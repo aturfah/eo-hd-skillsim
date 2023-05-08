@@ -1,5 +1,150 @@
 const treeData = [
-    [],
+    [// Prince
+        {
+            skillID: 'royal_lineage',
+            baseSkill: true,
+            coords: {x: 2, y: 0}
+        },
+        {
+            skillID: 'royal_veil',
+            baseSkill: true,
+            coords: {x: 1, y: 0},
+            barSize: 1
+        },
+        {
+            skillID: 'triumphant_cry',
+            baseSkill: false,
+            coords: {x: 1, y: 1},
+            numBefore: 1,
+            preReqLevels: [5],
+            numAfter: 1
+        },
+        {
+            skillID: 'monarch_march',
+            baseSkill: false,
+            coords: {x: 2, y: 1},
+            numBefore: 1,
+            preReqLevels: [5],
+        },
+        {
+            skillID: 'nobility_proof',
+            baseSkill: true,
+            coords: {x: 0, y: 0},
+            barSize: 3
+        },
+        {
+            skillID: 'negotiation',
+            baseSkill: false,
+            coords: {x: 0, y: 1},
+            numBefore: 1,
+            preReqLevels: [1]
+        },
+        {
+            skillID: 'inspire',
+            baseSkill: false,
+            coords: {x: 0, y: 2},
+            numBefore: 1,
+            preReqLevels: [3]
+        },
+        {
+            skillID: 'knighthood',
+            baseSkill: false,
+            coords: {x: 0, y: 3},
+            numBefore: 1,
+            preReqLevels: [5]
+        },
+        {
+            skillID: 'guard_order',
+            baseSkill: true,
+            coords: {x: 0, y: 4},
+            barSize: 4
+        },
+        {
+            skillID: 'reinforce',
+            baseSkill: false,
+            coords: {x: 0, y: 5},
+            numBefore: 1,
+            preReqLevels: [1]
+        },
+        {
+            skillID: 'prevent_order',
+            baseSkill: false,
+            coords: {x: 0, y: 6},
+            numBefore: 1,
+            preReqLevels: [3]
+        },
+        {
+            skillID: 'rally_order',
+            baseSkill: false,
+            coords: {x: 0, y: 7},
+            numBefore: 1,
+            preReqLevels: [5],
+            numAfter: 1,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'protect_order',
+            baseSkill: false,
+            coords: {x: 1, y: 7},
+            numBefore: 1,
+        },
+        {
+            skillID: undefined,
+            baseSkill: undefined,
+            coords: {x: 0, y: 8},
+            numBefore: 1,
+            preReqLevels: [5],
+            numAfter: 7
+        },
+        {
+            skillID: 'attack_order',
+            baseSkill: true,
+            coords: {x: 0, y: 9},
+            barSize: 5
+        },
+        {
+            skillID: 'fire_arms',
+            baseSkill: false,
+            coords: {x: 0, y: 10},
+            numBefore: 1,
+            preReqLevels: [1]
+        },
+        {
+            skillID: 'freeze_arms',
+            baseSkill: false,
+            coords: {x: 0, y: 11},
+            numBefore: 1,
+            preReqLevels: [3]
+        },
+        {
+            skillID: 'shock_arms',
+            baseSkill: false,
+            coords: {x: 0, y: 12},
+            numBefore: 1,
+            preReqLevels: [5],
+        },
+        {
+            skillID: 'regal_radiance',
+            baseSkill: false,
+            coords: {x: 0, y: 13},
+            numBefore: 1,
+            preReqLevels: [3]
+        },
+        {
+            skillID: undefined,
+            baseSkill: undefined,
+            coords: {x: 0, y: 14},
+            numBefore: 1,
+            preReqLevels: [5],
+            numAfter: 1
+        },
+        {
+            skillID: "ad_nihilo",
+            coords: {x: 1, y: 11},
+            numBefore: 1
+        }
+
+    ],
     [],
     [],
     [],
