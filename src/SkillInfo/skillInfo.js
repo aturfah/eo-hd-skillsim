@@ -126,7 +126,8 @@ function buildSkillText(skillDatum) {
     });
     rowOrder.forEach(function(label) {
         let curLevel = 0;
-        if (skillDatum.growth[label].length === 2 && skillDatum.growth[label][0].value === skillDatum.growth[label][1].value) {
+        console.log(skillDatum.growth[label])
+        if (skillDatum.growth[label].length === 1) {
             if (skillDescr.includes("\n")) {
                 skillDescr += ' Has a ' + label.toLowerCase() + ' of ' + skillDatum.growth[label][0].value + ' at all levels.'
             } else {
@@ -138,9 +139,9 @@ function buildSkillText(skillDatum) {
         skillDatum.growth[label].forEach(function(val) {
             curLevel += parseInt(val.levelspan);
             if (curLevel > maxLevel) {
-                grimSkillData[label].push(<td colSpan={val.levelspan}>{val.value}</td>)
+                grimSkillData[label].push(<td colSpan={val.levelspan}>&nbsp;{val.value}&nbsp;</td>)
             } else {
-                regSkillData[label].push(<td colSpan={val.levelspan}>{val.value}</td>)
+                regSkillData[label].push(<td colSpan={val.levelspan}>&nbsp;{val.value}&nbsp;</td>)
             }
         })
     }) 
