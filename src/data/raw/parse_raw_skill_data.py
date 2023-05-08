@@ -71,8 +71,20 @@ def generate_skill_output(skill_datum:dict, linked_skill_id:str=None) -> dict:
     if linked_skill_id is not None:
         skill_output["linked_skill"] = linked_skill_id
         skill_output["no_level"] = True
+        skill_output["prerequisites"] = [{"_id": linked_skill_id, "level": 1}]
 
     return skill_output
+
+def output_js(data, filename, var_name):
+    new_file_data = """// AUTOMATICALLY GENERATED FILE; DO NOT MODIFY!;
+    var {variable} = {data};
+    export default {variable};
+    """
+    data = json.dumps(data, indent=2)
+
+    with open(filename, 'w') as nf:
+        nf.write(new_file_data.format(variable=var_name,
+                                      data=data))
 
 
 if __name__ == "__main__":
@@ -101,7 +113,7 @@ if __name__ == "__main__":
            values_range = [x for x in range((header_idx+1), (header_idx+11))]
            
            subheader = skill_datum[header_idx]
-           if subheader not in ["0", "77", "59", "52", "136", "135", "113", "128", "107", "106"]:
+           if subheader not in ["0", "77", "59", "52", "136", "135", "113", "128", "107", "106", "158"]:
                 """
                 0 - Empty
                 77 - Skill Link (ID)
@@ -113,6 +125,7 @@ if __name__ == "__main__":
                 128 - Link on Ally Hit
                 107 - Link on Summon
                 106 - Beast to summon
+                158 - Normal Death Anim
                 """
                 try:
                     skill_data_levels.append({
@@ -176,6 +189,7 @@ if __name__ == "__main__":
     
     ## OK Now we put it all together
     class_skill_data_output = []
+    prereq_data_output = []
     default_skill_data = {}
     for class_name in class_skill_map.keys():
         class_obj = {
@@ -198,11 +212,15 @@ if __name__ == "__main__":
                         skill_output["_id"]
                     ))
 
+            prereq_data_output.append({
+                skill_output["_id"]: skill_output["prerequisites"]
+            })
 
         if class_name == "Default":
             default_skill_data = class_obj
         else:
             class_skill_data_output.append(class_obj)
-    
-    pprint(default_skill_data)
-    pprint(class_skill_data_output)
+
+    output_js(default_skill_data, "common_skills.js", "commonSkills")
+    output_js(class_skill_data_output, 'skill_data.js', 'skillData')
+    output_js(prereq_data_output, "prereq_data.js", "prereqData")
