@@ -20,6 +20,59 @@ LINKED_SKILLS = {
     "Shoot": ["Fire All"]
 }
 
+def generate_skill_output(skill_datum:dict, linked_skill_id:str=None) -> dict:
+    ## Flags from EO2U skillsim so code can stay mostly the same
+    skill_output = {
+        "force_boost": False,
+        "force_break": False,
+        "transform_only": False,
+        "mastery": False,
+        "linked_skill": None,
+        "no_level": False
+    }
+
+    ## Misc Skill Info
+    skill_output["_id"] = skill_datum["_id"]
+    skill_output["name"] = skill_datum["name"]
+    skill_output["description"] = skill_datum.get("details", "")
+    skill_output["max_level"] = int(skill_datum["max_level"])
+    skill_output["uses"] = skill_datum.get("uses", "N/A")
+
+    ## Prerequisites
+    skill_prereqs = []
+    for prereq_name in skill_datum.get("prerequisites", {}):
+        prereq_id = parsed_skills[prereq_name]["_id"]
+        skill_prereqs.append({
+            "_id": prereq_id,
+            "level": skill_datum["prerequisites"][prereq_name]
+        })
+
+    skill_output["prerequisites"] = skill_prereqs
+
+    ## Skill Level Info
+    skill_output["levels"] = [{"label": "Level", "width": "20%"}]
+    for lvl in range(1, 1 + skill_output["max_level"]):
+        skill_output["levels"].append({"label": lvl, "width": "8%"})
+
+
+    skill_output["growth_order"] = []
+    skill_output["growth"] = defaultdict(list)
+
+    for attrib_info in skill_datum["data"]:
+        skill_output["growth_order"].append(attrib_info["attribute"])
+        skill_output["growth"][attrib_info["attribute"]].extend([{
+            "levelspan": 1,
+            "value": x
+        } for x in attrib_info["levels"]])
+
+    skill_output["growth"] = dict(skill_output["growth"])
+
+    ## For linked skills
+    if linked_skill_id is not None:
+        skill_output["linked_skill"] = linked_skill_id
+        skill_output["no_level"] = True
+
+    return skill_output
 
 
 if __name__ == "__main__":
@@ -83,18 +136,6 @@ if __name__ == "__main__":
         else:
            parsed_skills[name]["data"].extend(skill_data_levels)
 
-    # ## Match linked skills
-    # for skill_name in LINKED_SKILLS.keys():
-    #     for linked_skill_name in LINKED_SKILLS[skill_name]:
-    #         parsed_skills[skill_name]["data"].extend(
-    #             parsed_skills[linked_skill_name]["data"]
-    #         )
-    #         del parsed_skills[linked_skill_name]
-
-
-    # pprint(parsed_skills["Call Elephant"])
-    # raise RuntimeError("AAAHH")
-
     ## Now we get the old skillsim data to match our skillsim data
     with open("skills.json", "r", encoding="utf8") as in_file:
         old_class_skills = json.load(in_file)
@@ -121,21 +162,47 @@ if __name__ == "__main__":
 
     ## Pull out info from skillsim data
     for skill_name in parsed_skills.keys():
+        parsed_skills[skill_name]["_id"] = str(skill_name).lower().replace(" ", "_")
         skill_datum = parsed_skills[skill_name].get("skillsim_data")
         if skill_datum is None:
-            print(skill_name)
             continue
-
-        if skill_name != "Call Tiger":
-            continue
-
-        skill_deps = skill_datum.get("dep", {})
 
         parsed_skills[skill_name]["passive"] = not skill_datum["active"]
         parsed_skills[skill_name]["uses"] = skill_datum["requires"]
         parsed_skills[skill_name]["details"] = skill_datum["details"]
-        parsed_skills[skill_name]["dependencies"] = {old_key_name_map[x]: skill_deps[x] for x in skill_deps.keys()}
+        skill_deps = skill_datum.get("dep", {})
+        parsed_skills[skill_name]["prerequisites"] = {old_key_name_map[x]: skill_deps[x] for x in skill_deps.keys()}
 
-    pprint(parsed_skills["Call Tiger"])
-
+    
     ## OK Now we put it all together
+    class_skill_data_output = []
+    default_skill_data = {}
+    for class_name in class_skill_map.keys():
+        class_obj = {
+            "source": None,
+            "class": class_name,
+            "branches": []
+        }
+
+        class_skills = class_skill_map[class_name]
+        for skill_name in class_skills:
+            skill_datum = parsed_skills[skill_name]
+
+            skill_output = generate_skill_output(skill_datum)
+            class_obj["branches"].append(skill_output)
+
+            if skill_name in LINKED_SKILLS:
+                for linked_skill in LINKED_SKILLS[skill_name]:
+                    class_obj["branches"].append(generate_skill_output(
+                        parsed_skills[linked_skill],
+                        skill_output["_id"]
+                    ))
+
+
+        if class_name == "Default":
+            default_skill_data = class_obj
+        else:
+            class_skill_data_output.append(class_obj)
+    
+    pprint(default_skill_data)
+    pprint(class_skill_data_output)
