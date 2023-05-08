@@ -4,7 +4,10 @@ import json
 if __name__ == "__main__":
     with open("EO3 Skill Data - Skills.csv", "r") as in_file:
       raw_skill_rows = in_file.readlines()
-    
+
+    with open("subheaders.json", "r") as in_file:
+        skill_subheaders = json.load(in_file)
+
     raw_skill_rows = [x.strip().split(",") for x in raw_skill_rows]
     
     ## Parse Shiri's skill file
@@ -21,11 +24,18 @@ if __name__ == "__main__":
            header_idx = offset + 1
            values_range = [x for x in range((header_idx+1), (header_idx+11))]
            
-           
-           skill_data_levels.append({
-              "header": header_idx,
-              "levels": [skill_datum[x] for x in values_range]
-           })
+           subheader = skill_datum[header_idx]
+           if subheader != "0":
+                try:
+                    skill_data_levels.append({
+                        "subheader_val": subheader,
+                        "attribute": skill_subheaders[str(subheader)],
+                        "levels": [skill_datum[x] for x in values_range]
+                    })
+                except KeyError as exc:
+                    print(name, subheader)
+                    raise exc
+
            offset = offset + 11
 
 
@@ -37,6 +47,7 @@ if __name__ == "__main__":
             }
         else:
            parsed_skills[name]["data"].extend(skill_data_levels)
+
 
     ## Now we get the old skillsim data to match our skillsim data
     with open("skills.json", "r", encoding="utf8") as in_file:
@@ -52,12 +63,11 @@ if __name__ == "__main__":
             eng_name = skill_datum["name_en"]
             matches = eng_name in parsed_skills.keys()
 
-            old_key_name_map[skill_key] = skill_datum["name_en"]
-
-        
+            old_key_name_map[skill_key] = eng_name
 
             if not matches:
-                print(skill_key, eng_name, matches)
+                err_msg = "'{key}' does not match with name '{name_en}'".format(key=skill_key, name_en=eng_name)
+                raise ValueError(err_msg)
 
     X = {}
     
