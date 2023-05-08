@@ -1180,7 +1180,13 @@
               "TP cost",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Multiplier"
+              "Beast Stat Multiplier",
+              "Initial Skill accuracy",
+              "Initial Damage %",
+              "Initial Ailment chance (%)",
+              "Subsequent Skill accuracy",
+              "Subsequent Damage %",
+              "Subsequent Ailment chance (%)"
             ],
             "growth": {
               "TP cost": [
@@ -1258,86 +1264,14 @@
                   "levelspan": 10,
                   "value": "100"
                 }
-              ]
-            }
-          },
-          {
-            "force_boost": false,
-            "force_break": false,
-            "transform_only": false,
-            "mastery": false,
-            "linked_skill": "call_bird",
-            "no_level": true,
-            "_id": "bind_feather",
-            "name": "Bind Feather (Initial)",
-            "description": "See Call Bird for details.",
-            "max_level": 10,
-            "uses": "N/A",
-            "prerequisites": [
-              {
-                "_id": "call_bird",
-                "level": 1
-              }
-            ],
-            "levels": [
-              {
-                "label": "Level",
-                "width": "20%"
-              },
-              {
-                "label": 1,
-                "width": "8%"
-              },
-              {
-                "label": 2,
-                "width": "8%"
-              },
-              {
-                "label": 3,
-                "width": "8%"
-              },
-              {
-                "label": 4,
-                "width": "8%"
-              },
-              {
-                "label": 5,
-                "width": "8%"
-              },
-              {
-                "label": 6,
-                "width": "8%"
-              },
-              {
-                "label": 7,
-                "width": "8%"
-              },
-              {
-                "label": 8,
-                "width": "8%"
-              },
-              {
-                "label": 9,
-                "width": "8%"
-              },
-              {
-                "label": 10,
-                "width": "8%"
-              }
-            ],
-            "growth_order": [
-              "Skill accuracy",
-              "Damage %",
-              "Ailment chance (%)"
-            ],
-            "growth": {
-              "Skill accuracy": [
+              ],
+              "Initial Skill accuracy": [
                 {
                   "levelspan": 10,
                   "value": "98"
                 }
               ],
-              "Damage %": [
+              "Initial Damage %": [
                 {
                   "levelspan": 1,
                   "value": "80"
@@ -1379,7 +1313,7 @@
                   "value": "130"
                 }
               ],
-              "Ailment chance (%)": [
+              "Initial Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "25"
@@ -1420,86 +1354,14 @@
                   "levelspan": 1,
                   "value": "50"
                 }
-              ]
-            }
-          },
-          {
-            "force_boost": false,
-            "force_break": false,
-            "transform_only": false,
-            "mastery": false,
-            "linked_skill": "call_bird",
-            "no_level": true,
-            "_id": "bind_feather_followup",
-            "name": "Bind Feather (Follow-Up)",
-            "description": "See Call Bird for details.",
-            "max_level": 10,
-            "uses": "N/A",
-            "prerequisites": [
-              {
-                "_id": "call_bird",
-                "level": 1
-              }
-            ],
-            "levels": [
-              {
-                "label": "Level",
-                "width": "20%"
-              },
-              {
-                "label": 1,
-                "width": "8%"
-              },
-              {
-                "label": 2,
-                "width": "8%"
-              },
-              {
-                "label": 3,
-                "width": "8%"
-              },
-              {
-                "label": 4,
-                "width": "8%"
-              },
-              {
-                "label": 5,
-                "width": "8%"
-              },
-              {
-                "label": 6,
-                "width": "8%"
-              },
-              {
-                "label": 7,
-                "width": "8%"
-              },
-              {
-                "label": 8,
-                "width": "8%"
-              },
-              {
-                "label": 9,
-                "width": "8%"
-              },
-              {
-                "label": 10,
-                "width": "8%"
-              }
-            ],
-            "growth_order": [
-              "Skill accuracy",
-              "Damage %",
-              "Ailment chance (%)"
-            ],
-            "growth": {
-              "Skill accuracy": [
+              ],
+              "Subsequent Skill accuracy": [
                 {
                   "levelspan": 10,
                   "value": "98"
                 }
               ],
-              "Damage %": [
+              "Subsequent Damage %": [
                 {
                   "levelspan": 1,
                   "value": "70"
@@ -1541,7 +1403,7 @@
                   "value": "120"
                 }
               ],
-              "Ailment chance (%)": [
+              "Subsequent Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "25"
@@ -1657,7 +1519,13 @@
               "TP cost",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Multiplier"
+              "Beast Stat Multiplier",
+              "Initial Skill accuracy",
+              "Initial Damage %",
+              "Initial Ailment chance (%)",
+              "Subsequent Skill accuracy",
+              "Subsequent Damage %",
+              "Subsequent Ailment chance (%)"
             ],
             "growth": {
               "TP cost": [
@@ -1735,86 +1603,14 @@
                   "levelspan": 10,
                   "value": "120"
                 }
-              ]
-            }
-          },
-          {
-            "force_boost": false,
-            "force_break": false,
-            "transform_only": false,
-            "mastery": false,
-            "linked_skill": "call_elephant",
-            "no_level": true,
-            "_id": "reckless_rush",
-            "name": "Reckless Rush (Initial)",
-            "description": "See Call Elephant for details.",
-            "max_level": 10,
-            "uses": "N/A",
-            "prerequisites": [
-              {
-                "_id": "call_elephant",
-                "level": 1
-              }
-            ],
-            "levels": [
-              {
-                "label": "Level",
-                "width": "20%"
-              },
-              {
-                "label": 1,
-                "width": "8%"
-              },
-              {
-                "label": 2,
-                "width": "8%"
-              },
-              {
-                "label": 3,
-                "width": "8%"
-              },
-              {
-                "label": 4,
-                "width": "8%"
-              },
-              {
-                "label": 5,
-                "width": "8%"
-              },
-              {
-                "label": 6,
-                "width": "8%"
-              },
-              {
-                "label": 7,
-                "width": "8%"
-              },
-              {
-                "label": 8,
-                "width": "8%"
-              },
-              {
-                "label": 9,
-                "width": "8%"
-              },
-              {
-                "label": 10,
-                "width": "8%"
-              }
-            ],
-            "growth_order": [
-              "Skill accuracy",
-              "Damage %",
-              "Ailment chance (%)"
-            ],
-            "growth": {
-              "Skill accuracy": [
+              ],
+              "Initial Skill accuracy": [
                 {
                   "levelspan": 10,
                   "value": "98"
                 }
               ],
-              "Damage %": [
+              "Initial Damage %": [
                 {
                   "levelspan": 1,
                   "value": "75"
@@ -1856,7 +1652,7 @@
                   "value": "120"
                 }
               ],
-              "Ailment chance (%)": [
+              "Initial Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "25"
@@ -1897,86 +1693,14 @@
                   "levelspan": 1,
                   "value": "50"
                 }
-              ]
-            }
-          },
-          {
-            "force_boost": false,
-            "force_break": false,
-            "transform_only": false,
-            "mastery": false,
-            "linked_skill": "call_elephant",
-            "no_level": true,
-            "_id": "reckless_rush_followup",
-            "name": "Reckless Rush (Follow-Up)",
-            "description": "See Call Elephant for details.",
-            "max_level": 10,
-            "uses": "N/A",
-            "prerequisites": [
-              {
-                "_id": "call_elephant",
-                "level": 1
-              }
-            ],
-            "levels": [
-              {
-                "label": "Level",
-                "width": "20%"
-              },
-              {
-                "label": 1,
-                "width": "8%"
-              },
-              {
-                "label": 2,
-                "width": "8%"
-              },
-              {
-                "label": 3,
-                "width": "8%"
-              },
-              {
-                "label": 4,
-                "width": "8%"
-              },
-              {
-                "label": 5,
-                "width": "8%"
-              },
-              {
-                "label": 6,
-                "width": "8%"
-              },
-              {
-                "label": 7,
-                "width": "8%"
-              },
-              {
-                "label": 8,
-                "width": "8%"
-              },
-              {
-                "label": 9,
-                "width": "8%"
-              },
-              {
-                "label": 10,
-                "width": "8%"
-              }
-            ],
-            "growth_order": [
-              "Skill accuracy",
-              "Damage %",
-              "Ailment chance (%)"
-            ],
-            "growth": {
-              "Skill accuracy": [
+              ],
+              "Subsequent Skill accuracy": [
                 {
                   "levelspan": 10,
                   "value": "98"
                 }
               ],
-              "Damage %": [
+              "Subsequent Damage %": [
                 {
                   "levelspan": 1,
                   "value": "120"
@@ -2018,7 +1742,7 @@
                   "value": "190"
                 }
               ],
-              "Ailment chance (%)": [
+              "Subsequent Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "25"
@@ -2611,7 +2335,13 @@
               "TP cost",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Multiplier"
+              "Beast Stat Multiplier",
+              "Initial Skill accuracy",
+              "Initial Damage %",
+              "Initial Ailment chance (%)",
+              "Subsequent Skill accuracy",
+              "Subsequent Damage %",
+              "Subsequent Ailment chance (%)"
             ],
             "growth": {
               "TP cost": [
@@ -2689,86 +2419,14 @@
                   "levelspan": 10,
                   "value": "100"
                 }
-              ]
-            }
-          },
-          {
-            "force_boost": false,
-            "force_break": false,
-            "transform_only": false,
-            "mastery": false,
-            "linked_skill": "call_mole",
-            "no_level": true,
-            "_id": "scratch",
-            "name": "Scratch (Initial)",
-            "description": "See Call Mole for details.",
-            "max_level": 10,
-            "uses": "N/A",
-            "prerequisites": [
-              {
-                "_id": "call_mole",
-                "level": 1
-              }
-            ],
-            "levels": [
-              {
-                "label": "Level",
-                "width": "20%"
-              },
-              {
-                "label": 1,
-                "width": "8%"
-              },
-              {
-                "label": 2,
-                "width": "8%"
-              },
-              {
-                "label": 3,
-                "width": "8%"
-              },
-              {
-                "label": 4,
-                "width": "8%"
-              },
-              {
-                "label": 5,
-                "width": "8%"
-              },
-              {
-                "label": 6,
-                "width": "8%"
-              },
-              {
-                "label": 7,
-                "width": "8%"
-              },
-              {
-                "label": 8,
-                "width": "8%"
-              },
-              {
-                "label": 9,
-                "width": "8%"
-              },
-              {
-                "label": 10,
-                "width": "8%"
-              }
-            ],
-            "growth_order": [
-              "Skill accuracy",
-              "Damage %",
-              "Ailment chance (%)"
-            ],
-            "growth": {
-              "Skill accuracy": [
+              ],
+              "Initial Skill accuracy": [
                 {
                   "levelspan": 10,
                   "value": "98"
                 }
               ],
-              "Damage %": [
+              "Initial Damage %": [
                 {
                   "levelspan": 1,
                   "value": "80"
@@ -2810,7 +2468,7 @@
                   "value": "130"
                 }
               ],
-              "Ailment chance (%)": [
+              "Initial Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "25"
@@ -2851,86 +2509,14 @@
                   "levelspan": 1,
                   "value": "50"
                 }
-              ]
-            }
-          },
-          {
-            "force_boost": false,
-            "force_break": false,
-            "transform_only": false,
-            "mastery": false,
-            "linked_skill": "call_mole",
-            "no_level": true,
-            "_id": "scratch_followup",
-            "name": "Scratch (Follow-Up)",
-            "description": "See Call Mole for details.",
-            "max_level": 10,
-            "uses": "N/A",
-            "prerequisites": [
-              {
-                "_id": "call_mole",
-                "level": 1
-              }
-            ],
-            "levels": [
-              {
-                "label": "Level",
-                "width": "20%"
-              },
-              {
-                "label": 1,
-                "width": "8%"
-              },
-              {
-                "label": 2,
-                "width": "8%"
-              },
-              {
-                "label": 3,
-                "width": "8%"
-              },
-              {
-                "label": 4,
-                "width": "8%"
-              },
-              {
-                "label": 5,
-                "width": "8%"
-              },
-              {
-                "label": 6,
-                "width": "8%"
-              },
-              {
-                "label": 7,
-                "width": "8%"
-              },
-              {
-                "label": 8,
-                "width": "8%"
-              },
-              {
-                "label": 9,
-                "width": "8%"
-              },
-              {
-                "label": 10,
-                "width": "8%"
-              }
-            ],
-            "growth_order": [
-              "Skill accuracy",
-              "Damage %",
-              "Ailment chance (%)"
-            ],
-            "growth": {
-              "Skill accuracy": [
+              ],
+              "Subsequent Skill accuracy": [
                 {
                   "levelspan": 10,
                   "value": "98"
                 }
               ],
-              "Damage %": [
+              "Subsequent Damage %": [
                 {
                   "levelspan": 1,
                   "value": "70"
@@ -2972,7 +2558,7 @@
                   "value": "120"
                 }
               ],
-              "Ailment chance (%)": [
+              "Subsequent Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "25"
@@ -3088,7 +2674,15 @@
               "TP cost",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Multiplier"
+              "Beast Stat Multiplier",
+              "Initial Skill accuracy",
+              "Initial Damage %",
+              "Initial Ailment chance (%)",
+              "Initial Min hits",
+              "Initial Max hits",
+              "Subsequent Skill accuracy",
+              "Subsequent Damage %",
+              "Subsequent Ailment chance (%)"
             ],
             "growth": {
               "TP cost": [
@@ -3166,88 +2760,14 @@
                   "levelspan": 10,
                   "value": "120"
                 }
-              ]
-            }
-          },
-          {
-            "force_boost": false,
-            "force_break": false,
-            "transform_only": false,
-            "mastery": false,
-            "linked_skill": "call_cow",
-            "no_level": true,
-            "_id": "bull_run",
-            "name": "Bull Run (Initial)",
-            "description": "See Call Cow for details.",
-            "max_level": 10,
-            "uses": "N/A",
-            "prerequisites": [
-              {
-                "_id": "call_cow",
-                "level": 1
-              }
-            ],
-            "levels": [
-              {
-                "label": "Level",
-                "width": "20%"
-              },
-              {
-                "label": 1,
-                "width": "8%"
-              },
-              {
-                "label": 2,
-                "width": "8%"
-              },
-              {
-                "label": 3,
-                "width": "8%"
-              },
-              {
-                "label": 4,
-                "width": "8%"
-              },
-              {
-                "label": 5,
-                "width": "8%"
-              },
-              {
-                "label": 6,
-                "width": "8%"
-              },
-              {
-                "label": 7,
-                "width": "8%"
-              },
-              {
-                "label": 8,
-                "width": "8%"
-              },
-              {
-                "label": 9,
-                "width": "8%"
-              },
-              {
-                "label": 10,
-                "width": "8%"
-              }
-            ],
-            "growth_order": [
-              "Skill accuracy",
-              "Damage %",
-              "Ailment chance (%)",
-              "Min hits",
-              "Max hits"
-            ],
-            "growth": {
-              "Skill accuracy": [
+              ],
+              "Initial Skill accuracy": [
                 {
                   "levelspan": 10,
                   "value": "98"
                 }
               ],
-              "Damage %": [
+              "Initial Damage %": [
                 {
                   "levelspan": 1,
                   "value": "65"
@@ -3289,7 +2809,7 @@
                   "value": "90"
                 }
               ],
-              "Ailment chance (%)": [
+              "Initial Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "25"
@@ -3331,13 +2851,13 @@
                   "value": "50"
                 }
               ],
-              "Min hits": [
+              "Initial Min hits": [
                 {
                   "levelspan": 10,
                   "value": "2"
                 }
               ],
-              "Max hits": [
+              "Initial Max hits": [
                 {
                   "levelspan": 2,
                   "value": "2"
@@ -3354,86 +2874,14 @@
                   "levelspan": 1,
                   "value": "5"
                 }
-              ]
-            }
-          },
-          {
-            "force_boost": false,
-            "force_break": false,
-            "transform_only": false,
-            "mastery": false,
-            "linked_skill": "call_cow",
-            "no_level": true,
-            "_id": "bull_run_followup",
-            "name": "Bull Run (Follow-Up)",
-            "description": "See Call Cow for details.",
-            "max_level": 10,
-            "uses": "N/A",
-            "prerequisites": [
-              {
-                "_id": "call_cow",
-                "level": 1
-              }
-            ],
-            "levels": [
-              {
-                "label": "Level",
-                "width": "20%"
-              },
-              {
-                "label": 1,
-                "width": "8%"
-              },
-              {
-                "label": 2,
-                "width": "8%"
-              },
-              {
-                "label": 3,
-                "width": "8%"
-              },
-              {
-                "label": 4,
-                "width": "8%"
-              },
-              {
-                "label": 5,
-                "width": "8%"
-              },
-              {
-                "label": 6,
-                "width": "8%"
-              },
-              {
-                "label": 7,
-                "width": "8%"
-              },
-              {
-                "label": 8,
-                "width": "8%"
-              },
-              {
-                "label": 9,
-                "width": "8%"
-              },
-              {
-                "label": 10,
-                "width": "8%"
-              }
-            ],
-            "growth_order": [
-              "Skill accuracy",
-              "Damage %",
-              "Ailment chance (%)"
-            ],
-            "growth": {
-              "Skill accuracy": [
+              ],
+              "Subsequent Skill accuracy": [
                 {
                   "levelspan": 10,
                   "value": "98"
                 }
               ],
-              "Damage %": [
+              "Subsequent Damage %": [
                 {
                   "levelspan": 1,
                   "value": "130"
@@ -3475,7 +2923,7 @@
                   "value": "200"
                 }
               ],
-              "Ailment chance (%)": [
+              "Subsequent Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "30"
@@ -3840,7 +3288,13 @@
               "TP cost",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Multiplier"
+              "Beast Stat Multiplier",
+              "Initial Skill accuracy",
+              "Initial Damage %",
+              "Initial Ailment chance (%)",
+              "Subsequent Skill accuracy",
+              "Subsequent Damage %",
+              "Subsequent Ailment chance (%)"
             ],
             "growth": {
               "TP cost": [
@@ -3918,86 +3372,14 @@
                   "levelspan": 10,
                   "value": "100"
                 }
-              ]
-            }
-          },
-          {
-            "force_boost": false,
-            "force_break": false,
-            "transform_only": false,
-            "mastery": false,
-            "linked_skill": "call_snake",
-            "no_level": true,
-            "_id": "wind_wrap",
-            "name": "Wind Wrap (Initial)",
-            "description": "See Call Snake for details.",
-            "max_level": 10,
-            "uses": "N/A",
-            "prerequisites": [
-              {
-                "_id": "call_snake",
-                "level": 1
-              }
-            ],
-            "levels": [
-              {
-                "label": "Level",
-                "width": "20%"
-              },
-              {
-                "label": 1,
-                "width": "8%"
-              },
-              {
-                "label": 2,
-                "width": "8%"
-              },
-              {
-                "label": 3,
-                "width": "8%"
-              },
-              {
-                "label": 4,
-                "width": "8%"
-              },
-              {
-                "label": 5,
-                "width": "8%"
-              },
-              {
-                "label": 6,
-                "width": "8%"
-              },
-              {
-                "label": 7,
-                "width": "8%"
-              },
-              {
-                "label": 8,
-                "width": "8%"
-              },
-              {
-                "label": 9,
-                "width": "8%"
-              },
-              {
-                "label": 10,
-                "width": "8%"
-              }
-            ],
-            "growth_order": [
-              "Skill accuracy",
-              "Damage %",
-              "Ailment chance (%)"
-            ],
-            "growth": {
-              "Skill accuracy": [
+              ],
+              "Initial Skill accuracy": [
                 {
                   "levelspan": 10,
                   "value": "98"
                 }
               ],
-              "Damage %": [
+              "Initial Damage %": [
                 {
                   "levelspan": 1,
                   "value": "80"
@@ -4039,7 +3421,7 @@
                   "value": "130"
                 }
               ],
-              "Ailment chance (%)": [
+              "Initial Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "25"
@@ -4080,86 +3462,14 @@
                   "levelspan": 1,
                   "value": "50"
                 }
-              ]
-            }
-          },
-          {
-            "force_boost": false,
-            "force_break": false,
-            "transform_only": false,
-            "mastery": false,
-            "linked_skill": "call_snake",
-            "no_level": true,
-            "_id": "wind_wrap_followup",
-            "name": "Wind Wrap (Follow-Up)",
-            "description": "See Call Snake for details.",
-            "max_level": 10,
-            "uses": "N/A",
-            "prerequisites": [
-              {
-                "_id": "call_snake",
-                "level": 1
-              }
-            ],
-            "levels": [
-              {
-                "label": "Level",
-                "width": "20%"
-              },
-              {
-                "label": 1,
-                "width": "8%"
-              },
-              {
-                "label": 2,
-                "width": "8%"
-              },
-              {
-                "label": 3,
-                "width": "8%"
-              },
-              {
-                "label": 4,
-                "width": "8%"
-              },
-              {
-                "label": 5,
-                "width": "8%"
-              },
-              {
-                "label": 6,
-                "width": "8%"
-              },
-              {
-                "label": 7,
-                "width": "8%"
-              },
-              {
-                "label": 8,
-                "width": "8%"
-              },
-              {
-                "label": 9,
-                "width": "8%"
-              },
-              {
-                "label": 10,
-                "width": "8%"
-              }
-            ],
-            "growth_order": [
-              "Skill accuracy",
-              "Damage %",
-              "Ailment chance (%)"
-            ],
-            "growth": {
-              "Skill accuracy": [
+              ],
+              "Subsequent Skill accuracy": [
                 {
                   "levelspan": 10,
                   "value": "98"
                 }
               ],
-              "Damage %": [
+              "Subsequent Damage %": [
                 {
                   "levelspan": 1,
                   "value": "70"
@@ -4201,7 +3511,7 @@
                   "value": "120"
                 }
               ],
-              "Ailment chance (%)": [
+              "Subsequent Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "25"
@@ -4317,7 +3627,13 @@
               "TP cost",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Multiplier"
+              "Beast Stat Multiplier",
+              "Ailment chance (%)",
+              "TP cost",
+              "Speed",
+              "Acc. (mod)",
+              "Damage %",
+              "Uncounterable"
             ],
             "growth": {
               "TP cost": [
@@ -4340,12 +3656,20 @@
                 {
                   "levelspan": 2,
                   "value": "36"
+                },
+                {
+                  "levelspan": 10,
+                  "value": "0"
                 }
               ],
               "Speed": [
                 {
                   "levelspan": 10,
                   "value": "-3"
+                },
+                {
+                  "levelspan": 10,
+                  "value": "10"
                 }
               ],
               "Beast Base HP": [
@@ -4395,77 +3719,7 @@
                   "levelspan": 10,
                   "value": "150"
                 }
-              ]
-            }
-          },
-          {
-            "force_boost": false,
-            "force_break": false,
-            "transform_only": false,
-            "mastery": false,
-            "linked_skill": "call_tiger",
-            "no_level": true,
-            "_id": "death_fang",
-            "name": "Death Fang",
-            "description": "See Call Tiger for details.",
-            "max_level": 10,
-            "uses": "N/A",
-            "prerequisites": [
-              {
-                "_id": "call_tiger",
-                "level": 1
-              }
-            ],
-            "levels": [
-              {
-                "label": "Level",
-                "width": "20%"
-              },
-              {
-                "label": 1,
-                "width": "8%"
-              },
-              {
-                "label": 2,
-                "width": "8%"
-              },
-              {
-                "label": 3,
-                "width": "8%"
-              },
-              {
-                "label": 4,
-                "width": "8%"
-              },
-              {
-                "label": 5,
-                "width": "8%"
-              },
-              {
-                "label": 6,
-                "width": "8%"
-              },
-              {
-                "label": 7,
-                "width": "8%"
-              },
-              {
-                "label": 8,
-                "width": "8%"
-              },
-              {
-                "label": 9,
-                "width": "8%"
-              },
-              {
-                "label": 10,
-                "width": "8%"
-              }
-            ],
-            "growth_order": [
-              "Ailment chance (%)"
-            ],
-            "growth": {
+              ],
               "Ailment chance (%)": [
                 {
                   "levelspan": 1,
@@ -4506,92 +3760,6 @@
                 {
                   "levelspan": 1,
                   "value": "20"
-                }
-              ]
-            }
-          },
-          {
-            "force_boost": false,
-            "force_break": false,
-            "transform_only": false,
-            "mastery": false,
-            "linked_skill": "call_tiger",
-            "no_level": true,
-            "_id": "fierce_counter",
-            "name": "Fierce Counter",
-            "description": "See Call Tiger for details.",
-            "max_level": 10,
-            "uses": "N/A",
-            "prerequisites": [
-              {
-                "_id": "call_tiger",
-                "level": 1
-              }
-            ],
-            "levels": [
-              {
-                "label": "Level",
-                "width": "20%"
-              },
-              {
-                "label": 1,
-                "width": "8%"
-              },
-              {
-                "label": 2,
-                "width": "8%"
-              },
-              {
-                "label": 3,
-                "width": "8%"
-              },
-              {
-                "label": 4,
-                "width": "8%"
-              },
-              {
-                "label": 5,
-                "width": "8%"
-              },
-              {
-                "label": 6,
-                "width": "8%"
-              },
-              {
-                "label": 7,
-                "width": "8%"
-              },
-              {
-                "label": 8,
-                "width": "8%"
-              },
-              {
-                "label": 9,
-                "width": "8%"
-              },
-              {
-                "label": 10,
-                "width": "8%"
-              }
-            ],
-            "growth_order": [
-              "TP cost",
-              "Speed",
-              "Acc. (mod)",
-              "Damage %",
-              "Uncounterable"
-            ],
-            "growth": {
-              "TP cost": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
-              "Speed": [
-                {
-                  "levelspan": 10,
-                  "value": "10"
                 }
               ],
               "Acc. (mod)": [
@@ -4746,7 +3914,15 @@
               "TP cost",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Multiplier"
+              "Beast Stat Multiplier",
+              "Initial Skill accuracy",
+              "Initial Damage %",
+              "Initial Ailment chance (%)",
+              "Initial Poison damage",
+              "Subsequent Skill accuracy",
+              "Subsequent Damage %",
+              "Subsequent Ailment chance (%)",
+              "Subsequent Poison damage"
             ],
             "growth": {
               "TP cost": [
@@ -4824,87 +4000,14 @@
                   "levelspan": 10,
                   "value": "70"
                 }
-              ]
-            }
-          },
-          {
-            "force_boost": false,
-            "force_break": false,
-            "transform_only": false,
-            "mastery": false,
-            "linked_skill": "call_insect",
-            "no_level": true,
-            "_id": "poison_dust",
-            "name": "Poison Dust (Initial)",
-            "description": "See Call Insect for details.",
-            "max_level": 10,
-            "uses": "N/A",
-            "prerequisites": [
-              {
-                "_id": "call_insect",
-                "level": 1
-              }
-            ],
-            "levels": [
-              {
-                "label": "Level",
-                "width": "20%"
-              },
-              {
-                "label": 1,
-                "width": "8%"
-              },
-              {
-                "label": 2,
-                "width": "8%"
-              },
-              {
-                "label": 3,
-                "width": "8%"
-              },
-              {
-                "label": 4,
-                "width": "8%"
-              },
-              {
-                "label": 5,
-                "width": "8%"
-              },
-              {
-                "label": 6,
-                "width": "8%"
-              },
-              {
-                "label": 7,
-                "width": "8%"
-              },
-              {
-                "label": 8,
-                "width": "8%"
-              },
-              {
-                "label": 9,
-                "width": "8%"
-              },
-              {
-                "label": 10,
-                "width": "8%"
-              }
-            ],
-            "growth_order": [
-              "Skill accuracy",
-              "Damage %",
-              "Ailment chance (%)",
-              "Poison damage"
-            ],
-            "growth": {
-              "Skill accuracy": [
+              ],
+              "Initial Skill accuracy": [
                 {
                   "levelspan": 10,
                   "value": "98"
                 }
               ],
-              "Damage %": [
+              "Initial Damage %": [
                 {
                   "levelspan": 1,
                   "value": "60"
@@ -4946,13 +4049,13 @@
                   "value": "130"
                 }
               ],
-              "Ailment chance (%)": [
+              "Initial Ailment chance (%)": [
                 {
                   "levelspan": 10,
                   "value": "40"
                 }
               ],
-              "Poison damage": [
+              "Initial Poison damage": [
                 {
                   "levelspan": 1,
                   "value": "50"
@@ -4993,87 +4096,14 @@
                   "levelspan": 1,
                   "value": "350"
                 }
-              ]
-            }
-          },
-          {
-            "force_boost": false,
-            "force_break": false,
-            "transform_only": false,
-            "mastery": false,
-            "linked_skill": "call_insect",
-            "no_level": true,
-            "_id": "poison_dust_followup",
-            "name": "Poison Dust (Follow-Up)",
-            "description": "See Call Insect for details.",
-            "max_level": 10,
-            "uses": "N/A",
-            "prerequisites": [
-              {
-                "_id": "call_insect",
-                "level": 1
-              }
-            ],
-            "levels": [
-              {
-                "label": "Level",
-                "width": "20%"
-              },
-              {
-                "label": 1,
-                "width": "8%"
-              },
-              {
-                "label": 2,
-                "width": "8%"
-              },
-              {
-                "label": 3,
-                "width": "8%"
-              },
-              {
-                "label": 4,
-                "width": "8%"
-              },
-              {
-                "label": 5,
-                "width": "8%"
-              },
-              {
-                "label": 6,
-                "width": "8%"
-              },
-              {
-                "label": 7,
-                "width": "8%"
-              },
-              {
-                "label": 8,
-                "width": "8%"
-              },
-              {
-                "label": 9,
-                "width": "8%"
-              },
-              {
-                "label": 10,
-                "width": "8%"
-              }
-            ],
-            "growth_order": [
-              "Skill accuracy",
-              "Damage %",
-              "Ailment chance (%)",
-              "Poison damage"
-            ],
-            "growth": {
-              "Skill accuracy": [
+              ],
+              "Subsequent Skill accuracy": [
                 {
                   "levelspan": 10,
                   "value": "98"
                 }
               ],
-              "Damage %": [
+              "Subsequent Damage %": [
                 {
                   "levelspan": 1,
                   "value": "50"
@@ -5115,13 +4145,13 @@
                   "value": "120"
                 }
               ],
-              "Ailment chance (%)": [
+              "Subsequent Ailment chance (%)": [
                 {
                   "levelspan": 10,
                   "value": "40"
                 }
               ],
-              "Poison damage": [
+              "Subsequent Poison damage": [
                 {
                   "levelspan": 1,
                   "value": "50"

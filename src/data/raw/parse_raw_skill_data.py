@@ -173,6 +173,19 @@ if __name__ == "__main__":
            parsed_skills[name]["data"].extend(skill_data_levels)
 
     ## Combine Linked Skills
+    for skill_name in LINKED_SKILLS:
+        for linked_name in LINKED_SKILLS[skill_name]:
+            linked_data = parsed_skills[linked_name]
+            prefix = ""
+            if "(Initial)" in linked_name:
+                prefix = "Initial "
+            elif "(Follow-Up)" in linked_name:
+                prefix = "Subsequent "
+            
+            for attrib_data in linked_data["data"]:
+                attrib_data["attribute"] = "{pfx}{atb}".format(pfx=prefix,
+                                                               atb=attrib_data["attribute"])
+                parsed_skills[skill_name]["data"].append(attrib_data)
 
     ## Now we get the old skillsim data to match our skillsim data
     with open("skills.json", "r", encoding="utf8") as in_file:
@@ -239,13 +252,13 @@ if __name__ == "__main__":
             skill_output = generate_skill_output(skill_datum)
             class_obj["branches"][0]["skill_data"].append(skill_output)
 
-            if skill_name in LINKED_SKILLS:
-                for linked_skill in LINKED_SKILLS[skill_name]:
-                    class_obj["branches"][0]["skill_data"].append(generate_skill_output(
-                        parsed_skills[linked_skill],
-                        skill_output["_id"],
-                        skill_name
-                    ))
+            # if skill_name in LINKED_SKILLS:
+            #     for linked_skill in LINKED_SKILLS[skill_name]:
+            #         class_obj["branches"][0]["skill_data"].append(generate_skill_output(
+            #             parsed_skills[linked_skill],
+            #             skill_output["_id"],
+            #             skill_name
+            #         ))
 
             class_prereqs[skill_output["_id"]] = skill_output["prerequisites"]
 
