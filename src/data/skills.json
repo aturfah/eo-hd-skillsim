@@ -789,8 +789,8 @@
     },
     "ChaseThunder": {
     "name_jp": "チェイスサンダー",
-    "name_en": "Chase Thunder",
-    "details": "Gun: Matches with allies' thunder attacks; performs a chase with a gun.",
+    "name_en": "Chase Volt",
+    "details": "Gun: Matches with allies' volt attacks; performs a chase with a gun.",
     "requires": "Legs",
     "dep": { "GunMastery": 3 },
     "active": true,
@@ -829,7 +829,7 @@
     },
     "Troublemaking": {
     "name_jp": "トラブルメイク",
-    "name_en": "Trouble Maker",
+    "name_en": "Troublemaker",
     "details": "For a certain number of steps, encounters are increased.",
     "requires": "N/A",
     "dep": {  },
