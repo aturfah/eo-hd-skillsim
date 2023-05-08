@@ -118,6 +118,9 @@ class Header extends Component {
     buildClassDropdown() {
         const classOptions = []
         this.classOpts.forEach(function(className, idx) {
+            if (className === "Default") {
+                return;
+            }
             classOptions.push(<option key={idx + className} value={idx} >{className}</option>)
         })
         return <div>
