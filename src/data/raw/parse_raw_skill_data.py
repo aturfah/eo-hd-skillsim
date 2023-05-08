@@ -244,9 +244,6 @@ if __name__ == "__main__":
         class_skills = class_skill_map[class_name]
         class_prereqs = {}
         for skill_name in class_skills:
-            if class_name != "Wildling":
-                continue
-
             skill_datum = parsed_skills[skill_name]
             
             skill_output = generate_skill_output(skill_datum)
