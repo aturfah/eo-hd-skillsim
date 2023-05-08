@@ -145,7 +145,149 @@ const treeData = [
         }
 
     ],
-    [],
+    [// Gladiator
+        {
+            skillID: 'endless_battle',
+            baseSkill: true,
+            coords: {x: 1, y: 0}
+        },
+        {
+            skillID: 'sword_mastery',
+            baseSkill: true,
+            coords: {x: 0, y: 0},
+            barSize: 6
+        },
+        {
+            skillID: 'break',
+            baseSkill: false,
+            coords: {x: 0, y: 1},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 2,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'bind_cut',
+            baseSkill: false,
+            coords: {x: 1, y: 1},
+            numBefore: 1,
+        },
+        {
+            skillID: undefined,
+            baseSkill: false,
+            coords: {x: 0, y: 2},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 1,
+        },
+        {
+            skillID: 'rush',
+            baseSkill: false,
+            coords: {x: 0, y: 3},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 3,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'rampage',
+            baseSkill: false,
+            coords: {x: 0, y: 4},
+            numBefore: 1,
+            preReqLevels: [7]
+        },
+        {
+            skillID: undefined,
+            baseSkill: false,
+            coords: {x: 0, y: 5},
+            numBefore: 1,
+            preReqLevels: [10],
+            numAfter: 1,
+        },
+        {
+            skillID: 'blade_rave',
+            baseSkill: false,
+            coords: {x: 1, y: 5},
+            numBefore: 1,
+        },
+        {
+            skillID: 'club_mastery',
+            baseSkill: true,
+            coords: {x: 0, y: 7},
+            barSize: 5
+        },
+        {
+            skillID: 'crushing_blow',
+            baseSkill: false,
+            coords: {x: 0, y: 8},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 2,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'freezing_blow',
+            baseSkill: false,
+            coords: {x: 1, y: 8},
+            numBefore: 1,
+        },
+        {
+            skillID: undefined,
+            baseSkill: false,
+            coords: {x: 0, y: 9},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 1,
+        },
+        {
+            skillID: 'arm_breaker',
+            baseSkill: false,
+            coords: {x: 0, y: 10},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 2,
+            postReqLevels: [5]
+        },
+        {
+            skillID: undefined,
+            baseSkill: false,
+            coords: {x: 0, y: 11},
+            numBefore: 1,
+            preReqLevels: [10],
+            numAfter: 1,
+        },
+        {
+            skillID: 'nine_smashes',
+            baseSkill: false,
+            coords: {x: 1, y: 10},
+            numBefore: 1,
+        },
+        {
+            skillID: undefined,
+            baseSkill: false,
+            coords: {x: 0, y: 6},
+            numBefore: 1,
+            afterSkip: 1,
+            preReqLevels: [5],
+            numAfter: 1,
+        },
+        {
+            skillID: undefined,
+            baseSkill: false,
+            coords: {x: 0, y: 12},
+            numBefore: 1,
+            preReqLevels: [5],
+            numAfter: 1,
+            afterSkip: 1,
+        },
+        {
+            skillID: 'wild_swings',
+            baseSkill: false,
+            coords: {x: 2, y: 9},
+            numBefore: 7,
+            beforeStyle: 'centered'
+        },
+    ],
     [],
     [],
     [],
