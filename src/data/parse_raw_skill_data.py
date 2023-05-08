@@ -34,11 +34,9 @@ if __name__ == "__main__":
     ## Parse Shiri's skill file
     parsed_skills = {}
     for skill_datum in raw_skill_rows:
-        if len(skill_datum) == 1:
-            continue
-
-        # print(skill_datum, end="\n\n")
         name = skill_datum[0]
+        if not name or name.startswith("--"):
+            continue
 
         max_level = skill_datum[1]
         offset = 24
@@ -50,7 +48,7 @@ if __name__ == "__main__":
            values_range = [x for x in range((header_idx+1), (header_idx+11))]
            
            subheader = skill_datum[header_idx]
-           if subheader not in ["0", "77", "59", "52", "136", "135", "113", "128"]:
+           if subheader not in ["0", "77", "59", "52", "136", "135", "113", "128", "107", "106"]:
                 """
                 0 - Empty
                 77 - Skill Link (ID)
@@ -60,6 +58,8 @@ if __name__ == "__main__":
                 135 - Cannot Repeat
                 113 - Weapon Type
                 128 - Link on Ally Hit
+                107 - Link on Summon
+                106 - Beast to summon
                 """
                 try:
                     skill_data_levels.append({
@@ -119,7 +119,6 @@ if __name__ == "__main__":
                 err_msg = "'{key}' does not match with name '{name_en}'".format(key=skill_key, name_en=eng_name)
                 raise ValueError(err_msg)              
 
-
     ## Pull out info from skillsim data
     for skill_name in parsed_skills.keys():
         skill_datum = parsed_skills[skill_name].get("skillsim_data")
@@ -127,13 +126,16 @@ if __name__ == "__main__":
             print(skill_name)
             continue
 
+        if skill_name != "Call Tiger":
+            continue
+
+        skill_deps = skill_datum.get("dep", {})
+
         parsed_skills[skill_name]["passive"] = not skill_datum["active"]
         parsed_skills[skill_name]["uses"] = skill_datum["requires"]
         parsed_skills[skill_name]["details"] = skill_datum["details"]
-        
-    pprint(parsed_skills["Infect"])
-    
+        parsed_skills[skill_name]["dependencies"] = {old_key_name_map[x]: skill_deps[x] for x in skill_deps.keys()}
 
-    # pprint(old_class_skills)
-    # print("\n\n")
-    # pprint(old_skill_levels)
+    pprint(parsed_skills["Call Tiger"])
+
+    ## OK Now we put it all together
