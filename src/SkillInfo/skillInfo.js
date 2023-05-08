@@ -157,17 +157,6 @@ function buildSkillText(skillDatum) {
         </tr>)
     })
 
-    const grimSkillRows = []
-    rowOrder.forEach(function(val) {
-        if (regSkillData[val].length === 0) {
-            return
-        }
-        grimSkillRows.push(<tr>
-            <td>{val}</td>
-            {grimSkillData[val]}
-        </tr>)
-    })
-
     // Give us the table
     return <div><table>
         <thead className='SkillHeader'>
@@ -188,10 +177,6 @@ function buildSkillText(skillDatum) {
                         <th>Level</th>{regSkillData["Level"]}
                     </tr>
                     {regSkillRows}
-                    <tr>
-                        <th>Level</th>{grimSkillData["Level"]}
-                    </tr>
-                    {grimSkillRows}
                     </tbody>
                 </table>
 

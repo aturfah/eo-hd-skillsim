@@ -46,11 +46,11 @@ class SkillTreeNode extends Component {
 
     render() {
         let header = <span>{this.props.skillData.name}</span>;
-        let nodeColor = '#f5bdc6';
+        let nodeColor = '#1abaef';
         let textColor = 'black';
         if(this.props.activeFlag) {
             header = <b>{this.props.skillData.name}</b>
-            nodeColor = '#cb212c'; 
+            nodeColor = '#024199'; 
         }
         const nodeStyle = {
             backgroundColor: nodeColor,
