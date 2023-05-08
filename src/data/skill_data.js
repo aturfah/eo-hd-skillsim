@@ -137,18 +137,11 @@
               }
             ],
             "growth_order": [
-              "Cannot miss",
               "Beast HP %",
               "Beast DMG %",
               "Beast DEF %"
             ],
             "growth": {
-              "Cannot miss": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "Beast HP %": [
                 {
                   "levelspan": 1,
@@ -337,17 +330,10 @@
               }
             ],
             "growth_order": [
-              "Cannot miss",
               "Restore rate",
               "Chance to trigger"
             ],
             "growth": {
-              "Cannot miss": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "Restore rate": [
                 {
                   "levelspan": 1,
@@ -594,7 +580,6 @@
             ],
             "growth_order": [
               "TP cost",
-              "Cannot miss",
               "Speed"
             ],
             "growth": {
@@ -618,12 +603,6 @@
                 {
                   "levelspan": 1,
                   "value": "1"
-                }
-              ],
-              "Cannot miss": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
                 }
               ],
               "Speed": [
@@ -675,7 +654,6 @@
             ],
             "growth_order": [
               "TP cost",
-              "Cannot miss",
               "Speed",
               "Buff duration",
               "ATK %"
@@ -701,12 +679,6 @@
                 {
                   "levelspan": 1,
                   "value": "16"
-                }
-              ],
-              "Cannot miss": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
                 }
               ],
               "Speed": [
@@ -853,7 +825,6 @@
             ],
             "growth_order": [
               "TP cost",
-              "Cannot miss",
               "Speed",
               "Buff duration",
               "Damage taken %"
@@ -879,12 +850,6 @@
                 {
                   "levelspan": 1,
                   "value": "16"
-                }
-              ],
-              "Cannot miss": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
                 }
               ],
               "Speed": [
@@ -988,16 +953,9 @@
               }
             ],
             "growth_order": [
-              "Cannot miss",
               "Beast draw chance"
             ],
             "growth": {
-              "Cannot miss": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "Beast draw chance": [
                 {
                   "levelspan": 1,
@@ -1107,16 +1065,9 @@
               }
             ],
             "growth_order": [
-              "Cannot miss",
               "Beast draw chance"
             ],
             "growth": {
-              "Cannot miss": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "Beast draw chance": [
                 {
                   "levelspan": 1,
@@ -1170,7 +1121,7 @@
             "no_level": false,
             "_id": "call_bird",
             "name": "Call Bird",
-            "description": "Summons a large bird that does a Thrust attack and can Bind Head to one enemy.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+            "description": "Summons a large bird that does a Thrust attack and can Bind Head to one enemy. ",
             "max_level": 10,
             "uses": "Arms",
             "prerequisites": [
@@ -1227,10 +1178,9 @@
             ],
             "growth_order": [
               "TP cost",
-              "Cannot miss",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Mult."
+              "Beast Stat Multiplier"
             ],
             "growth": {
               "TP cost": [
@@ -1253,12 +1203,6 @@
                 {
                   "levelspan": 2,
                   "value": "27"
-                }
-              ],
-              "Cannot miss": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ],
               "Speed": [
@@ -1309,7 +1253,7 @@
                   "value": "90"
                 }
               ],
-              "Beast Stat Mult.": [
+              "Beast Stat Multiplier": [
                 {
                   "levelspan": 10,
                   "value": "100"
@@ -1484,11 +1428,173 @@
             "force_break": false,
             "transform_only": false,
             "mastery": false,
+            "linked_skill": "call_bird",
+            "no_level": true,
+            "_id": "bind_feather_followup",
+            "name": "Bind Feather (Follow-Up)",
+            "description": "",
+            "max_level": 10,
+            "uses": "N/A",
+            "prerequisites": [
+              {
+                "_id": "call_bird",
+                "level": 1
+              }
+            ],
+            "levels": [
+              {
+                "label": "Level",
+                "width": "20%"
+              },
+              {
+                "label": 1,
+                "width": "8%"
+              },
+              {
+                "label": 2,
+                "width": "8%"
+              },
+              {
+                "label": 3,
+                "width": "8%"
+              },
+              {
+                "label": 4,
+                "width": "8%"
+              },
+              {
+                "label": 5,
+                "width": "8%"
+              },
+              {
+                "label": 6,
+                "width": "8%"
+              },
+              {
+                "label": 7,
+                "width": "8%"
+              },
+              {
+                "label": 8,
+                "width": "8%"
+              },
+              {
+                "label": 9,
+                "width": "8%"
+              },
+              {
+                "label": 10,
+                "width": "8%"
+              }
+            ],
+            "growth_order": [
+              "Skill accuracy",
+              "Damage %",
+              "Ailment chance"
+            ],
+            "growth": {
+              "Skill accuracy": [
+                {
+                  "levelspan": 10,
+                  "value": "98"
+                }
+              ],
+              "Damage %": [
+                {
+                  "levelspan": 1,
+                  "value": "70"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "75"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "80"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "85"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "90"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "95"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "100"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "105"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "110"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "120"
+                }
+              ],
+              "Ailment chance": [
+                {
+                  "levelspan": 1,
+                  "value": "25"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "27"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "29"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "32"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "35"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "38"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "41"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "44"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "47"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "50"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "transform_only": false,
+            "mastery": false,
             "linked_skill": null,
             "no_level": false,
             "_id": "call_elephant",
             "name": "Call Elephant",
-            "description": "Summons an elephant that attacks all enemies and can cause confusion.  After the initial attack, it will only attack a single enemy.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+            "description": "Summons an elephant that attacks all enemies and can cause confusion.  After the initial attack, it will only attack a single enemy. ",
             "max_level": 10,
             "uses": "Arms",
             "prerequisites": [
@@ -1549,10 +1655,9 @@
             ],
             "growth_order": [
               "TP cost",
-              "Cannot miss",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Mult."
+              "Beast Stat Multiplier"
             ],
             "growth": {
               "TP cost": [
@@ -1575,12 +1680,6 @@
                 {
                   "levelspan": 2,
                   "value": "33"
-                }
-              ],
-              "Cannot miss": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ],
               "Speed": [
@@ -1631,7 +1730,7 @@
                   "value": "250"
                 }
               ],
-              "Beast Stat Mult.": [
+              "Beast Stat Multiplier": [
                 {
                   "levelspan": 10,
                   "value": "120"
@@ -1806,11 +1905,173 @@
             "force_break": false,
             "transform_only": false,
             "mastery": false,
+            "linked_skill": "call_elephant",
+            "no_level": true,
+            "_id": "reckless_rush_followup",
+            "name": "Reckless Rush (Follow-Up)",
+            "description": "",
+            "max_level": 10,
+            "uses": "N/A",
+            "prerequisites": [
+              {
+                "_id": "call_elephant",
+                "level": 1
+              }
+            ],
+            "levels": [
+              {
+                "label": "Level",
+                "width": "20%"
+              },
+              {
+                "label": 1,
+                "width": "8%"
+              },
+              {
+                "label": 2,
+                "width": "8%"
+              },
+              {
+                "label": 3,
+                "width": "8%"
+              },
+              {
+                "label": 4,
+                "width": "8%"
+              },
+              {
+                "label": 5,
+                "width": "8%"
+              },
+              {
+                "label": 6,
+                "width": "8%"
+              },
+              {
+                "label": 7,
+                "width": "8%"
+              },
+              {
+                "label": 8,
+                "width": "8%"
+              },
+              {
+                "label": 9,
+                "width": "8%"
+              },
+              {
+                "label": 10,
+                "width": "8%"
+              }
+            ],
+            "growth_order": [
+              "Skill accuracy",
+              "Damage %",
+              "Ailment chance"
+            ],
+            "growth": {
+              "Skill accuracy": [
+                {
+                  "levelspan": 10,
+                  "value": "98"
+                }
+              ],
+              "Damage %": [
+                {
+                  "levelspan": 1,
+                  "value": "120"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "125"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "130"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "135"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "140"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "150"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "160"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "170"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "180"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "190"
+                }
+              ],
+              "Ailment chance": [
+                {
+                  "levelspan": 1,
+                  "value": "25"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "27"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "29"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "32"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "35"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "38"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "41"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "44"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "47"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "50"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "transform_only": false,
+            "mastery": false,
             "linked_skill": null,
             "no_level": false,
             "_id": "call_owl",
             "name": "Call Owl",
-            "description": "Summons an owl that has a chance to cause every enemy to fall asleep.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+            "description": "Summons an owl that has a chance to cause every enemy to fall asleep. ",
             "max_level": 10,
             "uses": "Arms",
             "prerequisites": [
@@ -1867,10 +2128,9 @@
             ],
             "growth_order": [
               "TP cost",
-              "Cannot miss",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Mult."
+              "Beast Stat Multiplier"
             ],
             "growth": {
               "TP cost": [
@@ -1893,12 +2153,6 @@
                 {
                   "levelspan": 2,
                   "value": "30"
-                }
-              ],
-              "Cannot miss": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ],
               "Speed": [
@@ -1949,7 +2203,7 @@
                   "value": "140"
                 }
               ],
-              "Beast Stat Mult.": [
+              "Beast Stat Multiplier": [
                 {
                   "levelspan": 10,
                   "value": "100"
@@ -2022,16 +2276,121 @@
               }
             ],
             "growth_order": [
-              "Cannot miss",
               "Ailment chance"
             ],
             "growth": {
-              "Cannot miss": [
+              "Ailment chance": [
                 {
-                  "levelspan": 10,
-                  "value": "0"
+                  "levelspan": 1,
+                  "value": "25"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "27"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "29"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "32"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "35"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "38"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "41"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "44"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "47"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "50"
                 }
-              ],
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": "call_owl",
+            "no_level": true,
+            "_id": "sleep_powder_followup",
+            "name": "Sleep Powder (Follow-Up)",
+            "description": "",
+            "max_level": 10,
+            "uses": "N/A",
+            "prerequisites": [
+              {
+                "_id": "call_owl",
+                "level": 1
+              }
+            ],
+            "levels": [
+              {
+                "label": "Level",
+                "width": "20%"
+              },
+              {
+                "label": 1,
+                "width": "8%"
+              },
+              {
+                "label": 2,
+                "width": "8%"
+              },
+              {
+                "label": 3,
+                "width": "8%"
+              },
+              {
+                "label": 4,
+                "width": "8%"
+              },
+              {
+                "label": 5,
+                "width": "8%"
+              },
+              {
+                "label": 6,
+                "width": "8%"
+              },
+              {
+                "label": 7,
+                "width": "8%"
+              },
+              {
+                "label": 8,
+                "width": "8%"
+              },
+              {
+                "label": 9,
+                "width": "8%"
+              },
+              {
+                "label": 10,
+                "width": "8%"
+              }
+            ],
+            "growth_order": [
+              "Ailment chance"
+            ],
+            "growth": {
               "Ailment chance": [
                 {
                   "levelspan": 1,
@@ -2085,7 +2444,7 @@
             "no_level": false,
             "_id": "call_lion",
             "name": "Call Lion",
-            "description": "Summons a sleeping lion king that paralyzes or petrifies all enemies when it wakes up.  Deals greater damage to enemies that already have a status ailment.  After its attack, it goes back to sleep.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+            "description": "Summons a sleeping lion king that paralyzes or petrifies all enemies when it wakes up.  Deals greater damage to enemies that already have a status ailment.  After its attack, it goes back to sleep. ",
             "max_level": 10,
             "uses": "Arms",
             "prerequisites": [
@@ -2146,10 +2505,9 @@
             ],
             "growth_order": [
               "TP cost",
-              "Cannot miss",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Mult."
+              "Beast Stat Multiplier"
             ],
             "growth": {
               "TP cost": [
@@ -2172,12 +2530,6 @@
                 {
                   "levelspan": 2,
                   "value": "39"
-                }
-              ],
-              "Cannot miss": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ],
               "Speed": [
@@ -2228,7 +2580,7 @@
                   "value": "320"
                 }
               ],
-              "Beast Stat Mult.": [
+              "Beast Stat Multiplier": [
                 {
                   "levelspan": 10,
                   "value": "150"
@@ -2450,7 +2802,7 @@
             "no_level": false,
             "_id": "call_mole",
             "name": "Call Mole",
-            "description": "Summons a mole that does a Slash attack and can Bind Legs to one enemy.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+            "description": "Summons a mole that does a Slash attack and can Bind Legs to one enemy. ",
             "max_level": 10,
             "uses": "Arms",
             "prerequisites": [
@@ -2507,10 +2859,9 @@
             ],
             "growth_order": [
               "TP cost",
-              "Cannot miss",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Mult."
+              "Beast Stat Multiplier"
             ],
             "growth": {
               "TP cost": [
@@ -2533,12 +2884,6 @@
                 {
                   "levelspan": 2,
                   "value": "27"
-                }
-              ],
-              "Cannot miss": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ],
               "Speed": [
@@ -2589,7 +2934,7 @@
                   "value": "90"
                 }
               ],
-              "Beast Stat Mult.": [
+              "Beast Stat Multiplier": [
                 {
                   "levelspan": 10,
                   "value": "100"
@@ -2764,11 +3109,173 @@
             "force_break": false,
             "transform_only": false,
             "mastery": false,
+            "linked_skill": "call_mole",
+            "no_level": true,
+            "_id": "scratch_followup",
+            "name": "Scratch (Follow-Up)",
+            "description": "",
+            "max_level": 10,
+            "uses": "N/A",
+            "prerequisites": [
+              {
+                "_id": "call_mole",
+                "level": 1
+              }
+            ],
+            "levels": [
+              {
+                "label": "Level",
+                "width": "20%"
+              },
+              {
+                "label": 1,
+                "width": "8%"
+              },
+              {
+                "label": 2,
+                "width": "8%"
+              },
+              {
+                "label": 3,
+                "width": "8%"
+              },
+              {
+                "label": 4,
+                "width": "8%"
+              },
+              {
+                "label": 5,
+                "width": "8%"
+              },
+              {
+                "label": 6,
+                "width": "8%"
+              },
+              {
+                "label": 7,
+                "width": "8%"
+              },
+              {
+                "label": 8,
+                "width": "8%"
+              },
+              {
+                "label": 9,
+                "width": "8%"
+              },
+              {
+                "label": 10,
+                "width": "8%"
+              }
+            ],
+            "growth_order": [
+              "Skill accuracy",
+              "Damage %",
+              "Ailment chance"
+            ],
+            "growth": {
+              "Skill accuracy": [
+                {
+                  "levelspan": 10,
+                  "value": "98"
+                }
+              ],
+              "Damage %": [
+                {
+                  "levelspan": 1,
+                  "value": "70"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "75"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "80"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "85"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "90"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "95"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "100"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "105"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "110"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "120"
+                }
+              ],
+              "Ailment chance": [
+                {
+                  "levelspan": 1,
+                  "value": "25"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "27"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "29"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "32"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "35"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "38"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "41"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "44"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "47"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "50"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "transform_only": false,
+            "mastery": false,
             "linked_skill": null,
             "no_level": false,
             "_id": "call_cow",
             "name": "Call Cow",
-            "description": "Summons a bull that does a Thrust attack on random enemies and can cause paralysis.  After the initial attack, it will only attack a single enemy.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+            "description": "Summons a bull that does a Thrust attack on random enemies and can cause paralysis.  After the initial attack, it will only attack a single enemy. ",
             "max_level": 10,
             "uses": "Arms",
             "prerequisites": [
@@ -2829,10 +3336,9 @@
             ],
             "growth_order": [
               "TP cost",
-              "Cannot miss",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Mult."
+              "Beast Stat Multiplier"
             ],
             "growth": {
               "TP cost": [
@@ -2855,12 +3361,6 @@
                 {
                   "levelspan": 2,
                   "value": "33"
-                }
-              ],
-              "Cannot miss": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ],
               "Speed": [
@@ -2911,7 +3411,7 @@
                   "value": "200"
                 }
               ],
-              "Beast Stat Mult.": [
+              "Beast Stat Multiplier": [
                 {
                   "levelspan": 10,
                   "value": "120"
@@ -3112,11 +3612,173 @@
             "force_break": false,
             "transform_only": false,
             "mastery": false,
+            "linked_skill": "call_cow",
+            "no_level": true,
+            "_id": "bull_run_followup",
+            "name": "Bull Run (Follow-Up)",
+            "description": "",
+            "max_level": 10,
+            "uses": "N/A",
+            "prerequisites": [
+              {
+                "_id": "call_cow",
+                "level": 1
+              }
+            ],
+            "levels": [
+              {
+                "label": "Level",
+                "width": "20%"
+              },
+              {
+                "label": 1,
+                "width": "8%"
+              },
+              {
+                "label": 2,
+                "width": "8%"
+              },
+              {
+                "label": 3,
+                "width": "8%"
+              },
+              {
+                "label": 4,
+                "width": "8%"
+              },
+              {
+                "label": 5,
+                "width": "8%"
+              },
+              {
+                "label": 6,
+                "width": "8%"
+              },
+              {
+                "label": 7,
+                "width": "8%"
+              },
+              {
+                "label": 8,
+                "width": "8%"
+              },
+              {
+                "label": 9,
+                "width": "8%"
+              },
+              {
+                "label": 10,
+                "width": "8%"
+              }
+            ],
+            "growth_order": [
+              "Skill accuracy",
+              "Damage %",
+              "Ailment chance"
+            ],
+            "growth": {
+              "Skill accuracy": [
+                {
+                  "levelspan": 10,
+                  "value": "98"
+                }
+              ],
+              "Damage %": [
+                {
+                  "levelspan": 1,
+                  "value": "130"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "135"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "140"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "145"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "150"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "160"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "170"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "180"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "190"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "200"
+                }
+              ],
+              "Ailment chance": [
+                {
+                  "levelspan": 1,
+                  "value": "30"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "32"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "34"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "36"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "38"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "40"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "42"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "44"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "46"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "50"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "transform_only": false,
+            "mastery": false,
             "linked_skill": null,
             "no_level": false,
             "_id": "call_ooze",
             "name": "Call Ooze",
-            "description": "Summons a slime that does a Slash attack and can inflict decay on one enemy.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+            "description": "Summons a slime that does a Slash attack and can inflict decay on one enemy. ",
             "max_level": 10,
             "uses": "Arms",
             "prerequisites": [
@@ -3177,10 +3839,9 @@
             ],
             "growth_order": [
               "TP cost",
-              "Cannot miss",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Mult."
+              "Beast Stat Multiplier"
             ],
             "growth": {
               "TP cost": [
@@ -3203,12 +3864,6 @@
                 {
                   "levelspan": 2,
                   "value": "39"
-                }
-              ],
-              "Cannot miss": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ],
               "Speed": [
@@ -3259,7 +3914,7 @@
                   "value": "40"
                 }
               ],
-              "Beast Stat Mult.": [
+              "Beast Stat Multiplier": [
                 {
                   "levelspan": 10,
                   "value": "90"
@@ -3441,11 +4096,180 @@
             "force_break": false,
             "transform_only": false,
             "mastery": false,
+            "linked_skill": "call_ooze",
+            "no_level": true,
+            "_id": "plague_gunk_followup",
+            "name": "Plague Gunk (Follow-Up)",
+            "description": "",
+            "max_level": 10,
+            "uses": "N/A",
+            "prerequisites": [
+              {
+                "_id": "call_ooze",
+                "level": 1
+              }
+            ],
+            "levels": [
+              {
+                "label": "Level",
+                "width": "20%"
+              },
+              {
+                "label": 1,
+                "width": "8%"
+              },
+              {
+                "label": 2,
+                "width": "8%"
+              },
+              {
+                "label": 3,
+                "width": "8%"
+              },
+              {
+                "label": 4,
+                "width": "8%"
+              },
+              {
+                "label": 5,
+                "width": "8%"
+              },
+              {
+                "label": 6,
+                "width": "8%"
+              },
+              {
+                "label": 7,
+                "width": "8%"
+              },
+              {
+                "label": 8,
+                "width": "8%"
+              },
+              {
+                "label": 9,
+                "width": "8%"
+              },
+              {
+                "label": 10,
+                "width": "8%"
+              }
+            ],
+            "growth_order": [
+              "Skill accuracy",
+              "Damage %",
+              "Ailment chance",
+              "Poison damage"
+            ],
+            "growth": {
+              "Skill accuracy": [
+                {
+                  "levelspan": 10,
+                  "value": "98"
+                }
+              ],
+              "Damage %": [
+                {
+                  "levelspan": 1,
+                  "value": "120"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "125"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "130"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "135"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "140"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "150"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "160"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "170"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "180"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "190"
+                }
+              ],
+              "Ailment chance": [
+                {
+                  "levelspan": 10,
+                  "value": "40"
+                }
+              ],
+              "Poison damage": [
+                {
+                  "levelspan": 1,
+                  "value": "30"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "60"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "90"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "120"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "150"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "180"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "210"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "240"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "270"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "300"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "transform_only": false,
+            "mastery": false,
             "linked_skill": null,
             "no_level": false,
             "_id": "call_snake",
             "name": "Call Snake",
-            "description": "Summons a large snake that does a Hit attack and can Bind Arms to one enemy.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+            "description": "Summons a large snake that does a Hit attack and can Bind Arms to one enemy. ",
             "max_level": 10,
             "uses": "Arms",
             "prerequisites": [
@@ -3502,10 +4326,9 @@
             ],
             "growth_order": [
               "TP cost",
-              "Cannot miss",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Mult."
+              "Beast Stat Multiplier"
             ],
             "growth": {
               "TP cost": [
@@ -3528,12 +4351,6 @@
                 {
                   "levelspan": 2,
                   "value": "27"
-                }
-              ],
-              "Cannot miss": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ],
               "Speed": [
@@ -3584,7 +4401,7 @@
                   "value": "90"
                 }
               ],
-              "Beast Stat Mult.": [
+              "Beast Stat Multiplier": [
                 {
                   "levelspan": 10,
                   "value": "100"
@@ -3759,11 +4576,173 @@
             "force_break": false,
             "transform_only": false,
             "mastery": false,
+            "linked_skill": "call_snake",
+            "no_level": true,
+            "_id": "wind_wrap_followup",
+            "name": "Wind Wrap (Follow-Up)",
+            "description": "",
+            "max_level": 10,
+            "uses": "N/A",
+            "prerequisites": [
+              {
+                "_id": "call_snake",
+                "level": 1
+              }
+            ],
+            "levels": [
+              {
+                "label": "Level",
+                "width": "20%"
+              },
+              {
+                "label": 1,
+                "width": "8%"
+              },
+              {
+                "label": 2,
+                "width": "8%"
+              },
+              {
+                "label": 3,
+                "width": "8%"
+              },
+              {
+                "label": 4,
+                "width": "8%"
+              },
+              {
+                "label": 5,
+                "width": "8%"
+              },
+              {
+                "label": 6,
+                "width": "8%"
+              },
+              {
+                "label": 7,
+                "width": "8%"
+              },
+              {
+                "label": 8,
+                "width": "8%"
+              },
+              {
+                "label": 9,
+                "width": "8%"
+              },
+              {
+                "label": 10,
+                "width": "8%"
+              }
+            ],
+            "growth_order": [
+              "Skill accuracy",
+              "Damage %",
+              "Ailment chance"
+            ],
+            "growth": {
+              "Skill accuracy": [
+                {
+                  "levelspan": 10,
+                  "value": "98"
+                }
+              ],
+              "Damage %": [
+                {
+                  "levelspan": 1,
+                  "value": "70"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "75"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "80"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "85"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "90"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "95"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "100"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "105"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "110"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "120"
+                }
+              ],
+              "Ailment chance": [
+                {
+                  "levelspan": 1,
+                  "value": "25"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "27"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "29"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "32"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "35"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "38"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "41"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "44"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "47"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "50"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "transform_only": false,
+            "mastery": false,
             "linked_skill": null,
             "no_level": false,
             "_id": "call_tiger",
             "name": "Call Tiger",
-            "description": "Summons the saber-toothed tiger that tries to instantly kill all enemies.  After that, it counters any attacks that it receives.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+            "description": "Summons the saber-toothed tiger that tries to instantly kill all enemies.  After that, it counters any attacks that it receives. ",
             "max_level": 10,
             "uses": "Arms",
             "prerequisites": [
@@ -3824,10 +4803,9 @@
             ],
             "growth_order": [
               "TP cost",
-              "Cannot miss",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Mult."
+              "Beast Stat Multiplier"
             ],
             "growth": {
               "TP cost": [
@@ -3850,12 +4828,6 @@
                 {
                   "levelspan": 2,
                   "value": "36"
-                }
-              ],
-              "Cannot miss": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ],
               "Speed": [
@@ -3906,7 +4878,7 @@
                   "value": "320"
                 }
               ],
-              "Beast Stat Mult.": [
+              "Beast Stat Multiplier": [
                 {
                   "levelspan": 10,
                   "value": "150"
@@ -3979,16 +4951,9 @@
               }
             ],
             "growth_order": [
-              "Cannot miss",
               "Ailment chance"
             ],
             "growth": {
-              "Cannot miss": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "Ailment chance": [
                 {
                   "levelspan": 1,
@@ -4099,9 +5064,7 @@
             ],
             "growth_order": [
               "TP cost",
-              "Cannot miss",
               "Speed",
-              "Link when attacked",
               "Acc. (mod)",
               "Damage %",
               "Uncounterable"
@@ -4113,22 +5076,10 @@
                   "value": "0"
                 }
               ],
-              "Cannot miss": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "Speed": [
                 {
                   "levelspan": 10,
                   "value": "10"
-                }
-              ],
-              "Link when attacked": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ],
               "Acc. (mod)": [
@@ -4224,7 +5175,7 @@
             "no_level": false,
             "_id": "call_insect",
             "name": "Call Insect",
-            "description": "Summons a venomfly which does a Slash attack and has a chance to inflict one enemy with poison.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+            "description": "Summons a venomfly which does a Slash attack and has a chance to inflict one enemy with poison. ",
             "max_level": 10,
             "uses": "Arms",
             "prerequisites": [
@@ -4281,10 +5232,9 @@
             ],
             "growth_order": [
               "TP cost",
-              "Cannot miss",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Mult."
+              "Beast Stat Multiplier"
             ],
             "growth": {
               "TP cost": [
@@ -4307,12 +5257,6 @@
                 {
                   "levelspan": 2,
                   "value": "30"
-                }
-              ],
-              "Cannot miss": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ],
               "Speed": [
@@ -4363,7 +5307,7 @@
                   "value": "40"
                 }
               ],
-              "Beast Stat Mult.": [
+              "Beast Stat Multiplier": [
                 {
                   "levelspan": 10,
                   "value": "70"
@@ -4488,6 +5432,175 @@
                 {
                   "levelspan": 1,
                   "value": "130"
+                }
+              ],
+              "Ailment chance": [
+                {
+                  "levelspan": 10,
+                  "value": "40"
+                }
+              ],
+              "Poison damage": [
+                {
+                  "levelspan": 1,
+                  "value": "50"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "80"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "110"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "140"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "170"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "200"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "230"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "270"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "310"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "350"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": "call_insect",
+            "no_level": true,
+            "_id": "poison_dust_followup",
+            "name": "Poison Dust (Follow-Up)",
+            "description": "",
+            "max_level": 10,
+            "uses": "N/A",
+            "prerequisites": [
+              {
+                "_id": "call_insect",
+                "level": 1
+              }
+            ],
+            "levels": [
+              {
+                "label": "Level",
+                "width": "20%"
+              },
+              {
+                "label": 1,
+                "width": "8%"
+              },
+              {
+                "label": 2,
+                "width": "8%"
+              },
+              {
+                "label": 3,
+                "width": "8%"
+              },
+              {
+                "label": 4,
+                "width": "8%"
+              },
+              {
+                "label": 5,
+                "width": "8%"
+              },
+              {
+                "label": 6,
+                "width": "8%"
+              },
+              {
+                "label": 7,
+                "width": "8%"
+              },
+              {
+                "label": 8,
+                "width": "8%"
+              },
+              {
+                "label": 9,
+                "width": "8%"
+              },
+              {
+                "label": 10,
+                "width": "8%"
+              }
+            ],
+            "growth_order": [
+              "Skill accuracy",
+              "Damage %",
+              "Ailment chance",
+              "Poison damage"
+            ],
+            "growth": {
+              "Skill accuracy": [
+                {
+                  "levelspan": 10,
+                  "value": "98"
+                }
+              ],
+              "Damage %": [
+                {
+                  "levelspan": 1,
+                  "value": "50"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "55"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "60"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "65"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "70"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "80"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "90"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "100"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "110"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "120"
                 }
               ],
               "Ailment chance": [

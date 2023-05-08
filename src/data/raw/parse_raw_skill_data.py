@@ -3,16 +3,16 @@ from pprint import pprint
 import json
 
 LINKED_SKILLS = {
-    "Call Elephant": ["Reckless Rush"],
-    "Call Cow": ["Bull Run"],
-    "Call Bird": ["Bind Feather"],
-    "Call Snake": ["Wind Wrap"],
-    "Call Mole": ["Scratch"],
-    "Call Insect": ["Poison Dust"],
-    "Call Owl": ["Sleep Powder"],
+    "Call Elephant": ["Reckless Rush", "Reckless Rush (Follow-Up)"],
+    "Call Cow": ["Bull Run", "Bull Run (Follow-Up)"],
+    "Call Bird": ["Bind Feather", "Bind Feather (Follow-Up)"],
+    "Call Snake": ["Wind Wrap", "Wind Wrap (Follow-Up)"],
+    "Call Mole": ["Scratch", "Scratch (Follow-Up)"],
+    "Call Insect": ["Poison Dust", "Poison Dust (Follow-Up)"],
+    "Call Owl": ["Sleep Powder", "Sleep Powder (Follow-Up)"],
     "Call Tiger": ["Death Fang", "Fierce Counter"],
     "Call Lion": ["Regal Authority"],
-    "Call Ooze": ["Plague Gunk"],
+    "Call Ooze": ["Plague Gunk", "Plague Gunk (Follow-Up)"],
     "Red Bot": ["Red Module"],
     "Blue Bot": ["Blue Module"],
     "Yellow Bot": ["Yellow Module"],
@@ -61,6 +61,10 @@ def generate_skill_output(skill_datum:dict, linked_skill_id:str=None) -> dict:
     max_level = skill_output["max_level"]
     for attrib_info in skill_datum["data"]:
         attribute = attrib_info["attribute"]
+        if attribute == "Cannot miss":
+            skill_output["description"] = "{}. Cannot miss.".format(skill_output["description"])
+            continue
+
         skill_output["growth_order"].append(attribute)
         idx = 0
         while idx < max_level:
@@ -78,7 +82,7 @@ def generate_skill_output(skill_datum:dict, linked_skill_id:str=None) -> dict:
             })
             idx += 1
 
-    pprint(skill_output["growth"])
+    # pprint(skill_output["growth"])
     skill_output["growth"] = dict(skill_output["growth"])
 
     ## For linked skills
@@ -127,7 +131,7 @@ if __name__ == "__main__":
            values_range = [x for x in range((header_idx+1), (header_idx+11))]
            
            subheader = skill_datum[header_idx]
-           if subheader not in ["0", "77", "59", "52", "136", "135", "113", "128", "107", "106", "158", "110", "111", "71"]:
+           if subheader not in ["0", "77", "59", "52", "136", "135", "113", "128", "107", "106", "158", "110", "111", "71", "134", "126"]:
                 """
                 0 - Empty
                 77 - Skill Link (ID)
@@ -142,6 +146,8 @@ if __name__ == "__main__":
                 158 - Normal Death Anim
                 110/111 - Link after use
                 71 - Self-destruct
+                134 - Cannot miss
+                126 - Link when attacked
                 """
                 try:
                     skill_data_levels.append({
@@ -191,7 +197,8 @@ if __name__ == "__main__":
 
     ## Pull out info from skillsim data
     for skill_name in parsed_skills.keys():
-        parsed_skills[skill_name]["_id"] = str(skill_name).lower().replace(" ", "_")
+        skill_name_new = skill_name.replace("(Follow-Up)", "followup")
+        parsed_skills[skill_name]["_id"] = str(skill_name_new).lower().replace(" ", "_")
         skill_datum = parsed_skills[skill_name].get("skillsim_data")
         if skill_datum is None:
             continue

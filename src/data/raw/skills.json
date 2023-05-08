@@ -1508,7 +1508,7 @@
     "SummonBird": {
     "name_jp": "大鳥招来",
     "name_en": "Call Bird",
-    "details": "Summons a large bird that does a Thrust attack and can Bind Head to one enemy.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+    "details": "Summons a large bird that does a Thrust attack and can Bind Head to one enemy. ",
     "requires": "Arms",
     "dep": { "BeastKingMastery": 1 },
     "active": true,
@@ -1518,7 +1518,7 @@
     "SummonElephant": {
     "name_jp": "巨象招来",
     "name_en": "Call Elephant",
-    "details": "Summons an elephant that attacks all enemies and can cause confusion.  After the initial attack, it will only attack a single enemy.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+    "details": "Summons an elephant that attacks all enemies and can cause confusion.  After the initial attack, it will only attack a single enemy. ",
     "requires": "Arms",
     "dep": { "BeastKingMastery": 7, "SummonVenomfly": 4 },
     "active": true,
@@ -1528,7 +1528,7 @@
     "SummonHypnoOwl": {
     "name_jp": "催眠梟招来",
     "name_en": "Call Owl",
-    "details": "Summons an owl that has a chance to cause every enemy to fall asleep.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+    "details": "Summons an owl that has a chance to cause every enemy to fall asleep. ",
     "requires": "Arms",
     "dep": { "BeastKingMastery": 5 },
     "active": true,
@@ -1538,7 +1538,7 @@
     "SummonLionKing": {
     "name_jp": "獅子王招来",
     "name_en": "Call Lion",
-    "details": "Summons a sleeping lion king that paralyzes or petrifies all enemies when it wakes up.  Deals greater damage to enemies that already have a status ailment.  After its attack, it goes back to sleep.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+    "details": "Summons a sleeping lion king that paralyzes or petrifies all enemies when it wakes up.  Deals greater damage to enemies that already have a status ailment.  After its attack, it goes back to sleep. ",
     "requires": "Arms",
     "dep": { "BeastKingMastery": 10, "SacrificeI": 5 },
     "active": true,
@@ -1548,7 +1548,7 @@
     "SummonMole": {
     "name_jp": "土竜招来",
     "name_en": "Call Mole",
-    "details": "Summons a mole that does a Slash attack and can Bind Legs to one enemy.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+    "details": "Summons a mole that does a Slash attack and can Bind Legs to one enemy. ",
     "requires": "Arms",
     "dep": { "BeastKingMastery": 1 },
     "active": true,
@@ -1558,7 +1558,7 @@
     "SummonRagingBull": {
     "name_jp": "暴れ野牛招来",
     "name_en": "Call Cow",
-    "details": "Summons a bull that does a Thrust attack on random enemies and can cause paralysis.  After the initial attack, it will only attack a single enemy.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+    "details": "Summons a bull that does a Thrust attack on random enemies and can cause paralysis.  After the initial attack, it will only attack a single enemy. ",
     "requires": "Arms",
     "dep": { "BeastKingMastery": 7, "SummonHypnoOwl": 4 },
     "active": true,
@@ -1568,7 +1568,7 @@
     "SummonSlime": {
     "name_jp": "不定型生物招来",
     "name_en": "Call Ooze",
-    "details": "Summons a slime that does a Slash attack and can inflict decay on one enemy.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+    "details": "Summons a slime that does a Slash attack and can inflict decay on one enemy. ",
     "requires": "Arms",
     "dep": { "BeastKingMastery": 6, "AnimalFriendship": 10 },
     "active": true,
@@ -1578,7 +1578,7 @@
     "SummonSnake": {
     "name_jp": "大蛇招来",
     "name_en": "Call Snake",
-    "details": "Summons a large snake that does a Hit attack and can Bind Arms to one enemy.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+    "details": "Summons a large snake that does a Hit attack and can Bind Arms to one enemy. ",
     "requires": "Arms",
     "dep": { "BeastKingMastery": 1 },
     "active": true,
@@ -1588,7 +1588,7 @@
     "SummonTiger": {
     "name_jp": "剣虎招来",
     "name_en": "Call Tiger",
-    "details": "Summons the saber-toothed tiger that tries to instantly kill all enemies.  After that, it counters any attacks that it receives.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+    "details": "Summons the saber-toothed tiger that tries to instantly kill all enemies.  After that, it counters any attacks that it receives. ",
     "requires": "Arms",
     "dep": { "BeastKingMastery": 10, "SacrificeII": 5 },
     "active": true,
@@ -1598,7 +1598,7 @@
     "SummonVenomfly": {
     "name_jp": "毒アゲハ招来",
     "name_en": "Call Insect",
-    "details": "Summons a venomfly which does a Slash attack and has a chance to inflict one enemy with poison.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+    "details": "Summons a venomfly which does a Slash attack and has a chance to inflict one enemy with poison. ",
     "requires": "Arms",
     "dep": { "BeastKingMastery": 3 },
     "active": true,
