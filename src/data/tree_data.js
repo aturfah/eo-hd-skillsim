@@ -287,6 +287,56 @@ const treeData = [
             numBefore: 7,
             beforeStyle: 'centered'
         },
+        {
+            skillID: 'berserker_vow',
+            baseSkill: true,
+            coords: {x: 0, y: 13},
+            barSize: 2
+        },
+        {
+            skillID: 'avenger',
+            baseSkill: false,
+            coords: {x: 0, y: 14},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: undefined,
+            baseSkill: false,
+            coords: {x: 1, y: 14},
+            numBefore: 1,
+            numAfter: 1,
+        },
+        {
+            skillID: 'wolf_howl',
+            baseSkill: true,
+            coords: {x: 2, y: 13},
+            barSize: 1
+        },
+        {
+            skillID: 'charge',
+            baseSkill: false,
+            coords: {x: 2, y: 14},
+            numBefore: 1,
+            preReqLevels: [3],
+        },
+        {
+            skillID: 'white_flame',
+            baseSkill: false,
+            coords: {x: 0, y: 15},
+            numBefore: 1,
+            preReqLevels: [5],
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'stun_attack',
+            baseSkill: false,
+            coords: {x: 1, y: 15},
+            numBefore: 1,
+        },
     ],
     [],
     [],
