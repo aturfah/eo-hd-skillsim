@@ -250,7 +250,23 @@ const treeData = [
             numBefore: 1,
             numAfter: 1,
             postReqLevels: ["(Lv.3)"],
-        }
+        },
+        {
+            skillID: 'beast_roar',
+            baseSkill: false,
+            coords: {x: 0, y: 16},
+        },
+        {
+            skillID: 'primal_drums',
+            baseSkill: false,
+            coords: {x: 1, y: 16},
+        },
+        {
+            skillID: 'alertness',
+            baseSkill: false,
+            coords: {x: 2, y: 16},
+        },
+        
     ]
 ]
 
