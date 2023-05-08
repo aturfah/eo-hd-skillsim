@@ -127,7 +127,7 @@ if __name__ == "__main__":
            values_range = [x for x in range((header_idx+1), (header_idx+11))]
            
            subheader = skill_datum[header_idx]
-           if subheader not in ["0", "77", "59", "52", "136", "135", "113", "128", "107", "106", "158"]:
+           if subheader not in ["0", "77", "59", "52", "136", "135", "113", "128", "107", "106", "158", "110", "111", "71"]:
                 """
                 0 - Empty
                 77 - Skill Link (ID)
@@ -140,6 +140,8 @@ if __name__ == "__main__":
                 107 - Link on Summon
                 106 - Beast to summon
                 158 - Normal Death Anim
+                110/111 - Link after use
+                71 - Self-destruct
                 """
                 try:
                     skill_data_levels.append({
