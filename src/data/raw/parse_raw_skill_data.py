@@ -20,7 +20,7 @@ LINKED_SKILLS = {
     "Shoot": ["Fire All"]
 }
 
-def generate_skill_output(skill_datum:dict, linked_skill_id:str=None) -> dict:
+def generate_skill_output(skill_datum:dict, linked_skill_id:str=None, linked_skill_name:str=None) -> dict:
     ## Flags from EO2U skillsim so code can stay mostly the same
     skill_output = {
         "force_boost": False,
@@ -90,6 +90,7 @@ def generate_skill_output(skill_datum:dict, linked_skill_id:str=None) -> dict:
         skill_output["linked_skill"] = linked_skill_id
         skill_output["no_level"] = True
         skill_output["prerequisites"] = [{"_id": linked_skill_id, "level": 1}]
+        skill_output["description"] = "See {} for details.".format(linked_skill_name)
 
     return skill_output
 
@@ -240,7 +241,8 @@ if __name__ == "__main__":
                 for linked_skill in LINKED_SKILLS[skill_name]:
                     class_obj["branches"][0]["skill_data"].append(generate_skill_output(
                         parsed_skills[linked_skill],
-                        skill_output["_id"]
+                        skill_output["_id"],
+                        skill_name
                     ))
 
             class_prereqs[skill_output["_id"]] = skill_output["prerequisites"]

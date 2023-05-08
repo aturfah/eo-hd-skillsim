@@ -1270,7 +1270,7 @@
             "no_level": true,
             "_id": "bind_feather",
             "name": "Bind Feather (Initial)",
-            "description": "",
+            "description": "See Call Bird for details.",
             "max_level": 10,
             "uses": "N/A",
             "prerequisites": [
@@ -1432,7 +1432,7 @@
             "no_level": true,
             "_id": "bind_feather_followup",
             "name": "Bind Feather (Follow-Up)",
-            "description": "",
+            "description": "See Call Bird for details.",
             "max_level": 10,
             "uses": "N/A",
             "prerequisites": [
@@ -1747,7 +1747,7 @@
             "no_level": true,
             "_id": "reckless_rush",
             "name": "Reckless Rush (Initial)",
-            "description": "",
+            "description": "See Call Elephant for details.",
             "max_level": 10,
             "uses": "N/A",
             "prerequisites": [
@@ -1909,7 +1909,7 @@
             "no_level": true,
             "_id": "reckless_rush_followup",
             "name": "Reckless Rush (Follow-Up)",
-            "description": "",
+            "description": "See Call Elephant for details.",
             "max_level": 10,
             "uses": "N/A",
             "prerequisites": [
@@ -2220,7 +2220,7 @@
             "no_level": true,
             "_id": "sleep_powder",
             "name": "Sleep Powder",
-            "description": "",
+            "description": "See Call Owl for details.",
             "max_level": 10,
             "uses": "N/A",
             "prerequisites": [
@@ -2332,7 +2332,7 @@
             "no_level": true,
             "_id": "sleep_powder_followup",
             "name": "Sleep Powder (Follow-Up)",
-            "description": "",
+            "description": "See Call Owl for details.",
             "max_level": 10,
             "uses": "N/A",
             "prerequisites": [
@@ -2597,7 +2597,7 @@
             "no_level": true,
             "_id": "regal_authority",
             "name": "Regal Authority",
-            "description": "",
+            "description": "See Call Lion for details.",
             "max_level": 10,
             "uses": "N/A",
             "prerequisites": [
@@ -2951,7 +2951,7 @@
             "no_level": true,
             "_id": "scratch",
             "name": "Scratch (Initial)",
-            "description": "",
+            "description": "See Call Mole for details.",
             "max_level": 10,
             "uses": "N/A",
             "prerequisites": [
@@ -3113,7 +3113,7 @@
             "no_level": true,
             "_id": "scratch_followup",
             "name": "Scratch (Follow-Up)",
-            "description": "",
+            "description": "See Call Mole for details.",
             "max_level": 10,
             "uses": "N/A",
             "prerequisites": [
@@ -3428,7 +3428,7 @@
             "no_level": true,
             "_id": "bull_run",
             "name": "Bull Run (Initial)",
-            "description": "",
+            "description": "See Call Cow for details.",
             "max_level": 10,
             "uses": "N/A",
             "prerequisites": [
@@ -3616,7 +3616,7 @@
             "no_level": true,
             "_id": "bull_run_followup",
             "name": "Bull Run (Follow-Up)",
-            "description": "",
+            "description": "See Call Cow for details.",
             "max_level": 10,
             "uses": "N/A",
             "prerequisites": [
@@ -3931,7 +3931,7 @@
             "no_level": true,
             "_id": "plague_gunk",
             "name": "Plague Gunk",
-            "description": "",
+            "description": "See Call Ooze for details.",
             "max_level": 10,
             "uses": "N/A",
             "prerequisites": [
@@ -4100,7 +4100,7 @@
             "no_level": true,
             "_id": "plague_gunk_followup",
             "name": "Plague Gunk (Follow-Up)",
-            "description": "",
+            "description": "See Call Ooze for details.",
             "max_level": 10,
             "uses": "N/A",
             "prerequisites": [
@@ -4418,7 +4418,7 @@
             "no_level": true,
             "_id": "wind_wrap",
             "name": "Wind Wrap (Initial)",
-            "description": "",
+            "description": "See Call Snake for details.",
             "max_level": 10,
             "uses": "N/A",
             "prerequisites": [
@@ -4580,7 +4580,7 @@
             "no_level": true,
             "_id": "wind_wrap_followup",
             "name": "Wind Wrap (Follow-Up)",
-            "description": "",
+            "description": "See Call Snake for details.",
             "max_level": 10,
             "uses": "N/A",
             "prerequisites": [
@@ -4895,7 +4895,7 @@
             "no_level": true,
             "_id": "death_fang",
             "name": "Death Fang",
-            "description": "",
+            "description": "See Call Tiger for details.",
             "max_level": 10,
             "uses": "N/A",
             "prerequisites": [
@@ -5007,7 +5007,7 @@
             "no_level": true,
             "_id": "fierce_counter",
             "name": "Fierce Counter",
-            "description": "",
+            "description": "See Call Tiger for details.",
             "max_level": 10,
             "uses": "N/A",
             "prerequisites": [
@@ -5324,7 +5324,7 @@
             "no_level": true,
             "_id": "poison_dust",
             "name": "Poison Dust (Initial)",
-            "description": "",
+            "description": "See Call Insect for details.",
             "max_level": 10,
             "uses": "N/A",
             "prerequisites": [
@@ -5493,7 +5493,7 @@
             "no_level": true,
             "_id": "poison_dust_followup",
             "name": "Poison Dust (Follow-Up)",
-            "description": "",
+            "description": "See Call Insect for details.",
             "max_level": 10,
             "uses": "N/A",
             "prerequisites": [
