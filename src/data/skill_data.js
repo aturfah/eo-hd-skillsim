@@ -2656,7 +2656,7 @@
               "Skill accuracy",
               "Ailment chance",
               "Damage %",
-              "DMG mult if ailment"
+              "Damage % (if ailment)"
             ],
             "growth": {
               "Skill accuracy": [
@@ -2749,7 +2749,7 @@
                   "value": "200"
                 }
               ],
-              "DMG mult if ailment": [
+              "Damage % (if ailment)": [
                 {
                   "levelspan": 1,
                   "value": "160"
