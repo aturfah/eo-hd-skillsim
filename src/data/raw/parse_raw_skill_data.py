@@ -58,13 +58,27 @@ def generate_skill_output(skill_datum:dict, linked_skill_id:str=None) -> dict:
     skill_output["growth_order"] = []
     skill_output["growth"] = defaultdict(list)
 
+    max_level = skill_output["max_level"]
     for attrib_info in skill_datum["data"]:
-        skill_output["growth_order"].append(attrib_info["attribute"])
-        skill_output["growth"][attrib_info["attribute"]].extend([{
-            "levelspan": 1,
-            "value": x
-        } for x in attrib_info["levels"]])
+        attribute = attrib_info["attribute"]
+        skill_output["growth_order"].append(attribute)
+        idx = 0
+        while idx < max_level:
+            levelspan = 1
+            if idx + 1 < max_level:
+                while attrib_info["levels"][idx] == attrib_info["levels"][idx+1]:
+                    levelspan += 1
+                    idx += 1
+                    if (idx + 1 >= max_level):
+                        break
 
+            skill_output["growth"][attrib_info["attribute"]].append({
+                "levelspan": levelspan,
+                "value": attrib_info["levels"][idx]
+            })
+            idx += 1
+
+    pprint(skill_output["growth"])
     skill_output["growth"] = dict(skill_output["growth"])
 
     ## For linked skills
@@ -204,6 +218,9 @@ if __name__ == "__main__":
         class_skills = class_skill_map[class_name]
         class_prereqs = {}
         for skill_name in class_skills:
+            if class_name != "Wildling":
+                continue
+
             skill_datum = parsed_skills[skill_name]
             
             skill_output = generate_skill_output(skill_datum)
