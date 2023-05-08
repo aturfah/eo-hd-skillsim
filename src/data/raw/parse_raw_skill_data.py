@@ -265,6 +265,9 @@ if __name__ == "__main__":
             class_skill_data_output.append(class_obj)
             prereq_data_output.append(class_prereqs)
 
+    class_skill_data_output.append(default_skill_data)
+    prereq_data_output.append({})
+
     output_js(default_skill_data, "common_skills.js", "commonSkills")
     output_js(class_skill_data_output, 'skill_data.js', 'skillData')
     output_js(prereq_data_output, "prereq_data.js", "prereqData")

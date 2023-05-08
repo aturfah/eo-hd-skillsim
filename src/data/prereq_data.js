@@ -1200,7 +1200,8 @@
         "level": 10
       }
     ]
-  }
+  },
+  {}
 ];
     export default prereqData;
     
