@@ -180,12 +180,19 @@ const treeData = [
             baseSkill: false,
             coords: {x: 2, y: 8},
             numBefore: 2,
-            numAfter: 1
+            numAfter: 2
         },
         {
             skillID: 'bull_run',
             baseSkill: false,
             coords: {x: 3, y: 8},
+            numBefore: 1,
+            preReqLevels: ['Skill']
+        },
+        {
+            skillID: 'bull_run_followup',
+            baseSkill: false,
+            coords: {x: 3, y: 9},
             numBefore: 1,
             preReqLevels: ['Skill']
         },
@@ -227,13 +234,12 @@ const treeData = [
             baseSkill: false,
             coords: {x: 1, y: 14},
             numAfter: 1,
-            afterSkip: 1,
             numBefore: 1
         },
         {
             skillID: 'death_fang',
             baseSkill: false,
-            coords: {x: 1, y: 14},
+            coords: {x: 1, y: 15},
             numBefore: 1,
             preReqLevels: ['Skill']
         },
@@ -258,7 +264,6 @@ const treeData = [
             baseSkill: false,
             coords: {x: 1, y: 12},
             numAfter: 1,
-            afterSkip: 1,
             numBefore: 1
         },
         {
@@ -285,7 +290,7 @@ const treeData = [
         {
             skillID: 'sacrifice_i',
             baseSkill: false,
-            coords: {x: 2, y: 14},
+            coords: {x: 2, y: 12},
             numBefore: 1,
             numAfter: 1,
             postReqLevels: ["(Lv.3)"],
