@@ -202,9 +202,10 @@ if __name__ == "__main__":
         }
 
         class_skills = class_skill_map[class_name]
+        class_prereqs = {}
         for skill_name in class_skills:
             skill_datum = parsed_skills[skill_name]
-
+            
             skill_output = generate_skill_output(skill_datum)
             class_obj["branches"][0]["skill_data"].append(skill_output)
 
@@ -215,14 +216,13 @@ if __name__ == "__main__":
                         skill_output["_id"]
                     ))
 
-            prereq_data_output.append({
-                skill_output["_id"]: skill_output["prerequisites"]
-            })
+            class_prereqs[skill_output["_id"]] = skill_output["prerequisites"]
 
         if class_name == "Default":
             default_skill_data = class_obj
         else:
             class_skill_data_output.append(class_obj)
+            prereq_data_output.append(class_prereqs)
 
     output_js(default_skill_data, "common_skills.js", "commonSkills")
     output_js(class_skill_data_output, 'skill_data.js', 'skillData')
