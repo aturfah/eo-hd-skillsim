@@ -9,7 +9,7 @@ const treeData = [
     [ // Wildling
         {
             skillID: 'beast_soul',
-            baseSkill: false,
+            baseSkill: true,
             coords: {x: 1, y: 0}
         },
         {
