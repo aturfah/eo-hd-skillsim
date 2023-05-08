@@ -9,10 +9,10 @@ LINKED_SKILLS = {
     "Call Snake": ["Wind Wrap (Initial)", "Wind Wrap (Follow-Up)"],
     "Call Mole": ["Scratch (Initial)", "Scratch (Follow-Up)"],
     "Call Insect": ["Poison Dust (Initial)", "Poison Dust (Follow-Up)"],
-    "Call Owl": ["Sleep Powder", "Sleep Powder (Follow-Up)"],
+    "Call Owl": [],
     "Call Tiger": ["Death Fang", "Fierce Counter"],
-    "Call Lion": ["Regal Authority"],
-    "Call Ooze": ["Plague Gunk", "Plague Gunk (Follow-Up)"],
+    "Call Lion": [],
+    "Call Ooze": [],
     "Red Bot": ["Red Module"],
     "Blue Bot": ["Blue Module"],
     "Yellow Bot": ["Yellow Module"],
@@ -171,6 +171,8 @@ if __name__ == "__main__":
             }
         else:
            parsed_skills[name]["data"].extend(skill_data_levels)
+
+    ## Combine Linked Skills
 
     ## Now we get the old skillsim data to match our skillsim data
     with open("skills.json", "r", encoding="utf8") as in_file:

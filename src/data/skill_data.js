@@ -1328,7 +1328,7 @@
             "growth_order": [
               "Skill accuracy",
               "Damage %",
-              "Ailment chance"
+              "Ailment chance (%)"
             ],
             "growth": {
               "Skill accuracy": [
@@ -1379,7 +1379,7 @@
                   "value": "130"
                 }
               ],
-              "Ailment chance": [
+              "Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "25"
@@ -1490,7 +1490,7 @@
             "growth_order": [
               "Skill accuracy",
               "Damage %",
-              "Ailment chance"
+              "Ailment chance (%)"
             ],
             "growth": {
               "Skill accuracy": [
@@ -1541,7 +1541,7 @@
                   "value": "120"
                 }
               ],
-              "Ailment chance": [
+              "Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "25"
@@ -1805,7 +1805,7 @@
             "growth_order": [
               "Skill accuracy",
               "Damage %",
-              "Ailment chance"
+              "Ailment chance (%)"
             ],
             "growth": {
               "Skill accuracy": [
@@ -1856,7 +1856,7 @@
                   "value": "120"
                 }
               ],
-              "Ailment chance": [
+              "Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "25"
@@ -1967,7 +1967,7 @@
             "growth_order": [
               "Skill accuracy",
               "Damage %",
-              "Ailment chance"
+              "Ailment chance (%)"
             ],
             "growth": {
               "Skill accuracy": [
@@ -2018,7 +2018,7 @@
                   "value": "190"
                 }
               ],
-              "Ailment chance": [
+              "Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "25"
@@ -2130,7 +2130,8 @@
               "TP cost",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Multiplier"
+              "Beast Stat Multiplier",
+              "Ailment chance (%)"
             ],
             "growth": {
               "TP cost": [
@@ -2208,190 +2209,8 @@
                   "levelspan": 10,
                   "value": "100"
                 }
-              ]
-            }
-          },
-          {
-            "force_boost": false,
-            "force_break": false,
-            "transform_only": false,
-            "mastery": false,
-            "linked_skill": "call_owl",
-            "no_level": true,
-            "_id": "sleep_powder",
-            "name": "Sleep Powder",
-            "description": "See Call Owl for details.",
-            "max_level": 10,
-            "uses": "N/A",
-            "prerequisites": [
-              {
-                "_id": "call_owl",
-                "level": 1
-              }
-            ],
-            "levels": [
-              {
-                "label": "Level",
-                "width": "20%"
-              },
-              {
-                "label": 1,
-                "width": "8%"
-              },
-              {
-                "label": 2,
-                "width": "8%"
-              },
-              {
-                "label": 3,
-                "width": "8%"
-              },
-              {
-                "label": 4,
-                "width": "8%"
-              },
-              {
-                "label": 5,
-                "width": "8%"
-              },
-              {
-                "label": 6,
-                "width": "8%"
-              },
-              {
-                "label": 7,
-                "width": "8%"
-              },
-              {
-                "label": 8,
-                "width": "8%"
-              },
-              {
-                "label": 9,
-                "width": "8%"
-              },
-              {
-                "label": 10,
-                "width": "8%"
-              }
-            ],
-            "growth_order": [
-              "Ailment chance"
-            ],
-            "growth": {
-              "Ailment chance": [
-                {
-                  "levelspan": 1,
-                  "value": "25"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "27"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "29"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "32"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "35"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "38"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "41"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "44"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "47"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "50"
-                }
-              ]
-            }
-          },
-          {
-            "force_boost": false,
-            "force_break": false,
-            "transform_only": false,
-            "mastery": false,
-            "linked_skill": "call_owl",
-            "no_level": true,
-            "_id": "sleep_powder_followup",
-            "name": "Sleep Powder (Follow-Up)",
-            "description": "See Call Owl for details.",
-            "max_level": 10,
-            "uses": "N/A",
-            "prerequisites": [
-              {
-                "_id": "call_owl",
-                "level": 1
-              }
-            ],
-            "levels": [
-              {
-                "label": "Level",
-                "width": "20%"
-              },
-              {
-                "label": 1,
-                "width": "8%"
-              },
-              {
-                "label": 2,
-                "width": "8%"
-              },
-              {
-                "label": 3,
-                "width": "8%"
-              },
-              {
-                "label": 4,
-                "width": "8%"
-              },
-              {
-                "label": 5,
-                "width": "8%"
-              },
-              {
-                "label": 6,
-                "width": "8%"
-              },
-              {
-                "label": 7,
-                "width": "8%"
-              },
-              {
-                "label": 8,
-                "width": "8%"
-              },
-              {
-                "label": 9,
-                "width": "8%"
-              },
-              {
-                "label": 10,
-                "width": "8%"
-              }
-            ],
-            "growth_order": [
-              "Ailment chance"
-            ],
-            "growth": {
-              "Ailment chance": [
+              ],
+              "Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "25"
@@ -2507,7 +2326,11 @@
               "TP cost",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Multiplier"
+              "Beast Stat Multiplier",
+              "Skill accuracy",
+              "Ailment chance (%)",
+              "Damage %",
+              "Damage % (if ailment)"
             ],
             "growth": {
               "TP cost": [
@@ -2585,87 +2408,14 @@
                   "levelspan": 10,
                   "value": "150"
                 }
-              ]
-            }
-          },
-          {
-            "force_boost": false,
-            "force_break": false,
-            "transform_only": false,
-            "mastery": false,
-            "linked_skill": "call_lion",
-            "no_level": true,
-            "_id": "regal_authority",
-            "name": "Regal Authority",
-            "description": "See Call Lion for details.",
-            "max_level": 10,
-            "uses": "N/A",
-            "prerequisites": [
-              {
-                "_id": "call_lion",
-                "level": 1
-              }
-            ],
-            "levels": [
-              {
-                "label": "Level",
-                "width": "20%"
-              },
-              {
-                "label": 1,
-                "width": "8%"
-              },
-              {
-                "label": 2,
-                "width": "8%"
-              },
-              {
-                "label": 3,
-                "width": "8%"
-              },
-              {
-                "label": 4,
-                "width": "8%"
-              },
-              {
-                "label": 5,
-                "width": "8%"
-              },
-              {
-                "label": 6,
-                "width": "8%"
-              },
-              {
-                "label": 7,
-                "width": "8%"
-              },
-              {
-                "label": 8,
-                "width": "8%"
-              },
-              {
-                "label": 9,
-                "width": "8%"
-              },
-              {
-                "label": 10,
-                "width": "8%"
-              }
-            ],
-            "growth_order": [
-              "Skill accuracy",
-              "Ailment chance",
-              "Damage %",
-              "Damage % (if ailment)"
-            ],
-            "growth": {
+              ],
               "Skill accuracy": [
                 {
                   "levelspan": 10,
                   "value": "98"
                 }
               ],
-              "Ailment chance": [
+              "Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "30"
@@ -3009,7 +2759,7 @@
             "growth_order": [
               "Skill accuracy",
               "Damage %",
-              "Ailment chance"
+              "Ailment chance (%)"
             ],
             "growth": {
               "Skill accuracy": [
@@ -3060,7 +2810,7 @@
                   "value": "130"
                 }
               ],
-              "Ailment chance": [
+              "Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "25"
@@ -3171,7 +2921,7 @@
             "growth_order": [
               "Skill accuracy",
               "Damage %",
-              "Ailment chance"
+              "Ailment chance (%)"
             ],
             "growth": {
               "Skill accuracy": [
@@ -3222,7 +2972,7 @@
                   "value": "120"
                 }
               ],
-              "Ailment chance": [
+              "Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "25"
@@ -3486,7 +3236,7 @@
             "growth_order": [
               "Skill accuracy",
               "Damage %",
-              "Ailment chance",
+              "Ailment chance (%)",
               "Min hits",
               "Max hits"
             ],
@@ -3539,7 +3289,7 @@
                   "value": "90"
                 }
               ],
-              "Ailment chance": [
+              "Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "25"
@@ -3674,7 +3424,7 @@
             "growth_order": [
               "Skill accuracy",
               "Damage %",
-              "Ailment chance"
+              "Ailment chance (%)"
             ],
             "growth": {
               "Skill accuracy": [
@@ -3725,7 +3475,7 @@
                   "value": "200"
                 }
               ],
-              "Ailment chance": [
+              "Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "30"
@@ -3841,7 +3591,11 @@
               "TP cost",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Multiplier"
+              "Beast Stat Multiplier",
+              "Skill accuracy",
+              "Damage %",
+              "Ailment chance (%)",
+              "Poison damage"
             ],
             "growth": {
               "TP cost": [
@@ -3919,80 +3673,7 @@
                   "levelspan": 10,
                   "value": "90"
                 }
-              ]
-            }
-          },
-          {
-            "force_boost": false,
-            "force_break": false,
-            "transform_only": false,
-            "mastery": false,
-            "linked_skill": "call_ooze",
-            "no_level": true,
-            "_id": "plague_gunk",
-            "name": "Plague Gunk",
-            "description": "See Call Ooze for details.",
-            "max_level": 10,
-            "uses": "N/A",
-            "prerequisites": [
-              {
-                "_id": "call_ooze",
-                "level": 1
-              }
-            ],
-            "levels": [
-              {
-                "label": "Level",
-                "width": "20%"
-              },
-              {
-                "label": 1,
-                "width": "8%"
-              },
-              {
-                "label": 2,
-                "width": "8%"
-              },
-              {
-                "label": 3,
-                "width": "8%"
-              },
-              {
-                "label": 4,
-                "width": "8%"
-              },
-              {
-                "label": 5,
-                "width": "8%"
-              },
-              {
-                "label": 6,
-                "width": "8%"
-              },
-              {
-                "label": 7,
-                "width": "8%"
-              },
-              {
-                "label": 8,
-                "width": "8%"
-              },
-              {
-                "label": 9,
-                "width": "8%"
-              },
-              {
-                "label": 10,
-                "width": "8%"
-              }
-            ],
-            "growth_order": [
-              "Skill accuracy",
-              "Damage %",
-              "Ailment chance",
-              "Poison damage"
-            ],
-            "growth": {
+              ],
               "Skill accuracy": [
                 {
                   "levelspan": 10,
@@ -4041,176 +3722,7 @@
                   "value": "190"
                 }
               ],
-              "Ailment chance": [
-                {
-                  "levelspan": 10,
-                  "value": "40"
-                }
-              ],
-              "Poison damage": [
-                {
-                  "levelspan": 1,
-                  "value": "30"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "60"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "90"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "120"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "150"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "180"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "210"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "240"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "270"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "300"
-                }
-              ]
-            }
-          },
-          {
-            "force_boost": false,
-            "force_break": false,
-            "transform_only": false,
-            "mastery": false,
-            "linked_skill": "call_ooze",
-            "no_level": true,
-            "_id": "plague_gunk_followup",
-            "name": "Plague Gunk (Follow-Up)",
-            "description": "See Call Ooze for details.",
-            "max_level": 10,
-            "uses": "N/A",
-            "prerequisites": [
-              {
-                "_id": "call_ooze",
-                "level": 1
-              }
-            ],
-            "levels": [
-              {
-                "label": "Level",
-                "width": "20%"
-              },
-              {
-                "label": 1,
-                "width": "8%"
-              },
-              {
-                "label": 2,
-                "width": "8%"
-              },
-              {
-                "label": 3,
-                "width": "8%"
-              },
-              {
-                "label": 4,
-                "width": "8%"
-              },
-              {
-                "label": 5,
-                "width": "8%"
-              },
-              {
-                "label": 6,
-                "width": "8%"
-              },
-              {
-                "label": 7,
-                "width": "8%"
-              },
-              {
-                "label": 8,
-                "width": "8%"
-              },
-              {
-                "label": 9,
-                "width": "8%"
-              },
-              {
-                "label": 10,
-                "width": "8%"
-              }
-            ],
-            "growth_order": [
-              "Skill accuracy",
-              "Damage %",
-              "Ailment chance",
-              "Poison damage"
-            ],
-            "growth": {
-              "Skill accuracy": [
-                {
-                  "levelspan": 10,
-                  "value": "98"
-                }
-              ],
-              "Damage %": [
-                {
-                  "levelspan": 1,
-                  "value": "120"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "125"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "130"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "135"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "140"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "150"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "160"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "170"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "180"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "190"
-                }
-              ],
-              "Ailment chance": [
+              "Ailment chance (%)": [
                 {
                   "levelspan": 10,
                   "value": "40"
@@ -4476,7 +3988,7 @@
             "growth_order": [
               "Skill accuracy",
               "Damage %",
-              "Ailment chance"
+              "Ailment chance (%)"
             ],
             "growth": {
               "Skill accuracy": [
@@ -4527,7 +4039,7 @@
                   "value": "130"
                 }
               ],
-              "Ailment chance": [
+              "Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "25"
@@ -4638,7 +4150,7 @@
             "growth_order": [
               "Skill accuracy",
               "Damage %",
-              "Ailment chance"
+              "Ailment chance (%)"
             ],
             "growth": {
               "Skill accuracy": [
@@ -4689,7 +4201,7 @@
                   "value": "120"
                 }
               ],
-              "Ailment chance": [
+              "Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "25"
@@ -4951,10 +4463,10 @@
               }
             ],
             "growth_order": [
-              "Ailment chance"
+              "Ailment chance (%)"
             ],
             "growth": {
-              "Ailment chance": [
+              "Ailment chance (%)": [
                 {
                   "levelspan": 1,
                   "value": "5"
@@ -5382,7 +4894,7 @@
             "growth_order": [
               "Skill accuracy",
               "Damage %",
-              "Ailment chance",
+              "Ailment chance (%)",
               "Poison damage"
             ],
             "growth": {
@@ -5434,7 +4946,7 @@
                   "value": "130"
                 }
               ],
-              "Ailment chance": [
+              "Ailment chance (%)": [
                 {
                   "levelspan": 10,
                   "value": "40"
@@ -5551,7 +5063,7 @@
             "growth_order": [
               "Skill accuracy",
               "Damage %",
-              "Ailment chance",
+              "Ailment chance (%)",
               "Poison damage"
             ],
             "growth": {
@@ -5603,7 +5115,7 @@
                   "value": "120"
                 }
               ],
-              "Ailment chance": [
+              "Ailment chance (%)": [
                 {
                   "levelspan": 10,
                   "value": "40"
