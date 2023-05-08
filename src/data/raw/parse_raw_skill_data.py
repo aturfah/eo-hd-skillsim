@@ -195,7 +195,10 @@ if __name__ == "__main__":
         class_obj = {
             "source": None,
             "class": class_name,
-            "branches": []
+            "branches": [{
+                "branch_name": class_name,
+                "skill_data": []
+            }]
         }
 
         class_skills = class_skill_map[class_name]
@@ -203,11 +206,11 @@ if __name__ == "__main__":
             skill_datum = parsed_skills[skill_name]
 
             skill_output = generate_skill_output(skill_datum)
-            class_obj["branches"].append(skill_output)
+            class_obj["branches"][0]["skill_data"].append(skill_output)
 
             if skill_name in LINKED_SKILLS:
                 for linked_skill in LINKED_SKILLS[skill_name]:
-                    class_obj["branches"].append(generate_skill_output(
+                    class_obj["branches"][0]["skill_data"].append(generate_skill_output(
                         parsed_skills[linked_skill],
                         skill_output["_id"]
                     ))
