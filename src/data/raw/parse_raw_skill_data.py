@@ -3,12 +3,12 @@ from pprint import pprint
 import json
 
 LINKED_SKILLS = {
-    "Call Elephant": ["Reckless Rush", "Reckless Rush (Follow-Up)"],
-    "Call Cow": ["Bull Run", "Bull Run (Follow-Up)"],
-    "Call Bird": ["Bind Feather", "Bind Feather (Follow-Up)"],
-    "Call Snake": ["Wind Wrap", "Wind Wrap (Follow-Up)"],
-    "Call Mole": ["Scratch", "Scratch (Follow-Up)"],
-    "Call Insect": ["Poison Dust", "Poison Dust (Follow-Up)"],
+    "Call Elephant": ["Reckless Rush (Initial)", "Reckless Rush (Follow-Up)"],
+    "Call Cow": ["Bull Run (Initial)", "Bull Run (Follow-Up)"],
+    "Call Bird": ["Bind Feather (Initial)", "Bind Feather (Follow-Up)"],
+    "Call Snake": ["Wind Wrap (Initial)", "Wind Wrap (Follow-Up)"],
+    "Call Mole": ["Scratch (Initial)", "Scratch (Follow-Up)"],
+    "Call Insect": ["Poison Dust (Initial)", "Poison Dust (Follow-Up)"],
     "Call Owl": ["Sleep Powder", "Sleep Powder (Follow-Up)"],
     "Call Tiger": ["Death Fang", "Fierce Counter"],
     "Call Lion": ["Regal Authority"],
@@ -198,7 +198,8 @@ if __name__ == "__main__":
     ## Pull out info from skillsim data
     for skill_name in parsed_skills.keys():
         skill_name_new = skill_name.replace("(Follow-Up)", "followup")
-        parsed_skills[skill_name]["_id"] = str(skill_name_new).lower().replace(" ", "_")
+        skill_name_new = skill_name_new.replace("(Initial)", "")
+        parsed_skills[skill_name]["_id"] = str(skill_name_new).lower().strip().replace(" ", "_")
         skill_datum = parsed_skills[skill_name].get("skillsim_data")
         if skill_datum is None:
             continue
