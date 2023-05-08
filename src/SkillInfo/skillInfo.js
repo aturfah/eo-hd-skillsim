@@ -126,7 +126,6 @@ function buildSkillText(skillDatum) {
     });
     rowOrder.forEach(function(label) {
         let curLevel = 0;
-        console.log(skillDatum.growth[label])
         if (skillDatum.growth[label].length === 1) {
             if (skillDescr.includes("\n")) {
                 skillDescr += ' Has a ' + label.toLowerCase() + ' of ' + skillDatum.growth[label][0].value + ' at all levels.'
