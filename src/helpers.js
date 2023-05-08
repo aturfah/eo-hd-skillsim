@@ -196,6 +196,7 @@ export function listIntersect(listA, listB) {
 
 export function firstDegSkills(activeClassIdx) {
     const output = [];
+    console.log(prereqData)
     Object.keys(prereqData[activeClassIdx]).forEach(function (key) {
         const datum = prereqData[activeClassIdx][key];
         let firstDeg = false;

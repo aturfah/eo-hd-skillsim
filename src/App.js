@@ -135,6 +135,11 @@ class App extends Component {
         <SkillTree
           updateMethod={this.updateState.bind(this)}
           skillsChosen={this.state.skillsChosen}
+          activeClassIdx={12}
+        ></SkillTree>
+        <SkillTree
+          updateMethod={this.updateState.bind(this)}
+          skillsChosen={this.state.skillsChosen}
           activeClassIdx={this.state.activeClassIdx}
         ></SkillTree>
       </div>
