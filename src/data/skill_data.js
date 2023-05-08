@@ -339,7 +339,6 @@
             "growth_order": [
               "Cannot miss",
               "Restore rate",
-              "Self-destruct",
               "Chance to trigger"
             ],
             "growth": {
@@ -389,12 +388,6 @@
                 {
                   "levelspan": 1,
                   "value": "-1"
-                }
-              ],
-              "Self-destruct": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ],
               "Chance to trigger": [
@@ -1236,8 +1229,8 @@
               "TP cost",
               "Cannot miss",
               "Speed",
-              "Beast base HP",
-              "Beast stat mult"
+              "Beast Base HP",
+              "Beast Stat Mult."
             ],
             "growth": {
               "TP cost": [
@@ -1274,7 +1267,7 @@
                   "value": "-3"
                 }
               ],
-              "Beast base HP": [
+              "Beast Base HP": [
                 {
                   "levelspan": 1,
                   "value": "40"
@@ -1316,7 +1309,7 @@
                   "value": "90"
                 }
               ],
-              "Beast stat mult": [
+              "Beast Stat Mult.": [
                 {
                   "levelspan": 10,
                   "value": "100"
@@ -1558,8 +1551,8 @@
               "TP cost",
               "Cannot miss",
               "Speed",
-              "Beast base HP",
-              "Beast stat mult"
+              "Beast Base HP",
+              "Beast Stat Mult."
             ],
             "growth": {
               "TP cost": [
@@ -1596,7 +1589,7 @@
                   "value": "-3"
                 }
               ],
-              "Beast base HP": [
+              "Beast Base HP": [
                 {
                   "levelspan": 1,
                   "value": "110"
@@ -1638,7 +1631,7 @@
                   "value": "250"
                 }
               ],
-              "Beast stat mult": [
+              "Beast Stat Mult.": [
                 {
                   "levelspan": 10,
                   "value": "120"
@@ -1876,8 +1869,8 @@
               "TP cost",
               "Cannot miss",
               "Speed",
-              "Beast base HP",
-              "Beast stat mult"
+              "Beast Base HP",
+              "Beast Stat Mult."
             ],
             "growth": {
               "TP cost": [
@@ -1914,7 +1907,7 @@
                   "value": "-3"
                 }
               ],
-              "Beast base HP": [
+              "Beast Base HP": [
                 {
                   "levelspan": 1,
                   "value": "70"
@@ -1956,7 +1949,7 @@
                   "value": "140"
                 }
               ],
-              "Beast stat mult": [
+              "Beast Stat Mult.": [
                 {
                   "levelspan": 10,
                   "value": "100"
@@ -2155,8 +2148,8 @@
               "TP cost",
               "Cannot miss",
               "Speed",
-              "Beast base HP",
-              "Beast stat mult"
+              "Beast Base HP",
+              "Beast Stat Mult."
             ],
             "growth": {
               "TP cost": [
@@ -2193,7 +2186,7 @@
                   "value": "-3"
                 }
               ],
-              "Beast base HP": [
+              "Beast Base HP": [
                 {
                   "levelspan": 1,
                   "value": "160"
@@ -2235,7 +2228,7 @@
                   "value": "320"
                 }
               ],
-              "Beast stat mult": [
+              "Beast Stat Mult.": [
                 {
                   "levelspan": 10,
                   "value": "150"
@@ -2311,8 +2304,7 @@
               "Skill accuracy",
               "Ailment chance",
               "Damage %",
-              "DMG mult if ailment",
-              "Link after use"
+              "DMG mult if ailment"
             ],
             "growth": {
               "Skill accuracy": [
@@ -2446,12 +2438,6 @@
                   "levelspan": 1,
                   "value": "250"
                 }
-              ],
-              "Link after use": [
-                {
-                  "levelspan": 10,
-                  "value": "280"
-                }
               ]
             }
           },
@@ -2523,8 +2509,8 @@
               "TP cost",
               "Cannot miss",
               "Speed",
-              "Beast base HP",
-              "Beast stat mult"
+              "Beast Base HP",
+              "Beast Stat Mult."
             ],
             "growth": {
               "TP cost": [
@@ -2561,7 +2547,7 @@
                   "value": "-3"
                 }
               ],
-              "Beast base HP": [
+              "Beast Base HP": [
                 {
                   "levelspan": 1,
                   "value": "40"
@@ -2603,7 +2589,7 @@
                   "value": "90"
                 }
               ],
-              "Beast stat mult": [
+              "Beast Stat Mult.": [
                 {
                   "levelspan": 10,
                   "value": "100"
@@ -2845,8 +2831,8 @@
               "TP cost",
               "Cannot miss",
               "Speed",
-              "Beast base HP",
-              "Beast stat mult"
+              "Beast Base HP",
+              "Beast Stat Mult."
             ],
             "growth": {
               "TP cost": [
@@ -2883,7 +2869,7 @@
                   "value": "-3"
                 }
               ],
-              "Beast base HP": [
+              "Beast Base HP": [
                 {
                   "levelspan": 1,
                   "value": "100"
@@ -2925,7 +2911,7 @@
                   "value": "200"
                 }
               ],
-              "Beast stat mult": [
+              "Beast Stat Mult.": [
                 {
                   "levelspan": 10,
                   "value": "120"
@@ -3193,8 +3179,8 @@
               "TP cost",
               "Cannot miss",
               "Speed",
-              "Beast base HP",
-              "Beast stat mult"
+              "Beast Base HP",
+              "Beast Stat Mult."
             ],
             "growth": {
               "TP cost": [
@@ -3231,7 +3217,7 @@
                   "value": "-3"
                 }
               ],
-              "Beast base HP": [
+              "Beast Base HP": [
                 {
                   "levelspan": 1,
                   "value": "20"
@@ -3273,7 +3259,7 @@
                   "value": "40"
                 }
               ],
-              "Beast stat mult": [
+              "Beast Stat Mult.": [
                 {
                   "levelspan": 10,
                   "value": "90"
@@ -3518,8 +3504,8 @@
               "TP cost",
               "Cannot miss",
               "Speed",
-              "Beast base HP",
-              "Beast stat mult"
+              "Beast Base HP",
+              "Beast Stat Mult."
             ],
             "growth": {
               "TP cost": [
@@ -3556,7 +3542,7 @@
                   "value": "-3"
                 }
               ],
-              "Beast base HP": [
+              "Beast Base HP": [
                 {
                   "levelspan": 1,
                   "value": "40"
@@ -3598,7 +3584,7 @@
                   "value": "90"
                 }
               ],
-              "Beast stat mult": [
+              "Beast Stat Mult.": [
                 {
                   "levelspan": 10,
                   "value": "100"
@@ -3840,8 +3826,8 @@
               "TP cost",
               "Cannot miss",
               "Speed",
-              "Beast base HP",
-              "Beast stat mult"
+              "Beast Base HP",
+              "Beast Stat Mult."
             ],
             "growth": {
               "TP cost": [
@@ -3878,7 +3864,7 @@
                   "value": "-3"
                 }
               ],
-              "Beast base HP": [
+              "Beast Base HP": [
                 {
                   "levelspan": 1,
                   "value": "160"
@@ -3920,7 +3906,7 @@
                   "value": "320"
                 }
               ],
-              "Beast stat mult": [
+              "Beast Stat Mult.": [
                 {
                   "levelspan": 10,
                   "value": "150"
@@ -4297,8 +4283,8 @@
               "TP cost",
               "Cannot miss",
               "Speed",
-              "Beast base HP",
-              "Beast stat mult"
+              "Beast Base HP",
+              "Beast Stat Mult."
             ],
             "growth": {
               "TP cost": [
@@ -4335,7 +4321,7 @@
                   "value": "-3"
                 }
               ],
-              "Beast base HP": [
+              "Beast Base HP": [
                 {
                   "levelspan": 1,
                   "value": "20"
@@ -4377,7 +4363,7 @@
                   "value": "40"
                 }
               ],
-              "Beast stat mult": [
+              "Beast Stat Mult.": [
                 {
                   "levelspan": 10,
                   "value": "70"
