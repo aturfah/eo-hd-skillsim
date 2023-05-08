@@ -16,7 +16,7 @@ const treeData = [
             skillID: 'wild_mastery',
             baseSkill: true,
             coords: {x: 0, y: 0},
-            barSize: 14
+            barSize: 13
         },
         {
             skillID: 'dismiss_beast',
@@ -177,11 +177,42 @@ const treeData = [
         {
             skillID: 'call_tiger',
             baseSkill: false,
-            coords: {x: 0, y: 11},
+            coords: {x: 0, y: 13},
             numBefore: 1,
             preReqLevels: ["10"],
             postReqLevels: ["(Lv.5)"],
             numAfter: 3
+        },
+        {
+            skillID: undefined,
+            baseSkill: false,
+            coords: {x: 1, y: 13},
+            numAfter: 1,
+            afterSkip: 1,
+            numBefore: 1
+        },
+        {
+            skillID: 'death_fang',
+            baseSkill: false,
+            coords: {x: 1, y: 14},
+            numBefore: 1,
+            preReqLevels: ['Skill']
+        },
+        {
+            skillID: 'fierce_counter',
+            baseSkill: false,
+            coords: {x: 1, y: 15},
+            numBefore: 1,
+            preReqLevels: ['Skill']
+        },
+        {
+            skillID: 'call_lion',
+            baseSkill: false,
+            coords: {x: 0, y: 11},
+            numBefore: 1,
+            preReqLevels: ["10"],
+            postReqLevels: ["(Lv.5)"],
+            numAfter: 2
         },
         {
             skillID: undefined,
@@ -192,40 +223,9 @@ const treeData = [
             numBefore: 1
         },
         {
-            skillID: 'death_fang',
-            baseSkill: false,
-            coords: {x: 1, y: 12},
-            numBefore: 1,
-            preReqLevels: ['Skill']
-        },
-        {
-            skillID: 'fierce_counter',
-            baseSkill: false,
-            coords: {x: 1, y: 13},
-            numBefore: 1,
-            preReqLevels: ['Skill']
-        },
-        {
-            skillID: 'call_lion',
-            baseSkill: false,
-            coords: {x: 0, y: 14},
-            numBefore: 1,
-            preReqLevels: ["10"],
-            postReqLevels: ["(Lv.5)"],
-            numAfter: 2
-        },
-        {
-            skillID: undefined,
-            baseSkill: false,
-            coords: {x: 1, y: 14},
-            numAfter: 1,
-            afterSkip: 1,
-            numBefore: 1
-        },
-        {
             skillID: 'regal_authority',
             baseSkill: false,
-            coords: {x: 1, y: 15},
+            coords: {x: 1, y: 12},
             numBefore: 1,
             preReqLevels: ['Skill']
         },
@@ -233,12 +233,12 @@ const treeData = [
             skillID: 'nature_pact',
             baseSkill: false,
             coords: {x: 3, y: 9},
-            numBefore: 6,
+            numBefore: 5,
         },
         {
             skillID: 'sacrifice_ii',
             baseSkill: false,
-            coords: {x: 2, y: 11},
+            coords: {x: 2, y: 13},
             numBefore: 1,
             numAfter: 1,
             postReqLevels: ["(Lv.3)"],
@@ -246,7 +246,7 @@ const treeData = [
         {
             skillID: 'sacrifice_i',
             baseSkill: false,
-            coords: {x: 2, y: 14},
+            coords: {x: 2, y: 11},
             numBefore: 1,
             numAfter: 1,
             postReqLevels: ["(Lv.3)"],
