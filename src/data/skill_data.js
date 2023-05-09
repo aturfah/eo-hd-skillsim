@@ -5669,16 +5669,9 @@
               }
             ],
             "growth_order": [
-              "Use on defend",
               "Restore rate"
             ],
             "growth": {
-              "Use on defend": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "Restore rate": [
                 {
                   "levelspan": 1,
@@ -6784,19 +6777,12 @@
               }
             ],
             "growth_order": [
-              "Swap row on hit (?)",
               "TP cost",
               "Acc. (mod)",
               "Speed",
               "Damage %"
             ],
             "growth": {
-              "Swap row on hit (?)": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "TP cost": [
                 {
                   "levelspan": 2,
@@ -7329,9 +7315,7 @@
             ],
             "growth_order": [
               "TP cost",
-              "Speed",
-              "Ailment mod",
-              "Bind mod"
+              "Speed"
             ],
             "growth": {
               "TP cost": [
@@ -7360,18 +7344,6 @@
                 {
                   "levelspan": 5,
                   "value": "0"
-                }
-              ],
-              "Ailment mod": [
-                {
-                  "levelspan": 5,
-                  "value": "510"
-                }
-              ],
-              "Bind mod": [
-                {
-                  "levelspan": 5,
-                  "value": "7168"
                 }
               ]
             }
@@ -15342,7 +15314,6 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Ailment mod",
               "Target mod"
             ],
             "growth": {
@@ -15392,12 +15363,6 @@
                 {
                   "levelspan": 10,
                   "value": "-3"
-                }
-              ],
-              "Ailment mod": [
-                {
-                  "levelspan": 10,
-                  "value": "510"
                 }
               ],
               "Target mod": [
@@ -15483,7 +15448,6 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Bind mod",
               "Target mod"
             ],
             "growth": {
@@ -15533,12 +15497,6 @@
                 {
                   "levelspan": 10,
                   "value": "-3"
-                }
-              ],
-              "Bind mod": [
-                {
-                  "levelspan": 10,
-                  "value": "7168"
                 }
               ],
               "Target mod": [
