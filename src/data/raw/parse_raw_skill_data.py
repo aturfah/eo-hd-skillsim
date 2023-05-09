@@ -65,6 +65,9 @@ def generate_skill_output(skill_datum:dict, linked_skill_id:str=None, linked_ski
             skill_output["description"] = "{}. Cannot miss.".format(skill_output["description"])
             continue
 
+        if attribute in skill_output["growth_order"]:
+            continue
+
         skill_output["growth_order"].append(attribute)
         idx = 0
         while idx < max_level:
