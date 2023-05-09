@@ -34,7 +34,9 @@ class App extends Component {
   }
 
   calculateSpRemaining(skillState) {
-    const sp = calculateTotalSP(skillState.level, skillState.retirementIdx)
+    const subclassBonus = this.state.activeSubclassIdx === -1 ? 0 : 5;
+    console.log(subclassBonus)
+    const sp = calculateTotalSP(skillState.level, skillState.retirementIdx, subclassBonus)
     const activeFDegSkills = listIntersect(Object.keys(skillState.skillsChosen), this.firstDegSkills);
     const skillsChosen = skillState.skillsChosen;
     const activeLinkedSkills = listIntersect(Object.keys(skillState.skillsChosen), linkedSkills(skillState.activeClassIdx))
@@ -47,7 +49,7 @@ class App extends Component {
       totalSpSpent += skillsChosen[key];
     });
 
-    return sp - totalSpSpent + activeFDegSkills.length
+    return sp - totalSpSpent + activeFDegSkills.length;
   }
 
   copySkillsClipboard() {
@@ -128,7 +130,8 @@ class App extends Component {
           level={this.state.level}
           retirementIdx={this.state.retirementIdx}
           skillsChosen={this.state.skillsChosen}
-          skillPointsTotal={calculateTotalSP(this.state.level, this.state.retirementIdx)}
+          skillPointsTotal={calculateTotalSP(this.state.level, this.state.retirementIdx, 
+                                             this.state.activeSubclassIdx === -1 ? 0 : 5)}
           skillPointsRemaining={this.calculateSpRemaining(this.state)}
           activeClassIdx={this.state.activeClassIdx}
           activeSubclassIdx={this.state.activeSubclassIdx}

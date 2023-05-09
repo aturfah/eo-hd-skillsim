@@ -181,9 +181,9 @@ export function isNumber(input) {
     return re.test(input) || !input;
 }
 
-export function calculateTotalSP(level, retirementIdx) {
+export function calculateTotalSP(level, retirementIdx, subclassBonus) {
     const retirementBonus = [0, 4, 5, 6, 7, 8, 10]
-    return level + 2 + retirementBonus[retirementIdx]
+    return level + 2 + retirementBonus[retirementIdx] + subclassBonus
   }
 
 export function listSubtract(listA, listB) {

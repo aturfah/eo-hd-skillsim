@@ -155,13 +155,13 @@ class Header extends Component {
     updateClassIdx(newClassIdx) {
         // const newClassIdx = this.refs.classDropdownList.value;
         console.log('Updating to class', newClassIdx, this.classOpts[newClassIdx]);
-        this.props.updateMethod('activeClassIdx', newClassIdx);
+        this.props.updateMethod('activeClassIdx', parseInt(newClassIdx));
     }
 
     updateSubclassClassIdx(newClassIdx) {
         // const newClassIdx = this.refs.classDropdownList.value;
         console.log('Updating to subclass', newClassIdx, this.classOpts[newClassIdx]);
-        this.props.updateMethod('activeSubclassIdx', newClassIdx);
+        this.props.updateMethod('activeSubclassIdx', parseInt(newClassIdx));
     }
 
     _changeLevel() {
