@@ -1434,7 +1434,68 @@ const treeData = [
         },
     ],
     [ // Shogun
-
+        {
+            skillID: "second_sword",
+            baseSkill: true,
+            coords: {x: 1, y: 0}
+        },
+        {
+            skillID: 'retreat',
+            baseSkill: true,
+            coords: {x: 2, y: 0}
+        },
+        {
+            skillID: 'morale_boost',
+            baseSkill: true,
+            coords: {x: 0, y: 0},
+            barSize: 4
+        },
+        {
+            skillID: 'kaishaku',
+            baseSkill: false,
+            coords: {x: 0, y: 1},
+            numBefore: 1,
+            preReqLevels: [1],
+        },
+        {
+            skillID: 'rear_dignity',
+            baseSkill: false,
+            coords: {x: 0, y: 2},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 2,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'fore_honor',
+            baseSkill: false,
+            coords: {x: 0, y: 3},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'ambush_stance',
+            baseSkill: false,
+            coords: {x: 1, y: 2},
+            numBefore: 1,
+        },
+        {
+            skillID: 'fusillade',
+            baseSkill: false,
+            coords: {x: 0, y: 4},
+            numBefore: 1,
+            preReqLevels: [5],
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'blitz_command',
+            baseSkill: false,
+            coords: {x: 1, y: 4},
+            numBefore: 1
+        },
     ],
     [ // Yggdroid
         {
