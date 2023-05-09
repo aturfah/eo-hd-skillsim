@@ -25478,8 +25478,7 @@
               "TP cost",
               "Acc. (mod)",
               "Speed",
-              "Damage %",
-              "Ignore DEF buffs"
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -25576,12 +25575,6 @@
                 {
                   "levelspan": 1,
                   "value": "215"
-                }
-              ],
-              "Ignore DEF buffs": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ]
             }
