@@ -1482,7 +1482,8 @@ const treeData = [
             numBefore: 1,
             preReqLevels: [3],
             numAfter: 2,
-            postReqLevels: [3]
+            afterSkip: 0.5,
+            postReqLevels: ["Both Lv.3"]
         },
         {
             skillID: 'resupply',
@@ -1490,16 +1491,17 @@ const treeData = [
             numBefore: 1,
             preReqLevels: [3],
             numAfter: 1,
-            postReqLevels: [3]
+            afterSkip: 0.5,
+            postReqLevels: ["Both Lv.5"]
         },
         {
             skillID: 'reflector',
-            coords: {x: 1, y: 4},
+            coords: {x: 1.7, y: 4},
             numBefore: 1,
         },
         {
             skillID: 'shoot',
-            coords: {x: 1, y: 5},
+            coords: {x: 1.7, y: 5},
             numBefore: 1,
         },
         {
