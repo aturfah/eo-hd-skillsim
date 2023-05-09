@@ -22,6 +22,7 @@ function defaultState() {
     activeClassIdx: 0,
     activeSubclassIdx: -1,
     activeSubclassFlag: false,
+    subclassToggle: false,
     maxLevel: 70
   };
 }
@@ -139,6 +140,7 @@ class App extends Component {
           skillPointsRemaining={this.calculateSpRemaining(this.state)}
           activeClassIdx={this.state.activeClassIdx}
           activeSubclassIdx={this.state.activeSubclassIdx}
+          subclassToggle={this.state.subclassToggle}
           maxLevel={this.state.maxLevel}
         ></Header>
         <SkillTree
@@ -149,7 +151,7 @@ class App extends Component {
         <SkillTree
           updateMethod={this.updateState.bind(this)}
           skillsChosen={this.state.skillsChosen}
-          activeClassIdx={this.state.activeClassIdx}
+          activeClassIdx={(this.state.subclassToggle ? this.state.activeSubclassIdx : this.state.activeClassIdx)}
         ></SkillTree>
       </div>
     );
