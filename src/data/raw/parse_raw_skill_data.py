@@ -61,9 +61,12 @@ def generate_skill_output(skill_datum:dict, linked_skill_id:str=None, linked_ski
     max_level = skill_output["max_level"]
     for attrib_info in skill_datum["data"]:
         attribute = attrib_info["attribute"]
+
         if attribute == "Cannot miss":
-            skill_output["description"] = "{}. Cannot miss.".format(skill_output["description"])
+            skill_output["description"] = "{} Cannot miss.".format(skill_output["description"])
             continue
+        elif attribute == "Uncounterable":
+            skill_output["description"] = "{} Uncounterable.".format(skill_output["description"])
 
         if attribute in skill_output["growth_order"]:
             continue
@@ -79,7 +82,21 @@ def generate_skill_output(skill_datum:dict, linked_skill_id:str=None, linked_ski
                     if (idx + 1 >= max_level):
                         break
 
-            skill_output["growth"][attrib_info["attribute"]].append({
+            ## Refresh/Unbind
+            if attribute == "Target mod":
+                if attrib_info["levels"][idx] == "1":
+                    attribute = "Target"
+                    attrib_info["levels"][idx] = "Single"
+                elif attrib_info["levels"][idx] == "16":
+                    attribute = "Target"
+                    attrib_info["levels"][idx] = "Row"
+                elif attrib_info["levels"][idx] == "2":
+                    attribute = "Target"
+                    attrib_info["levels"][idx] = "All"
+                else:
+                    raise RuntimeError("INVALID Target mod: {}".format(attrib_info["levels"][idx]))
+
+            skill_output["growth"][attribute].append({
                 "levelspan": levelspan,
                 "value": attrib_info["levels"][idx]
             })
