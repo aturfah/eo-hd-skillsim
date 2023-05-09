@@ -750,6 +750,16 @@ const treeData = [
     ],
     [// Monk
         {
+            skillID: 'form_qi',
+            baseSkill: false,
+            coords: {x: 1, y: 0}
+        },
+        {
+            skillID: 'fire_walk',
+            baseSkill: false,
+            coords: {x: 2, y: 0}
+        },
+        {
             skillID: 'fist_mastery',
             coords: {x: 0, y: 0},
             baseSkill: true,
