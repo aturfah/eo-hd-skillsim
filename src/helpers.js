@@ -405,6 +405,15 @@ export function fixSkillDependencyDelete(chosenSkills, activeClassIdx) {
     return chosenSkills
 }
 
+export function getClassSkillList(classIdx) {
+    const output = [];
+    skillData[classIdx].branches.forEach((branchSkills) => {
+        branchSkills.skill_data.forEach((skillDatum) => {
+            output.push(skillDatum._id)
+        })
+    })
+    return output;
+}
 
 export function exportSkillList(classState, remainingSP) {
     const chosenSkills = classState.skillsChosen
