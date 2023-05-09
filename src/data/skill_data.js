@@ -11597,7 +11597,7 @@
             "no_level": false,
             "_id": "nikudan",
             "name": "Nikudan",
-            "description": "Upon your death, you deal FIRE damage to the enemy.",
+            "description": "Upon your death, you deal FIRE damage to the enemy. Uncounterable.",
             "max_level": 10,
             "uses": "N/A",
             "prerequisites": [
@@ -13063,7 +13063,7 @@
             "no_level": false,
             "_id": "makibishi",
             "name": "Makibishi",
-            "description": "A cut counterattack with fixed damage to enemies that have attacked the designated row; has a chance to inflict Poison.",
+            "description": "A cut counterattack with fixed damage to enemies that have attacked the designated row; has a chance to inflict Poison. Uncounterable.",
             "max_level": 10,
             "uses": "Arms",
             "prerequisites": [
@@ -15295,10 +15295,10 @@
                   "value": "-3"
                 }
               ],
-              "Target mod": [
+              "Target": [
                 {
                   "levelspan": 3,
-                  "value": "1"
+                  "value": "Single"
                 },
                 {
                   "levelspan": 3,
@@ -15429,10 +15429,10 @@
                   "value": "-3"
                 }
               ],
-              "Target mod": [
+              "Target": [
                 {
                   "levelspan": 3,
-                  "value": "1"
+                  "value": "Single"
                 },
                 {
                   "levelspan": 3,
@@ -16031,7 +16031,7 @@
             "no_level": false,
             "_id": "counter",
             "name": "Counter",
-            "description": "Fist: Counterattacks with a blunt attack against enemy physical attacks.",
+            "description": "Fist: Counterattacks with a blunt attack against enemy physical attacks. Uncounterable.",
             "max_level": 10,
             "uses": "Arms",
             "prerequisites": [
@@ -16203,7 +16203,7 @@
             "no_level": false,
             "_id": "retaliate",
             "name": "Retaliate",
-            "description": "Fist: Counterattacks with a blunt attack against enemy elemental attacks.",
+            "description": "Fist: Counterattacks with a blunt attack against enemy elemental attacks. Uncounterable.",
             "max_level": 10,
             "uses": "Arms",
             "prerequisites": [
@@ -17699,7 +17699,7 @@
             "no_level": false,
             "_id": "fire_prophecy",
             "name": "Fire Prophecy",
-            "description": "FIRE: Prevents the FIRE attacks of one designated enemy and counterattack that target with a FIRE spell.",
+            "description": "FIRE: Prevents the FIRE attacks of one designated enemy and counterattack that target with a FIRE spell. Uncounterable.",
             "max_level": 5,
             "uses": "Head",
             "prerequisites": [
@@ -18190,7 +18190,7 @@
             "no_level": false,
             "_id": "ice_prophecy",
             "name": "Ice Prophecy",
-            "description": "ICE: Prevents the ICE attacks of one designated enemy and counterattack that target with an ICE spell.",
+            "description": "ICE: Prevents the ICE attacks of one designated enemy and counterattack that target with an ICE spell. Uncounterable.",
             "max_level": 5,
             "uses": "Head",
             "prerequisites": [
@@ -18681,7 +18681,7 @@
             "no_level": false,
             "_id": "volt_prophecy",
             "name": "Volt Prophecy",
-            "description": "VOLT: Prevents the VOLT attacks of one designated enemy and counterattack that target with a VOLT spell.",
+            "description": "VOLT: Prevents the VOLT attacks of one designated enemy and counterattack that target with a VOLT spell. Uncounterable.",
             "max_level": 5,
             "uses": "Head",
             "prerequisites": [
@@ -22774,7 +22774,7 @@
             "no_level": false,
             "_id": "call_tiger",
             "name": "Call Tiger",
-            "description": "Summons the saber-toothed tiger that tries to instantly kill all enemies.  After that, it counters any attacks that it receives. ",
+            "description": "Summons the saber-toothed tiger that tries to instantly kill all enemies.  After that, it counters any attacks that it receives.  Uncounterable.",
             "max_level": 10,
             "uses": "Arms",
             "prerequisites": [
@@ -28926,7 +28926,7 @@
             "no_level": false,
             "_id": "kaishaku",
             "name": "Kaishaku",
-            "description": "When allies or enemies are below a certain amount of HP, there is a chance to instantly kill them.",
+            "description": "When allies or enemies are below a certain amount of HP, there is a chance to instantly kill them. Uncounterable.",
             "max_level": 5,
             "uses": "Arms",
             "prerequisites": [
@@ -30787,7 +30787,7 @@
             "no_level": false,
             "_id": "ambush_stance",
             "name": "Ambush Stance",
-            "description": "Command a row assume battle formation, causing them to counter enemy attacks that target that row.",
+            "description": "Command a row assume battle formation, causing them to counter enemy attacks that target that row. Uncounterable.",
             "max_level": 10,
             "uses": "Arms",
             "prerequisites": [
@@ -31231,7 +31231,7 @@
             "no_level": false,
             "_id": "fusillade",
             "name": "Fusillade",
-            "description": "Commands everyone with a gun or a crossbow to fire at one enemy.",
+            "description": "Commands everyone with a gun or a crossbow to fire at one enemy. Uncounterable.",
             "max_level": 10,
             "uses": "Arms",
             "prerequisites": [
@@ -31442,7 +31442,7 @@
             "no_level": false,
             "_id": "blitz_command",
             "name": "Blitz Command",
-            "description": "Commands every ally to strike one enemy simultaneously with their equipped weapon.",
+            "description": "Commands every ally to strike one enemy simultaneously with their equipped weapon. Uncounterable.",
             "max_level": 10,
             "uses": "Arms",
             "prerequisites": [
@@ -32408,7 +32408,7 @@
             "no_level": false,
             "_id": "em_barrier",
             "name": "EM Barrier",
-            "description": "When being attacked, there is a chance that you may paralyze the enemy and counterattack THUNDER elemental attacks.",
+            "description": "When being attacked, there is a chance that you may paralyze the enemy and counterattack THUNDER elemental attacks. Uncounterable.",
             "max_level": 10,
             "uses": "N/A",
             "prerequisites": [
@@ -33658,7 +33658,7 @@
             "no_level": false,
             "_id": "reflector",
             "name": "Reflector",
-            "description": "If there are bots deployed, prevent attacks of the same attribute and counterattack with that attribute.",
+            "description": "If there are bots deployed, prevent attacks of the same attribute and counterattack with that attribute. Uncounterable.",
             "max_level": 5,
             "uses": "Head",
             "prerequisites": [
