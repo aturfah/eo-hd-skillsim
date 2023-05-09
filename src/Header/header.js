@@ -117,19 +117,25 @@ class Header extends Component {
     }
 
     buildClassDropdown(subclassFlag=false) {
-        const classOptions = []
-        
+        // Set variables
         let label = "Class"
         let invalidClasses = ["Default"]
         let curValue = this.props.activeClassIdx
         let updateFunc = this.updateClassIdx
+        let extraClasses = []
         if (subclassFlag) {
             label = "Subclass"
             invalidClasses = ["Default", "Yggdroid", this.classOpts[this.props.activeClassIdx]]
             curValue = 1 // TODO: CHANGE THIS
             updateFunc = this.updateSubclassClassIdx
+            extraClasses = ["(None)"]
         }
 
+        const classOptions = []
+        extraClasses.forEach(function(className, idx) {
+            idx = -1 * (idx + 1)
+            classOptions.push(<option key={idx + className} value={idx}>{className}</option>)
+        });
         this.classOpts.forEach(function(className, idx) {
             if (invalidClasses.includes(className)) {
                 return;
