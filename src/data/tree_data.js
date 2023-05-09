@@ -1451,11 +1451,19 @@ const treeData = [
             barSize: 4
         },
         {
-            skillID: 'kaishaku',
+            skillID: undefined,
             baseSkill: false,
             coords: {x: 0, y: 1},
             numBefore: 1,
             preReqLevels: [1],
+            afterSkip: 1,
+            numAfter: 1,
+        },
+        {
+            skillID: 'kaishaku',
+            baseSkill: false,
+            coords: {x: 2, y: 1},
+            numBefore: 6,
         },
         {
             skillID: 'rear_dignity',
@@ -1495,6 +1503,54 @@ const treeData = [
             baseSkill: false,
             coords: {x: 1, y: 4},
             numBefore: 1
+        },
+        {
+            skillID: 'endure',
+            baseSkill: true,
+            coords: {x: 0, y: 5},
+            barSize: 4
+        },
+        {
+            skillID: undefined,
+            baseSkill: false,
+            coords: {x: 0, y: 6},
+            numBefore: 1,
+            afterSkip: 1,
+            numAfter: 1,
+            preReqLevels: [1],
+        },
+        {
+            skillID: 'unified_spirit',
+            baseSkill: false,
+            coords: {x: 0, y: 7},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 2,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'bloody_lance',
+            baseSkill: false,
+            coords: {x: 0, y: 8},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'warrior_might',
+            baseSkill: false,
+            coords: {x: 1, y: 7},
+            numBefore: 1,
+        },
+        {
+            skillID: 'daifuhensha',
+            baseSkill: false,
+            coords: {x: 0, y: 9},
+            numBefore: 1,
+            preReqLevels: [5],
+            numAfter: 1,
+            postReqLevels: [3]
         },
     ],
     [ // Yggdroid
