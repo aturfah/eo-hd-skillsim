@@ -1552,6 +1552,47 @@ const treeData = [
             numAfter: 1,
             postReqLevels: [3]
         },
+        {
+            skillID: 'katana_mastery',
+            baseSkill: true,
+            coords: {x: 0, y: 10},
+            barSize: 4
+        },
+        {
+            skillID: 'hilt_strike',
+            baseSkill: false,
+            coords: {x: 0, y: 11},
+            numBefore: 1,
+            preReqLevels: [1],
+        },
+        {
+            skillID: 'myoujou',
+            baseSkill: false,
+            coords: {x: 0, y: 12},
+            numBefore: 1,
+            preReqLevels: [3],
+        },
+        {
+            skillID: 'magatoki',
+            baseSkill: false,
+            coords: {x: 0, y: 13},
+            numBefore: 1,
+            preReqLevels: [3],
+        },
+        {
+            skillID: undefined,
+            baseSkill: false,
+            coords: {x: 0, y: 14},
+            numBefore: 1,
+            preReqLevels: [10],
+            numAfter: 1,
+        },
+        {
+            skillID: '5-ring_sword',
+            baseSkill: false,
+            coords: {x: 1, y: 9},
+            numBefore: 6,
+        },
     ],
     [ // Yggdroid
         {
