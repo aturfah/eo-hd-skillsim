@@ -316,7 +316,7 @@
     "Avenger": {
     "name_jp": "アベンジャー",
     "name_en": "Avenger",
-    "details": "Strongly transforms a vengeful heart towards the enemy; HP recovers when allies become battle incapacitated.",
+    "details": "Recover HP on ally death.",
     "requires": "N/A",
     "dep": { "BerserkersOath": 1 },
     "active": false,
