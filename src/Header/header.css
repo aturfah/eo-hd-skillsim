@@ -43,12 +43,17 @@ button.btn-active {
     color: white;
 }
 
-button.btn-inactive {
+button.btn-gray {
     background-color: #e7e7e7;
     color: black;
 }
 
+button.btn-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
 div.inline-block-div {
     display: inline-block;
-    margin-left: 5px;
+    margin-right: 5px;
 }

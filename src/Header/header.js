@@ -159,13 +159,13 @@ class Header extends Component {
         return <div>
             <div className='btn-group'>
                 <button type='button'
-                    class={'btn ' + (this.props.subclassToggle ? 'btn-inactive' : 'btn-active')}
+                    class={'btn ' + (this.props.subclassToggle ? 'btn-gray' : 'btn-active')}
                     onClick={() => this.props.updateMethod('subclassToggle', false)}
                     >
                     Main</button>
                 <button type='button'
                     disabled={!this.props.activeSubclassFlag}
-                    class={'btn ' + (this.props.subclassToggle ? 'btn-active' : 'btn-inactive')}
+                    class={'btn ' + (this.props.subclassToggle ? 'btn-active' : 'btn-gray btn-disabled')}
                     onClick={() => this.props.updateMethod('subclassToggle', true)}
                     >
                     Sub</button>
@@ -243,8 +243,8 @@ class Header extends Component {
                     {skillPointsInfo}                        
                 </div>
                 <div center>
-                    <button className="btn" onClick={() => this._clearSkills()}>Clear Skills</button> &nbsp;
-                    <button className="btn" onClick={() => this._copySkillsClipboard()}>Copy Build</button>
+                    <button className="btn btn-gray" onClick={() => this._clearSkills()}>Clear Skills</button> &nbsp;
+                    <button className="btn btn-gray" onClick={() => this._copySkillsClipboard()}>Copy Build</button>
                 </div>
             </div>
         </div>
