@@ -1367,6 +1367,33 @@ const treeData = [
             coords: {x: 2, y: 3},
             numBefore: 1,
         },
+        {
+            skillID: 'keen_eye',
+            baseSkill: true,
+            coords: {x: 0, y: 4},
+            barSize: 3
+        },
+        {
+            skillID: 'to_market',
+            baseSkill: false,
+            coords: {x: 0, y: 5},
+            numBefore: 1,
+            preReqLevels: [1],
+        },
+        {
+            skillID: 'rain_or_shine',
+            baseSkill: false,
+            coords: {x: 0, y: 6},
+            numBefore: 1,
+            preReqLevels: [3],
+        },
+        {
+            skillID: 'safe_stroll',
+            baseSkill: false,
+            coords: {x: 0, y: 7},
+            numBefore: 1,
+            preReqLevels: [5],
+        },
     ],
     [ // Shogun
 
