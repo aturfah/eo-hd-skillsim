@@ -198,6 +198,7 @@ if __name__ == "__main__":
                 249/250/251 - HP/TP/ATK on kill
                 78 - Link after turns
                 169 - Unknown169
+                142 - Ignore DEF Buffs
                 """
                 try:
                     skill_data_levels.append({
