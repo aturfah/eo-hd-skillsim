@@ -748,7 +748,66 @@ const treeData = [
             numBefore: 2,
         },
     ],
-    [],
+    [// Monk
+        {
+            skillID: 'fist_mastery',
+            coords: {x: 0, y: 0},
+            baseSkill: true,
+            barSize: 5
+        },
+        {
+            skillID: 'kikouken',
+            coords: {x: 0, y: 1},
+            numBefore: 1,
+            preReqLevels: [1],
+        },
+        {
+            skillID: 'breakfire_fist',
+            coords: {x: 0, y: 2},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 2,
+            postReqLevels: ["(Lv.3)"]
+        },
+        {
+            skillID: 'waking_chakra',
+            coords: {x: 1, y: 2},
+            numBefore: 1,
+        },
+        {
+            skillID: 'counter',
+            coords: {x: 0, y: 3},
+            numBefore: 1,
+            preReqLevels: [8],
+        },
+        {
+            skillID: 'retaliate',
+            coords: {x: 0, y: 4},
+            numBefore: 1,
+            preReqLevels: [8],
+        },
+        {
+            skillID: undefined,
+            coords: {x: 0, y: 5},
+            numBefore: 1,
+            preReqLevels: [10],
+            afterSkip: 1,
+            numAfter: 1,
+        },
+        {
+            skillID: undefined,
+            coords: {x: 1, y: 3},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 1,
+        },
+        {
+            skillID: 'darkness_fist',
+            coords: {x: 2, y: 4},
+            numBefore: 3,
+            beforeStyle: 'centered'
+        },
+    ],
     [],
     [ // Wildling
         {
