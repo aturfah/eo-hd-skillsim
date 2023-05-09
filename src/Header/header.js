@@ -159,13 +159,13 @@ class Header extends Component {
         return <div>
             <div className='btn-group'>
                 <button type='button'
-                    class={'btn ' + (this.props.subclassToggle ? 'btn-gray' : 'btn-active')}
+                    class={'btn ' + (this.props.subclassToggle ? 'btn-inactive' : 'btn-active')}
                     onClick={() => this.props.updateMethod('subclassToggle', false)}
                     >
                     Main</button>
                 <button type='button'
                     disabled={!this.props.activeSubclassFlag}
-                    class={'btn ' + (this.props.subclassToggle ? 'btn-active' : 'btn-gray') +
+                    class={'btn ' + (this.props.subclassToggle ? 'btn-active' : 'btn-inactive') +
                             (this.props.activeSubclassFlag ? '' : ' btn-disabled')}
                     onClick={() => this.props.updateMethod('subclassToggle', true)}
                     >

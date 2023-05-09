@@ -43,6 +43,11 @@ button.btn-active {
     color: white;
 }
 
+button.btn-inactive {
+    background-color: #f44336;
+    color: white;
+}
+
 button.btn-gray {
     background-color: #e7e7e7;
     color: black;
