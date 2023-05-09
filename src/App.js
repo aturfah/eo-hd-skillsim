@@ -8,11 +8,14 @@ import SkillTree from './SkillTree/skillTree'
 // Function Import
 import {fixSkillDependencyAdd,
   fixSkillDependencyDelete,
+  getClassSkillList,
   exportSkillList,
   firstDegSkills,
   calculateTotalSP,
   linkedSkills,
-  listIntersect, deepCopy} from './helpers'
+  listIntersect,
+  deepCopy,
+  listSubtract} from './helpers'
 
 function defaultState() {
   return {
@@ -20,6 +23,9 @@ function defaultState() {
     retirementIdx: 0,
     skillsChosen: {},
     activeClassIdx: 0,
+    activeSubclassIdx: -1,
+    activeSubclassFlag: false,
+    subclassToggle: false,
     maxLevel: 70
   };
 }
@@ -33,7 +39,7 @@ class App extends Component {
   }
 
   calculateSpRemaining(skillState) {
-    const sp = calculateTotalSP(skillState.level, skillState.retirementIdx)
+    const sp = calculateTotalSP(skillState.level, skillState.retirementIdx, skillState.activeSubclassFlag)
     const activeFDegSkills = listIntersect(Object.keys(skillState.skillsChosen), this.firstDegSkills);
     const skillsChosen = skillState.skillsChosen;
     const activeLinkedSkills = listIntersect(Object.keys(skillState.skillsChosen), linkedSkills(skillState.activeClassIdx))
@@ -46,7 +52,7 @@ class App extends Component {
       totalSpSpent += skillsChosen[key];
     });
 
-    return sp - totalSpSpent + activeFDegSkills.length
+    return sp - totalSpSpent + activeFDegSkills.length;
   }
 
   copySkillsClipboard() {
@@ -75,6 +81,21 @@ class App extends Component {
       console.log('Class change -> resetting state...')
       oldState = defaultState();
       this.firstDegSkills = firstDegSkills(value)
+    } 
+    if (key === 'activeSubclassIdx') {
+      console.log('Subclass change -> Clear subclass skills')
+      oldState.activeSubclassFlag = (value === -1 ? false : true)
+      oldState.subclassToggle = (value === -1 ? false : true)
+
+      // Get skills for the subclass
+      let subclassSkillsToDelete = [];
+      if (this.state.activeSubclassIdx !== -1) {
+        subclassSkillsToDelete = getClassSkillList(this.state.activeSubclassIdx);
+      }
+
+      // Keep skills NOT in the subclass
+      let skillsToDelete = listIntersect(Object.keys(oldState.skillsChosen), subclassSkillsToDelete);
+      skillsToDelete.forEach(skillID => {delete oldState.skillsChosen[skillID]})
     }
 
     // Change parameters
@@ -103,7 +124,7 @@ class App extends Component {
       oldState[key] = value;
     }
 
-    const spRemaining = this.calculateSpRemaining(oldState)
+    const spRemaining = this.calculateSpRemaining(oldState);
     if (spRemaining < 0) {
         console.log('Increasing level by', -1*spRemaining, 'to meet SP needs');
         oldState['level'] -= spRemaining;
@@ -127,9 +148,13 @@ class App extends Component {
           level={this.state.level}
           retirementIdx={this.state.retirementIdx}
           skillsChosen={this.state.skillsChosen}
-          skillPointsTotal={calculateTotalSP(this.state.level, this.state.retirementIdx)}
+          skillPointsTotal={calculateTotalSP(this.state.level, this.state.retirementIdx, 
+                                             this.state.activeSubclassFlag)}
           skillPointsRemaining={this.calculateSpRemaining(this.state)}
           activeClassIdx={this.state.activeClassIdx}
+          activeSubclassIdx={this.state.activeSubclassIdx}
+          activeSubclassFlag={this.state.activeSubclassFlag}
+          subclassToggle={this.state.subclassToggle}
           maxLevel={this.state.maxLevel}
         ></Header>
         <SkillTree
@@ -140,7 +165,7 @@ class App extends Component {
         <SkillTree
           updateMethod={this.updateState.bind(this)}
           skillsChosen={this.state.skillsChosen}
-          activeClassIdx={this.state.activeClassIdx}
+          activeClassIdx={(this.state.subclassToggle ? this.state.activeSubclassIdx : this.state.activeClassIdx)}
         ></SkillTree>
       </div>
     );

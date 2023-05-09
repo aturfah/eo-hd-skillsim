@@ -201,8 +201,6 @@ class SkillInfoPanel extends Component {
         this.parsedSkillData = parseSkillBranches(skillData[activeClassIdx])
 
         const activeSkillID = this.props.activeInfo.activeSkillID;
-        console.log(this.parsedSkillData)
-        console.log(activeClassIdx,activeSkillID)
         const activeSkillBox = this.props.activeInfo.activeSkillBox;
         const graphParams = this.props.activeInfo.graphParams;
         const skillDatum = this.parsedSkillData[activeSkillID];

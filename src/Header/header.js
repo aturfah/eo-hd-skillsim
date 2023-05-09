@@ -34,6 +34,8 @@ class Header extends Component {
         this._clearSkills = this._clearSkills.bind(this);
         this._resetAll = this._resetAll.bind(this);
         this.updateClassIdx = this.updateClassIdx.bind(this);
+        this.updateSubclassClassIdx = this.updateSubclassClassIdx.bind(this);
+        this.buildSubclassViewToggle = this.buildSubclassViewToggle.bind(this);
     }
 
 
@@ -115,28 +117,71 @@ class Header extends Component {
         </div>
     }
 
-    buildClassDropdown() {
+    buildClassDropdown(subclassFlag=false) {
+        // Set variables
+        let label = "Class"
+        let invalidClasses = ["Default"]
+        let curValue = this.props.activeClassIdx
+        let updateFunc = this.updateClassIdx
+        let extraClasses = []
+        if (subclassFlag) {
+            label = "Subclass"
+            invalidClasses = ["Default", "Yggdroid", this.classOpts[this.props.activeClassIdx]]
+            curValue = this.props.activeSubclassIdx // TODO: CHANGE THIS
+            updateFunc = this.updateSubclassClassIdx
+            extraClasses = ["(None)"]
+        }
+
         const classOptions = []
+        extraClasses.forEach(function(className, idx) {
+            idx = -1 * (idx + 1)
+            classOptions.push(<option key={idx + className} value={idx}>{className}</option>)
+        });
         this.classOpts.forEach(function(className, idx) {
-            if (className === "Default") {
+            if (invalidClasses.includes(className)) {
                 return;
             }
             classOptions.push(<option key={idx + className} value={idx} >{className}</option>)
         })
         return <div>
-            <span className="HeaderLabel">Class:</span> <select
-                value={this.props.activeClassIdx}
+            <span className="HeaderLabel">{label}:</span> <select
+                value={curValue}
                 ref='classDropdownList'
                 id="classDropdown"
-                onChange={() => {this.updateClassIdx()}}>
+                onChange={(e) => {updateFunc(e.target.value)}}>
             {classOptions}
             </select></div>
     }
 
-    updateClassIdx() {
-        const newClassIdx = this.refs.classDropdownList.value;
+    buildSubclassViewToggle() {
+        return <div>
+            <div className='btn-group'>
+                <button type='button'
+                    class={'btn ' + (this.props.subclassToggle ? 'btn-inactive' : 'btn-active')}
+                    onClick={() => this.props.updateMethod('subclassToggle', false)}
+                    >
+                    Main</button>
+                <button type='button'
+                    disabled={!this.props.activeSubclassFlag}
+                    class={'btn ' + (this.props.subclassToggle ? 'btn-active' : 'btn-inactive') +
+                            (this.props.activeSubclassFlag ? '' : ' btn-disabled')}
+                    onClick={() => this.props.updateMethod('subclassToggle', true)}
+                    >
+                    Sub</button>
+            </div>
+        </div>
+    }
+
+    updateClassIdx(newClassIdx) {
+        // const newClassIdx = this.refs.classDropdownList.value;
         console.log('Updating to class', newClassIdx, this.classOpts[newClassIdx]);
-        this.props.updateMethod('activeClassIdx', newClassIdx);
+        this.props.updateMethod('activeClassIdx', parseInt(newClassIdx));
+    }
+
+    updateSubclassClassIdx(newClassIdx) {
+        // const newClassIdx = this.refs.classDropdownList.value;
+        console.log('Updating to subclass', newClassIdx, this.classOpts[newClassIdx]);
+        this.props.updateMethod('activeSubclassIdx', parseInt(newClassIdx));
     }
 
     _changeLevel() {
@@ -163,11 +208,13 @@ class Header extends Component {
     }
 
     render() {
-        const classDropdown = this.buildClassDropdown(this.classOpts);
+        const classDropdown = this.buildClassDropdown();
+        const subClassDropdown = this.buildClassDropdown(true);
         const skillPointsInfo = <div><span className="HeaderLabel">Skill Points:</span> {this.props.skillPointsRemaining}/{this.props.skillPointsTotal}</div>;
         const levelBox = this.buildLevelBox()
         const retirementBox = this.buildRetirementBox()
         const maxLevelBox = this.buildMaxLevelBox()
+        const subclassToggleDiv = this.buildSubclassViewToggle()
 
         const imgStyle = {
             float: 'left',
@@ -183,14 +230,20 @@ class Header extends Component {
                 </a>
             </div>
             <div className="HeaderControls">
-                {classDropdown}
-                {levelBox}
-                {maxLevelBox}
-                {retirementBox}
-                {skillPointsInfo}
-                <div>
-                    <span className="ButtonText" onClick={() => this._clearSkills()}>(CLEAR SKILLS)</span> <br/>
-                    <span className="ButtonText" onClick={() => this._copySkillsClipboard()}>(COPY BUILD)</span>
+                <div className='inline-block-div'>
+                    {classDropdown}
+                    {subClassDropdown}
+                    {subclassToggleDiv}
+                </div>
+                <div className='inline-block-div'>
+                    {levelBox}
+                    {maxLevelBox}
+                    {retirementBox}
+                    {skillPointsInfo}                        
+                </div>
+                <div center>
+                    <button className="btn btn-gray" onClick={() => this._clearSkills()}>Clear Skills</button> &nbsp;
+                    <button className="btn btn-gray" onClick={() => this._copySkillsClipboard()}>Copy Build</button>
                 </div>
             </div>
         </div>

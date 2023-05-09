@@ -181,9 +181,9 @@ export function isNumber(input) {
     return re.test(input) || !input;
 }
 
-export function calculateTotalSP(level, retirementIdx) {
+export function calculateTotalSP(level, retirementIdx, subClassFlag) {
     const retirementBonus = [0, 4, 5, 6, 7, 8, 10]
-    return level + 2 + retirementBonus[retirementIdx]
+    return level + 2 + retirementBonus[retirementIdx] + (subClassFlag ? 5 : 0)
   }
 
 export function listSubtract(listA, listB) {
@@ -405,17 +405,33 @@ export function fixSkillDependencyDelete(chosenSkills, activeClassIdx) {
     return chosenSkills
 }
 
+export function getClassSkillList(classIdx) {
+    const output = [];
+    skillData[classIdx].branches.forEach((branchSkills) => {
+        branchSkills.skill_data.forEach((skillDatum) => {
+            output.push(skillDatum._id)
+        })
+    })
+    return output;
+}
 
 export function exportSkillList(classState, remainingSP) {
     const chosenSkills = classState.skillsChosen
     const activeClassIdx = classState.activeClassIdx
+    const activeSubclassIdx = classState.activeSubclassIdx
 
     const skillTextList = []
     const classSkillInfo = deepCopy(skillData[activeClassIdx])
     classSkillInfo.branches.push(...skillData[skillData.length-1].branches)
+    if (classState.activeSubclassFlag) {
+        classSkillInfo.branches.push(...skillData[activeSubclassIdx].branches)
+    }
 
     // Get the Info on the class
     skillTextList.push("Class: " + classSkillInfo.class)
+    if (classState.activeSubclassFlag) {
+        skillTextList.push("Subclass: " + skillData[activeSubclassIdx].class)
+    }
     skillTextList.push("Level: " + classState.level)
     skillTextList.push("Retire Level: " + retirementLabels[classState.retirementIdx])
     skillTextList.push("SP Remaining: " + remainingSP + "/" + calculateTotalSP(classState.level, classState.retirementIdx))
