@@ -932,7 +932,7 @@
     "PluralSlash": {
     "name_jp": "多元抜刀",
     "name_en": "Tagen Battou",
-    "details": "Knife: A coordinated attack with clones randomly performs a cut attack at every enemy; the clone disappear after using this skill.  Damage is increased based on the number of clones consumed.  Only the damage from 1 clone is shown below.  For the complete damage table, see the table in the Help/About section.",
+    "details": "Knife: A coordinated attack with clones randomly performs a cut attack at every enemy; the clone disappear after using this skill.  Damage is increased based on the number of clones consumed.  Only the damage from 1 clone is shown below.",
     "requires": "Arms",
     "dep": { "DaggerMastery": 10, "FleshBullet": 3 },
     "active": true,
