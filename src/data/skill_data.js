@@ -7831,16 +7831,9 @@
               }
             ],
             "growth_order": [
-              "Use on DMG skill",
               "Restore rate"
             ],
             "growth": {
-              "Use on DMG skill": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "Restore rate": [
                 {
                   "levelspan": 1,
@@ -8706,8 +8699,7 @@
               "Chase chance red.",
               "Maximum chases",
               "Acc. (mod)",
-              "Damage %",
-              "Use weap DMG type"
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -8860,12 +8852,6 @@
                 {
                   "levelspan": 1,
                   "value": "170"
-                }
-              ],
-              "Use weap DMG type": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ]
             }
@@ -8940,8 +8926,7 @@
               "Chase chance red.",
               "Maximum chases",
               "Acc. (mod)",
-              "Damage %",
-              "Use weap DMG type"
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -9094,12 +9079,6 @@
                 {
                   "levelspan": 1,
                   "value": "170"
-                }
-              ],
-              "Use weap DMG type": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ]
             }
@@ -9174,8 +9153,7 @@
               "Chase chance red.",
               "Maximum chases",
               "Acc. (mod)",
-              "Damage %",
-              "Use weap DMG type"
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -9328,12 +9306,6 @@
                 {
                   "levelspan": 1,
                   "value": "170"
-                }
-              ],
-              "Use weap DMG type": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ]
             }
@@ -9826,8 +9798,7 @@
               "Chase chance red.",
               "Maximum chases",
               "Acc. (mod)",
-              "Damage %",
-              "Use weap DMG type"
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -9980,12 +9951,6 @@
                 {
                   "levelspan": 1,
                   "value": "170"
-                }
-              ],
-              "Use weap DMG type": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ]
             }
@@ -10060,8 +10025,7 @@
               "Chase chance red.",
               "Maximum chases",
               "Acc. (mod)",
-              "Damage %",
-              "Use weap DMG type"
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -10214,12 +10178,6 @@
                 {
                   "levelspan": 1,
                   "value": "170"
-                }
-              ],
-              "Use weap DMG type": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ]
             }
@@ -10294,8 +10252,7 @@
               "Chase chance red.",
               "Maximum chases",
               "Acc. (mod)",
-              "Damage %",
-              "Use weap DMG type"
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -10448,12 +10405,6 @@
                 {
                   "levelspan": 1,
                   "value": "170"
-                }
-              ],
-              "Use weap DMG type": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ]
             }
@@ -24579,7 +24530,6 @@
               "Link after turns",
               "Acc. (mod)",
               "Damage %",
-              "Use weap DMG type",
               "unknown169"
             ],
             "growth": {
@@ -24699,12 +24649,6 @@
                 {
                   "levelspan": 1,
                   "value": "240"
-                }
-              ],
-              "Use weap DMG type": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ],
               "unknown169": [
@@ -24785,7 +24729,6 @@
               "Link after turns",
               "Acc. (mod)",
               "Damage %",
-              "Use weap DMG type",
               "unknown169"
             ],
             "growth": {
@@ -24905,12 +24848,6 @@
                 {
                   "levelspan": 1,
                   "value": "240"
-                }
-              ],
-              "Use weap DMG type": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ],
               "unknown169": [
@@ -29052,8 +28989,7 @@
             "growth_order": [
               "Activation chance",
               "HP threshold",
-              "Uncounterable",
-              "Use weap DMG type"
+              "Uncounterable"
             ],
             "growth": {
               "Activation chance": [
@@ -29101,12 +29037,6 @@
                 }
               ],
               "Uncounterable": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
-                }
-              ],
-              "Use weap DMG type": [
                 {
                   "levelspan": 5,
                   "value": "0"
@@ -30942,7 +30872,6 @@
               "Speed",
               "Acc. (mod)",
               "Damage %",
-              "Use weap DMG type",
               "Uncounterable"
             ],
             "growth": {
@@ -31074,12 +31003,6 @@
                   "value": "130"
                 }
               ],
-              "Use weap DMG type": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "Uncounterable": [
                 {
                   "levelspan": 10,
@@ -31161,7 +31084,6 @@
               "Speed",
               "Bonus DMG taken",
               "Damage %",
-              "Use weap DMG type",
               "Acc. (mod)"
             ],
             "growth": {
@@ -31297,12 +31219,6 @@
                   "value": "165"
                 }
               ],
-              "Use weap DMG type": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "Acc. (mod)": [
                 {
                   "levelspan": 2,
@@ -31397,8 +31313,7 @@
               "Link on use",
               "Acc. (mod)",
               "Damage %",
-              "Uncounterable",
-              "Use weap DMG type"
+              "Uncounterable"
             ],
             "growth": {
               "TP cost": [
@@ -31536,12 +31451,6 @@
                   "levelspan": 10,
                   "value": "0"
                 }
-              ],
-              "Use weap DMG type": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
               ]
             }
           },
@@ -31615,8 +31524,7 @@
               "Link on use",
               "Acc. (mod)",
               "Damage %",
-              "Uncounterable",
-              "Use weap DMG type"
+              "Uncounterable"
             ],
             "growth": {
               "TP cost": [
@@ -31758,12 +31666,6 @@
                 }
               ],
               "Uncounterable": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
-              "Use weap DMG type": [
                 {
                   "levelspan": 10,
                   "value": "0"
@@ -33661,8 +33563,7 @@
               "Skill accuracy",
               "Speed",
               "Damage %",
-              "Check for bot",
-              "Use weap DMG type"
+              "Check for bot"
             ],
             "growth": {
               "TP cost": [
@@ -33762,12 +33663,6 @@
                 }
               ],
               "Check for bot": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
-              "Use weap DMG type": [
                 {
                   "levelspan": 10,
                   "value": "0"
