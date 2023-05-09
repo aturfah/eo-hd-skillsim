@@ -1302,9 +1302,15 @@ const treeData = [
             numBefore: 2,
         },
     ],
-    [],
-    [],
-    [],
+    [ // Farmer
+
+    ],
+    [ // Shogun
+
+    ],
+    [ // Yggdroid
+
+    ],
     [ // Everyone Skills
         {
             skillID: 'hp_up',
