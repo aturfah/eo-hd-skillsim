@@ -11658,8 +11658,7 @@
             ],
             "growth_order": [
               "Acc. (mod)",
-              "Damage %",
-              "Uncounterable"
+              "Damage %"
             ],
             "growth": {
               "Acc. (mod)": [
@@ -11744,12 +11743,6 @@
                 {
                   "levelspan": 1,
                   "value": "500"
-                }
-              ],
-              "Uncounterable": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ]
             }
@@ -13121,7 +13114,6 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Uncounterable",
               "Damage %",
               "Ailment chance (%)",
               "Poison damage"
@@ -13150,12 +13142,6 @@
                 }
               ],
               "Speed": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
-              "Uncounterable": [
                 {
                   "levelspan": 10,
                   "value": "0"
@@ -15244,7 +15230,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Target mod"
+              "Target"
             ],
             "growth": {
               "TP cost": [
@@ -15302,11 +15288,11 @@
                 },
                 {
                   "levelspan": 3,
-                  "value": "16"
+                  "value": "Row"
                 },
                 {
                   "levelspan": 4,
-                  "value": "2"
+                  "value": "All"
                 }
               ]
             }
@@ -15378,7 +15364,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Target mod"
+              "Target"
             ],
             "growth": {
               "TP cost": [
@@ -15436,11 +15422,11 @@
                 },
                 {
                   "levelspan": 3,
-                  "value": "16"
+                  "value": "Row"
                 },
                 {
                   "levelspan": 4,
-                  "value": "2"
+                  "value": "All"
                 }
               ]
             }
@@ -16090,8 +16076,7 @@
               "TP cost",
               "Speed",
               "Acc. (mod)",
-              "Damage %",
-              "Uncounterable"
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -16184,12 +16169,6 @@
                 {
                   "levelspan": 1,
                   "value": "380"
-                }
-              ],
-              "Uncounterable": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ]
             }
@@ -16262,8 +16241,7 @@
               "TP cost",
               "Speed",
               "Acc. (mod)",
-              "Damage %",
-              "Uncounterable"
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -16356,12 +16334,6 @@
                 {
                   "levelspan": 1,
                   "value": "380"
-                }
-              ],
-              "Uncounterable": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ]
             }
@@ -17741,8 +17713,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Damage %",
-              "Uncounterable"
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -17793,12 +17764,6 @@
                 {
                   "levelspan": 1,
                   "value": "105"
-                }
-              ],
-              "Uncounterable": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
                 }
               ]
             }
@@ -18232,8 +18197,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Damage %",
-              "Uncounterable"
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -18284,12 +18248,6 @@
                 {
                   "levelspan": 1,
                   "value": "105"
-                }
-              ],
-              "Uncounterable": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
                 }
               ]
             }
@@ -18723,8 +18681,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Damage %",
-              "Uncounterable"
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -18775,12 +18732,6 @@
                 {
                   "levelspan": 1,
                   "value": "105"
-                }
-              ],
-              "Uncounterable": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
                 }
               ]
             }
@@ -22840,8 +22791,7 @@
               "Beast Stat Multiplier",
               "Ailment chance (%)",
               "Acc. (mod)",
-              "Damage %",
-              "Uncounterable"
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -23036,12 +22986,6 @@
                 {
                   "levelspan": 1,
                   "value": "200"
-                }
-              ],
-              "Uncounterable": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ]
             }
@@ -28967,8 +28911,7 @@
             ],
             "growth_order": [
               "Activation chance",
-              "HP threshold",
-              "Uncounterable"
+              "HP threshold"
             ],
             "growth": {
               "Activation chance": [
@@ -29013,12 +28956,6 @@
                 {
                   "levelspan": 1,
                   "value": "15"
-                }
-              ],
-              "Uncounterable": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
                 }
               ]
             }
@@ -30850,8 +30787,7 @@
               "TP cost",
               "Speed",
               "Acc. (mod)",
-              "Damage %",
-              "Uncounterable"
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -30980,12 +30916,6 @@
                 {
                   "levelspan": 1,
                   "value": "130"
-                }
-              ],
-              "Uncounterable": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ]
             }
@@ -31291,8 +31221,7 @@
               "Speed",
               "Link on use",
               "Acc. (mod)",
-              "Damage %",
-              "Uncounterable"
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -31424,12 +31353,6 @@
                   "levelspan": 1,
                   "value": "140"
                 }
-              ],
-              "Uncounterable": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
               ]
             }
           },
@@ -31502,8 +31425,7 @@
               "Speed",
               "Link on use",
               "Acc. (mod)",
-              "Damage %",
-              "Uncounterable"
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -31642,12 +31564,6 @@
                 {
                   "levelspan": 1,
                   "value": "140"
-                }
-              ],
-              "Uncounterable": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ]
             }
@@ -32467,7 +32383,6 @@
               "Link when hit %",
               "Acc. (mod)",
               "Damage %",
-              "Uncounterable",
               "Ailment chance (%)"
             ],
             "growth": {
@@ -32595,12 +32510,6 @@
                 {
                   "levelspan": 1,
                   "value": "70"
-                }
-              ],
-              "Uncounterable": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ],
               "Ailment chance (%)": [
@@ -33702,7 +33611,6 @@
               "Speed",
               "DMG type from bot",
               "Damage %",
-              "Uncounterable",
               "Elem from attack"
             ],
             "growth": {
@@ -33760,12 +33668,6 @@
                 {
                   "levelspan": 1,
                   "value": "270"
-                }
-              ],
-              "Uncounterable": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
                 }
               ],
               "Elem from attack": [

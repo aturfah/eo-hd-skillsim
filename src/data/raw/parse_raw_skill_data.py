@@ -67,9 +67,13 @@ def generate_skill_output(skill_datum:dict, linked_skill_id:str=None, linked_ski
             continue
         elif attribute == "Uncounterable":
             skill_output["description"] = "{} Uncounterable.".format(skill_output["description"])
+            continue
 
         if attribute in skill_output["growth_order"]:
             continue
+
+        if attribute == "Target mod":
+            attribute = "Target"
 
         skill_output["growth_order"].append(attribute)
         idx = 0
@@ -83,15 +87,12 @@ def generate_skill_output(skill_datum:dict, linked_skill_id:str=None, linked_ski
                         break
 
             ## Refresh/Unbind
-            if attribute == "Target mod":
+            if attribute == "Target":
                 if attrib_info["levels"][idx] == "1":
-                    attribute = "Target"
                     attrib_info["levels"][idx] = "Single"
                 elif attrib_info["levels"][idx] == "16":
-                    attribute = "Target"
                     attrib_info["levels"][idx] = "Row"
                 elif attrib_info["levels"][idx] == "2":
-                    attribute = "Target"
                     attrib_info["levels"][idx] = "All"
                 else:
                     raise RuntimeError("INVALID Target mod: {}".format(attrib_info["levels"][idx]))
@@ -155,7 +156,7 @@ if __name__ == "__main__":
            if subheader not in ["0", "77", "59", "52", "136", "135", "113", "128", "107", "106", "158", "110",
                                 "111", "71", "134", "126", "127", "150", "241", "242", "161", "228", "281",
                                 "282", "215", "216", "73", "151", "256", "205", "206", "244", "245", "83", "84",
-                                "274", "18", "279", "27", "160", "130", "235"]:
+                                "274", "18", "279", "27", "160", "130", "235", "240"]:
                 """
                 0 - Empty
                 77 - Skill Link (ID)
@@ -192,6 +193,7 @@ if __name__ == "__main__":
                 160 - Flee to pole
                 130 - Link on line hit
                 235 - Use on evade
+                240 - Use on skill use
                 """
                 try:
                     skill_data_levels.append({
