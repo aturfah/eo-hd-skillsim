@@ -23105,8 +23105,6 @@
               "Beast Base HP",
               "Beast Stat Multiplier",
               "Ailment chance (%)",
-              "TP cost",
-              "Speed",
               "Acc. (mod)",
               "Damage %",
               "Uncounterable"
@@ -23132,20 +23130,12 @@
                 {
                   "levelspan": 2,
                   "value": "36"
-                },
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ],
               "Speed": [
                 {
                   "levelspan": 10,
                   "value": "-3"
-                },
-                {
-                  "levelspan": 10,
-                  "value": "10"
                 }
               ],
               "Beast Base HP": [
@@ -33048,7 +33038,6 @@
               "Speed",
               "Bot skill ID",
               "Bot HP and TP",
-              "Speed",
               "Chase chance red.",
               "Maximum chases"
             ],
@@ -33099,10 +33088,6 @@
                 {
                   "levelspan": 10,
                   "value": "6"
-                },
-                {
-                  "levelspan": 10,
-                  "value": "19060"
                 }
               ],
               "Bot skill ID": [
@@ -33272,7 +33257,6 @@
               "Speed",
               "Bot skill ID",
               "Bot HP and TP",
-              "Speed",
               "Chase chance red.",
               "Maximum chases"
             ],
@@ -33323,10 +33307,6 @@
                 {
                   "levelspan": 10,
                   "value": "6"
-                },
-                {
-                  "levelspan": 10,
-                  "value": "19060"
                 }
               ],
               "Bot skill ID": [
@@ -33496,7 +33476,6 @@
               "Speed",
               "Bot skill ID",
               "Bot HP and TP",
-              "Speed",
               "Chase chance red.",
               "Maximum chases"
             ],
@@ -33547,10 +33526,6 @@
                 {
                   "levelspan": 10,
                   "value": "6"
-                },
-                {
-                  "levelspan": 10,
-                  "value": "19060"
                 }
               ],
               "Bot skill ID": [
@@ -34214,7 +34189,6 @@
               "Bot damage mult",
               "Kill bots after use",
               "Skill accuracy",
-              "Damage %",
               "Bot chase elem."
             ],
             "growth": {
@@ -34328,46 +34302,6 @@
                 {
                   "levelspan": 1,
                   "value": "165"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "80"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "90"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "100"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "110"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "120"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "130"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "140"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "150"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "160"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "170"
                 }
               ],
               "DMG type from bot": [
