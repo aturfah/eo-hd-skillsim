@@ -938,6 +938,33 @@ const treeData = [
             coords: {x: 2, y: 2},
             numBefore: 2,
         },
+        {
+            skillID: 'volt_mastery',
+            coords: {x: 0, y: 4},
+            baseSkill: false,
+            numAfter: 2
+        },
+        {
+            skillID: 'volt_star',
+            coords: {x: 1, y: 4},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'binary_thunder',
+            coords: {x: 1, y: 5},
+            numBefore: 1,
+            preReqLevels: [5],
+            numAfter: 1,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'volt_prophecy',
+            coords: {x: 2, y: 4},
+            numBefore: 2,
+        },
     ],
     [ // Wildling
         {
