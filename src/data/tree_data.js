@@ -483,7 +483,45 @@ const treeData = [
             postReqLevels: [3]
         },
     ],
-    [],
+    [// Buccaneer
+        {
+            skillID: 'trickster',
+            baseSkill: false,
+            coords: {x: 2, y: 0}
+        },
+        {
+            skillID: 'troublemaker',
+            baseSkill: false,
+            coords: {x: 2, y: 1}
+        },
+        {
+            skillID: 'eagle_eye',
+            baseSkill: true,
+            coords: {x: 0, y: 0},
+            barSize: 1
+        },
+        {
+            skillID: undefined,
+            baseSkill: false,
+            coords: {x: 0, y: 1},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 1
+        },
+        {
+            skillID: 'lady_luck',
+            baseSkill: true,
+            coords: {x: 1, y: 0},
+            barSize: 1
+        },
+        {
+            skillID: 'limit_boost',
+            baseSkill: false,
+            coords: {x: 1, y: 1},
+            numBefore: 1,
+            preReqLevels: [3],
+        },
+    ],
     [],
     [],
     [],
