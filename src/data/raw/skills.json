@@ -1750,7 +1750,7 @@
     "HighSpeedAPBullet": {
     "name_jp": "高速徹甲弾",
     "name_en": "Armor Piercer",
-    "details": "Bolt: A thrust attack at one enemy with an armor piercing bullet; ignores the enhancements of the enemy.",
+    "details": "Bolt: A thrust attack at one enemy ignoring DEF buffs.",
     "requires": "Arms",
     "dep": { "CrossbowMastery": 7 },
     "active": true,
