@@ -154,8 +154,6 @@ class Header extends Component {
     }
 
     buildSubclassViewToggle() {
-        console.log('-> ', this.props.subclassToggle)
-        console.log(this.props.activeSubclassFlag)
         return <div>
             <div className='btn-group'>
                 <button type='button'
