@@ -102,22 +102,28 @@ class App extends Component {
     if (key === 'skillsChosen') {
       const skillId = value._id;
       const skillLevel = value.level;
+      const mainClassSkillFlag = getClassSkillList(oldState.activeClassIdx).includes(skillId);
+      let validationClassIdx = oldState.activeClassIdx;
+      if (!mainClassSkillFlag) {
+        validationClassIdx = oldState.activeSubclassIdx;
+      }
+
       if (Object.keys(value).length === 0) {
         console.log('Resetting Skills')
         oldState.skillsChosen = {};
       } else if (skillLevel === 0) {
         console.log('Removing', skillId)
         delete oldState.skillsChosen[skillId];
-        oldState.skillsChosen = fixSkillDependencyDelete(oldState.skillsChosen, oldState.activeClassIdx);
+        oldState.skillsChosen = fixSkillDependencyDelete(oldState.skillsChosen, validationClassIdx);
       } else if (!Object.keys(oldState.skillsChosen).includes(skillId) ||
           oldState.skillsChosen[skillId] < skillLevel) {
         console.log('Increasing level of', skillId, 'to', skillLevel)
         oldState.skillsChosen[skillId] = skillLevel;
-        oldState.skillsChosen = fixSkillDependencyAdd(oldState.skillsChosen, oldState.activeClassIdx);
+        oldState.skillsChosen = fixSkillDependencyAdd(oldState.skillsChosen, validationClassIdx);
       } else if (oldState.skillsChosen[skillId] > skillLevel) {
         console.log('Decreasing level of', skillId, 'to', skillLevel);
         oldState.skillsChosen[skillId] = skillLevel;
-        oldState.skillsChosen = fixSkillDependencyDelete(oldState.skillsChosen, oldState.activeClassIdx);
+        oldState.skillsChosen = fixSkillDependencyDelete(oldState.skillsChosen, validationClassIdx);
       }
     } else {
       console.log('Setting', key, 'to', value)
