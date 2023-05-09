@@ -682,9 +682,9 @@ const treeData = [
             skillID: 'bunshin',
             coords: {x: 0, y: 7},
             numBefore: 1,
-            preReqLevels: [1],
+            preReqLevels: [3],
             numAfter: 1,
-            postReqLevels: [3]
+            postReqLevels: [1]
         },
         {
             skillID: 'nikudan',
@@ -692,6 +692,60 @@ const treeData = [
             numBefore: 2,
             numAfter: 1,
             postReqLevels: [3]
+        },
+        {
+            skillID: 'fukubari',
+            coords: {x: 0, y: 8},
+            baseSkill: true,
+            barSize: 2
+        },
+        {
+            skillID: 'suikyou',
+            coords: {x: 0, y: 9},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'makibishi',
+            coords: {x: 0, y: 10},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 1,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'kubikiri',
+            coords: {x: 1, y: 9},
+            numBefore: 2,
+        },
+        {
+            skillID: 'senpuku',
+            coords: {x: 0, y: 11},
+            baseSkill: true,
+            barSize: 2
+        },
+        {
+            skillID: 'sarutobi',
+            coords: {x: 0, y: 12},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'kumogakure',
+            coords: {x: 0, y: 13},
+            numBefore: 1,
+            preReqLevels: [5],
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'karuwaza',
+            coords: {x: 1, y: 12},
+            numBefore: 2,
         },
     ],
     [],
