@@ -11425,16 +11425,9 @@
               }
             ],
             "growth_order": [
-              "Use on evade",
               "Restore rate"
             ],
             "growth": {
-              "Use on evade": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "Restore rate": [
                 {
                   "levelspan": 1,
@@ -12437,7 +12430,7 @@
             "no_level": false,
             "_id": "tagen_battou",
             "name": "Tagen Battou",
-            "description": "Knife: A coordinated attack with clones randomly performs a cut attack at every enemy; the clone disappear after using this skill.  Damage is increased based on the number of clones consumed.  Only the damage from 1 clone is shown below.  For the complete damage table, see the table in the Help/About section.",
+            "description": "Knife: A coordinated attack with clones randomly performs a cut attack at every enemy; the clone disappear after using this skill.  Damage is increased based on the number of clones consumed.  Only the damage from 1 clone is shown below.",
             "max_level": 10,
             "uses": "Arms",
             "prerequisites": [
@@ -13128,7 +13121,6 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Link on line hit",
               "Uncounterable",
               "Damage %",
               "Ailment chance (%)",
@@ -13158,12 +13150,6 @@
                 }
               ],
               "Speed": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
-              "Link on line hit": [
                 {
                   "levelspan": 10,
                   "value": "0"
@@ -13900,8 +13886,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Flee chance",
-              "Flee to pole"
+              "Flee chance"
             ],
             "growth": {
               "TP cost": [
@@ -13952,12 +13937,6 @@
                 {
                   "levelspan": 1,
                   "value": "80"
-                }
-              ],
-              "Flee to pole": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
                 }
               ]
             }
