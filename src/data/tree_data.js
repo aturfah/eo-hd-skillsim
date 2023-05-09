@@ -1170,7 +1170,138 @@ const treeData = [
         },
         
     ],
-    [],
+    [// Arbalist
+        {
+            skillID: 'giant_kill',
+            baseSkill: true,
+            coords: {x: 1, y: 0}
+        },
+        {
+            skillID: 'ambush',
+            baseSkill: true,
+            coords: {x: 2, y: 0}
+        },
+        {
+            skillID: 'bolt_mastery',
+            baseSkill: true,
+            coords: {x: 0, y: 0},
+            barSize: 9
+        },
+        {
+            skillID: 'heavy_shot',
+            baseSkill: false,
+            coords: {x: 0, y: 1},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'front_mortar',
+            baseSkill: false,
+            coords: {x: 1, y: 1},
+            numBefore: 1,
+            numAfter: 1,
+            postReqLevels: [4]
+        },
+        {
+            skillID: 'snipe',
+            baseSkill: false,
+            coords: {x: 0, y: 2},
+            numBefore: 1,
+            preReqLevels: [2]
+        },
+        {
+            skillID: 'sharpshooter',
+            baseSkill: false,
+            coords: {x: 0, y: 3},
+            numBefore: 1,
+            preReqLevels: [2]
+        },
+        {
+            skillID: 'strafe',
+            baseSkill: false,
+            coords: {x: 0, y: 4},
+            numBefore: 1,
+            preReqLevels: [3]
+        },
+        {
+            skillID: 'fire_barrage',
+            baseSkill: false,
+            coords: {x: 0, y: 5},
+            numBefore: 1,
+            preReqLevels: [5]
+        },
+        {
+            skillID: 'ice_barrage',
+            baseSkill: false,
+            coords: {x: 0, y: 6},
+            numBefore: 1,
+            preReqLevels: [5]
+        },
+        {
+            skillID: 'volt_barrage',
+            baseSkill: false,
+            coords: {x: 0, y: 7},
+            numBefore: 1,
+            preReqLevels: [5]
+        },
+        {
+            skillID: 'armor_piercer',
+            baseSkill: false,
+            coords: {x: 0, y: 8},
+            numBefore: 1,
+            preReqLevels: [7],
+            numAfter: 1,
+            postReqLevels: [4],
+            afterSkip: 1
+        },
+        {
+            skillID: 'cloudbuster',
+            baseSkill: false,
+            coords: {x: 0, y: 9},
+            numBefore: 1,
+            preReqLevels: [10]
+        },
+        {
+            skillID: 'double_action',
+            baseSkill: false,
+            coords: {x: 2, y: 4.5},
+            numBefore: 8,
+            beforeStyle: 'centered'
+        },
+        {
+            skillID: 'proper_form',
+            coords: {x: 0, y: 10},
+            baseSkill: true,
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'extend',
+            coords: {x: 1, y: 10},
+            numBefore: 1,
+        },
+        {
+            skillID: 'pop_flares',
+            coords: {x: 0, y: 11},
+            baseSkill: true,
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'smoke_grenade',
+            baseSkill: true,
+            coords: {x: 0, y: 12},
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'night_vision',
+            coords: {x: 1, y: 11},
+            numBefore: 2,
+        },
+    ],
     [],
     [],
     [],
