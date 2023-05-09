@@ -418,15 +418,20 @@ export function getClassSkillList(classIdx) {
 export function exportSkillList(classState, remainingSP) {
     const chosenSkills = classState.skillsChosen
     const activeClassIdx = classState.activeClassIdx
+    const activeSubclassIdx = classState.activeSubclassIdx
 
     const skillTextList = []
     const classSkillInfo = deepCopy(skillData[activeClassIdx])
     classSkillInfo.branches.push(...skillData[skillData.length-1].branches)
-
-    // TODO: Get subclasses
+    if (classState.activeSubclassFlag) {
+        classSkillInfo.branches.push(...skillData[activeSubclassIdx].branches)
+    }
 
     // Get the Info on the class
     skillTextList.push("Class: " + classSkillInfo.class)
+    if (classState.activeSubclassFlag) {
+        skillTextList.push("Subclass: " + skillData[activeSubclassIdx].class)
+    }
     skillTextList.push("Level: " + classState.level)
     skillTextList.push("Retire Level: " + retirementLabels[classState.retirementIdx])
     skillTextList.push("SP Remaining: " + remainingSP + "/" + calculateTotalSP(classState.level, classState.retirementIdx))
