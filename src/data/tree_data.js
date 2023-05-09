@@ -1437,7 +1437,71 @@ const treeData = [
 
     ],
     [ // Yggdroid
-
+        {
+            skillID: 'sleep_mode',
+            coords: {x: 1, y: 0},
+            baseSkill: false,
+        },
+        {
+            skillID: 'infravision',
+            coords: {x: 2, y: 0},
+            baseSkill: false,
+        },
+        {
+            skillID: 'virus_scanner',
+            coords: {x: 1, y: 1},
+            baseSkill: false,
+        },
+        {
+            skillID: 'data_mining',
+            coords: {x: 0, y: 0},
+            baseSkill: true,
+            barSize: 5
+        },
+        {
+            skillID: 'red_bot',
+            coords: {x: 0, y: 1},
+            numBefore: 1,
+            preReqLevels: [1]
+        },
+        {
+            skillID: 'blue_bot',
+            coords: {x: 0, y: 2},
+            numBefore: 1,
+            preReqLevels: [1]
+        },
+        {
+            skillID: 'yellow_bot',
+            coords: {x: 0, y: 3},
+            numBefore: 1,
+            preReqLevels: [1]
+        },
+        {
+            skillID: 'all_out',
+            coords: {x: 0, y: 4},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 2,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'resupply',
+            coords: {x: 0, y: 5},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'reflector',
+            coords: {x: 1, y: 4},
+            numBefore: 1,
+        },
+        {
+            skillID: 'shoot',
+            coords: {x: 1, y: 5},
+            numBefore: 1,
+        },
     ],
     [ // Everyone Skills
         {
