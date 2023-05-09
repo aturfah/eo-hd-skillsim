@@ -817,6 +817,71 @@ const treeData = [
             numBefore: 3,
             beforeStyle: 'centered'
         },
+        {
+            skillID: 'healing',
+            coords: {x: 0, y: 6},
+            baseSkill: true,
+            barSize: 4
+        },
+        {
+            skillID: 'refresh',
+            coords: {x: 0, y: 7},
+            numBefore: 1,
+            preReqLevels: [2],
+            numAfter: 1,
+            postReqLevels: [2]
+        },
+        {
+            skillID: 'unbind',
+            coords: {x: 0, y: 8},
+            numBefore: 1,
+            preReqLevels: [2],
+            numAfter: 1,
+            postReqLevels: [2]
+        },
+        {
+            skillID: 'resurrect',
+            coords: {x: 1, y: 7},
+            numBefore: 2
+        },
+        {
+            skillID: 'line_heal',
+            coords: {x: 0, y: 9},
+            numBefore: 1,
+            preReqLevels: [4],
+            numAfter: 1,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'party_heal',
+            coords: {x: 1, y: 9},
+            numBefore: 1,
+        },
+        {
+            skillID: 'full_heal',
+            coords: {x: 0, y: 10},
+            numBefore: 1,
+            preReqLevels: [5],
+        },
+        {
+            skillID: 'ascetic_reward',
+            coords: {x: 0, y: 11},
+            baseSkill: true,
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'blood_return',
+            baseSkill: true,
+            coords: {x: 0, y: 12},
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'ascetic_deeds',
+            coords: {x: 1, y: 11},
+            numBefore: 2,
+        },
     ],
     [],
     [ // Wildling
