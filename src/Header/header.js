@@ -159,13 +159,13 @@ class Header extends Component {
         return <div>
             <div className='btn-group'>
                 <button type='button'
-                    class={'btn ' + (this.props.subclassToggle ? 'btn-secondary' : 'btn-success')}
+                    class={'btn ' + (this.props.subclassToggle ? 'btn-inactive' : 'btn-active')}
                     onClick={() => this.props.updateMethod('subclassToggle', false)}
                     >
                     Main</button>
                 <button type='button'
                     disabled={!this.props.activeSubclassFlag}
-                    class={'btn ' + (this.props.subclassToggle ? 'btn-success' : 'btn-secondary')}
+                    class={'btn ' + (this.props.subclassToggle ? 'btn-active' : 'btn-inactive')}
                     onClick={() => this.props.updateMethod('subclassToggle', true)}
                     >
                     Sub</button>
@@ -231,20 +231,20 @@ class Header extends Component {
                 </a>
             </div>
             <div className="HeaderControls">
-                <div className='classDropdownDiv'>
+                <div className='inline-block-div'>
                     {classDropdown}
                     {subClassDropdown}
                     {subclassToggleDiv}
                 </div>
-                <div className='classDropdownDiv'>
+                <div className='inline-block-div'>
                     {levelBox}
                     {maxLevelBox}
                     {retirementBox}
                     {skillPointsInfo}                        
                 </div>
-                <div>
-                    <span className="ButtonText" onClick={() => this._clearSkills()}>(CLEAR SKILLS)</span> <br/>
-                    <span className="ButtonText" onClick={() => this._copySkillsClipboard()}>(COPY BUILD)</span>
+                <div center>
+                    <button className="btn" onClick={() => this._clearSkills()}>Clear Skills</button> &nbsp;
+                    <button className="btn" onClick={() => this._copySkillsClipboard()}>Copy Build</button>
                 </div>
             </div>
         </div>
