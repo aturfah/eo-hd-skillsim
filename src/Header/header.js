@@ -34,6 +34,7 @@ class Header extends Component {
         this._clearSkills = this._clearSkills.bind(this);
         this._resetAll = this._resetAll.bind(this);
         this.updateClassIdx = this.updateClassIdx.bind(this);
+        this.updateSubclassClassIdx = this.updateSubclassClassIdx.bind(this);
     }
 
 
@@ -115,28 +116,46 @@ class Header extends Component {
         </div>
     }
 
-    buildClassDropdown() {
+    buildClassDropdown(subclassFlag=false) {
         const classOptions = []
+        
+        let label = "Class"
+        let invalidClasses = ["Default"]
+        let curValue = this.props.activeClassIdx
+        let updateFunc = this.updateClassIdx
+        if (subclassFlag) {
+            label = "Subclass"
+            invalidClasses = ["Default", "Yggdroid", this.classOpts[this.props.activeClassIdx]]
+            curValue = 1 // TODO: CHANGE THIS
+            updateFunc = this.updateSubclassClassIdx
+        }
+
         this.classOpts.forEach(function(className, idx) {
-            if (className === "Default") {
+            if (invalidClasses.includes(className)) {
                 return;
             }
             classOptions.push(<option key={idx + className} value={idx} >{className}</option>)
         })
         return <div>
-            <span className="HeaderLabel">Class:</span> <select
-                value={this.props.activeClassIdx}
+            <span className="HeaderLabel">{label}:</span> <select
+                value={curValue}
                 ref='classDropdownList'
                 id="classDropdown"
-                onChange={() => {this.updateClassIdx()}}>
+                onChange={(e) => {updateFunc(e.target.value)}}>
             {classOptions}
             </select></div>
     }
 
-    updateClassIdx() {
-        const newClassIdx = this.refs.classDropdownList.value;
+    updateClassIdx(newClassIdx) {
+        // const newClassIdx = this.refs.classDropdownList.value;
         console.log('Updating to class', newClassIdx, this.classOpts[newClassIdx]);
         this.props.updateMethod('activeClassIdx', newClassIdx);
+    }
+
+    updateSubclassClassIdx(newClassIdx) {
+        // const newClassIdx = this.refs.classDropdownList.value;
+        console.log('Updating to subclass', newClassIdx, this.classOpts[newClassIdx]);
+        this.props.updateMethod('activeSubclassClassIdx', newClassIdx);
     }
 
     _changeLevel() {
@@ -163,7 +182,8 @@ class Header extends Component {
     }
 
     render() {
-        const classDropdown = this.buildClassDropdown(this.classOpts);
+        const classDropdown = this.buildClassDropdown();
+        const subClassDropdown = this.buildClassDropdown(true);
         const skillPointsInfo = <div><span className="HeaderLabel">Skill Points:</span> {this.props.skillPointsRemaining}/{this.props.skillPointsTotal}</div>;
         const levelBox = this.buildLevelBox()
         const retirementBox = this.buildRetirementBox()
@@ -184,6 +204,7 @@ class Header extends Component {
             </div>
             <div className="HeaderControls">
                 {classDropdown}
+                {subClassDropdown}
                 {levelBox}
                 {maxLevelBox}
                 {retirementBox}
