@@ -2931,16 +2931,9 @@
               }
             ],
             "growth_order": [
-              "Use on ally death",
               "Restore rate"
             ],
             "growth": {
-              "Use on ally death": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "Restore rate": [
                 {
                   "levelspan": 1,
@@ -14438,16 +14431,9 @@
               }
             ],
             "growth_order": [
-              "Use on ally death 2",
               "Restore rate"
             ],
             "growth": {
-              "Use on ally death 2": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "Restore rate": [
                 {
                   "levelspan": 1,
