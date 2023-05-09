@@ -17243,16 +17243,9 @@
               }
             ],
             "growth_order": [
-              "TP on kill",
               "Restore rate"
             ],
             "growth": {
-              "TP on kill": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
-                }
-              ],
               "Restore rate": [
                 {
                   "levelspan": 1,
@@ -23805,16 +23798,9 @@
               }
             ],
             "growth_order": [
-              "HP on kill",
               "Restore rate"
             ],
             "growth": {
-              "HP on kill": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "Restore rate": [
                 {
                   "levelspan": 1,
@@ -28692,53 +28678,8 @@
                 "width": "8%"
               }
             ],
-            "growth_order": [
-              "ATK on kill"
-            ],
-            "growth": {
-              "ATK on kill": [
-                {
-                  "levelspan": 1,
-                  "value": "10"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "13"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "16"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "19"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "22"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "25"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "28"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "31"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "35"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "40"
-                }
-              ]
-            }
+            "growth_order": [],
+            "growth": {}
           },
           {
             "force_boost": false,
