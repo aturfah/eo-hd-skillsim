@@ -135,7 +135,7 @@ if __name__ == "__main__":
            values_range = [x for x in range((header_idx+1), (header_idx+11))]
            
            subheader = skill_datum[header_idx]
-           if subheader not in ["0", "77", "59", "52", "136", "135", "113", "128", "107", "106", "158", "110", "111", "71", "134", "126", "127", "150", "241", "242", "161", "228", "281", "282", "215", "216", "73", "151", "256", "205", "206", "244", "245"]:
+           if subheader not in ["0", "77", "59", "52", "136", "135", "113", "128", "107", "106", "158", "110", "111", "71", "134", "126", "127", "150", "241", "242", "161", "228", "281", "282", "215", "216", "73", "151", "256", "205", "206", "244", "245", "83", "84", "274", "18"]:
                 """
                 0 - Empty
                 77 - Skill Link (ID)
@@ -164,6 +164,9 @@ if __name__ == "__main__":
                 256 - Heal at battle end
                 205/206 - Ailment immunity
                 244/245 - Use on ally death
+                83/84 - Ailment/Bind mod
+                274 - Use on DEFEND
+                18 - Swap on row hit
                 """
                 try:
                     skill_data_levels.append({
