@@ -1502,6 +1502,66 @@ const treeData = [
             coords: {x: 1, y: 5},
             numBefore: 1,
         },
+        {
+            skillID: 'defrag',
+            coords: {x: 0, y: 6},
+            baseSkill: true,
+            barSize: 4
+        },
+        {
+            skillID: 'rocket_punch',
+            coords: {x: 0, y: 7},
+            numBefore: 1,
+            preReqLevels: [1]
+        },
+        {
+            skillID: 'rocket_headbutt',
+            coords: {x: 0, y: 8},
+            numBefore: 1,
+            preReqLevels: [1]
+        },
+        {
+            skillID: 'rocket_jump',
+            coords: {x: 0, y: 9},
+            numBefore: 1,
+            preReqLevels: [1]
+        },
+        {
+            skillID: 'core_dump',
+            coords: {x: 0, y: 10},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 1,
+            postReqLevels: [5],
+
+        },
+        {
+            skillID: 'overheat',
+            coords: {x: 0, y: 11},
+            baseSkill: true,
+            barSize: 2
+        },
+        {
+            skillID: 'em_barrier',
+            coords: {x: 0, y: 12},
+            numBefore: 1,
+            preReqLevels: [3]
+        },
+        {
+            skillID: undefined,
+            coords: {x: 0, y: 13},
+            numBefore: 1,
+            preReqLevels: [10],
+            numAfter: 1,
+            postReqLevels: [" "]
+        },
+        {
+            skillID: 'hp_cannon',
+            coords: {x: 1, y: 11.5},
+            numBefore: 4,
+            beforeStyle: 'centered'
+        },
+
     ],
     [ // Everyone Skills
         {
