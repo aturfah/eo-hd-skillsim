@@ -411,7 +411,7 @@ export function exportSkillList(classState, remainingSP) {
     const activeClassIdx = classState.activeClassIdx
 
     const skillTextList = []
-    const classSkillInfo = skillData[activeClassIdx]
+    const classSkillInfo = deepCopy(skillData[activeClassIdx])
     classSkillInfo.branches.push(...skillData[skillData.length-1].branches)
 
     // Get the Info on the class
