@@ -521,6 +521,97 @@ const treeData = [
             numBefore: 1,
             preReqLevels: [3],
         },
+        {
+            skillID: 'rapier_mastery',
+            baseSkill: true,
+            coords: {x: 0, y: 2},
+            barSize: 6
+        },
+        {
+            skillID: 'lights_out',
+            coords: {x: 0, y: 3},
+            numBefore: 1,
+            preReqLevels: [1]
+        },
+        {
+            skillID: 'chase_saber',
+            coords: {x: 0, y: 4},
+            numBefore: 1,
+            preReqLevels: [3]
+        },
+        {
+            skillID: 'chase_blow',
+            coords: {x: 0, y: 5},
+            numBefore: 1,
+            preReqLevels: [3]
+        },
+        {
+            skillID: 'chase_thrust',
+            coords: {x: 0, y: 6},
+            numBefore: 1,
+            preReqLevels: [3]
+        },
+        {
+            skillID: 'hanging',
+            coords: {x: 0, y: 7},
+            numBefore: 1,
+            preReqLevels: [5]
+        },
+        {
+            skillID: 'gun_mastery',
+            baseSkill: true,
+            coords: {x: 0, y: 9},
+            barSize: 6
+        },
+        {
+            skillID: 'quick_draw',
+            coords: {x: 0, y: 10},
+            numBefore: 1,
+            preReqLevels: [1]
+        },
+        {
+            skillID: 'chase_flame',
+            coords: {x: 0, y: 11},
+            numBefore: 1,
+            preReqLevels: [3]
+        },
+        {
+            skillID: 'chase_ice',
+            coords: {x: 0, y: 12},
+            numBefore: 1,
+            preReqLevels: [3]
+        },
+        {
+            skillID: 'chase_volt',
+            coords: {x: 0, y: 13},
+            numBefore: 1,
+            preReqLevels: [3]
+        },
+        {
+            skillID: 'rapid_fire',
+            coords: {x: 0, y: 14},
+            numBefore: 1,
+            preReqLevels: [5]
+        },
+        {
+            skillID: undefined,
+            coords: {x: 0, y: 8},
+            numBefore: 1,
+            numAfter: 8,
+            preReqLevels: [10]
+        },
+        {
+            skillID: undefined,
+            coords: {x: 0, y: 15},
+            numBefore: 1,
+            preReqLevels: [10],
+            numAfter: 1
+        },
+        {
+            skillID: 'pincushion',
+            coords: {x: 1, y: 11},
+            numBefore: 1,
+        },
     ],
     [],
     [],
