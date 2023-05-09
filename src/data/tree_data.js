@@ -338,7 +338,151 @@ const treeData = [
             numBefore: 1,
         },
     ],
-    [],
+    [// Hoplite
+        {
+            skillID: 'guardian',
+            baseSkill: true,
+            coords: {x: 2, y: 0}
+        },
+        {
+            skillID: 'provoke',
+            baseSkill: true,
+            coords: {x: 0, y: 0},
+            barSize: 2
+        },
+        {
+            skillID: 'parry',
+            baseSkill: false,
+            coords: {x: 0, y: 1},
+            numBefore: 1,
+            preReqLevels: [5],
+        },
+        {
+            skillID: 'magic_parry',
+            baseSkill: false,
+            coords: {x: 0, y: 2},
+            numBefore: 1,
+            preReqLevels: [5],
+        },
+        {
+            skillID: 'shrug_off',
+            baseSkill: true,
+            coords: {x: 1, y: 0},
+            barSize: 1
+        },
+        {
+            skillID: 'recuperate',
+            baseSkill: false,
+            coords: {x: 1, y: 1},
+            numBefore: 1,
+            preReqLevels: [5],
+        },
+        {
+            skillID: 'vigilance',
+            baseSkill: false,
+            coords: {x: 1, y: 2},
+        },
+        {
+            skillID: 'spear_mastery',
+            baseSkill: true,
+            coords: {x: 0, y: 3},
+            barSize: 3
+        },
+        {
+            skillID: 'switch_stab',
+            baseSkill: false,
+            coords: {x: 0, y: 4},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 2,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'blitzritter',
+            baseSkill: false,
+            coords: {x: 0, y: 5},
+            numBefore: 1,
+            preReqLevels: [5]
+        },
+        {
+            skillID: undefined,
+            baseSkill: false,
+            coords: {x: 0, y: 6},
+            numBefore: 1,
+            preReqLevels: [7],
+            numAfter: 1,
+        },
+        {
+            skillID: 'long_stride',
+            baseSkill: false,
+            coords: {x: 1, y: 4},
+            numBefore: 3,
+        },
+        {
+            skillID: 'shield_mastery',
+            baseSkill: true,
+            coords: {x: 0, y: 7},
+            barSize: 7
+        },
+        {
+            skillID: 'line_guard',
+            baseSkill: false,
+            coords: {x: 0, y: 8},
+            numBefore: 1,
+            preReqLevels: [1],
+        },
+        {
+            skillID: 'bodyguard',
+            baseSkill: false,
+            coords: {x: 0, y: 9},
+            numBefore: 1,
+            preReqLevels: [3],
+        },
+        {
+            skillID: 'antifire',
+            baseSkill: false,
+            coords: {x: 0, y: 10},
+            numBefore: 1,
+            preReqLevels: [5],
+        },
+        {
+            skillID: 'anticold',
+            baseSkill: false,
+            coords: {x: 0, y: 11},
+            numBefore: 1,
+            preReqLevels: [5],
+        },
+        {
+            skillID: 'antivolt',
+            baseSkill: false,
+            coords: {x: 0, y: 12},
+            numBefore: 1,
+            preReqLevels: [5],
+        },
+        {
+            skillID: undefined,
+            baseSkill: false,
+            coords: {x: 0, y: 14},
+            numBefore: 1,
+            afterSkip: 1,
+            preReqLevels: [1],
+        },
+        {
+            skillID: 'overwatch',
+            baseSkill: false,
+            coords: {x: 1, y: 14},
+            numBefore: 1,
+            beforeSkip: 1,
+            preReqLevels: [8],
+        },
+        {
+            skillID: 'selflessness',
+            baseSkill: false,
+            coords: {x: 0, y: 13},
+            numAfter: 2,
+            postReqLevels: [3]
+        },
+    ],
     [],
     [],
     [],
