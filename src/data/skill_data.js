@@ -2875,7 +2875,7 @@
             "no_level": false,
             "_id": "avenger",
             "name": "Avenger",
-            "description": "Strongly transforms a vengeful heart towards the enemy; HP recovers when allies become battle incapacitated.",
+            "description": "Recover HP on ally death.",
             "max_level": 10,
             "uses": "N/A",
             "prerequisites": [
