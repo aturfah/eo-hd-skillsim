@@ -21,6 +21,7 @@ function defaultState() {
     skillsChosen: {},
     activeClassIdx: 0,
     activeSubclassIdx: -1,
+    activeSubclassFlag: false,
     maxLevel: 70
   };
 }
@@ -34,9 +35,7 @@ class App extends Component {
   }
 
   calculateSpRemaining(skillState) {
-    const subclassBonus = this.state.activeSubclassIdx === -1 ? 0 : 5;
-    console.log(subclassBonus)
-    const sp = calculateTotalSP(skillState.level, skillState.retirementIdx, subclassBonus)
+    const sp = calculateTotalSP(skillState.level, skillState.retirementIdx, skillState.activeSubclassFlag)
     const activeFDegSkills = listIntersect(Object.keys(skillState.skillsChosen), this.firstDegSkills);
     const skillsChosen = skillState.skillsChosen;
     const activeLinkedSkills = listIntersect(Object.keys(skillState.skillsChosen), linkedSkills(skillState.activeClassIdx))
@@ -78,6 +77,10 @@ class App extends Component {
       console.log('Class change -> resetting state...')
       oldState = defaultState();
       this.firstDegSkills = firstDegSkills(value)
+    } 
+    if (key === 'activeSubclassIdx') {
+      console.log('Subclass change')
+      oldState.activeSubclassFlag = (value === -1 ? false : true)
     }
 
     // Change parameters
@@ -106,7 +109,8 @@ class App extends Component {
       oldState[key] = value;
     }
 
-    const spRemaining = this.calculateSpRemaining(oldState)
+    const spRemaining = this.calculateSpRemaining(oldState, );
+    console.log(spRemaining);
     if (spRemaining < 0) {
         console.log('Increasing level by', -1*spRemaining, 'to meet SP needs');
         oldState['level'] -= spRemaining;
@@ -131,7 +135,7 @@ class App extends Component {
           retirementIdx={this.state.retirementIdx}
           skillsChosen={this.state.skillsChosen}
           skillPointsTotal={calculateTotalSP(this.state.level, this.state.retirementIdx, 
-                                             this.state.activeSubclassIdx === -1 ? 0 : 5)}
+                                             this.state.activeSubclassFlag)}
           skillPointsRemaining={this.calculateSpRemaining(this.state)}
           activeClassIdx={this.state.activeClassIdx}
           activeSubclassIdx={this.state.activeSubclassIdx}

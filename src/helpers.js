@@ -181,9 +181,9 @@ export function isNumber(input) {
     return re.test(input) || !input;
 }
 
-export function calculateTotalSP(level, retirementIdx, subclassBonus) {
+export function calculateTotalSP(level, retirementIdx, subClassFlag) {
     const retirementBonus = [0, 4, 5, 6, 7, 8, 10]
-    return level + 2 + retirementBonus[retirementIdx] + subclassBonus
+    return level + 2 + retirementBonus[retirementIdx] + (subClassFlag ? 5 : 0)
   }
 
 export function listSubtract(listA, listB) {
@@ -413,6 +413,8 @@ export function exportSkillList(classState, remainingSP) {
     const skillTextList = []
     const classSkillInfo = deepCopy(skillData[activeClassIdx])
     classSkillInfo.branches.push(...skillData[skillData.length-1].branches)
+
+    // TODO: Get subclasses
 
     // Get the Info on the class
     skillTextList.push("Class: " + classSkillInfo.class)
