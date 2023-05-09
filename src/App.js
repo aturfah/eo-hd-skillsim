@@ -80,8 +80,10 @@ class App extends Component {
       this.firstDegSkills = firstDegSkills(value)
     } 
     if (key === 'activeSubclassIdx') {
-      console.log('Subclass change')
+      console.log('Subclass change -> Clear subclass skills')
       oldState.activeSubclassFlag = (value === -1 ? false : true)
+      oldState.subclassToggle = (value === -1 ? false : true)
+
     }
 
     // Change parameters
@@ -110,8 +112,7 @@ class App extends Component {
       oldState[key] = value;
     }
 
-    const spRemaining = this.calculateSpRemaining(oldState, );
-    console.log(spRemaining);
+    const spRemaining = this.calculateSpRemaining(oldState);
     if (spRemaining < 0) {
         console.log('Increasing level by', -1*spRemaining, 'to meet SP needs');
         oldState['level'] -= spRemaining;
@@ -140,6 +141,7 @@ class App extends Component {
           skillPointsRemaining={this.calculateSpRemaining(this.state)}
           activeClassIdx={this.state.activeClassIdx}
           activeSubclassIdx={this.state.activeSubclassIdx}
+          activeSubclassFlag={this.state.activeSubclassFlag}
           subclassToggle={this.state.subclassToggle}
           maxLevel={this.state.maxLevel}
         ></Header>

@@ -27,3 +27,8 @@
 .HeaderLabel {
     font-weight: bold;
 }
+
+.classDropdownDiv {
+    display: inline-block;
+    color: red;
+}

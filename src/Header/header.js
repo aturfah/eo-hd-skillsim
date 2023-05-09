@@ -35,6 +35,7 @@ class Header extends Component {
         this._resetAll = this._resetAll.bind(this);
         this.updateClassIdx = this.updateClassIdx.bind(this);
         this.updateSubclassClassIdx = this.updateSubclassClassIdx.bind(this);
+        this.buildSubclassViewToggle = this.buildSubclassViewToggle.bind(this);
     }
 
 
@@ -152,6 +153,26 @@ class Header extends Component {
             </select></div>
     }
 
+    buildSubclassViewToggle() {
+        console.log('-> ', this.props.subclassToggle)
+        console.log(this.props.activeSubclassFlag)
+        return <div>
+            <div className='btn-group'>
+                <button type='button'
+                    class={'btn ' + (this.props.subclassToggle ? 'btn-secondary' : 'btn-success')}
+                    onClick={() => this.props.updateMethod('subclassToggle', false)}
+                    >
+                    Main</button>
+                <button type='button'
+                    disabled={!this.props.activeSubclassFlag}
+                    class={'btn ' + (this.props.subclassToggle ? 'btn-success' : 'btn-secondary')}
+                    onClick={() => this.props.updateMethod('subclassToggle', true)}
+                    >
+                    Sub</button>
+            </div>
+        </div>
+    }
+
     updateClassIdx(newClassIdx) {
         // const newClassIdx = this.refs.classDropdownList.value;
         console.log('Updating to class', newClassIdx, this.classOpts[newClassIdx]);
@@ -194,6 +215,7 @@ class Header extends Component {
         const levelBox = this.buildLevelBox()
         const retirementBox = this.buildRetirementBox()
         const maxLevelBox = this.buildMaxLevelBox()
+        const subclassToggleDiv = this.buildSubclassViewToggle()
 
         const imgStyle = {
             float: 'left',
@@ -209,12 +231,17 @@ class Header extends Component {
                 </a>
             </div>
             <div className="HeaderControls">
-                {classDropdown}
-                {subClassDropdown}
-                {levelBox}
-                {maxLevelBox}
-                {retirementBox}
-                {skillPointsInfo}
+                <div className='classDropdownDiv'>
+                    {classDropdown}
+                    {subClassDropdown}
+                    {subclassToggleDiv}
+                </div>
+                <div className='classDropdownDiv'>
+                    {levelBox}
+                    {maxLevelBox}
+                    {retirementBox}
+                    {skillPointsInfo}                        
+                </div>
                 <div>
                     <span className="ButtonText" onClick={() => this._clearSkills()}>(CLEAR SKILLS)</span> <br/>
                     <span className="ButtonText" onClick={() => this._copySkillsClipboard()}>(COPY BUILD)</span>
