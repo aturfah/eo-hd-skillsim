@@ -607,7 +607,93 @@ const treeData = [
             numBefore: 1,
         },
     ],
-    [],
+    [// Ninja
+        {
+            skillID: 'keburi_no_sue',
+            baseSkill: false,
+            coords: {x: 1, y: 0}
+        },
+        {
+            skillID: 'tonsou_jutsu',
+            baseSkill: false,
+            coords: {x: 2, y: 0}
+        },
+        {
+            skillID: 'knife_mastery',
+            baseSkill: true,
+            coords: {x: 0, y: 0},
+            barSize: 4
+        },
+        {
+            skillID: 'kagenui',
+            coords: {x: 0, y: 1},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 2,
+            postReqLevels: [3]
+        },
+        {
+            skillID: undefined,
+            coords: {x: 0, y: 2},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 1,
+        },
+        {
+            skillID: 'izuna',
+            baseSkill: false,
+            coords: {x: 1, y: 2},
+            numBefore: 1
+        },
+        {
+            skillID: 'takanoha',
+            coords: {x: 0, y: 3},
+            numBefore: 1,
+            preReqLevels: [5],
+        },
+        {
+            skillID: undefined,
+            coords: {x: 0, y: 4},
+            numBefore: 1,
+            preReqLevels: [10],
+            numAfter: 1,
+            afterSkip: 1,
+        },
+        {
+            skillID: 'tagen_battou',
+            coords: {x: 2, y: 4},
+            numBefore: 3,
+        },
+        {
+            skillID: 'kagerou',
+            coords: {x: 0, y: 5},
+            baseSkill: true,
+            barSize: 2
+        },
+        {
+            skillID: 'otori',
+            coords: {x: 0, y: 6},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'bunshin',
+            coords: {x: 0, y: 7},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'nikudan',
+            coords: {x: 1, y: 6},
+            numBefore: 2,
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+    ],
     [],
     [],
     [ // Wildling
