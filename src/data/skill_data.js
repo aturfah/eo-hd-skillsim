@@ -67,16 +67,9 @@
               }
             ],
             "growth_order": [
-              "Cast when buffed",
               "Restore rate"
             ],
             "growth": {
-              "Cast when buffed": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "Restore rate": [
                 {
                   "levelspan": 1,
@@ -182,8 +175,7 @@
             ],
             "growth_order": [
               "% health required",
-              "Restore rate",
-              "Fail if this ailment"
+              "Restore rate"
             ],
             "growth": {
               "% health required": [
@@ -232,12 +224,6 @@
                 {
                   "levelspan": 1,
                   "value": "46"
-                }
-              ],
-              "Fail if this ailment": [
-                {
-                  "levelspan": 10,
-                  "value": "2"
                 }
               ]
             }
@@ -307,17 +293,9 @@
               }
             ],
             "growth_order": [
-              "Heal at battle end",
-              "Restore rate",
-              "Fail if this ailment"
+              "Restore rate"
             ],
             "growth": {
-              "Heal at battle end": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "Restore rate": [
                 {
                   "levelspan": 1,
@@ -358,12 +336,6 @@
                 {
                   "levelspan": 1,
                   "value": "60"
-                }
-              ],
-              "Fail if this ailment": [
-                {
-                  "levelspan": 10,
-                  "value": "2"
                 }
               ]
             }
@@ -433,8 +405,7 @@
               }
             ],
             "growth_order": [
-              "Field effect",
-              "Fail if this ailment"
+              "Field effect"
             ],
             "growth": {
               "Field effect": [
@@ -477,12 +448,6 @@
                 {
                   "levelspan": 1,
                   "value": "10"
-                }
-              ],
-              "Fail if this ailment": [
-                {
-                  "levelspan": 10,
-                  "value": "2"
                 }
               ]
             }
@@ -552,16 +517,9 @@
               }
             ],
             "growth_order": [
-              "Cast on buff use",
               "Restore rate"
             ],
             "growth": {
-              "Cast on buff use": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "Restore rate": [
                 {
                   "levelspan": 1,
@@ -666,16 +624,9 @@
               }
             ],
             "growth_order": [
-              "Use on buff expire",
               "Restore rate"
             ],
             "growth": {
-              "Use on buff expire": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "Restore rate": [
                 {
                   "levelspan": 1,
@@ -1675,8 +1626,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Buff duration",
-              "Ailment immunity"
+              "Buff duration"
             ],
             "growth": {
               "TP cost": [
@@ -1711,12 +1661,6 @@
                 {
                   "levelspan": 5,
                   "value": "4"
-                }
-              ],
-              "Ailment immunity": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
                 }
               ]
             }
@@ -2329,9 +2273,7 @@
             ],
             "growth_order": [
               "TP cost",
-              "Speed",
-              "Target acts next",
-              "Target acts first"
+              "Speed"
             ],
             "growth": {
               "TP cost": [
@@ -2360,18 +2302,6 @@
                 {
                   "levelspan": 5,
                   "value": "100"
-                }
-              ],
-              "Target acts next": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
-                }
-              ],
-              "Target acts first": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
                 }
               ]
             }
@@ -5037,8 +4967,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Buff duration",
-              "Ailment immunity"
+              "Buff duration"
             ],
             "growth": {
               "TP cost": [
@@ -5073,12 +5002,6 @@
                 {
                   "levelspan": 5,
                   "value": "4"
-                }
-              ],
-              "Ailment immunity": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
                 }
               ]
             }
@@ -11256,16 +11179,9 @@
               }
             ],
             "growth_order": [
-              "Full DMG in back",
               "TP cost reduction"
             ],
             "growth": {
-              "Full DMG in back": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "TP cost reduction": [
                 {
                   "levelspan": 1,
@@ -35605,8 +35521,7 @@
               }
             ],
             "growth_order": [
-              "EXP Bonus % (/10)",
-              "Fail if this ailment"
+              "EXP Bonus % (/10)"
             ],
             "growth": {
               "EXP Bonus % (/10)": [
@@ -35649,12 +35564,6 @@
                 {
                   "levelspan": 1,
                   "value": "100"
-                }
-              ],
-              "Fail if this ailment": [
-                {
-                  "levelspan": 10,
-                  "value": "2"
                 }
               ]
             }

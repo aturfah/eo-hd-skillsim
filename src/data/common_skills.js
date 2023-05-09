@@ -402,8 +402,7 @@
             }
           ],
           "growth_order": [
-            "EXP Bonus % (/10)",
-            "Fail if this ailment"
+            "EXP Bonus % (/10)"
           ],
           "growth": {
             "EXP Bonus % (/10)": [
@@ -446,12 +445,6 @@
               {
                 "levelspan": 1,
                 "value": "100"
-              }
-            ],
-            "Fail if this ailment": [
-              {
-                "levelspan": 10,
-                "value": "2"
               }
             ]
           }
