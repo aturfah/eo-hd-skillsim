@@ -36,6 +36,7 @@ button.btn {
     display: inline-block;
     padding: .375rem .75rem;
     margin-top: 5px;
+    transition-duration: 0.4s;
 }
 
 button.btn-active {
@@ -43,14 +44,28 @@ button.btn-active {
     color: white;
 }
 
+button.btn-active:hover {
+    background-color: #e7e7e7;
+    color: #4CAF50;
+}
+
 button.btn-inactive {
     background-color: #f44336;
     color: white;
 }
 
+button.btn-inactive:hover {
+    background-color: #e7e7e7;
+    color: #f44336;
+}
+
 button.btn-gray {
     background-color: #e7e7e7;
     color: black;
+}
+
+button.btn-gray:hover {
+    background-color: white;
 }
 
 button.btn-disabled {
