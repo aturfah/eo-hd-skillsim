@@ -883,7 +883,62 @@ const treeData = [
             numBefore: 2,
         },
     ],
-    [],
+    [// Zodiac
+        {
+            skillID: 'fire_mastery',
+            coords: {x: 0, y: 0},
+            baseSkill: false,
+            numAfter: 2
+        },
+        {
+            skillID: 'fire_star',
+            coords: {x: 1, y: 0},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'binary_fire',
+            coords: {x: 1, y: 1},
+            numBefore: 1,
+            preReqLevels: [5],
+            numAfter: 1,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'fire_prophecy',
+            coords: {x: 2, y: 0},
+            numBefore: 2,
+        },
+        {
+            skillID: 'ice_mastery',
+            coords: {x: 0, y: 2},
+            baseSkill: false,
+            numAfter: 2
+        },
+        {
+            skillID: 'ice_star',
+            coords: {x: 1, y: 2},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'binary_ice',
+            coords: {x: 1, y: 3},
+            numBefore: 1,
+            preReqLevels: [5],
+            numAfter: 1,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'ice_prophecy',
+            coords: {x: 2, y: 2},
+            numBefore: 2,
+        },
+    ],
     [ // Wildling
         {
             skillID: 'beast_soul',
