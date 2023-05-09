@@ -165,7 +165,8 @@ class Header extends Component {
                     Main</button>
                 <button type='button'
                     disabled={!this.props.activeSubclassFlag}
-                    class={'btn ' + (this.props.subclassToggle ? 'btn-active' : 'btn-gray btn-disabled')}
+                    class={'btn ' + (this.props.subclassToggle ? 'btn-active' : 'btn-gray') +
+                            (this.props.activeSubclassFlag ? '' : ' btn-disabled')}
                     onClick={() => this.props.updateMethod('subclassToggle', true)}
                     >
                     Sub</button>
