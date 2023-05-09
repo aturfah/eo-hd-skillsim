@@ -7678,8 +7678,7 @@
               "TP cost",
               "Speed",
               "Buff duration",
-              "Draw rate modifier",
-              "Provoke flag"
+              "Draw rate modifier"
             ],
             "growth": {
               "TP cost": [
@@ -7756,12 +7755,6 @@
                 {
                   "levelspan": 1,
                   "value": "15"
-                }
-              ],
-              "Provoke flag": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ]
             }
@@ -11841,7 +11834,6 @@
             "growth_order": [
               "Acc. (mod)",
               "Damage %",
-              "Use on death",
               "Uncounterable"
             ],
             "growth": {
@@ -11927,12 +11919,6 @@
                 {
                   "levelspan": 1,
                   "value": "500"
-                }
-              ],
-              "Use on death": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ],
               "Uncounterable": [
@@ -12685,8 +12671,7 @@
               "Damage %",
               "Min hits",
               "Max hits",
-              "Clone^2 * this mult",
-              "Join clones after"
+              "Clone^2 * this mult"
             ],
             "growth": {
               "TP cost": [
@@ -12881,12 +12866,6 @@
                 {
                   "levelspan": 1,
                   "value": "110"
-                }
-              ],
-              "Join clones after": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ]
             }
@@ -13657,8 +13636,7 @@
               "TP cost",
               "Speed",
               "Buff duration",
-              "Draw rate modifier",
-              "Provoke flag"
+              "Draw rate modifier"
             ],
             "growth": {
               "TP cost": [
@@ -13735,12 +13713,6 @@
                 {
                   "levelspan": 1,
                   "value": "15"
-                }
-              ],
-              "Provoke flag": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ]
             }
@@ -14443,16 +14415,9 @@
               }
             ],
             "growth_order": [
-              "Use on death",
               "Restore rate"
             ],
             "growth": {
-              "Use on death": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "Restore rate": [
                 {
                   "levelspan": 1,
@@ -17986,7 +17951,6 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Block and link W.A.",
               "Damage %",
               "Uncounterable"
             ],
@@ -18017,12 +17981,6 @@
                 {
                   "levelspan": 5,
                   "value": "30"
-                }
-              ],
-              "Block and link W.A.": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
                 }
               ],
               "Damage %": [
@@ -18484,7 +18442,6 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Block and link W.A.",
               "Damage %",
               "Uncounterable"
             ],
@@ -18515,12 +18472,6 @@
                 {
                   "levelspan": 5,
                   "value": "30"
-                }
-              ],
-              "Block and link W.A.": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
                 }
               ],
               "Damage %": [
@@ -18982,7 +18933,6 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Block and link W.A.",
               "Damage %",
               "Uncounterable"
             ],
@@ -19013,12 +18963,6 @@
                 {
                   "levelspan": 5,
                   "value": "30"
-                }
-              ],
-              "Block and link W.A.": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
                 }
               ],
               "Damage %": [
@@ -30443,8 +30387,7 @@
               "Buff duration",
               "ATK %",
               "Damage taken %",
-              "Draw rate modifier",
-              "Provoke flag"
+              "Draw rate modifier"
             ],
             "growth": {
               "TP cost": [
@@ -30625,12 +30568,6 @@
                 {
                   "levelspan": 1,
                   "value": "15"
-                }
-              ],
-              "Provoke flag": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ]
             }
@@ -34029,7 +33966,6 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Block and link W.A.",
               "DMG type from bot",
               "Damage %",
               "Uncounterable",
@@ -34062,12 +33998,6 @@
                 {
                   "levelspan": 5,
                   "value": "30"
-                }
-              ],
-              "Block and link W.A.": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
                 }
               ],
               "DMG type from bot": [
