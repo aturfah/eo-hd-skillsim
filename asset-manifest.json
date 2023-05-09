@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/eo3-remake-skillsim/static/css/main.073c9b0a.css",
-    "main.js": "/eo3-remake-skillsim/static/js/main.7488effa.js",
-    "static/js/787.bc3271f7.chunk.js": "/eo3-remake-skillsim/static/js/787.bc3271f7.chunk.js",
-    "static/media/logo.svg": "/eo3-remake-skillsim/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/eo3-remake-skillsim/static/css/main.7bc96eac.css",
+    "main.js": "/eo3-remake-skillsim/static/js/main.84528437.js",
     "index.html": "/eo3-remake-skillsim/index.html",
-    "main.073c9b0a.css.map": "/eo3-remake-skillsim/static/css/main.073c9b0a.css.map",
-    "main.7488effa.js.map": "/eo3-remake-skillsim/static/js/main.7488effa.js.map",
-    "787.bc3271f7.chunk.js.map": "/eo3-remake-skillsim/static/js/787.bc3271f7.chunk.js.map"
+    "main.7bc96eac.css.map": "/eo3-remake-skillsim/static/css/main.7bc96eac.css.map",
+    "main.84528437.js.map": "/eo3-remake-skillsim/static/js/main.84528437.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.7488effa.js"
+    "static/css/main.7bc96eac.css",
+    "static/js/main.84528437.js"
   ]
 }
