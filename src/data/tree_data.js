@@ -1394,6 +1394,44 @@ const treeData = [
             numBefore: 1,
             preReqLevels: [5],
         },
+        {
+            skillID: 'harvestry',
+            coords: {x: 1, y: 4},
+            baseSkill: false,
+            numAfter: 1,
+        },
+        {
+            skillID: 'keen_nose',
+            coords: {x: 2, y: 4},
+            numBefore: 2,
+            preReqLevels: [3]
+        },
+        {
+            skillID: 'double_crop',
+            baseSkill: false,
+            coords: {x: 2, y: 5},
+            numBefore: 1,
+            preReqLevels: [5]
+        },
+        {
+            skillID: 'camp_mastery',
+            coords: {x: 1, y: 6},
+            baseSkill: false,
+            numAfter: 1,
+        },
+        {
+            skillID: 'waste_not',
+            coords: {x: 2, y: 6},
+            numBefore: 2,
+            preReqLevels: [3]
+        },
+        {
+            skillID: 'slap_awake',
+            baseSkill: false,
+            coords: {x: 2, y: 7},
+            numBefore: 1,
+            preReqLevels: [5]
+        },
     ],
     [ // Shogun
 
