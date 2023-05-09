@@ -24429,10 +24429,8 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Link after turns",
               "Acc. (mod)",
-              "Damage %",
-              "unknown169"
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -24461,12 +24459,6 @@
                 {
                   "levelspan": 10,
                   "value": "200"
-                }
-              ],
-              "Link after turns": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ],
               "Acc. (mod)": [
@@ -24551,12 +24543,6 @@
                 {
                   "levelspan": 1,
                   "value": "240"
-                }
-              ],
-              "unknown169": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ]
             }
@@ -24628,10 +24614,8 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Link after turns",
               "Acc. (mod)",
-              "Damage %",
-              "unknown169"
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -24660,12 +24644,6 @@
                 {
                   "levelspan": 10,
                   "value": "200"
-                }
-              ],
-              "Link after turns": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ],
               "Acc. (mod)": [
@@ -24750,12 +24728,6 @@
                 {
                   "levelspan": 1,
                   "value": "240"
-                }
-              ],
-              "unknown169": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ]
             }
@@ -25447,7 +25419,7 @@
             "no_level": false,
             "_id": "armor_piercer",
             "name": "Armor Piercer",
-            "description": "Bolt: A thrust attack at one enemy with an armor piercing bullet; ignores the enhancements of the enemy.",
+            "description": "Bolt: A thrust attack at one enemy ignoring DEF buffs.",
             "max_level": 10,
             "uses": "Arms",
             "prerequisites": [
@@ -25661,7 +25633,6 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Link after turns",
               "Acc. (mod)",
               "Damage %"
             ],
@@ -25692,12 +25663,6 @@
                 {
                   "levelspan": 5,
                   "value": "-100"
-                }
-              ],
-              "Link after turns": [
-                {
-                  "levelspan": 5,
-                  "value": "1"
                 }
               ],
               "Acc. (mod)": [
@@ -27696,7 +27661,6 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Link after turns",
               "Ailment chance (%)",
               "Chance to sprout"
             ],
@@ -27731,12 +27695,6 @@
                 {
                   "levelspan": 10,
                   "value": "200"
-                }
-              ],
-              "Link after turns": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ],
               "Ailment chance (%)": [
