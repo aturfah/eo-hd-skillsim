@@ -14435,16 +14435,9 @@
               }
             ],
             "growth_order": [
-              "Use on skill use",
               "Restore rate"
             ],
             "growth": {
-              "Use on skill use": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "Restore rate": [
                 {
                   "levelspan": 1,
