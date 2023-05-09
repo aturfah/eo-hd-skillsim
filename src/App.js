@@ -8,11 +8,14 @@ import SkillTree from './SkillTree/skillTree'
 // Function Import
 import {fixSkillDependencyAdd,
   fixSkillDependencyDelete,
+  getClassSkillList,
   exportSkillList,
   firstDegSkills,
   calculateTotalSP,
   linkedSkills,
-  listIntersect, deepCopy} from './helpers'
+  listIntersect,
+  deepCopy,
+  listSubtract} from './helpers'
 
 function defaultState() {
   return {
@@ -83,7 +86,14 @@ class App extends Component {
       console.log('Subclass change -> Clear subclass skills')
       oldState.activeSubclassFlag = (value === -1 ? false : true)
       oldState.subclassToggle = (value === -1 ? false : true)
-
+      let subclassSkillsToDelete = [];
+      if (this.state.activeSubclassIdx !== -1) {
+        subclassSkillsToDelete = getClassSkillList(this.state.activeSubclassIdx);
+      }
+      let skillsToKeep = listSubtract(Object.keys(oldState.skillsChosen), subclassSkillsToDelete);
+      
+      console.log(oldState.skillsChosen);
+      console.log(skillsToKeep);
     }
 
     // Change parameters
