@@ -724,7 +724,8 @@ const treeData = [
             coords: {x: 0, y: 9},
             numAfter: 1,
             numBefore: 1,
-            preReqLevels: [6]
+            preReqLevels: [6],
+            postReqLevels: ["(Lv.10)"]
         },
         {
             skillID: undefined,
@@ -732,7 +733,6 @@ const treeData = [
             coords: {x: 1, y: 9},
             numAfter: 1,
             numBefore: 1,
-            preReqLevels: ["(Lv.10)"]
         },
         {
             skillID: 'call_lion',
