@@ -1303,7 +1303,70 @@ const treeData = [
         },
     ],
     [ // Farmer
-
+        {
+            skillID: "earth's_bounty",
+            baseSkill: true,
+            coords: {x: 1, y: 0}
+        },
+        {
+            skillID: 'horseplay',
+            baseSkill: true,
+            coords: {x: 2, y: 0}
+        },
+        {
+            skillID: 'lullaby',
+            baseSkill: true,
+            coords: {x: 0, y: 0},
+            barSize: 3
+        },
+        {
+            skillID: 'play_possum',
+            baseSkill: false,
+            coords: {x: 0, y: 1},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 2,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'strange_seeds',
+            baseSkill: false,
+            coords: {x: 0, y: 2},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'persistence',
+            baseSkill: false,
+            coords: {x: 1, y: 1},
+            numBefore: 1,
+        },
+        {
+            skillID: 'rotten_egg',
+            baseSkill: false,
+            coords: {x: 0, y: 3},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'sympathy_pain',
+            baseSkill: false,
+            coords: {x: 1, y: 3},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 1,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'brave_heart',
+            baseSkill: false,
+            coords: {x: 2, y: 3},
+            numBefore: 1,
+        },
     ],
     [ // Shogun
 
