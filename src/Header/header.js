@@ -126,7 +126,7 @@ class Header extends Component {
         if (subclassFlag) {
             label = "Subclass"
             invalidClasses = ["Default", "Yggdroid", this.classOpts[this.props.activeClassIdx]]
-            curValue = 1 // TODO: CHANGE THIS
+            curValue = this.props.activeSubclassIdx // TODO: CHANGE THIS
             updateFunc = this.updateSubclassClassIdx
             extraClasses = ["(None)"]
         }
@@ -161,7 +161,7 @@ class Header extends Component {
     updateSubclassClassIdx(newClassIdx) {
         // const newClassIdx = this.refs.classDropdownList.value;
         console.log('Updating to subclass', newClassIdx, this.classOpts[newClassIdx]);
-        this.props.updateMethod('activeSubclassClassIdx', newClassIdx);
+        this.props.updateMethod('activeSubclassIdx', newClassIdx);
     }
 
     _changeLevel() {

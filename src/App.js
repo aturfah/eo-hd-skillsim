@@ -20,6 +20,7 @@ function defaultState() {
     retirementIdx: 0,
     skillsChosen: {},
     activeClassIdx: 0,
+    activeSubclassIdx: -1,
     maxLevel: 70
   };
 }
@@ -130,6 +131,7 @@ class App extends Component {
           skillPointsTotal={calculateTotalSP(this.state.level, this.state.retirementIdx)}
           skillPointsRemaining={this.calculateSpRemaining(this.state)}
           activeClassIdx={this.state.activeClassIdx}
+          activeSubclassIdx={this.state.activeSubclassIdx}
           maxLevel={this.state.maxLevel}
         ></Header>
         <SkillTree
