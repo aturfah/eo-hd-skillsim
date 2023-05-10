@@ -241,7 +241,7 @@ class Header extends Component {
                     {retirementBox}
                     {skillPointsInfo}                        
                 </div>
-                <div center>
+                <div>
                     <button className="btn btn-gray" onClick={() => this._clearSkills()}>Clear Skills</button> &nbsp;
                     <button className="btn btn-gray" onClick={() => this._copySkillsClipboard()}>Copy Build</button>
                 </div>
