@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/eo3-remake-skillsim/static/css/main.fec66040.css",
+    "main.css": "/eo3-remake-skillsim/static/css/main.9afe78f3.css",
     "main.js": "/eo3-remake-skillsim/static/js/main.eef77555.js",
     "index.html": "/eo3-remake-skillsim/index.html",
-    "main.fec66040.css.map": "/eo3-remake-skillsim/static/css/main.fec66040.css.map",
+    "main.9afe78f3.css.map": "/eo3-remake-skillsim/static/css/main.9afe78f3.css.map",
     "main.eef77555.js.map": "/eo3-remake-skillsim/static/js/main.eef77555.js.map"
   },
   "entrypoints": [
-    "static/css/main.fec66040.css",
+    "static/css/main.9afe78f3.css",
     "static/js/main.eef77555.js"
   ]
 }
