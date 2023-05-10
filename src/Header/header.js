@@ -225,7 +225,7 @@ class Header extends Component {
 
         return <div className="HeaderBar">
             <div className="HeaderImg">
-                <a href="https://github.com/aturfah/eo2u-skillsim">
+                <a href="https://github.com/aturfah/eo3-remake-skillsim">
                 <img src={process.env.PUBLIC_URL + "/skillsim_img.png"}  alt="alt_text" style={imgStyle}/>
                 </a>
             </div>
