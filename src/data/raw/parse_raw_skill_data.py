@@ -37,6 +37,7 @@ def generate_skill_output(skill_datum:dict, linked_skill_id:str=None, linked_ski
     skill_output["description"] = skill_datum.get("details", "")
     skill_output["max_level"] = int(skill_datum["max_level"])
     skill_output["uses"] = skill_datum.get("uses", "N/A")
+    skill_output["class_skill"] = skill_datum["class_skill"]
 
     ## Prerequisites
     skill_prereqs = []
@@ -270,6 +271,7 @@ if __name__ == "__main__":
         if skill_datum is None:
             continue
 
+        parsed_skills[skill_name]["class_skill"] = skill_datum.get("unique", False)
         parsed_skills[skill_name]["passive"] = not skill_datum["active"]
         parsed_skills[skill_name]["uses"] = skill_datum["requires"]
         parsed_skills[skill_name]["details"] = skill_datum["details"]

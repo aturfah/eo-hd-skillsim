@@ -18,6 +18,7 @@
           "description": "Increases Max HP.",
           "max_level": 10,
           "uses": "N/A",
+          "class_skill": false,
           "prerequisites": [],
           "levels": [
             {
@@ -125,6 +126,7 @@
           "description": "Increases Max TP.",
           "max_level": 10,
           "uses": "N/A",
+          "class_skill": false,
           "prerequisites": [],
           "levels": [
             {
@@ -232,6 +234,7 @@
           "description": "Recovers an ally's HP; can only be used from the menu.",
           "max_level": 10,
           "uses": "N/A",
+          "class_skill": false,
           "prerequisites": [],
           "levels": [
             {
@@ -354,6 +357,7 @@
           "description": "For every level of this skill, the character gains that percent of experience from each battle while not in the active party.",
           "max_level": 10,
           "uses": "N/A",
+          "class_skill": false,
           "prerequisites": [],
           "levels": [
             {
@@ -461,6 +465,7 @@
           "description": "Allows character to use take gathering points.",
           "max_level": 10,
           "uses": "N/A",
+          "class_skill": false,
           "prerequisites": [],
           "levels": [
             {
@@ -568,6 +573,7 @@
           "description": "Allows character to use chop gathering points.",
           "max_level": 10,
           "uses": "N/A",
+          "class_skill": false,
           "prerequisites": [],
           "levels": [
             {
@@ -675,6 +681,7 @@
           "description": "Allows character to use mine gathering points.",
           "max_level": 10,
           "uses": "N/A",
+          "class_skill": false,
           "prerequisites": [],
           "levels": [
             {

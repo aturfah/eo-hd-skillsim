@@ -19,6 +19,7 @@
             "description": "Every time the Prince is buffed, he gains TP.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": true,
             "prerequisites": [],
             "levels": [
               {
@@ -126,6 +127,7 @@
             "description": "Every turn the Prince is at full HP, the entire team regenerates some HP.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -240,6 +242,7 @@
             "description": "If the Prince is alive at the end of the battle, the entire team is healed.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "royal_veil",
@@ -352,6 +355,7 @@
             "description": "Regenerate HP while walking to the entire party.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "triumphant_cry",
@@ -464,6 +468,7 @@
             "description": "When a buff is cast, the ally that received the buff is healed.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "guard_order",
@@ -576,6 +581,7 @@
             "description": "When the Prince's own buffs wear off, his TP is healed.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -683,6 +689,7 @@
             "description": "For 3 turns, a row's ATK is increased, increasing damage done.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -843,6 +850,7 @@
             "description": "For 3 turns, a row's DEF is increased, decreasing damage taken.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -1003,6 +1011,7 @@
             "description": "For 3 turns, reduces the FIRE damage one ally takes; grants the FIRE attribute to their normal attacks.",
             "max_level": 5,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "attack_order",
@@ -1112,6 +1121,7 @@
             "description": "For 3 turns, reduces the ICE damage one ally takes; grants the ICE attribute to their normal attacks.",
             "max_level": 5,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "attack_order",
@@ -1221,6 +1231,7 @@
             "description": "For 3 turns, reduces the THUNDER damage one ally takes; grants the THUNDER attribute to their normal attacks.",
             "max_level": 5,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "attack_order",
@@ -1330,6 +1341,7 @@
             "description": "Target an ally to cause them to release the elemental attribute attached to their weapon; that attribute inflicts damage to every enemy.  Damage is based upon the ATK of the ally, and ally's weapon must have an elemental attribute.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "attack_order",
@@ -1445,6 +1457,7 @@
             "description": "Eliminate the buffs of a target enemy, dealing non-elemental damage.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "attack_order",
@@ -1591,6 +1604,7 @@
             "description": "Grants an enhancement to one row of allies that will prevent status abnormalities once during 3 turns.",
             "max_level": 5,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "guard_order",
@@ -1677,6 +1691,7 @@
             "description": "For 3 turns, the max HP of one row of allies is increased.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "guard_order",
@@ -1826,6 +1841,7 @@
             "description": "For 3 turns, one row of allies recover HP at the end of each turn.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "rally_order",
@@ -1955,6 +1971,7 @@
             "description": "Eliminate the buffs of an ally, healing their HP.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "nobility_proof",
@@ -2097,6 +2114,7 @@
             "description": "Eliminate a row of allies' debuffs, healing their TP.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "nobility_proof",
@@ -2239,6 +2257,7 @@
             "description": "The target ally's turn comes first.  BUG: Using this skill on any ally other than front row left and center results in the enemy acting before the target ally.",
             "max_level": 5,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "nobility_proof",
@@ -2329,6 +2348,7 @@
             "description": "Physical attack damage is improved.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": true,
             "prerequisites": [],
             "levels": [
               {
@@ -2436,6 +2456,7 @@
             "description": "Improves physical damage with Swords; required for Sword skills.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -2543,6 +2564,7 @@
             "description": "Improves physical damage with Clubs; required for Club skills.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -2650,6 +2672,7 @@
             "description": "There's a chance to stun when using a normal attack.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "white_flame",
@@ -2762,6 +2785,7 @@
             "description": "There's a chance to hit enemies next to your target when using skills.  Enemies to the left side of your target are the priority.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "sword_mastery",
@@ -2878,6 +2902,7 @@
             "description": "Recover HP on ally death.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "berserker_vow",
@@ -2990,6 +3015,7 @@
             "description": "Sword: Aims at one enemy and swings downward; cut attack.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "sword_mastery",
@@ -3151,6 +3177,7 @@
             "description": "Sword: Rushes towards the enemy formation and cuts up every enemy randomly.  Can only hit each enemy once.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "sword_mastery",
@@ -3350,6 +3377,7 @@
             "description": "Sword: A powerful cut attack at one enemy; increased damage if the enemy has a bind condition.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "sword_mastery",
@@ -3562,6 +3590,7 @@
             "description": "Sword: Swings a sword in a rampage at every enemy; a cut attack to every enemy.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "sword_mastery",
@@ -3755,6 +3784,7 @@
             "description": "Sword: Swings a sword at high speeds; a cut attack that randomly hits every enemy in succession.  Can hit the same enemy multiple times.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "sword_mastery",
@@ -3982,6 +4012,7 @@
             "description": "Club: A blunt attack that smashes the head of one enemy; has a chance to inflict confusion.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "club_mastery",
@@ -4182,6 +4213,7 @@
             "description": "Club: A blunt attack aimed at the arms of one enemy; has a chance to inflict arm bind.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "club_mastery",
@@ -4390,6 +4422,7 @@
             "description": "Club: Strikes one enemy with a Club clad in cold air; a skill that combines blunt/ice attack.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "club_mastery",
@@ -4559,6 +4592,7 @@
             "description": "Club: A blunt attack that strikes many times at one enemy.  Has low (55%) accuracy.  High AGI can improve accuracy.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "club_mastery",
@@ -4754,6 +4788,7 @@
             "description": "Sacrifice some HP to drastically increase ATK for 3 turns.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -4925,6 +4960,7 @@
             "description": "For 3 turns, the Gladiator becomes immune to status effects.",
             "max_level": 5,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "berserker_vow",
@@ -5011,6 +5047,7 @@
             "description": "Power up for a turn in order to do increased damage on the next turn.",
             "max_level": 5,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "avenger",
@@ -5117,6 +5154,7 @@
             "description": "For 4 turns, the enemies' DEF is lowered.  It has a stronger effect on enemies that already have status ailments.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -5295,6 +5333,7 @@
             "description": "Decrease physical damage done to the Hoplite.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": true,
             "prerequisites": [],
             "levels": [
               {
@@ -5402,6 +5441,7 @@
             "description": "Decrease physical damage when a Shield is equipped; required for Shield skills.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -5509,6 +5549,7 @@
             "description": "Improves physical damage with Spears; required for Spear skills.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -5616,6 +5657,7 @@
             "description": "When Defending, HP is healed.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "shrug_off",
@@ -5728,6 +5770,7 @@
             "description": "There is a chance to nullify physical attacks.",
             "max_level": 5,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "provoke",
@@ -5800,6 +5843,7 @@
             "description": "There is a chance to nullify elemental attacks.",
             "max_level": 5,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "provoke",
@@ -5872,6 +5916,7 @@
             "description": "Shield: For 1 turn, decrease damage done to a certain row. The damage reduction is increased if it is used on the same row as the Hoplite.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "shield_mastery",
@@ -6061,6 +6106,7 @@
             "description": "Shield: For 1 turn, decrease FIRE damage done to the party.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "shield_mastery",
@@ -6207,6 +6253,7 @@
             "description": "Shield: For 1 turn, decrease ICE damage done to the party.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "shield_mastery",
@@ -6353,6 +6400,7 @@
             "description": "Shield: For 1 turn, decrease THUNDER damage done to the party.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "shield_mastery",
@@ -6499,6 +6547,7 @@
             "description": "Shield: For 1 turn, the Hoplite takes damage for a single ally.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "shield_mastery",
@@ -6641,6 +6690,7 @@
             "description": "Shield: For 1 turn, negates damage directed at the designated ally if that damage would be higher than the Hoplite's HP.",
             "max_level": 5,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "shield_mastery",
@@ -6724,6 +6774,7 @@
             "description": "Spear: Attack the enemy with a thrust attack and then switch rows simultaneously.",
             "max_level": 10,
             "uses": "Legs",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "spear_mastery",
@@ -6889,6 +6940,7 @@
             "description": "Spear: Lightning spear attack to a single target; Thrust & THUNDER elemental.",
             "max_level": 10,
             "uses": "Legs",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "spear_mastery",
@@ -7054,6 +7106,7 @@
             "description": "Spear: Attack all enemies; more damage is dealt if the Hoplite is in the back row.",
             "max_level": 10,
             "uses": "Legs",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "spear_mastery",
@@ -7286,6 +7339,7 @@
             "description": "Restore all status ailments and binds from self.",
             "max_level": 5,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -7360,6 +7414,7 @@
             "description": "Sacrifice HP to drastically reduce physical damage done to self for 3 turns.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -7515,6 +7570,7 @@
             "description": "For 3 turns, attract the enemy to attack the Hoplite.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -7659,6 +7715,7 @@
             "description": "For a certain number of steps, encounters are reduced.",
             "max_level": 5,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -7783,6 +7840,7 @@
             "description": "Whenever you use an offensive skill, TP is restored.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": true,
             "prerequisites": [],
             "levels": [
               {
@@ -7890,6 +7948,7 @@
             "description": "Improves physical damage with Rapiers; required for Rapier skills.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -7997,6 +8056,7 @@
             "description": "Improves physical damage with Guns; required for Gun skills.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -8104,6 +8164,7 @@
             "description": "When using a normal attack, there is a chance to strike multiple times.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "rapier_mastery",
@@ -8242,6 +8303,7 @@
             "description": "Increase critical rate when using normal attacks.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -8349,6 +8411,7 @@
             "description": "Increase the rate at which the Limit Gauge increases.",
             "max_level": 5,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "lady_luck",
@@ -8425,6 +8488,7 @@
             "description": "Rapier: A thrust attack aimed at the eyes of an enemy; has a chance to blind the enemy.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "rapier_mastery",
@@ -8641,6 +8705,7 @@
             "description": "Rapier: Matches with allies' cut attacks; performs a chase with a Rapier.",
             "max_level": 10,
             "uses": "Legs",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "rapier_mastery",
@@ -8868,6 +8933,7 @@
             "description": "Rapier: Matches with allies' blunt attacks; performs a chase with a Rapier.",
             "max_level": 10,
             "uses": "Legs",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "rapier_mastery",
@@ -9095,6 +9161,7 @@
             "description": "Rapier: Matches with allies' thrust attacks; performs a chase with a Rapier.",
             "max_level": 10,
             "uses": "Legs",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "rapier_mastery",
@@ -9322,6 +9389,7 @@
             "description": "Rapier: A thrust attack aimed at the head of one enemy; has a chance to bind the enemy's head.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "rapier_mastery",
@@ -9550,6 +9618,7 @@
             "description": "Gun: Quickly draws out a gun; thrust attacks randomly fired at every enemy at the beginning of the turn.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "gun_mastery",
@@ -9740,6 +9809,7 @@
             "description": "Gun: Matches with allies' flame attacks; performs a chase with a gun.",
             "max_level": 10,
             "uses": "Legs",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "gun_mastery",
@@ -9967,6 +10037,7 @@
             "description": "Gun: Matches with allies' ice attacks; performs a chase with a gun.",
             "max_level": 10,
             "uses": "Legs",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "gun_mastery",
@@ -10194,6 +10265,7 @@
             "description": "Gun: Matches with allies' volt attacks; performs a chase with a gun.",
             "max_level": 10,
             "uses": "Legs",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "gun_mastery",
@@ -10421,6 +10493,7 @@
             "description": "Gun: A thrust attack that drives 3 rapid shots into the enemy at once.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "gun_mastery",
@@ -10608,6 +10681,7 @@
             "description": "Rapier/Gun: Thrust attacks at every enemy randomly; damage increases with increased AGI.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "rapier_mastery",
@@ -10835,6 +10909,7 @@
             "description": "For 3 turns, an enemy's DEF is lowered.",
             "max_level": 5,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -10939,6 +11014,7 @@
             "description": "For a certain number of steps, encounters are increased.",
             "max_level": 5,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -11047,6 +11123,7 @@
             "description": "Decreases TP consumption and allows the Ninja to do full melee damage from the back row.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": true,
             "prerequisites": [],
             "levels": [
               {
@@ -11154,6 +11231,7 @@
             "description": "Improves physical damage with Knives; required for Knife skills.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -11261,6 +11339,7 @@
             "description": "Increase evasion rate.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -11368,6 +11447,7 @@
             "description": "TP is recovered when evading an attack.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "sarutobi",
@@ -11484,6 +11564,7 @@
             "description": "When using a normal attack, there's a chance to instantly kill an enemy.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "suikyou",
@@ -11600,6 +11681,7 @@
             "description": "Upon your death, you deal FIRE damage to the enemy. Uncounterable.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "otori",
@@ -11759,6 +11841,7 @@
             "description": "Knife: A slash attack that stitches an enemy's shadow; has a chance to Bind Legs.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "knife_mastery",
@@ -11975,6 +12058,7 @@
             "description": "Knife: A cut attack at one enemy; has a chance to Petrify.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "knife_mastery",
@@ -12207,6 +12291,7 @@
             "description": "Knife: A cut attack that randomly strikes every enemy many times at high speeds.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "knife_mastery",
@@ -12426,6 +12511,7 @@
             "description": "Knife: A coordinated attack with clones randomly performs a cut attack at every enemy; the clone disappear after using this skill.  Damage is increased based on the number of clones consumed.  Only the damage from 1 clone is shown below.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "knife_mastery",
@@ -12700,6 +12786,7 @@
             "description": "A thrust attack at 3 enemies with needles held in the mouth; has a chance to inflict Sleep.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -12917,6 +13004,7 @@
             "description": "Chance to spread target enemy's status ailments to other enemies.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "fukubari",
@@ -13059,6 +13147,7 @@
             "description": "A cut counterattack with fixed damage to enemies that have attacked the designated row; has a chance to inflict Poison. Uncounterable.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "fukubari",
@@ -13287,6 +13376,7 @@
             "description": "Create a shadow image of yourself from thin air to act as a decoy.",
             "max_level": 5,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -13384,6 +13474,7 @@
             "description": "For 3 turns, the designated ally will be the target of all enemy attacks.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "kagerou",
@@ -13533,6 +13624,7 @@
             "description": "Sacrifice half of your HP and TP to create a fully functional image from thin air. This clone can also use skills.",
             "max_level": 1,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "kagerou",
@@ -13580,6 +13672,7 @@
             "description": "For 1 turn, there's a chance to nullify enemy physical attacks.",
             "max_level": 5,
             "uses": "Legs",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "senpuku",
@@ -13682,6 +13775,7 @@
             "description": "Sacrifice half of your HP to increase evasion.",
             "max_level": 10,
             "uses": "Legs",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "senpuku",
@@ -13842,6 +13936,7 @@
             "description": "Escape from battle and return to the floor entrance or Geomagnetic Field.",
             "max_level": 5,
             "uses": "Legs",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -13950,6 +14045,7 @@
             "description": "The amount of HP recovered by healing skills is increased.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": true,
             "prerequisites": [],
             "levels": [
               {
@@ -14057,6 +14153,7 @@
             "description": "Increases Physical damage caused when unarmed by a percentage, and also improves the displayed base power of character that is unarmed (no weapon in 1st slot) by the skill level.  Required for fist skills.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -14164,6 +14261,7 @@
             "description": "If the Monk falls in combat, the HP of every ally is recovered.  Works only once per battle.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -14271,6 +14369,7 @@
             "description": "If an ally falls in combat, the Monk's TP is restored.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -14378,6 +14477,7 @@
             "description": "If the Monk uses a skill, HP is restored.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "ascetic_reward",
@@ -14494,6 +14594,7 @@
             "description": "Increases the rate of natural recovery of status ailments and binds on the monk.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -14601,6 +14702,7 @@
             "description": "Heal a single target of some HP.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -14758,6 +14860,7 @@
             "description": "Fully restore a target's HP.",
             "max_level": 5,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "healing",
@@ -14844,6 +14947,7 @@
             "description": "Heal the HP of an entire row of allies.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "healing",
@@ -15006,6 +15110,7 @@
             "description": "Heals the HP of all allies.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "line_heal",
@@ -15168,6 +15273,7 @@
             "description": "Restore status ailments.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "healing",
@@ -15302,6 +15408,7 @@
             "description": "Restores binds.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "healing",
@@ -15436,6 +15543,7 @@
             "description": "Revives a fallen ally.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "refresh",
@@ -15602,6 +15710,7 @@
             "description": "Fist: A blunt attack that sends spirit at one enemy; has a chance to Paralyze the enemy.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "fist_mastery",
@@ -15810,6 +15919,7 @@
             "description": "Fist: Randomly strike all enemies; combines blunt/flame attack.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "fist_mastery",
@@ -16013,6 +16123,7 @@
             "description": "Fist: Counterattacks with a blunt attack against enemy physical attacks. Uncounterable.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "fist_mastery",
@@ -16178,6 +16289,7 @@
             "description": "Fist: Counterattacks with a blunt attack against enemy elemental attacks. Uncounterable.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "fist_mastery",
@@ -16343,6 +16455,7 @@
             "description": "Fist: A blunt attack at all enemies at the expense of sacrificing HP; has a chance to curse the enemy.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "fist_mastery",
@@ -16582,6 +16695,7 @@
             "description": "Reduce damage taken from damage tiles for a certain number of steps.",
             "max_level": 5,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -16706,6 +16820,7 @@
             "description": "Increase damage caused by FIRE, ICE, and VOLT attacks.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": true,
             "prerequisites": [],
             "levels": [
               {
@@ -16813,6 +16928,7 @@
             "description": "Increase damage caused by FIRE skills; required for FIRE skills.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -16920,6 +17036,7 @@
             "description": "Increase damage caused by ICE skills; required for ICE skills.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -17027,6 +17144,7 @@
             "description": "Increase damage caused by VOLT skills; required for VOLT skills.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -17134,6 +17252,7 @@
             "description": "Increases damage if attacking an enemy's weak point, including both elemental weakness (Fire, Ice, VOLT) and physical damage weakness (Cut, Blunt, Thrust).",
             "max_level": 5,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "dark_ether",
@@ -17206,6 +17325,7 @@
             "description": "The Zodiac recovers TP when killing an enemy.",
             "max_level": 5,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "singularity",
@@ -17282,6 +17402,7 @@
             "description": "FIRE: A formula that brings forth flames by use of astrology; attacks one enemy with a FIRE spell.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "fire_mastery",
@@ -17455,6 +17576,7 @@
             "description": "FIRE: A formula that brings forth a great inferno by use of astrology; attacks every enemy with a FIRE spell.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "fire_mastery",
@@ -17660,6 +17782,7 @@
             "description": "FIRE: Prevents the FIRE attacks of one designated enemy and counterattack that target with a FIRE spell. Uncounterable.",
             "max_level": 5,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "fire_star",
@@ -17766,6 +17889,7 @@
             "description": "ICE: A formula that brings forth blocks of ice by use of astrology; attacks one enemy with an ICE spell.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "ice_mastery",
@@ -17939,6 +18063,7 @@
             "description": "ICE: A formula that brings forth a great ice spear by use of astrology; attacks every enemy with an ICE spell.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "ice_mastery",
@@ -18144,6 +18269,7 @@
             "description": "ICE: Prevents the ICE attacks of one designated enemy and counterattack that target with an ICE spell. Uncounterable.",
             "max_level": 5,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "ice_star",
@@ -18250,6 +18376,7 @@
             "description": "VOLT: A formula that brings forth a lightning strike by use of astrology; attacks one enemy with a VOLT spell.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "volt_mastery",
@@ -18423,6 +18550,7 @@
             "description": "VOLT: A formula that brings forth a great VOLTbolt by use of astrology; attacks every enemy with a VOLT spell.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "volt_mastery",
@@ -18628,6 +18756,7 @@
             "description": "VOLT: Prevents the VOLT attacks of one designated enemy and counterattack that target with a VOLT spell. Uncounterable.",
             "max_level": 5,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "volt_star",
@@ -18734,6 +18863,7 @@
             "description": "Causes a meteorite from the cosmos to come flying and randomly performs a powerful blunt attack at all enemies randomly.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "etheric_return",
@@ -18937,6 +19067,7 @@
             "description": "Concentrate the mind and raise the damage of FIRE, ICE and VOLT attacks for the next turn.",
             "max_level": 5,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "dark_ether",
@@ -19039,6 +19170,7 @@
             "description": "On this turn only, the skills that a row uses do not cost TP.",
             "max_level": 5,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -19120,6 +19252,7 @@
             "description": "Indicates the location of nearby F.O.E.s on the map for a certain number of steps.",
             "max_level": 5,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -19236,6 +19369,7 @@
             "description": "Increases Max HP, ATK, and DEF of summoned beasts.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": true,
             "prerequisites": [],
             "levels": [
               {
@@ -19429,6 +19563,7 @@
             "description": "On dying, there is a chance to take the place of the summoned beast.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -19579,6 +19714,7 @@
             "description": "Increase the chance for summoned beasts to inflict status ailments; required to summon beasts.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -19693,6 +19829,7 @@
             "description": "Return a summoned beast and recover the TP that was consumed during the summoning.",
             "max_level": 5,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "wild_mastery",
@@ -19772,6 +19909,7 @@
             "description": "The sound of a loud roar lowers the ATK of all enemies.",
             "max_level": 5,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -19876,6 +20014,7 @@
             "description": "Decreases the chance of enemy preemptive attacks.",
             "max_level": 5,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -19943,6 +20082,7 @@
             "description": "The sound of loud drumming lowers the DEF of all enemies.",
             "max_level": 5,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -20047,6 +20187,7 @@
             "description": "Have a chance that the summoned beast will take physical damage in place of allies in the same row.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "nature_pact",
@@ -20159,6 +20300,7 @@
             "description": "Have a chance that the summoned beast will take elemental damage in place of allies in the same row.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "nature_pact",
@@ -20271,6 +20413,7 @@
             "description": "Summons a large bird that does a Thrust attack and can Bind Head to one enemy. ",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "wild_mastery",
@@ -20606,6 +20749,7 @@
             "description": "Summons an elephant that attacks all enemies and can cause confusion.  After the initial attack, it will only attack a single enemy. ",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "wild_mastery",
@@ -20945,6 +21089,7 @@
             "description": "Summons an owl that has a chance to cause every enemy to fall asleep. ",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "wild_mastery",
@@ -21137,6 +21282,7 @@
             "description": "Summons a sleeping lion king that paralyzes or petrifies all enemies when it wakes up.  Deals greater damage to enemies that already have a status ailment.  After its attack, it goes back to sleep. ",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "wild_mastery",
@@ -21426,6 +21572,7 @@
             "description": "Summons a mole that does a Slash attack and can Bind Legs to one enemy. ",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "wild_mastery",
@@ -21761,6 +21908,7 @@
             "description": "Summons a bull that does a Thrust attack on random enemies and can cause paralysis.  After the initial attack, it will only attack a single enemy. ",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "wild_mastery",
@@ -22126,6 +22274,7 @@
             "description": "Summons a slime that does a Slash attack and can inflict decay on one enemy. ",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "wild_mastery",
@@ -22379,6 +22528,7 @@
             "description": "Summons a large snake that does a Hit attack and can Bind Arms to one enemy. ",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "wild_mastery",
@@ -22714,6 +22864,7 @@
             "description": "Summons the saber-toothed tiger that tries to instantly kill all enemies.  After that, it counters any attacks that it receives.  Uncounterable.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "wild_mastery",
@@ -22988,6 +23139,7 @@
             "description": "Summons a venomfly which does a Slash attack and has a chance to inflict one enemy with poison. ",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "wild_mastery",
@@ -23348,6 +23500,7 @@
             "description": "Increase damage against enemies whose HP is greater than 200% of the Arbalist's HP.  (e.g. If Arbalist has 100 HP, then enemy must have more than 200 HP).",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": true,
             "prerequisites": [],
             "levels": [
               {
@@ -23455,6 +23608,7 @@
             "description": "Improves physical damage with Bolts; required for Bolt skills.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -23562,6 +23716,7 @@
             "description": "Increase accuracy of skills.",
             "max_level": 5,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -23629,6 +23784,7 @@
             "description": "Increase critical hit rate during the night.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "pop_flares",
@@ -23745,6 +23901,7 @@
             "description": "When a monster is killed, the Arbalist restores some HP.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "proper_form",
@@ -23857,6 +24014,7 @@
             "description": "When using a skill that targets a single enemy, there is a chance to perform the skill a second time.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "front_mortar",
@@ -23973,6 +24131,7 @@
             "description": "Bolt: A thrust attack at one enemy by using a projectile that is heavier than normal.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "bolt_mastery",
@@ -24126,6 +24285,7 @@
             "description": "Bolt: Damage is increased when used from the front row; a thrust attack at one enemy with a projectile for short distance usage.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "heavy_shot",
@@ -24374,6 +24534,7 @@
             "description": "Bolt: Prepares weapon and waits; at the end of the turn, a thrust attack that snipes enemies that are afflicted by status abnormalities.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "bolt_mastery",
@@ -24559,6 +24720,7 @@
             "description": "Bolt: Prepares weapon and waits; at the end of the turn, a thrust attack that snipes enemies that have any bind conditions.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "bolt_mastery",
@@ -24744,6 +24906,7 @@
             "description": "Bolt: Fires projectiles in succession; thrust attack at all enemies randomly.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "bolt_mastery",
@@ -24939,6 +25102,7 @@
             "description": "Bolt: Fires a shell that is mixed with a special gunpowder; attacks all enemies; combines Thrust/FIRE attack.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "bolt_mastery",
@@ -25100,6 +25264,7 @@
             "description": "Bolt: Fires a shell that is mixed with a special gunpowder; attacks every enemy; combines Thrust/ICE attack.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "bolt_mastery",
@@ -25261,6 +25426,7 @@
             "description": "Bolt: Fires a shell that is mixed with a special gunpowder; attacks every enemy; combines Thrust/THUNDER attack.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "bolt_mastery",
@@ -25422,6 +25588,7 @@
             "description": "Bolt: A thrust attack at one enemy ignoring DEF buffs.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "bolt_mastery",
@@ -25591,6 +25758,7 @@
             "description": "Bolt: Fires projectiles up in the sky; on the next turn, a thrust attack descends upon all enemies.",
             "max_level": 5,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "bolt_mastery",
@@ -25716,6 +25884,7 @@
             "description": "For 3 turns, the accuracy of all allies increases.",
             "max_level": 5,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -25820,6 +25989,7 @@
             "description": "Drop a smoke bomb that has a chance to blind all enemies.",
             "max_level": 5,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -25932,6 +26102,7 @@
             "description": "The chance of getting a preemptive attack on enemies increases for a certain number of steps.",
             "max_level": 5,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -26056,6 +26227,7 @@
             "description": "As long as the Farmer is alive at the end of battle, all allies gain bonus EXP.  This effect stacks with other Farmers that have this skill and are in the active party.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": true,
             "prerequisites": [],
             "levels": [
               {
@@ -26163,6 +26335,7 @@
             "description": "Every turn that the Farmer's HP is full, TP is recovered.",
             "max_level": 5,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "sympathy_pain",
@@ -26242,6 +26415,7 @@
             "description": "For a certain number of steps, all allies become immune to damage and mud tiles.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "keen_eye",
@@ -26377,6 +26551,7 @@
             "description": "HP and TP healed from Tents is increased, dead party members and petrified party members are also restored.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -26527,6 +26702,7 @@
             "description": "Revive a person outside of battle.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "camp_mastery",
@@ -26653,6 +26829,7 @@
             "description": "For 3 turns, the Farmer is less likely to be targeted by enemies.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "lullaby",
@@ -26802,6 +26979,7 @@
             "description": "During 4 turns, all enemies have their ATK decreased. Those enemies already afflicted by a status condition have a greater ATK reduction.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "lullaby",
@@ -26974,6 +27152,7 @@
             "description": "For a certain number of steps, the location of every F.O.E. is displayed on the map.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -27104,6 +27283,7 @@
             "description": "Increases the drop rate of items acquired from battle.  This effect stacks with other Farmers that have this skill and are in the active party.",
             "max_level": 5,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "camp_mastery",
@@ -27176,6 +27356,7 @@
             "description": "Increases the number of times the Farmer can use Take, Chop and Mine gathering spots, independently from Take, Chop and Mine.",
             "max_level": 5,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -27243,6 +27424,7 @@
             "description": "Lets 1 hour pass by.",
             "max_level": 1,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -27285,6 +27467,7 @@
             "description": "Farmer falls asleep, but also has a chance to put each enemy to sleep.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -27445,6 +27628,7 @@
             "description": "If the Farmer is afflicted by a negative status effect, there is a chance to transfer them to an enemy.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "rotten_egg",
@@ -27599,6 +27783,7 @@
             "description": "At the end of a turn, all enemies will be afflicted by random binds.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "lullaby",
@@ -27768,6 +27953,7 @@
             "description": "Teleports the party out of the dungeon and back to town.  Same effect as a warp wire.",
             "max_level": 1,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "keen_eye",
@@ -27808,6 +27994,7 @@
             "description": "For a certain number of steps, the encounter rate with enemies becomes zero.",
             "max_level": 5,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "keen_eye",
@@ -27895,6 +28082,7 @@
             "description": "Once per battle, there's a chance that the Farmer is automatically revived if dead.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "play_possum",
@@ -28018,6 +28206,7 @@
             "description": "Restores the Farmer's ability to use Take, Chop and Mine spots.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "harvestry",
@@ -28173,6 +28362,7 @@
             "description": "Increase the chance of acquiring a rare item from a take, chop or mine spot.  This effect stacks with other Farmers that have this skill and are in the active party.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "harvestry",
@@ -28296,6 +28486,7 @@
             "description": "Allows equipping of two weapons and increases damage when attacking with two weapons.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": true,
             "prerequisites": [],
             "levels": [
               {
@@ -28403,6 +28594,7 @@
             "description": "Improves physical damage with Katanas; required for Katana skills.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -28510,6 +28702,7 @@
             "description": "Has a chance of surviving death with 1 HP once per battle.",
             "max_level": 5,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -28577,6 +28770,7 @@
             "description": "Increases the ATK of the Shogun whenever an ally or enemy is defeated in battle.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "endure",
@@ -28644,6 +28838,7 @@
             "description": "If the Shogun is revived during battle, all allies have their HP restored.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -28758,6 +28953,7 @@
             "description": "When allies or enemies are below a certain amount of HP, there is a chance to instantly kill them. Uncounterable.",
             "max_level": 5,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "morale_boost",
@@ -28857,6 +29053,7 @@
             "description": "Katana: A blunt attack that strikes one enemy with the hilt; has a chance to stun the enemy.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "katana_mastery",
@@ -29073,6 +29270,7 @@
             "description": "Katana: A cut attack that randomly strikes out at every enemy; attack power increases during the day.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "katana_mastery",
@@ -29331,6 +29529,7 @@
             "description": "Katana: A cut attack that randomly strikes out at every enemy; attack power increases during the night.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "katana_mastery",
@@ -29589,6 +29788,7 @@
             "description": "Katana: A cut attack that randomly strikes out at every enemy; the maximum number of strikes doubles if two weapons are equipped.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "katana_mastery",
@@ -29827,6 +30027,7 @@
             "description": "For three turns, the Shogun become immune to binds.",
             "max_level": 5,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "endure",
@@ -29920,6 +30121,7 @@
             "description": "For three turns, ATK and DEF is raised and the and the chance that enemies attack the Shogun increases.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "endure",
@@ -30175,6 +30377,7 @@
             "description": "Assigns someone to be the vanguard for 3 turns, increasing their ATK, lowering their DEF, and lets them act first.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "morale_boost",
@@ -30390,6 +30593,7 @@
             "description": "Assigns someone to be the rear guard for 3 turns, increasing their DEF, lowering their ATK, and having them act last.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "morale_boost",
@@ -30612,6 +30816,7 @@
             "description": "Command a row assume battle formation, causing them to counter enemy attacks that target that row. Uncounterable.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "fore_honor",
@@ -30817,6 +31022,7 @@
             "description": "While disregarding defense completely, chase the attacks of every ally.",
             "max_level": 10,
             "uses": "Legs",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "unified_spirit",
@@ -31049,6 +31255,7 @@
             "description": "Commands everyone with a gun or a crossbow to fire at one enemy. Uncounterable.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "morale_boost",
@@ -31253,6 +31460,7 @@
             "description": "Commands every ally to strike one enemy simultaneously with their equipped weapon. Uncounterable.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "fusillade",
@@ -31465,6 +31673,7 @@
             "description": "Causes everyone to try and escape.  Escaping chance increases with higher levels of the ability.",
             "max_level": 5,
             "uses": "Legs",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -31557,6 +31766,7 @@
             "description": "TP is restored when inflicted with Binds.  The more binds, the more TP is restored.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": true,
             "prerequisites": [],
             "levels": [
               {
@@ -31671,6 +31881,7 @@
             "description": "ATK and critical rate is increased for normal attacks.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -31805,6 +32016,7 @@
             "description": "Accuracy and evasion is increased during the night.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -31955,6 +32167,7 @@
             "description": "Increases status ailment resistance.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -32062,6 +32275,7 @@
             "description": "Increases ATK, but in exchange, HP will be consumed each turn.  Since this skill is passive, it cannot be turned off.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -32212,6 +32426,7 @@
             "description": "When being attacked, there is a chance that you may paralyze the enemy and counterattack THUNDER elemental attacks. Uncounterable.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "overheat",
@@ -32453,6 +32668,7 @@
             "description": "Deploys a fire bot in an empty space that chases the FIRE attacks of all allies.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "data_mining",
@@ -32672,6 +32888,7 @@
             "description": "Deploys an ice bot in an empty space that chases the ICE attacks of all allies.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "data_mining",
@@ -32891,6 +33108,7 @@
             "description": "Deploys a thunder bot in an empty space that chases the THUNDER attacks of all allies.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "data_mining",
@@ -33110,6 +33328,7 @@
             "description": "Supplies energy to bots and recovers the HP of every bot.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "data_mining",
@@ -33279,6 +33498,7 @@
             "description": "Simultaneous attack to one enemy with deployed bots and the Yggdroid.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "data_mining",
@@ -33455,6 +33675,7 @@
             "description": "If there are bots deployed, prevent attacks of the same attribute and counterattack with that attribute. Uncounterable.",
             "max_level": 5,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "resupply",
@@ -33575,6 +33796,7 @@
             "description": "Attacks one enemy with attributes of deployed bots.  The number of bots deployed and their types determines the amount of damage done.  Having all three types of bots deployed maximizes the damage.  All bots are destroyed after using this skill.  Only damage done by 3 bots, one of each type, is shown below.  For the complete damage table, see the table in the Help/About section.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "resupply",
@@ -33835,6 +34057,7 @@
             "description": "Recover all parts, removing binds.",
             "max_level": 5,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -33916,6 +34139,7 @@
             "description": "Releases all parts and adds every bind condition.",
             "max_level": 5,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "defrag",
@@ -34016,6 +34240,7 @@
             "description": "Fires both arms causing two blunt attacks towards one enemy; the Yggdroid's arm is bound after use.",
             "max_level": 10,
             "uses": "Arms",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "defrag",
@@ -34229,6 +34454,7 @@
             "description": "Fires head causing thrust attacks at every enemy; the Yggdroid's head is bound after use.",
             "max_level": 10,
             "uses": "Head",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "defrag",
@@ -34435,6 +34661,7 @@
             "description": "For one turn only, all attacks directed at the Yggdroid will miss; the Yggdroid's legs are bound afterwards.",
             "max_level": 5,
             "uses": "Legs",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "defrag",
@@ -34558,6 +34785,7 @@
             "description": "Non-elemental attack towards one enemy; only usable when the Yggdroid has every bind condition; the less HP the Yggdroid has, the greater the power of this skill.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [
               {
                 "_id": "core_dump",
@@ -34742,6 +34970,7 @@
             "description": "Increases Max HP.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -34849,6 +35078,7 @@
             "description": "Increases Max TP.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -34956,6 +35186,7 @@
             "description": "Recovers an ally's HP; can only be used from the menu.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -35078,6 +35309,7 @@
             "description": "For every level of this skill, the character gains that percent of experience from each battle while not in the active party.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -35185,6 +35417,7 @@
             "description": "Allows character to use take gathering points.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -35292,6 +35525,7 @@
             "description": "Allows character to use chop gathering points.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
@@ -35399,6 +35633,7 @@
             "description": "Allows character to use mine gathering points.",
             "max_level": 10,
             "uses": "N/A",
+            "class_skill": false,
             "prerequisites": [],
             "levels": [
               {
