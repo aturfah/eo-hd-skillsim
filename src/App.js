@@ -14,8 +14,7 @@ import {fixSkillDependencyAdd,
   calculateTotalSP,
   linkedSkills,
   listIntersect,
-  deepCopy,
-  listSubtract} from './helpers'
+  deepCopy} from './helpers'
 
 function defaultState() {
   return {
