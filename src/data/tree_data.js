@@ -491,12 +491,12 @@ const treeData = [
             skillID: 'trickster',
             baseSkill: false,
             classSkill: true,
-            coords: {x: 1, y: 2}
+            coords: {x: 2, y: 2}
         },
         {
             skillID: 'troublemaker',
             baseSkill: false,
-            coords: {x: 2, y: 2}
+            coords: {x: 1, y: 2}
         },
         {
             skillID: 'eagle_eye',
@@ -616,12 +616,12 @@ const treeData = [
             skillID: 'keburi_no_sue',
             baseSkill: false,
             classSkill: true,
-            coords: {x: 1, y: 0}
+            coords: {x: 2, y: 0}
         },
         {
             skillID: 'tonsou_jutsu',
             baseSkill: false,
-            coords: {x: 2, y: 0}
+            coords: {x: 1, y: 0}
         },
         {
             skillID: 'knife_mastery',
@@ -758,12 +758,12 @@ const treeData = [
             skillID: 'form_qi',
             baseSkill: false,
             classSkill: true,
-            coords: {x: 1, y: 0}
+            coords: {x: 2, y: 0}
         },
         {
             skillID: 'fire_walk',
             baseSkill: false,
-            coords: {x: 2, y: 0}
+            coords: {x: 1, y: 0}
         },
         {
             skillID: 'fist_mastery',
@@ -892,19 +892,19 @@ const treeData = [
     [// Zodiac
         {
             skillID: 'ether_mastery',
-            coords: {x: 0, y: 0},
+            coords: {x: 1, y: 0},
             classSkill: true,
             baseSkill: true
         },
         {
             skillID: 'fire_mastery',
-            coords: {x: 0, y: 1},
+            coords: {x: 0, y: 0},
             baseSkill: true,
             barSize: 2
         },
         {
             skillID: 'fire_star',
-            coords: {x: 0, y: 2},
+            coords: {x: 0, y: 1},
             numBefore: 1,
             preReqLevels: [1],
             numAfter: 1,
@@ -912,7 +912,7 @@ const treeData = [
         },
         {
             skillID: 'binary_fire',
-            coords: {x: 0, y: 3},
+            coords: {x: 0, y: 2},
             numBefore: 1,
             preReqLevels: [5],
             numAfter: 1,
@@ -920,18 +920,18 @@ const treeData = [
         },
         {
             skillID: 'fire_prophecy',
-            coords: {x: 1, y: 2},
+            coords: {x: 1, y: 1},
             numBefore: 2,
         },
         {
             skillID: 'ice_mastery',
-            coords: {x: 0, y: 4},
+            coords: {x: 0, y: 3},
             baseSkill: true,
             barSize: 2
         },
         {
             skillID: 'ice_star',
-            coords: {x: 0, y: 5},
+            coords: {x: 0, y: 4},
             numBefore: 1,
             preReqLevels: [1],
             numAfter: 1,
@@ -939,7 +939,7 @@ const treeData = [
         },
         {
             skillID: 'binary_ice',
-            coords: {x: 0, y: 6},
+            coords: {x: 0, y: 5},
             numBefore: 1,
             preReqLevels: [5],
             numAfter: 1,
@@ -947,18 +947,18 @@ const treeData = [
         },
         {
             skillID: 'ice_prophecy',
-            coords: {x: 1, y: 5},
+            coords: {x: 1, y: 4},
             numBefore: 2,
         },
         {
             skillID: 'volt_mastery',
-            coords: {x: 0, y: 7},
+            coords: {x: 0, y: 6},
             baseSkill: true,
             barSize: 2
         },
         {
             skillID: 'volt_star',
-            coords: {x: 0, y: 8},
+            coords: {x: 0, y: 7},
             numBefore: 1,
             preReqLevels: [1],
             numAfter: 1,
@@ -966,7 +966,7 @@ const treeData = [
         },
         {
             skillID: 'binary_thunder',
-            coords: {x: 0, y: 9},
+            coords: {x: 0, y: 8},
             numBefore: 1,
             preReqLevels: [5],
             numAfter: 1,
@@ -974,18 +974,18 @@ const treeData = [
         },
         {
             skillID: 'volt_prophecy',
-            coords: {x: 1, y: 8},
+            coords: {x: 1, y: 7},
             numBefore: 2,
         },
         {
             skillID: 'dark_ether',
-            coords: {x: 0, y: 10},
+            coords: {x: 0, y: 9},
             baseSkill: true,
             barSize: 2
         },
         {
             skillID: 'etheric_charge',
-            coords: {x: 0, y: 11},
+            coords: {x: 0, y: 10},
             numBefore: 1,
             preReqLevels: [5],
             numAfter: 1,
@@ -993,7 +993,7 @@ const treeData = [
         },
         {
             skillID: 'singularity',
-            coords: {x: 0, y: 12},
+            coords: {x: 0, y: 11},
             numBefore: 1,
             preReqLevels: [5],
             numAfter: 1,
@@ -1001,20 +1001,20 @@ const treeData = [
         },
         {
             skillID: 'etheric_return',
-            coords: {x: 1, y: 11},
+            coords: {x: 1, y: 10},
             numBefore: 2,
             numAfter: 1,
             postReqLevels: [3]
         },
         {
             skillID: 'horoscope',
-            coords: {x: 1, y: 12},
+            coords: {x: 1, y: 11},
             numAfter: 1,
             postReqLevels: [5]
         },
         {
             skillID: 'meteor',
-            coords: {x: 2, y: 11},
+            coords: {x: 2, y: 10},
             numBefore: 2,
         },
     ],
@@ -1183,12 +1183,12 @@ const treeData = [
             skillID: 'giant_kill',
             baseSkill: true,
             classSkill: true,
-            coords: {x: 1, y: 0}
+            coords: {x: 2, y: 0}
         },
         {
             skillID: 'ambush',
             baseSkill: true,
-            coords: {x: 2, y: 0}
+            coords: {x: 1, y: 0}
         },
         {
             skillID: 'bolt_mastery',
@@ -1316,12 +1316,12 @@ const treeData = [
             skillID: "earth's_bounty",
             baseSkill: true,
             classSkill: true,
-            coords: {x: 1, y: 0}
+            coords: {x: 2, y: 0}
         },
         {
             skillID: 'horseplay',
             baseSkill: true,
-            coords: {x: 2, y: 0}
+            coords: {x: 1, y: 0}
         },
         {
             skillID: 'lullaby',
@@ -1448,12 +1448,12 @@ const treeData = [
             skillID: "second_sword",
             baseSkill: true,
             classSkill: true,
-            coords: {x: 1, y: 0}
+            coords: {x: 2, y: 0}
         },
         {
             skillID: 'retreat',
             baseSkill: true,
-            coords: {x: 2, y: 0}
+            coords: {x: 1, y: 0}
         },
         {
             skillID: 'morale_boost',
@@ -1608,13 +1608,13 @@ const treeData = [
     [ // Yggdroid
         {
             skillID: 'sleep_mode',
-            coords: {x: 1, y: 0},
+            coords: {x: 2, y: 0},
             classSkill: true,
             baseSkill: false,
         },
         {
             skillID: 'infravision',
-            coords: {x: 2, y: 0},
+            coords: {x: 1, y: 0},
             baseSkill: false,
         },
         {
