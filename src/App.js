@@ -172,6 +172,7 @@ class App extends Component {
           updateMethod={this.updateState.bind(this)}
           skillsChosen={this.state.skillsChosen}
           activeClassIdx={(this.state.subclassToggle ? this.state.activeSubclassIdx : this.state.activeClassIdx)}
+          subclassTree={this.state.subclassToggle}
         ></SkillTree>
       </div>
     );

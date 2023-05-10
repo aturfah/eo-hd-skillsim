@@ -68,6 +68,9 @@ class SkillTree extends Component {
         const output = {};
         branches.forEach(function (skillBranch) {
             skillBranch.skill_data.forEach(function (skillDatum) {
+                if (skillDatum.class_skill & objProps.subclassTree) {
+                    return;
+                }
                 output[skillDatum._id] = <SkillTreeNode
                     key={skillDatum._id}
                     skillData={skillDatum}
@@ -82,6 +85,7 @@ class SkillTree extends Component {
     }
 
     drawSkillTree(skillTreeNodes) {
+        const objProps = this.props;
         const BOX_WIDTH = 170;
         const BOX_HEIGHT = 60;
         const LINE_LENGTH = 60;
@@ -110,6 +114,10 @@ class SkillTree extends Component {
         const activeSkillMethod = this._setActiveSkill;
 
         skillTreeStructure.forEach(function (datum) {
+            if (datum.classSkill === true & objProps.subclassTree) {
+                return;
+            }
+
             var className = 'baseSkill';
             var xOffset = 0;
             var xCoord = null;
