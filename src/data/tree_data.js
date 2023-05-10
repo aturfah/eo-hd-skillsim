@@ -3,6 +3,7 @@ const treeData = [
         {
             skillID: 'royal_lineage',
             baseSkill: true,
+            classSkill: true,
             coords: {x: 2, y: 0}
         },
         {
@@ -149,6 +150,7 @@ const treeData = [
         {
             skillID: 'endless_battle',
             baseSkill: true,
+            classSkill: true,
             coords: {x: 1, y: 0}
         },
         {
@@ -342,6 +344,7 @@ const treeData = [
         {
             skillID: 'guardian',
             baseSkill: true,
+            classSkill: true,
             coords: {x: 2, y: 0}
         },
         {
@@ -487,6 +490,7 @@ const treeData = [
         {
             skillID: 'trickster',
             baseSkill: false,
+            classSkill: true,
             coords: {x: 1, y: 2}
         },
         {
@@ -611,6 +615,7 @@ const treeData = [
         {
             skillID: 'keburi_no_sue',
             baseSkill: false,
+            classSkill: true,
             coords: {x: 1, y: 0}
         },
         {
@@ -752,6 +757,7 @@ const treeData = [
         {
             skillID: 'form_qi',
             baseSkill: false,
+            classSkill: true,
             coords: {x: 1, y: 0}
         },
         {
@@ -887,6 +893,7 @@ const treeData = [
         {
             skillID: 'ether_mastery',
             coords: {x: 0, y: 0},
+            classSkill: true,
             baseSkill: true
         },
         {
@@ -1015,6 +1022,7 @@ const treeData = [
         {
             skillID: 'beast_soul',
             baseSkill: true,
+            classSkill: true,
             coords: {x: 1, y: 0}
         },
         {
@@ -1174,6 +1182,7 @@ const treeData = [
         {
             skillID: 'giant_kill',
             baseSkill: true,
+            classSkill: true,
             coords: {x: 1, y: 0}
         },
         {
@@ -1306,6 +1315,7 @@ const treeData = [
         {
             skillID: "earth's_bounty",
             baseSkill: true,
+            classSkill: true,
             coords: {x: 1, y: 0}
         },
         {
@@ -1437,6 +1447,7 @@ const treeData = [
         {
             skillID: "second_sword",
             baseSkill: true,
+            classSkill: true,
             coords: {x: 1, y: 0}
         },
         {
@@ -1598,6 +1609,7 @@ const treeData = [
         {
             skillID: 'sleep_mode',
             coords: {x: 1, y: 0},
+            classSkill: true,
             baseSkill: false,
         },
         {
