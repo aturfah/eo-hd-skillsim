@@ -12,10 +12,12 @@ export const retirementLabels = ['N/A', '30-39', '40-49', '50-59', '60-69', '70-
 export const masterySkills = {
     "eo3": eo3MasterySkills,
     "eo2": eo2MasterySkills,
+    "eo1": eo3MasterySkills
 }
 export const prereqData = {
     "eo3": eo3PrereqData,
     "eo2": eo2PrereqData,
+    "eo1": eo3PrereqData
 }
 export const skillData = {
     "eo3": eo3SkillData,
@@ -218,8 +220,9 @@ export function listIntersect(listA, listB) {
     return listA.filter(x => listB.includes(x))
 }
 
-export function firstDegSkills(activeClassIdx, gameID="eo3") {
+export function firstDegSkills(activeClassIdx, gameID) {
     const output = [];
+    console.log(activeClassIdx, gameID)
     Object.keys(prereqData[gameID][activeClassIdx]).forEach(function (key) {
         const datum = prereqData[gameID][activeClassIdx][key];
         let firstDeg = false;
@@ -276,7 +279,7 @@ export function parseSkillBranches(classSkillInfo) {
     return output;
 }
 
-export function linkedSkills(activeClassIdx, gameID="eo3") {
+export function linkedSkills(activeClassIdx, gameID) {
     let parsedSkillData = parseSkillBranches(skillData[gameID][activeClassIdx])
     const output = []
 
@@ -292,7 +295,7 @@ export function linkedSkills(activeClassIdx, gameID="eo3") {
     return output
 }
 
-function fixLinkedSkills(chosenSkills, activeClassIdx, gameID="eo3") {
+function fixLinkedSkills(chosenSkills, activeClassIdx, gameID) {
     let newChosenSkills = deepCopy(chosenSkills);
     let parsedSkillData = parseSkillBranches(skillData[gameID][activeClassIdx])
 
@@ -315,7 +318,7 @@ function fixLinkedSkills(chosenSkills, activeClassIdx, gameID="eo3") {
     }
 }
 
-function verifySkillDependenciesAdd(chosenSkills, activeClassIdx, gameID="eo3") {
+function verifySkillDependenciesAdd(chosenSkills, activeClassIdx, gameID) {
     let newChosenSkills = deepCopy(chosenSkills);
 
     Object.keys(newChosenSkills).forEach(function (skillId) {
@@ -340,9 +343,9 @@ function verifySkillDependenciesAdd(chosenSkills, activeClassIdx, gameID="eo3") 
     }
 }
 
-function fixMasterySkills(chosenSkills, activeClassIdx, gameID="eo3") {
+function fixMasterySkills(chosenSkills, activeClassIdx, gameID) {
     // Check if Mastery unlocks other skills
-    firstDegSkills(activeClassIdx).forEach(function (key) {
+    firstDegSkills(activeClassIdx, gameID).forEach(function (key) {
         if (Object.keys(chosenSkills).includes(key)) {
             return
         }
@@ -362,7 +365,7 @@ function fixMasterySkills(chosenSkills, activeClassIdx, gameID="eo3") {
     })
 }
 
-export function fixSkillDependencyAdd(chosenSkills, activeClassIdx, gameID="eo3") {
+export function fixSkillDependencyAdd(chosenSkills, activeClassIdx, gameID) {
     // Check if Prerequisites needed
     let temp = verifySkillDependenciesAdd(chosenSkills, activeClassIdx, gameID);
     while (temp !== -1) {
@@ -383,7 +386,7 @@ export function fixSkillDependencyAdd(chosenSkills, activeClassIdx, gameID="eo3"
     return chosenSkills
 }
 
-function verifySkillDependenciesDel(chosenSkills, activeClassIdx, gameID="eo3") {
+function verifySkillDependenciesDel(chosenSkills, activeClassIdx, gameID) {
     let validSkills = {};
     Object.keys(chosenSkills).forEach(function (skillId) {
         let validSkill = true;
@@ -410,7 +413,7 @@ function verifySkillDependenciesDel(chosenSkills, activeClassIdx, gameID="eo3") 
     }
 }
 
-export function fixSkillDependencyDelete(chosenSkills, activeClassIdx, gameID="eo3") {
+export function fixSkillDependencyDelete(chosenSkills, activeClassIdx, gameID) {
     let temp = verifySkillDependenciesDel(chosenSkills, activeClassIdx, gameID);
     while (temp !== -1) {
         chosenSkills = temp;
@@ -429,7 +432,7 @@ export function fixSkillDependencyDelete(chosenSkills, activeClassIdx, gameID="e
     return chosenSkills
 }
 
-export function getClassSkillList(classIdx, gameID="eo3") {
+export function getClassSkillList(classIdx, gameID) {
     const output = [];
     skillData[gameID][classIdx].branches.forEach((branchSkills) => {
         branchSkills.skill_data.forEach((skillDatum) => {
@@ -439,7 +442,7 @@ export function getClassSkillList(classIdx, gameID="eo3") {
     return output;
 }
 
-export function exportSkillList(classState, remainingSP, gameID="eo3") {
+export function exportSkillList(classState, remainingSP, gameID) {
     const chosenSkills = classState.skillsChosen
     const activeClassIdx = classState.activeClassIdx
     const activeSubclassIdx = classState.activeSubclassIdx

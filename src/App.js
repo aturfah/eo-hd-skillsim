@@ -34,7 +34,7 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = defaultState()
-    this.firstDegSkills = firstDegSkills(this.state.activeClassIdx);
+    this.firstDegSkills = firstDegSkills(this.state.activeClassIdx, this.state.gameID);
     this.calculateSpRemaining = this.calculateSpRemaining.bind(this)
   }
 
@@ -42,7 +42,7 @@ class App extends Component {
     const sp = calculateTotalSP(skillState.level, skillState.retirementIdx, skillState.activeSubclassFlag)
     const activeFDegSkills = listIntersect(Object.keys(skillState.skillsChosen), this.firstDegSkills);
     const skillsChosen = skillState.skillsChosen;
-    const activeLinkedSkills = listIntersect(Object.keys(skillState.skillsChosen), linkedSkills(skillState.activeClassIdx))
+    const activeLinkedSkills = listIntersect(Object.keys(skillState.skillsChosen), linkedSkills(skillState.activeClassIdx, this.state.gameID))
 
     let totalSpSpent = 0;
     Object.keys(skillsChosen).forEach(function (key) {
@@ -117,16 +117,16 @@ class App extends Component {
       } else if (skillLevel === 0) {
         console.log('Removing', skillId)
         delete oldState.skillsChosen[skillId];
-        oldState.skillsChosen = fixSkillDependencyDelete(oldState.skillsChosen, validationClassIdx);
+        oldState.skillsChosen = fixSkillDependencyDelete(oldState.skillsChosen, validationClassIdx, oldState.gameID);
       } else if (!Object.keys(oldState.skillsChosen).includes(skillId) ||
           oldState.skillsChosen[skillId] < skillLevel) {
         console.log('Increasing level of', skillId, 'to', skillLevel)
         oldState.skillsChosen[skillId] = skillLevel;
-        oldState.skillsChosen = fixSkillDependencyAdd(oldState.skillsChosen, validationClassIdx);
+        oldState.skillsChosen = fixSkillDependencyAdd(oldState.skillsChosen, validationClassIdx, oldState.gameID);
       } else if (oldState.skillsChosen[skillId] > skillLevel) {
         console.log('Decreasing level of', skillId, 'to', skillLevel);
         oldState.skillsChosen[skillId] = skillLevel;
-        oldState.skillsChosen = fixSkillDependencyDelete(oldState.skillsChosen, validationClassIdx);
+        oldState.skillsChosen = fixSkillDependencyDelete(oldState.skillsChosen, validationClassIdx, oldState.gameID);
       }
     } else {
       console.log('Setting', key, 'to', value)

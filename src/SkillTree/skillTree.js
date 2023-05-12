@@ -21,7 +21,7 @@ class SkillTree extends Component {
     constructor(props) {
         super(props);
         this.state = {activeSkillID: null, activeSkillBox: null, graphParams: null}
-        this.firstSkills = firstDegSkills(props.activeClassIdx)
+        this.firstSkills = firstDegSkills(props.activeClassIdx, props.gameID)
         this.divHeight = null;
         this.divWidth = null;
         this.buildSkillTreeNodes = this.buildSkillTreeNodes.bind(this);
@@ -66,7 +66,6 @@ class SkillTree extends Component {
     buildSkillTreeNodes() {
         const objProps = this.props;
         const gameSkills = skillData[this.props.gameID];
-        console.log(gameSkills)
         const skillTreeData = gameSkills[objProps.activeClassIdx];
         const addSkillFunc = this._addSkill;
         const updateMethod = this.props.updateMethod;

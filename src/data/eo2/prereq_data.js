@@ -1063,9 +1063,15 @@
   {
     "hp_up": [],
     "tp_up": [],
-    "str_up/tec_up/vit_up/agi_up/luc_up": [],
+    "str_up": [],
+    "tec_up": [],
+    "vit_up": [],
+    "agi_up": [],
+    "luc_up": [],
     "esc_up": [],
-    "chop/take/mine": []
+    "chop": [],
+    "take": [],
+    "mine": []
   }
 ];
     export default prereqData;
