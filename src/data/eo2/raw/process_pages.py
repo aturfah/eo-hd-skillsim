@@ -1,6 +1,7 @@
 from helpers import OUTPUT_DIR, CLASSES
 from pprint import pprint
 from bs4 import BeautifulSoup
+import json
 
 def requirements_li(tag):
     return tag.name == 'li' and 'Requirements' in tag.text
@@ -11,12 +12,25 @@ def body_part_li(tag):
 def map_name_id(skill_name):
     return skill_name.strip().lower().replace(" ", "_")
 
+def output_js(data, filename, var_name):
+    new_file_data = """// AUTOMATICALLY GENERATED FILE; DO NOT MODIFY!;
+    var {variable} = {data};
+    export default {variable};
+    """
+    data = json.dumps(data, indent=2)
+
+    with open(filename, 'w') as nf:
+        nf.write(new_file_data.format(variable=var_name,
+                                      data=data))
+
+
 BASE_FILENAME = "{}.html"
 COMMON_SKILLS = []
 
 if __name__ == "__main__":
+    prereq_data_output = []
+    class_skill_data_output = []
     for class_id in CLASSES:
-        print("\n\nCLASS:", class_id)
         file_path = OUTPUT_DIR.joinpath(BASE_FILENAME.format(class_id))
         
         bs_file = BeautifulSoup(file_path.read_text(), features="html.parser")
@@ -35,16 +49,17 @@ if __name__ == "__main__":
                 "skill_data": []
             }]
         }
+        class_prereqs = {}
 
         ## Get the skills; demarked by <h3>
         str_data = str(bs_file)
         data_arr = str_data.split("<h3>")[1:]
-
         for datum in data_arr:
             datum = "<h3>{}".format(datum)
             ## Can do this with beautifulsoup
             soup_datum = BeautifulSoup(datum, features="html.parser")
             skill_name = soup_datum.find("h3").text
+            skill_id = map_name_id(skill_name)
             skill_details = soup_datum.find_all("li")
             skill_description = soup_datum.find("p").text
             skill_table = soup_datum.find("table", {"class": "ffaq"})
@@ -67,6 +82,7 @@ if __name__ == "__main__":
                         name, level = rsprq.lower().split(" level ")
                         prereqs[map_name_id(name)] = int(level)
             prereq_list = [{"_id": x, "level": prereqs[x]} for x in prereqs.keys()]
+            class_prereqs[skill_id] = prereq_list
 
             ## Parse out the body part
             raw_skill_uses = [x.text for x in skill_details if body_part_li(x)]
@@ -119,7 +135,8 @@ if __name__ == "__main__":
                 "mastery": False,
                 "linked_skill": None,
                 "no_level": False,
-                "_id": map_name_id(skill_name),
+                "_id": skill_id,
+                "name": skill_name,
                 "description": skill_description,
                 "max_level": max_level, ## TODO: Parse this out
                 "uses": skill_uses,
@@ -131,4 +148,9 @@ if __name__ == "__main__":
 
             class_obj["branches"][0]["skill_data"].append(skill_output)
 
-        pprint(class_obj)
+
+        class_skill_data_output.append(class_obj)
+        prereq_data_output.append(class_prereqs)
+
+    output_js(class_skill_data_output, "skill_data.js", "skillData")
+    output_js(prereq_data_output, "prereq_data.js", "prereqData")
