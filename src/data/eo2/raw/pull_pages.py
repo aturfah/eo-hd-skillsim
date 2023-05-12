@@ -9,7 +9,7 @@ if __name__ == "__main__":
         OUTPUT_DIR.mkdir()
 
     for classname in CLASSES:
-        sleep(0.5)
+        sleep(2)
         print("Getting page for {}".format(classname))
         class_url = BASE_URL.format(classname)
         res = requests.get(class_url)
