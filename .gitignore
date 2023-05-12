@@ -25,3 +25,4 @@ yarn-error.log*
 ## Pythons tuff
 env/
 raw_pages/
+*.pyc
