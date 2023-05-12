@@ -367,6 +367,7 @@ function fixMasterySkills(chosenSkills, activeClassIdx, gameID) {
 
 export function fixSkillDependencyAdd(chosenSkills, activeClassIdx, gameID) {
     // Check if Prerequisites needed
+    console.log(gameID, activeClassIdx)
     let temp = verifySkillDependenciesAdd(chosenSkills, activeClassIdx, gameID);
     while (temp !== -1) {
         chosenSkills = temp;

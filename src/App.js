@@ -93,7 +93,7 @@ class App extends Component {
       // Get skills for the subclass
       let subclassSkillsToDelete = [];
       if (this.state.activeSubclassIdx !== -1) {
-        subclassSkillsToDelete = getClassSkillList(this.state.activeSubclassIdx);
+        subclassSkillsToDelete = getClassSkillList(this.state.activeSubclassIdx, oldState.gameID);
       }
 
       // Keep skills NOT in the subclass
@@ -105,9 +105,9 @@ class App extends Component {
     if (key === 'skillsChosen') {
       const skillId = value._id;
       const skillLevel = value.level;
-      const mainClassSkillFlag = getClassSkillList(oldState.activeClassIdx).includes(skillId);
+      const mainClassSkillFlag = getClassSkillList(oldState.activeClassIdx, oldState.gameID).includes(skillId);
       let validationClassIdx = oldState.activeClassIdx;
-      if (!mainClassSkillFlag) {
+      if (!mainClassSkillFlag & oldState.activeSubclassFlag) {
         validationClassIdx = oldState.activeSubclassIdx;
       }
 
