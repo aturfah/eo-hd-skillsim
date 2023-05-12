@@ -41,6 +41,8 @@ if __name__ == "__main__":
 
         ## Get the Class Name
         class_name = [s for s in bs_file("h2")][0].text
+        if class_name == "Common Passives":
+            class_name = "Default"
         class_obj = {
             "source": None,
             "class": class_name,

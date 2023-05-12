@@ -22984,10 +22984,10 @@
   },
   {
     "source": null,
-    "class": "Common Passives",
+    "class": "Default",
     "branches": [
       {
-        "branch_name": "Common Passives",
+        "branch_name": "Default",
         "skill_data": [
           {
             "force_boost": false,
