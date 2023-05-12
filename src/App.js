@@ -154,7 +154,7 @@ class App extends Component {
       // its 12
     } else if (this.state.gameID === 'eo2') {
       // its 13
-      defaultSkillsIdx = 13
+      defaultSkillsIdx = 12
     }
     return (
       <div className="App">
