@@ -26,3 +26,4 @@ yarn-error.log*
 env/
 raw_pages/
 *.pyc
+.vscode/
