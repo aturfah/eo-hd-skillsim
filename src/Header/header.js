@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
 import './header.css';
 
-import skillData from '../data/eo3/skill_data';
-
 // Helper Functions
-import {isNumber, retirementLabels} from '../helpers'
+import {isNumber, retirementLabels, skillData} from '../helpers'
 
-function getClasses() {
+function getClasses(gameID) {
     const classes = [];
-    skillData.forEach(function (datum) {
+    skillData[gameID].forEach(function (datum) {
       classes.push(datum.class)
     })
   
@@ -19,7 +17,7 @@ class Header extends Component {
     constructor(props) {
         super(props);
         this.level = props.level;
-        this.classOpts = getClasses();
+        this.classOpts = getClasses(this.props.gameID);
 
         // Element Builder Functions
         this.buildClassDropdown = this.buildClassDropdown.bind(this);
@@ -256,7 +254,9 @@ class Header extends Component {
                 </a>
             </div>
             <div className="HeaderControls">
-                {gameToggle}
+                <div>
+                    {gameToggle}
+                </div>
                 <div className='inline-block-div'>
                     {classDropdown}
                     {subClassDropdown}

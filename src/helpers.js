@@ -6,14 +6,16 @@ import eo3SkillData from './data/eo3/skill_data';
 
 export const retirementLabels = ['N/A', '30-39', '40-49', '50-59', '60-69', '70-98', '99']
 
-const masterySkills = {
+export const masterySkills = {
     "eo3": eo3MasterySkills
 }
-const prereqData = {
+export const prereqData = {
     "eo3": eo3PrereqData
 }
-const skillData = {
-    "eo3": eo3SkillData
+export const skillData = {
+    "eo3": eo3SkillData,
+    "eo2": eo3SkillData,
+    "eo1": eo3SkillData
 }
 
 
@@ -350,23 +352,23 @@ function fixMasterySkills(chosenSkills, activeClassIdx, gameID="eo3") {
     })
 }
 
-export function fixSkillDependencyAdd(chosenSkills, activeClassIdx) {
+export function fixSkillDependencyAdd(chosenSkills, activeClassIdx, gameID="eo3") {
     // Check if Prerequisites needed
-    let temp = verifySkillDependenciesAdd(chosenSkills, activeClassIdx);
+    let temp = verifySkillDependenciesAdd(chosenSkills, activeClassIdx, gameID);
     while (temp !== -1) {
         chosenSkills = temp;
-        temp = verifySkillDependenciesAdd(temp, activeClassIdx);
+        temp = verifySkillDependenciesAdd(temp, activeClassIdx, gameID);
     }
 
-    fixMasterySkills(chosenSkills, activeClassIdx)
+    fixMasterySkills(chosenSkills, activeClassIdx, gameID)
 
-    temp = fixLinkedSkills(chosenSkills, activeClassIdx);
+    temp = fixLinkedSkills(chosenSkills, activeClassIdx, gameID);
     while (temp !== -1) {
         chosenSkills = temp;
-        temp = fixLinkedSkills(chosenSkills, activeClassIdx)
+        temp = fixLinkedSkills(chosenSkills, activeClassIdx, gameID)
     }
 
-    fixMasterySkills(chosenSkills, activeClassIdx)
+    fixMasterySkills(chosenSkills, activeClassIdx, gameID)
 
     return chosenSkills
 }
@@ -375,7 +377,7 @@ function verifySkillDependenciesDel(chosenSkills, activeClassIdx, gameID="eo3") 
     let validSkills = {};
     Object.keys(chosenSkills).forEach(function (skillId) {
         let validSkill = true;
-        let preReq = prereqData["eo3"][activeClassIdx][skillId];
+        let preReq = prereqData[gameID][activeClassIdx][skillId];
         if (preReq !== undefined) {
             preReq.forEach(function (prSkill) {
                 if (!Object.keys(chosenSkills).includes(prSkill._id)) {
@@ -398,22 +400,22 @@ function verifySkillDependenciesDel(chosenSkills, activeClassIdx, gameID="eo3") 
     }
 }
 
-export function fixSkillDependencyDelete(chosenSkills, activeClassIdx) {
-    let temp = verifySkillDependenciesDel(chosenSkills, activeClassIdx);
+export function fixSkillDependencyDelete(chosenSkills, activeClassIdx, gameID="eo3") {
+    let temp = verifySkillDependenciesDel(chosenSkills, activeClassIdx, gameID);
     while (temp !== -1) {
         chosenSkills = temp;
-        temp = verifySkillDependenciesDel(chosenSkills, activeClassIdx);
+        temp = verifySkillDependenciesDel(chosenSkills, activeClassIdx, gameID);
     }
 
-    fixMasterySkills(chosenSkills, activeClassIdx)
+    fixMasterySkills(chosenSkills, activeClassIdx, gameID)
 
-    temp = fixLinkedSkills(chosenSkills, activeClassIdx);
+    temp = fixLinkedSkills(chosenSkills, activeClassIdx, gameID);
     while (temp !== -1) {
         chosenSkills = temp;
-        temp = fixLinkedSkills(chosenSkills, activeClassIdx)
+        temp = fixLinkedSkills(chosenSkills, activeClassIdx, gameID)
     }
 
-    fixMasterySkills(chosenSkills, activeClassIdx)
+    fixMasterySkills(chosenSkills, activeClassIdx, gameID)
     return chosenSkills
 }
 
