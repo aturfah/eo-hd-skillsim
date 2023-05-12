@@ -2815,7 +2815,7 @@
                 }
               ]
             }
-          }.
+          },
           { // TAKE
             "force_boost": false,
             "force_break": false,
@@ -2858,7 +2858,7 @@
                 }
               ]
             }
-          }.
+          },
           { // MINE
             "force_boost": false,
             "force_break": false,
@@ -2901,7 +2901,7 @@
                 }
               ]
             }
-          }.
+          },
           {
             "force_boost": false,
             "force_break": false,
@@ -4727,7 +4727,7 @@
                 }
               ]
             }
-          }.
+          },
           {
             "force_boost": false,
             "force_break": false,
@@ -6569,7 +6569,7 @@
                 }
               ]
             }
-          }.
+          },
           {
             "force_boost": false,
             "force_break": false,
@@ -8576,7 +8576,7 @@
                 }
               ]
             }
-          }.
+          },
           {
             "force_boost": false,
             "force_break": false,
@@ -10601,7 +10601,7 @@
               }
             ]
           }
-        }.
+        },
           {
             "force_boost": false,
             "force_break": false,
@@ -11762,7 +11762,7 @@
                 }
               ]
             }
-          }.
+          },
           {
             "force_boost": false,
             "force_break": false,
@@ -13499,7 +13499,7 @@
                 }
               ]
             }
-          }.
+          },
           {
             "force_boost": false,
             "force_break": false,
@@ -15701,7 +15701,7 @@
                 }
               ]
             }
-          }.
+          },
           {
             "force_boost": false,
             "force_break": false,
@@ -17108,7 +17108,7 @@
                 }
               ]
             }
-          }.
+          },
           {
             "force_boost": false,
             "force_break": false,
@@ -18779,7 +18779,7 @@
                 }
               ]
             }
-          }.
+          },
           {
             "force_boost": false,
             "force_break": false,
