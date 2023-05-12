@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './header.css';
 
-import skillData from '../data/skill_data';
+import skillData from '../data/eo3/skill_data';
 
 // Helper Functions
 import {isNumber, retirementLabels} from '../helpers'
@@ -27,6 +27,8 @@ class Header extends Component {
         this.updateLevel = this.updateLevel.bind(this);
         this.buildRetirementBox = this.buildRetirementBox.bind(this);
         this.updateRetirementIdx = this.updateRetirementIdx.bind(this);
+        this.buildGameToggle = this.buildGameToggle.bind(this);
+        this.buildSubclassViewToggle = this.buildSubclassViewToggle.bind(this);
 
         // Updater Functions
         this._setLevel = this._setLevel.bind(this);
@@ -35,9 +37,32 @@ class Header extends Component {
         this._resetAll = this._resetAll.bind(this);
         this.updateClassIdx = this.updateClassIdx.bind(this);
         this.updateSubclassClassIdx = this.updateSubclassClassIdx.bind(this);
-        this.buildSubclassViewToggle = this.buildSubclassViewToggle.bind(this);
     }
 
+    buildGameToggle() {
+        const eo1Toggle = this.props.gameID === "eo1";
+        const eo2Toggle = this.props.gameID === "eo2";
+        const eo3Toggle = this.props.gameID === "eo3";
+        return <div>
+            <div className='btn-group'>
+                <button type='button'
+                    class={'btn ' + (eo1Toggle ? 'btn-active' : 'btn-inactive')}
+                    onClick={() => this.props.updateMethod('gameID', 'eo1')}
+                    >
+                    EO1</button>
+                <button type='button'
+                    class={'btn ' + (eo2Toggle ? 'btn-active' : 'btn-inactive')}
+                    onClick={() => this.props.updateMethod('gameID', 'eo2')}
+                    >
+                    EO2</button>
+                <button type='button'
+                    class={'btn ' + (eo3Toggle ? 'btn-active' : 'btn-inactive')}
+                    onClick={() => this.props.updateMethod('gameID', 'eo3')}
+                    >
+                    EO3</button>
+            </div>
+        </div>
+    }
 
     updateRetirementIdx() {
         this.props.updateMethod('retirementIdx', parseInt(this.refs.retirementDropdownList.value))
@@ -215,6 +240,7 @@ class Header extends Component {
         const retirementBox = this.buildRetirementBox()
         const maxLevelBox = this.buildMaxLevelBox()
         const subclassToggleDiv = this.buildSubclassViewToggle()
+        const gameToggle = this.buildGameToggle();
 
         const imgStyle = {
             float: 'left',
@@ -230,6 +256,7 @@ class Header extends Component {
                 </a>
             </div>
             <div className="HeaderControls">
+                {gameToggle}
                 <div className='inline-block-div'>
                     {classDropdown}
                     {subClassDropdown}

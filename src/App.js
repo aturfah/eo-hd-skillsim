@@ -25,7 +25,8 @@ function defaultState() {
     activeSubclassIdx: -1,
     activeSubclassFlag: false,
     subclassToggle: false,
-    maxLevel: 70
+    maxLevel: 70,
+    gameID: "eo3"
   };
 }
 
@@ -67,7 +68,9 @@ class App extends Component {
     if (key === undefined) {
       console.log('Resetting State...')
         this.firstDegSkills = firstDegSkills(defaultState().activeClassIdx)
-        this.setState(defaultState());
+        const newState = defaultState();
+        newState.gameID = this.state.gameID;
+        this.setState(newState);
       return;
     }
     //Set a specific part of state
@@ -79,6 +82,7 @@ class App extends Component {
     if (key === 'activeClassIdx') { 
       console.log('Class change -> resetting state...')
       oldState = defaultState();
+      oldState.gameID = this.state.gameID;
       this.firstDegSkills = firstDegSkills(value)
     } 
     if (key === 'activeSubclassIdx') {
@@ -161,6 +165,7 @@ class App extends Component {
           activeSubclassFlag={this.state.activeSubclassFlag}
           subclassToggle={this.state.subclassToggle}
           maxLevel={this.state.maxLevel}
+          gameID={this.state.gameID}
         ></Header>
         <SkillTree
           updateMethod={this.updateState.bind(this)}
