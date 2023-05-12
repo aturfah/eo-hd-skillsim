@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './skillInfo.css'
 
-import {parsePX, parseSkillBranches, skillData} from '../helpers';
+import {deepCopy, parsePX, parseSkillBranches, skillData} from '../helpers';
 
 function oldBuildSkillText(skillDatum) {
     if (skillDatum === undefined) {
@@ -17,11 +17,17 @@ function oldBuildSkillText(skillDatum) {
     var levelGrowth = []
 
     // First initialize levelGrowth with 'Level #:' strings
-    skillDatum.levels.forEach(function (level) {
-        if (level.label !== 'Level') {
-            levelGrowth.push('Lv. ' + level.label + ': ');
+    if (skillDatum.levels === undefined) {
+        for (let idx = 1; idx <= skillDatum.max_level; ++idx) {
+            levelGrowth.push('Lv. ' + idx + ': ');
         }
-    })
+    } else {
+        skillDatum.levels.forEach(function (level) {
+            if (level.label !== 'Level') {
+                levelGrowth.push('Lv. ' + level.label + ': ');
+            }
+        })    
+    }
 
 
     // Clean up skills to get 15-length vectors
@@ -88,6 +94,7 @@ function buildSkillText(skillDatum) {
     if (skillDatum === undefined) {
         return 'doot'
     }
+    skillDatum = deepCopy(skillDatum);
 
     if (skillDatum.force_boost === true || skillDatum.force_break === true) {
         return oldBuildSkillText(skillDatum)
@@ -100,6 +107,16 @@ function buildSkillText(skillDatum) {
     const grimSkillData = {};
     const maxLevel = skillDatum.max_level;
     const rowOrder = skillDatum.growth_order;
+
+    // Hack around not having levels object because these are all 5/10
+    if (skillDatum.levels === undefined) {
+        skillDatum.levels = []
+        const temp = Array(maxLevel + 1).keys();
+        [...temp].forEach(idx => {
+            skillDatum.levels.push({label: idx})
+        })
+    }
+
     skillDatum.levels.forEach(function (val, idx) {
         if (idx === 0) {
             return

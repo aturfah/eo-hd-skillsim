@@ -23,29 +23,34 @@ const treeData = [
             coords: {x: 0, y: 1}
         },
         {
-            skillID: 'bandage',
+            skillID: 'str_up',
             baseSkill: true,
             coords: {x: 0, y: 2}
         },
         {
-            skillID: 'combat_study',
+            skillID: 'tec_up',
             baseSkill: true,
             coords: {x: 0, y: 3}
         },
         {
-            skillID: 'take',
+            skillID: 'vit_up',
             baseSkill: true,
             coords: {x: 0, y: 4}
         },
         {
-            skillID: 'chop',
+            skillID: 'agi_up',
             baseSkill: true,
             coords: {x: 0, y: 5}
         },
         {
-            skillID: 'mine',
+            skillID: 'luc_up',
             baseSkill: true,
             coords: {x: 0, y: 6}
+        },
+        {
+            skillID: 'esc_up',
+            baseSkill: true,
+            coords: {x: 0, y: 7}
         },
     ],
 ]

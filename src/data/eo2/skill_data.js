@@ -23999,7 +23999,7 @@
             "_id": "esc_up",
             "name": "Esc Up",
             "description": "Increases the user's escape rate by 30%.",
-            "max_level": 0,
+            "max_level": 1,
             "uses": "N/A",
             "class_skill": false,
             "prerequisites": [],
