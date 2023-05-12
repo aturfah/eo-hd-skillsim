@@ -67,7 +67,7 @@ class App extends Component {
     // Reset Everything
     if (key === undefined) {
       console.log('Resetting State...')
-        this.firstDegSkills = firstDegSkills(defaultState().activeClassIdx)
+        this.firstDegSkills = firstDegSkills(defaultState().activeClassIdx, defaultState().gameID)
         const newState = defaultState();
         newState.gameID = this.state.gameID;
         this.setState(newState);
@@ -83,7 +83,7 @@ class App extends Component {
       console.log('Class change -> resetting state...')
       oldState = defaultState();
       oldState.gameID = this.state.gameID;
-      this.firstDegSkills = firstDegSkills(value)
+      this.firstDegSkills = firstDegSkills(value, oldState.gameID)
     } 
     if (key === 'activeSubclassIdx') {
       console.log('Subclass change -> Clear subclass skills')
@@ -99,6 +99,11 @@ class App extends Component {
       // Keep skills NOT in the subclass
       let skillsToDelete = listIntersect(Object.keys(oldState.skillsChosen), subclassSkillsToDelete);
       skillsToDelete.forEach(skillID => {delete oldState.skillsChosen[skillID]})
+    }
+    if (key === 'gameID') {
+      // Reset the whole state
+      oldState = defaultState();
+      oldState.gameID = value;
     }
 
     // Change parameters
