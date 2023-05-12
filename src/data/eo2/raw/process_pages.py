@@ -80,23 +80,24 @@ if __name__ == "__main__":
             growth_order = []
             max_level = 0
 
-            for table_row in skill_table.find_all("tr"):
-                max_level = 0
-                row_tag = None
-                for table_cell in table_row.find_all(["th", "td"]):
-                    if row_tag is None:
-                        temp = table_cell.text.strip()
-                        if temp == "Level":
-                            break
+            if skill_table:
+                for table_row in skill_table.find_all("tr"):
+                    max_level = 0
+                    row_tag = None
+                    for table_cell in table_row.find_all(["th", "td"]):
+                        if row_tag is None:
+                            temp = table_cell.text.strip()
+                            if temp == "Level":
+                                break
 
-                        row_tag = temp
-                        growth_order.append(row_tag)
-                        growth[row_tag] = []
-                        continue
+                            row_tag = temp
+                            growth_order.append(row_tag)
+                            growth[row_tag] = []
+                            continue
 
-                    levelspan = table_cell.get("colspan", "1")
-                    max_level += int(levelspan)
-                    growth[row_tag].append({"levelspan": levelspan, "value": table_cell.text})
+                        levelspan = table_cell.get("colspan", "1")
+                        max_level += int(levelspan)
+                        growth[row_tag].append({"levelspan": levelspan, "value": table_cell.text})
 
 
             ## Start putting stuff into the objects
