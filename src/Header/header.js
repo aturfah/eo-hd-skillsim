@@ -17,7 +17,7 @@ class Header extends Component {
     constructor(props) {
         super(props);
         this.level = props.level;
-        this.classOpts = getClasses(this.props.gameID);
+        // this.classOpts = getClasses(this.props.gameID);
 
         // Element Builder Functions
         this.buildClassDropdown = this.buildClassDropdown.bind(this);
@@ -149,7 +149,7 @@ class Header extends Component {
         let extraClasses = []
         if (subclassFlag) {
             label = "Subclass"
-            invalidClasses = ["Default", "Yggdroid", this.classOpts[this.props.activeClassIdx]]
+            invalidClasses = ["Default", "Yggdroid", getClasses(this.props.gameID)[this.props.activeClassIdx]]
             curValue = this.props.activeSubclassIdx // TODO: CHANGE THIS
             updateFunc = this.updateSubclassClassIdx
             extraClasses = ["(None)"]
@@ -160,7 +160,7 @@ class Header extends Component {
             idx = -1 * (idx + 1)
             classOptions.push(<option key={idx + className} value={idx}>{className}</option>)
         });
-        this.classOpts.forEach(function(className, idx) {
+        getClasses(this.props.gameID).forEach(function(className, idx) {
             if (invalidClasses.includes(className)) {
                 return;
             }
@@ -197,13 +197,13 @@ class Header extends Component {
 
     updateClassIdx(newClassIdx) {
         // const newClassIdx = this.refs.classDropdownList.value;
-        console.log('Updating to class', newClassIdx, this.classOpts[newClassIdx]);
+        console.log('Updating to class', newClassIdx, getClasses(this.props.gameID)[newClassIdx]);
         this.props.updateMethod('activeClassIdx', parseInt(newClassIdx));
     }
 
     updateSubclassClassIdx(newClassIdx) {
         // const newClassIdx = this.refs.classDropdownList.value;
-        console.log('Updating to subclass', newClassIdx, this.classOpts[newClassIdx]);
+        console.log('Updating to subclass', newClassIdx, getClasses(this.props.gameID)[newClassIdx]);
         this.props.updateMethod('activeSubclassIdx', parseInt(newClassIdx));
     }
 

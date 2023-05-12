@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import './skillInfo.css'
 
-import skillData from '../data/eo3/skill_data';
-import {parsePX, parseSkillBranches} from '../helpers';
+import {parsePX, parseSkillBranches, skillData} from '../helpers';
 
 function oldBuildSkillText(skillDatum) {
     if (skillDatum === undefined) {
@@ -192,13 +191,13 @@ class SkillInfoPanel extends Component {
     constructor(props) {
         super(props);
         this.activeClassIdx = props.activeClassIdx;
-        this.parsedSkillData = parseSkillBranches(skillData[this.activeClassIdx])
+        this.parsedSkillData = parseSkillBranches(skillData[this.props.gameID][this.activeClassIdx])
         this.maxWidth = 800;
     }
 
     render() {
         const activeClassIdx = this.props.activeClassIdx;
-        this.parsedSkillData = parseSkillBranches(skillData[activeClassIdx])
+        this.parsedSkillData = parseSkillBranches(skillData[this.props.gameID][activeClassIdx])
 
         const activeSkillID = this.props.activeInfo.activeSkillID;
         const activeSkillBox = this.props.activeInfo.activeSkillBox;

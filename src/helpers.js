@@ -3,18 +3,23 @@ import React from 'react';
 import eo3MasterySkills from './data/eo3/mastery_skills';
 import eo3PrereqData from './data/eo3/prereq_data';
 import eo3SkillData from './data/eo3/skill_data';
+import eo2MasterySkills from './data/eo2/mastery_skills';
+import eo2PrereqData from './data/eo2/prereq_data';
+import eo2SkillData from './data/eo2/skill_data';
 
 export const retirementLabels = ['N/A', '30-39', '40-49', '50-59', '60-69', '70-98', '99']
 
 export const masterySkills = {
-    "eo3": eo3MasterySkills
+    "eo3": eo3MasterySkills,
+    "eo2": eo2MasterySkills,
 }
 export const prereqData = {
-    "eo3": eo3PrereqData
+    "eo3": eo3PrereqData,
+    "eo2": eo2PrereqData,
 }
 export const skillData = {
     "eo3": eo3SkillData,
-    "eo2": eo3SkillData,
+    "eo2": eo2SkillData,
     "eo1": eo3SkillData
 }
 

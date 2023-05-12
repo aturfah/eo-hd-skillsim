@@ -149,6 +149,13 @@ class App extends Component {
   }
 
   render() {
+    let defaultSkillsIdx = 12;
+    if (this.state.gameID === 'eo3') {
+      // its 12
+    } else if (this.state.gameID === 'eo2') {
+      // its 13
+      defaultSkillsIdx = 13
+    }
     return (
       <div className="App">
         <Header
@@ -170,7 +177,7 @@ class App extends Component {
         <SkillTree
           updateMethod={this.updateState.bind(this)}
           skillsChosen={this.state.skillsChosen}
-          activeClassIdx={12}
+          activeClassIdx={defaultSkillsIdx}
           gameID={this.state.gameID}
         ></SkillTree>
         <SkillTree
