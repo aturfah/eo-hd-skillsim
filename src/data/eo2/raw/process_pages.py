@@ -66,6 +66,7 @@ if __name__ == "__main__":
                     for rsprq in raw_skill_prereqs:
                         name, level = rsprq.lower().split(" level ")
                         prereqs[map_name_id(name)] = int(level)
+            prereq_list = [{"_id": x, "level": prereqs[x]} for x in prereqs.keys()]
 
             ## Parse out the body part
             raw_skill_uses = [x.text for x in skill_details if body_part_li(x)]
@@ -74,7 +75,29 @@ if __name__ == "__main__":
                 raw_skill_uses = raw_skill_uses[0]
                 skill_uses = raw_skill_uses.split(":")[1].strip()
 
-            ## TODO: Parse out skill table
+            ## Parse out skill table
+            growth = {}
+            growth_order = []
+            max_level = 0
+
+            for table_row in skill_table.find_all("tr"):
+                max_level = 0
+                row_tag = None
+                for table_cell in table_row.find_all(["th", "td"]):
+                    if row_tag is None:
+                        temp = table_cell.text.strip()
+                        if temp == "Level":
+                            break
+
+                        row_tag = temp
+                        growth_order.append(row_tag)
+                        growth[row_tag] = []
+                        continue
+
+                    levelspan = table_cell.get("colspan", "1")
+                    max_level += int(levelspan)
+                    growth[row_tag].append({"levelspan": levelspan, "value": table_cell.text})
+
 
             ## Start putting stuff into the objects
             if True == False:
@@ -97,11 +120,12 @@ if __name__ == "__main__":
                 "no_level": False,
                 "_id": map_name_id(skill_name),
                 "description": skill_description,
-                "max_level": 10, ## TODO: Parse this out
+                "max_level": max_level, ## TODO: Parse this out
                 "uses": skill_uses,
                 "class_skill": False,
-                "prerequisites": [{"_id": x, "level": prereqs[x]} for x in prereqs.keys()]
-
+                "prerequisites": prereq_list,
+                "growth_order": growth_order,
+                "growth": growth
             }
 
             class_obj["branches"][0]["skill_data"].append(skill_output)
