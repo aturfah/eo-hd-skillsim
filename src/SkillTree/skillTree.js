@@ -5,8 +5,8 @@ import SkillInfoPanel from '../SkillInfo/skillInfo'
 import './skillTree.css';
 
 // Data Import
-import skillData from '../data/skill_data';
-import treeData from '../data/tree_data'
+import skillData from '../data/eo3/skill_data';
+import treeData from '../data/eo3/tree_data'
 
 // Helper Functions
 import {firstDegSkills, buildBarsBefore, buildBarsAfter} from '../helpers';

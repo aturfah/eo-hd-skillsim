@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './skillInfo.css'
 
-import skillData from '../data/skill_data';
+import skillData from '../data/eo3/skill_data';
 import {parsePX, parseSkillBranches} from '../helpers';
 
 function oldBuildSkillText(skillDatum) {
