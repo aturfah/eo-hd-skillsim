@@ -247,16 +247,21 @@ class Header extends Component {
             height: 'auto'
         }
 
-        return <div className="HeaderBar">
-            <div className="HeaderImg">
-                <a href="https://github.com/aturfah/eo3-remake-skillsim">
-                <img src={process.env.PUBLIC_URL + "/skillsim_img.png"}  alt="alt_text" style={imgStyle}/>
-                </a>
-            </div>
-            <div className="HeaderControls">
-                <div>
-                    {gameToggle}
+        let headerControlsDiv = <div>
+                <div>{gameToggle} <br/></div>
+                <div className='inline-block-div'>
                 </div>
+                <div className='inline-block-div'>
+                    {classDropdown}
+                    {levelBox}
+                    {maxLevelBox}
+                    {retirementBox}
+                    {skillPointsInfo}                        
+                </div>
+        </div>
+        if (this.props.gameID === 'eo3') {
+            headerControlsDiv = <div>
+                <div>{gameToggle}</div>
                 <div className='inline-block-div'>
                     {classDropdown}
                     {subClassDropdown}
@@ -268,6 +273,17 @@ class Header extends Component {
                     {retirementBox}
                     {skillPointsInfo}                        
                 </div>
+            </div>
+        } 
+
+        return <div className="HeaderBar">
+            <div className="HeaderImg">
+                <a href="https://github.com/aturfah/eo3-remake-skillsim">
+                <img src={process.env.PUBLIC_URL + "/skillsim_img.png"}  alt="alt_text" style={imgStyle}/>
+                </a>
+            </div>
+            <div className="HeaderControls">
+                {headerControlsDiv}
                 <div>
                     <button className="btn btn-gray" onClick={() => this._clearSkills()}>Clear Skills</button> &nbsp;
                     <button className="btn btn-gray" onClick={() => this._copySkillsClipboard()}>Copy Build</button>
