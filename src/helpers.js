@@ -23,6 +23,11 @@ export const skillData = {
     "eo1": eo3SkillData
 }
 
+export const styleConfigs = {
+    "eo3": {},
+    "eo2": {},
+    "eo1": {}
+}
 
 export function parsePX (pxStr) {
     return parseInt(String(pxStr).replace('px', ''));
