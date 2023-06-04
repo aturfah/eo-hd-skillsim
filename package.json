@@ -1,7 +1,7 @@
 {
   "name": "eo3-remake-skillsim",
   "version": "0.1.0",
-  "homepage": "https://aturfah.github.io/eo3-remake-skillsim/",
+  "homepage": "https://aturfah.github.io/eo3hd-skillsim/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
