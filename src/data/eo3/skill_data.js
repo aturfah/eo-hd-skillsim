@@ -8761,7 +8761,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Chase chance red.",
+              "Chase chance reduction",
               "Maximum chases",
               "Acc. (mod)",
               "Damage %"
@@ -8807,7 +8807,7 @@
                   "value": "60"
                 }
               ],
-              "Chase chance red.": [
+              "Chase chance reduction": [
                 {
                   "levelspan": 1,
                   "value": "40"
@@ -8989,7 +8989,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Chase chance red.",
+              "Chase chance reduction",
               "Maximum chases",
               "Acc. (mod)",
               "Damage %"
@@ -9035,7 +9035,7 @@
                   "value": "60"
                 }
               ],
-              "Chase chance red.": [
+              "Chase chance reduction": [
                 {
                   "levelspan": 1,
                   "value": "40"
@@ -9217,7 +9217,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Chase chance red.",
+              "Chase chance reduction",
               "Maximum chases",
               "Acc. (mod)",
               "Damage %"
@@ -9263,7 +9263,7 @@
                   "value": "60"
                 }
               ],
-              "Chase chance red.": [
+              "Chase chance reduction": [
                 {
                   "levelspan": 1,
                   "value": "40"
@@ -9865,7 +9865,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Chase chance red.",
+              "Chase chance reduction",
               "Maximum chases",
               "Acc. (mod)",
               "Damage %"
@@ -9911,7 +9911,7 @@
                   "value": "60"
                 }
               ],
-              "Chase chance red.": [
+              "Chase chance reduction": [
                 {
                   "levelspan": 1,
                   "value": "40"
@@ -10093,7 +10093,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Chase chance red.",
+              "Chase chance reduction",
               "Maximum chases",
               "Acc. (mod)",
               "Damage %"
@@ -10139,7 +10139,7 @@
                   "value": "60"
                 }
               ],
-              "Chase chance red.": [
+              "Chase chance reduction": [
                 {
                   "levelspan": 1,
                   "value": "40"
@@ -10321,7 +10321,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Chase chance red.",
+              "Chase chance reduction",
               "Maximum chases",
               "Acc. (mod)",
               "Damage %"
@@ -10367,7 +10367,7 @@
                   "value": "60"
                 }
               ],
-              "Chase chance red.": [
+              "Chase chance reduction": [
                 {
                   "levelspan": 1,
                   "value": "40"
@@ -32724,9 +32724,8 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Bot skill ID",
               "Bot HP and TP",
-              "Chase chance red.",
+              "Chase chance reduction",
               "Maximum chases"
             ],
             "growth": {
@@ -32826,7 +32825,7 @@
                   "value": "360"
                 }
               ],
-              "Chase chance red.": [
+              "Chase chance reduction": [
                 {
                   "levelspan": 1,
                   "value": "40"
@@ -32944,9 +32943,8 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Bot skill ID",
               "Bot HP and TP",
-              "Chase chance red.",
+              "Chase chance reduction",
               "Maximum chases"
             ],
             "growth": {
@@ -33046,7 +33044,7 @@
                   "value": "360"
                 }
               ],
-              "Chase chance red.": [
+              "Chase chance reduction": [
                 {
                   "levelspan": 1,
                   "value": "40"
@@ -33164,9 +33162,8 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Bot skill ID",
               "Bot HP and TP",
-              "Chase chance red.",
+              "Chase chance reduction",
               "Maximum chases"
             ],
             "growth": {
@@ -33266,7 +33263,7 @@
                   "value": "360"
                 }
               ],
-              "Chase chance red.": [
+              "Chase chance reduction": [
                 {
                   "levelspan": 1,
                   "value": "40"
