@@ -2,7 +2,7 @@
     position: absolute;
     background-color: #91acc7;
     padding: 10px;
-    font-size: 14px;
+    font-size: 15px;
     border-style: solid;
     border-width: 2px;
     border-color: #0169ba;
@@ -21,7 +21,7 @@
 }
 
 .SkillHeader {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .SkillInfoTable table {
@@ -34,5 +34,5 @@
     border: 2px solid black;
     border-spacing: 0;
     padding: 3px;
-    font-size: 14px;
+    font-size: 15px;
 }
