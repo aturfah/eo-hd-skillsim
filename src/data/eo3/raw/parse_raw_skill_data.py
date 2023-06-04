@@ -129,7 +129,7 @@ def output_js(data, filename, var_name):
 
 
 if __name__ == "__main__":
-    with open("EO3 Skill Data - Skills.csv", "r") as in_file:
+    with open("FULL EO3 Skill Data - Skills.csv", "r") as in_file:
       raw_skill_rows = in_file.readlines()
 
     with open("subheaders.json", "r") as in_file:
@@ -139,6 +139,8 @@ if __name__ == "__main__":
     
     ## Parse Shiri's skill file
     parsed_skills = {}
+    id_counter = 0
+    id_data_map = {}
     for skill_datum in raw_skill_rows:
         name = skill_datum[0]
         if not name or name.startswith("--"):
@@ -154,14 +156,13 @@ if __name__ == "__main__":
            values_range = [x for x in range((header_idx+1), (header_idx+11))]
            
            subheader = skill_datum[header_idx]
-           if subheader not in ["0", "77", "59", "52", "136", "135", "113", "128", "107", "106", "158", "110",
+           if subheader not in ["0", "59", "52", "136", "135", "113", "128", "107", "106", "158", "110",
                                 "111", "71", "134", "126", "127", "150", "241", "242", "161", "228", "281",
                                 "282", "215", "216", "73", "151", "256", "205", "206", "244", "245", "83", "84",
                                 "274", "18", "279", "27", "160", "130", "235", "240", "249", "250", "251", "78",
-                                "169", "142"]:
+                                "169", "142", "28"]:
                 """
                 0 - Empty
-                77 - Skill Link (ID)
                 59 - Unknown59
                 52 - Valid kill target
                 136 - Use Weapon Animation/Sound
@@ -200,6 +201,7 @@ if __name__ == "__main__":
                 78 - Link after turns
                 169 - Unknown169
                 142 - Ignore DEF Buffs
+                28 - Bot chase elem.
                 """
                 try:
                     skill_data_levels.append({
@@ -213,15 +215,37 @@ if __name__ == "__main__":
 
            offset = offset + 11
 
-
+        id_data_map[str(id_counter)] = skill_data_levels
         if name not in parsed_skills.keys():
             parsed_skills[name] = {
                 "name": name,
                 "max_level": max_level,
-                "data": skill_data_levels
+                "data": skill_data_levels,
+                "skill_id": id_counter
             }
         else:
            parsed_skills[name]["data"].extend(skill_data_levels)
+
+        id_counter += 1
+
+    ## Handle Linked Skills in data
+    LINK_SKILL_SUBHEADERS = ["77", "114", "172"]
+    for skill_id in parsed_skills:        
+        skill_data = dict(parsed_skills[skill_id]) ## deepcopy
+        link_attrib_idx = 0
+        idx_to_delete = []
+        for attrib_info in skill_data["data"]:
+            if attrib_info["subheader_val"] in LINK_SKILL_SUBHEADERS:
+                ## Logic to add linked skill
+                linked_skill_data = id_data_map[attrib_info["levels"][0]]
+                parsed_skills[skill_id]["data"].extend(linked_skill_data)
+                idx_to_delete.append(link_attrib_idx)
+
+            link_attrib_idx += 1
+
+        idx_to_delete.reverse()
+        for idx in idx_to_delete:
+            del parsed_skills[skill_id]["data"][idx]
 
     ## Combine Linked Skills
     for skill_name in LINKED_SKILLS:
@@ -232,7 +256,7 @@ if __name__ == "__main__":
                 prefix = "Initial "
             elif "(Follow-Up)" in linked_name:
                 prefix = "Subsequent "
-            
+
             for attrib_data in linked_data["data"]:
                 attrib_data["attribute"] = "{pfx}{atb}".format(pfx=prefix,
                                                                atb=attrib_data["attribute"])
