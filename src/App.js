@@ -25,7 +25,8 @@ function defaultState() {
     activeSubclassIdx: -1,
     activeSubclassFlag: false,
     subclassToggle: false,
-    maxLevel: 70
+    maxLevel: 70,
+    gameID: "eo3"
   };
 }
 
@@ -33,7 +34,7 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = defaultState()
-    this.firstDegSkills = firstDegSkills(this.state.activeClassIdx);
+    this.firstDegSkills = firstDegSkills(this.state.activeClassIdx, this.state.gameID);
     this.calculateSpRemaining = this.calculateSpRemaining.bind(this)
   }
 
@@ -41,7 +42,7 @@ class App extends Component {
     const sp = calculateTotalSP(skillState.level, skillState.retirementIdx, skillState.activeSubclassFlag)
     const activeFDegSkills = listIntersect(Object.keys(skillState.skillsChosen), this.firstDegSkills);
     const skillsChosen = skillState.skillsChosen;
-    const activeLinkedSkills = listIntersect(Object.keys(skillState.skillsChosen), linkedSkills(skillState.activeClassIdx))
+    const activeLinkedSkills = listIntersect(Object.keys(skillState.skillsChosen), linkedSkills(skillState.activeClassIdx, this.state.gameID))
 
     let totalSpSpent = 0;
     Object.keys(skillsChosen).forEach(function (key) {
@@ -66,8 +67,10 @@ class App extends Component {
     // Reset Everything
     if (key === undefined) {
       console.log('Resetting State...')
-        this.firstDegSkills = firstDegSkills(defaultState().activeClassIdx)
-        this.setState(defaultState());
+        this.firstDegSkills = firstDegSkills(defaultState().activeClassIdx, defaultState().gameID)
+        const newState = defaultState();
+        newState.gameID = this.state.gameID;
+        this.setState(newState);
       return;
     }
     //Set a specific part of state
@@ -79,7 +82,8 @@ class App extends Component {
     if (key === 'activeClassIdx') { 
       console.log('Class change -> resetting state...')
       oldState = defaultState();
-      this.firstDegSkills = firstDegSkills(value)
+      oldState.gameID = this.state.gameID;
+      this.firstDegSkills = firstDegSkills(value, oldState.gameID)
     } 
     if (key === 'activeSubclassIdx') {
       console.log('Subclass change -> Clear subclass skills')
@@ -89,21 +93,26 @@ class App extends Component {
       // Get skills for the subclass
       let subclassSkillsToDelete = [];
       if (this.state.activeSubclassIdx !== -1) {
-        subclassSkillsToDelete = getClassSkillList(this.state.activeSubclassIdx);
+        subclassSkillsToDelete = getClassSkillList(this.state.activeSubclassIdx, oldState.gameID);
       }
 
       // Keep skills NOT in the subclass
       let skillsToDelete = listIntersect(Object.keys(oldState.skillsChosen), subclassSkillsToDelete);
       skillsToDelete.forEach(skillID => {delete oldState.skillsChosen[skillID]})
     }
+    if (key === 'gameID') {
+      // Reset the whole state
+      oldState = defaultState();
+      oldState.gameID = value;
+    }
 
     // Change parameters
     if (key === 'skillsChosen') {
       const skillId = value._id;
       const skillLevel = value.level;
-      const mainClassSkillFlag = getClassSkillList(oldState.activeClassIdx).includes(skillId);
+      const mainClassSkillFlag = getClassSkillList(oldState.activeClassIdx, oldState.gameID).includes(skillId);
       let validationClassIdx = oldState.activeClassIdx;
-      if (!mainClassSkillFlag) {
+      if (!mainClassSkillFlag & oldState.activeSubclassFlag) {
         validationClassIdx = oldState.activeSubclassIdx;
       }
 
@@ -113,16 +122,16 @@ class App extends Component {
       } else if (skillLevel === 0) {
         console.log('Removing', skillId)
         delete oldState.skillsChosen[skillId];
-        oldState.skillsChosen = fixSkillDependencyDelete(oldState.skillsChosen, validationClassIdx);
+        oldState.skillsChosen = fixSkillDependencyDelete(oldState.skillsChosen, validationClassIdx, oldState.gameID);
       } else if (!Object.keys(oldState.skillsChosen).includes(skillId) ||
           oldState.skillsChosen[skillId] < skillLevel) {
         console.log('Increasing level of', skillId, 'to', skillLevel)
         oldState.skillsChosen[skillId] = skillLevel;
-        oldState.skillsChosen = fixSkillDependencyAdd(oldState.skillsChosen, validationClassIdx);
+        oldState.skillsChosen = fixSkillDependencyAdd(oldState.skillsChosen, validationClassIdx, oldState.gameID);
       } else if (oldState.skillsChosen[skillId] > skillLevel) {
         console.log('Decreasing level of', skillId, 'to', skillLevel);
         oldState.skillsChosen[skillId] = skillLevel;
-        oldState.skillsChosen = fixSkillDependencyDelete(oldState.skillsChosen, validationClassIdx);
+        oldState.skillsChosen = fixSkillDependencyDelete(oldState.skillsChosen, validationClassIdx, oldState.gameID);
       }
     } else {
       console.log('Setting', key, 'to', value)
@@ -145,6 +154,13 @@ class App extends Component {
   }
 
   render() {
+    let defaultSkillsIdx = 12;
+    if (this.state.gameID === 'eo3') {
+      // its 12
+    } else if (this.state.gameID === 'eo2') {
+      // its 13
+      defaultSkillsIdx = 12
+    }
     return (
       <div className="App">
         <Header
@@ -161,17 +177,20 @@ class App extends Component {
           activeSubclassFlag={this.state.activeSubclassFlag}
           subclassToggle={this.state.subclassToggle}
           maxLevel={this.state.maxLevel}
+          gameID={this.state.gameID}
         ></Header>
         <SkillTree
           updateMethod={this.updateState.bind(this)}
           skillsChosen={this.state.skillsChosen}
-          activeClassIdx={12}
+          activeClassIdx={defaultSkillsIdx}
+          gameID={this.state.gameID}
         ></SkillTree>
         <SkillTree
           updateMethod={this.updateState.bind(this)}
           skillsChosen={this.state.skillsChosen}
           activeClassIdx={(this.state.subclassToggle ? this.state.activeSubclassIdx : this.state.activeClassIdx)}
           subclassTree={this.state.subclassToggle}
+          gameID={this.state.gameID}
         ></SkillTree>
       </div>
     );

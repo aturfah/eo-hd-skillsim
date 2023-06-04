@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
 import './header.css';
 
-import skillData from '../data/skill_data';
-
 // Helper Functions
-import {isNumber, retirementLabels} from '../helpers'
+import {isNumber, retirementLabels, skillData} from '../helpers'
 
-function getClasses() {
+function getClasses(gameID) {
     const classes = [];
-    skillData.forEach(function (datum) {
+    skillData[gameID].forEach(function (datum) {
       classes.push(datum.class)
     })
   
@@ -19,7 +17,7 @@ class Header extends Component {
     constructor(props) {
         super(props);
         this.level = props.level;
-        this.classOpts = getClasses();
+        // this.classOpts = getClasses(this.props.gameID);
 
         // Element Builder Functions
         this.buildClassDropdown = this.buildClassDropdown.bind(this);
@@ -27,6 +25,8 @@ class Header extends Component {
         this.updateLevel = this.updateLevel.bind(this);
         this.buildRetirementBox = this.buildRetirementBox.bind(this);
         this.updateRetirementIdx = this.updateRetirementIdx.bind(this);
+        this.buildGameToggle = this.buildGameToggle.bind(this);
+        this.buildSubclassViewToggle = this.buildSubclassViewToggle.bind(this);
 
         // Updater Functions
         this._setLevel = this._setLevel.bind(this);
@@ -35,9 +35,32 @@ class Header extends Component {
         this._resetAll = this._resetAll.bind(this);
         this.updateClassIdx = this.updateClassIdx.bind(this);
         this.updateSubclassClassIdx = this.updateSubclassClassIdx.bind(this);
-        this.buildSubclassViewToggle = this.buildSubclassViewToggle.bind(this);
     }
 
+    buildGameToggle() {
+        const eo1Toggle = this.props.gameID === "eo1";
+        const eo2Toggle = this.props.gameID === "eo2";
+        const eo3Toggle = this.props.gameID === "eo3";
+        return <div>
+            <div className='btn-group'>
+                <button type='button'
+                    class={'btn ' + (eo1Toggle ? 'btn-active' : 'btn-inactive')}
+                    onClick={() => this.props.updateMethod('gameID', 'eo1')}
+                    >
+                    EO1</button>
+                <button type='button'
+                    class={'btn ' + (eo2Toggle ? 'btn-active' : 'btn-inactive')}
+                    onClick={() => this.props.updateMethod('gameID', 'eo2')}
+                    >
+                    EO2</button>
+                <button type='button'
+                    class={'btn ' + (eo3Toggle ? 'btn-active' : 'btn-inactive')}
+                    onClick={() => this.props.updateMethod('gameID', 'eo3')}
+                    >
+                    EO3</button>
+            </div>
+        </div>
+    }
 
     updateRetirementIdx() {
         this.props.updateMethod('retirementIdx', parseInt(this.refs.retirementDropdownList.value))
@@ -126,7 +149,7 @@ class Header extends Component {
         let extraClasses = []
         if (subclassFlag) {
             label = "Subclass"
-            invalidClasses = ["Default", "Yggdroid", this.classOpts[this.props.activeClassIdx]]
+            invalidClasses = ["Default", "Yggdroid", getClasses(this.props.gameID)[this.props.activeClassIdx]]
             curValue = this.props.activeSubclassIdx // TODO: CHANGE THIS
             updateFunc = this.updateSubclassClassIdx
             extraClasses = ["(None)"]
@@ -137,7 +160,7 @@ class Header extends Component {
             idx = -1 * (idx + 1)
             classOptions.push(<option key={idx + className} value={idx}>{className}</option>)
         });
-        this.classOpts.forEach(function(className, idx) {
+        getClasses(this.props.gameID).forEach(function(className, idx) {
             if (invalidClasses.includes(className)) {
                 return;
             }
@@ -174,13 +197,13 @@ class Header extends Component {
 
     updateClassIdx(newClassIdx) {
         // const newClassIdx = this.refs.classDropdownList.value;
-        console.log('Updating to class', newClassIdx, this.classOpts[newClassIdx]);
+        console.log('Updating to class', newClassIdx, getClasses(this.props.gameID)[newClassIdx]);
         this.props.updateMethod('activeClassIdx', parseInt(newClassIdx));
     }
 
     updateSubclassClassIdx(newClassIdx) {
         // const newClassIdx = this.refs.classDropdownList.value;
-        console.log('Updating to subclass', newClassIdx, this.classOpts[newClassIdx]);
+        console.log('Updating to subclass', newClassIdx, getClasses(this.props.gameID)[newClassIdx]);
         this.props.updateMethod('activeSubclassIdx', parseInt(newClassIdx));
     }
 
@@ -215,6 +238,7 @@ class Header extends Component {
         const retirementBox = this.buildRetirementBox()
         const maxLevelBox = this.buildMaxLevelBox()
         const subclassToggleDiv = this.buildSubclassViewToggle()
+        // const gameToggle = this.buildGameToggle();
 
         const imgStyle = {
             float: 'left',
@@ -223,13 +247,19 @@ class Header extends Component {
             height: 'auto'
         }
 
-        return <div className="HeaderBar">
-            <div className="HeaderImg">
-                <a href="https://github.com/aturfah/eo3-remake-skillsim">
-                <img src={process.env.PUBLIC_URL + "/skillsim_img.png"}  alt="alt_text" style={imgStyle}/>
-                </a>
-            </div>
-            <div className="HeaderControls">
+        let headerControlsDiv = <div>
+                <div className='inline-block-div'>
+                </div>
+                <div className='inline-block-div'>
+                    {classDropdown}
+                    {levelBox}
+                    {maxLevelBox}
+                    {retirementBox}
+                    {skillPointsInfo}                        
+                </div>
+        </div>
+        if (this.props.gameID === 'eo3') {
+            headerControlsDiv = <div>
                 <div className='inline-block-div'>
                     {classDropdown}
                     {subClassDropdown}
@@ -241,6 +271,17 @@ class Header extends Component {
                     {retirementBox}
                     {skillPointsInfo}                        
                 </div>
+            </div>
+        } 
+
+        return <div className="HeaderBar">
+            <div className="HeaderImg">
+                <a href="https://github.com/aturfah/eo3-remake-skillsim">
+                <img src={process.env.PUBLIC_URL + "/skillsim_img.png"}  alt="alt_text" style={imgStyle}/>
+                </a>
+            </div>
+            <div className="HeaderControls">
+                {headerControlsDiv}
                 <div>
                     <button className="btn btn-gray" onClick={() => this._clearSkills()}>Clear Skills</button> &nbsp;
                     <button className="btn btn-gray" onClick={() => this._copySkillsClipboard()}>Copy Build</button>

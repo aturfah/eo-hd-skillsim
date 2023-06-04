@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+## Pythons tuff
+env/
+raw_pages/
+*.pyc
+.vscode/

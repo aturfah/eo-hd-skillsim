@@ -4,19 +4,24 @@ import SkillTreeNode from './skillTreeNode'
 import SkillInfoPanel from '../SkillInfo/skillInfo'
 import './skillTree.css';
 
-// Data Import
-import skillData from '../data/skill_data';
-import treeData from '../data/tree_data'
-
 // Helper Functions
-import {firstDegSkills, buildBarsBefore, buildBarsAfter} from '../helpers';
+import {firstDegSkills, buildBarsBefore, buildBarsAfter, skillData} from '../helpers';
 
+// Data Import
+import eo3TreeData from '../data/eo3/tree_data'
+import eo2TreeData from '../data/eo2/tree_data'
+
+const treeData = {
+    'eo3': eo3TreeData,
+    'eo2': eo2TreeData,
+    'eo1': eo3TreeData
+}
 
 class SkillTree extends Component {
     constructor(props) {
         super(props);
         this.state = {activeSkillID: null, activeSkillBox: null, graphParams: null}
-        this.firstSkills = firstDegSkills(props.activeClassIdx)
+        this.firstSkills = firstDegSkills(props.activeClassIdx, props.gameID)
         this.divHeight = null;
         this.divWidth = null;
         this.buildSkillTreeNodes = this.buildSkillTreeNodes.bind(this);
@@ -60,7 +65,8 @@ class SkillTree extends Component {
 
     buildSkillTreeNodes() {
         const objProps = this.props;
-        const skillTreeData = skillData[objProps.activeClassIdx];
+        const gameSkills = skillData[this.props.gameID];
+        const skillTreeData = gameSkills[objProps.activeClassIdx];
         const addSkillFunc = this._addSkill;
         const updateMethod = this.props.updateMethod;
 
@@ -106,7 +112,7 @@ class SkillTree extends Component {
         }
         const output = [];
 
-        const skillTreeStructure = treeData[this.props.activeClassIdx]
+        const skillTreeStructure = treeData[this.props.gameID][this.props.activeClassIdx]
         const setHeightMethod = this._setHeight
         const getHeightMethod = this._getHeight
         const setWidthMethod = this._setWidth
@@ -211,6 +217,7 @@ class SkillTree extends Component {
                 activeClassIdx={this.props.activeClassIdx}
                 parentHeight={this._getHeight()}
                 parentWidth={this._getWidth()}
+                gameID={this.props.gameID}
             ></SkillInfoPanel>
             </div>
     }
