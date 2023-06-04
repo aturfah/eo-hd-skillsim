@@ -248,7 +248,6 @@ class Header extends Component {
         }
 
         let headerControlsDiv = <div>
-                <div>{gameToggle} <br/></div>
                 <div className='inline-block-div'>
                 </div>
                 <div className='inline-block-div'>
@@ -261,7 +260,6 @@ class Header extends Component {
         </div>
         if (this.props.gameID === 'eo3') {
             headerControlsDiv = <div>
-                <div>{gameToggle}</div>
                 <div className='inline-block-div'>
                     {classDropdown}
                     {subClassDropdown}
