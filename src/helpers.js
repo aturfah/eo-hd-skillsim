@@ -450,13 +450,12 @@ export function exportSkillList(classState, remainingSP) {
 
     const skillTextList = []
     const gameSkills = skillData[classState.gameID]
-
-    // Skills in order: Stat UP, Class Skills, Subclass Skills
-    const classSkillInfo = deepCopy(...gameSkills[gameSkills.length-1].branches)
-    classSkillInfo.branches.push(gameSkills[activeClassIdx])
+    // Order: Class Skills, Subclass Skills, General Class skills
+    const classSkillInfo = deepCopy(gameSkills[activeClassIdx])
     if (classState.activeSubclassFlag) {
         classSkillInfo.branches.push(...gameSkills[activeSubclassIdx].branches)
     }
+    classSkillInfo.branches.push(...gameSkills[gameSkills.length-1].branches)
 
     // Get the Info on the class
     skillTextList.push("Class: " + classSkillInfo.class)
