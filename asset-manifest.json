@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/eo3hd-skillsim/static/css/main.7c088400.css",
-    "main.js": "/eo3hd-skillsim/static/js/main.a3f62e60.js",
+    "main.js": "/eo3hd-skillsim/static/js/main.0c161659.js",
     "index.html": "/eo3hd-skillsim/index.html",
     "main.7c088400.css.map": "/eo3hd-skillsim/static/css/main.7c088400.css.map",
-    "main.a3f62e60.js.map": "/eo3hd-skillsim/static/js/main.a3f62e60.js.map"
+    "main.0c161659.js.map": "/eo3hd-skillsim/static/js/main.0c161659.js.map"
   },
   "entrypoints": [
     "static/css/main.7c088400.css",
-    "static/js/main.a3f62e60.js"
+    "static/js/main.0c161659.js"
   ]
 }
