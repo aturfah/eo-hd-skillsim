@@ -238,7 +238,7 @@ class Header extends Component {
         const retirementBox = this.buildRetirementBox()
         const maxLevelBox = this.buildMaxLevelBox()
         const subclassToggleDiv = this.buildSubclassViewToggle()
-        const gameToggle = this.buildGameToggle();
+        // const gameToggle = this.buildGameToggle();
 
         const imgStyle = {
             float: 'left',
