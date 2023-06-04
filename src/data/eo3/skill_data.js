@@ -2,10 +2,10 @@
     var skillData = [
   {
     "source": null,
-    "class": "Prince",
+    "class": "Sovereign",
     "branches": [
       {
-        "branch_name": "Prince",
+        "branch_name": "Sovereign",
         "skill_data": [
           {
             "force_boost": false,
@@ -16,7 +16,7 @@
             "no_level": false,
             "_id": "royal_lineage",
             "name": "Royal Lineage",
-            "description": "Every time the Prince is buffed, he gains TP.",
+            "description": "Every time the Sovereign is buffed, they gain TP.",
             "max_level": 10,
             "uses": "N/A",
             "class_skill": true,
@@ -124,7 +124,7 @@
             "no_level": false,
             "_id": "royal_veil",
             "name": "Royal Veil",
-            "description": "Every turn the Prince is at full HP, the entire team regenerates some HP.",
+            "description": "Every turn the Sovereign is at full HP, the entire team regenerates some HP.",
             "max_level": 10,
             "uses": "N/A",
             "class_skill": false,
@@ -239,7 +239,7 @@
             "no_level": false,
             "_id": "triumphant_cry",
             "name": "Triumphant Cry",
-            "description": "If the Prince is alive at the end of the battle, the entire team is healed.",
+            "description": "If the Sovereign is alive at the end of the battle, the entire team is healed.",
             "max_level": 10,
             "uses": "N/A",
             "class_skill": false,
@@ -578,7 +578,7 @@
             "no_level": false,
             "_id": "nobility_proof",
             "name": "Nobility Proof",
-            "description": "When the Prince's own buffs wear off, his TP is healed.",
+            "description": "When the Sovereign's own buffs wear off, his TP is healed.",
             "max_level": 10,
             "uses": "N/A",
             "class_skill": false,
