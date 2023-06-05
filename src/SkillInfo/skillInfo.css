@@ -2,7 +2,7 @@
     position: absolute;
     background-color: #91acc7;
     padding: 10px;
-    font-size: 15px;
+    font-size: 12pt;
     border-style: solid;
     border-width: 2px;
     border-color: #0169ba;
@@ -14,14 +14,15 @@
     margin: 0;
     padding: 0;
     /* color: blue; */
+    padding-bottom: 5px;
 }
 
 .levelGrowthElt {
-    font-size: 14px;
+    font-size: 10pt;
 }
 
 .SkillHeader {
-    font-size: 18px;
+    font-size: 15pt;
 }
 
 .SkillInfoTable table {
@@ -34,5 +35,5 @@
     border: 2px solid black;
     border-spacing: 0;
     padding: 3px;
-    font-size: 15px;
+    font-size: 11pt;
 }
