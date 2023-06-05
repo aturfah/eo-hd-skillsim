@@ -1340,7 +1340,7 @@
             "name": "Regal Radiance",
             "description": "Dispel elemental imbue from an ally and deal damage to all enemies. Damage type depends on the ally's imbue and weapon type. Uses ally's stats to calculate damage.",
             "max_level": 10,
-            "stat": "STR",
+            "stat": "STR (ally)",
             "uses": "Head",
             "class_skill": false,
             "prerequisites": [
@@ -2674,6 +2674,7 @@
             "name": "Stun Attack",
             "description": "There is a chance to stun when using a normal attack.",
             "max_level": 10,
+            "stat": "LUC, TEC",
             "uses": "N/A",
             "class_skill": false,
             "prerequisites": [
@@ -2785,7 +2786,7 @@
             "no_level": false,
             "_id": "wild_swings",
             "name": "Wild Swings",
-            "description": "There is a chance to hit enemies next to your target when using skills. Enemies to the left side of your target are given priority.",
+            "description": "When the Gladiator uses single-target skills, there is a chance to attack any adjacent enemies. Enemies to the left side of your target are given priority.",
             "max_level": 10,
             "uses": "N/A",
             "class_skill": false,
@@ -2902,7 +2903,7 @@
             "no_level": false,
             "_id": "avenger",
             "name": "Avenger",
-            "description": "Recover HP on ally death.",
+            "description": "Recover a fixed amount of HP on ally death.",
             "max_level": 10,
             "uses": "N/A",
             "class_skill": false,
@@ -3017,6 +3018,7 @@
             "name": "Break",
             "description": "Sword: Aims at one enemy and swings downward; slash attack.",
             "max_level": 10,
+            "stat": "STR",
             "uses": "Arms",
             "class_skill": false,
             "prerequisites": [
@@ -3179,6 +3181,7 @@
             "name": "Rush",
             "description": "Sword: Rushes towards the enemy formation and slashes every enemy randomly. Can only hit each enemy once.",
             "max_level": 10,
+            "stat": "STR",
             "uses": "Arms",
             "class_skill": false,
             "prerequisites": [
@@ -3379,6 +3382,7 @@
             "name": "Bind Cut",
             "description": "Sword: A powerful slash attack at one enemy; increased damage if the enemy has a bind condition.",
             "max_level": 10,
+            "stat": "STR",
             "uses": "Arms",
             "class_skill": false,
             "prerequisites": [
@@ -3592,6 +3596,7 @@
             "name": "Rampage",
             "description": "Sword: Swings a sword in a rampage at every enemy; a slash attack to every enemy.",
             "max_level": 10,
+            "stat": "STR",
             "uses": "Arms",
             "class_skill": false,
             "prerequisites": [
@@ -3786,6 +3791,7 @@
             "name": "Blade Rave",
             "description": "Sword: Swings a sword at high speeds; a slash attack that randomly hits every enemy in succession. Can hit the same enemy multiple times.",
             "max_level": 10,
+            "stat": "STR",
             "uses": "Arms",
             "class_skill": false,
             "prerequisites": [
@@ -4014,6 +4020,7 @@
             "name": "Crushing Blow",
             "description": "Club: A bash attack that smashes the head of one enemy; has a chance to inflict confusion.",
             "max_level": 10,
+            "stat": "STR, TEC, LUC",
             "uses": "Arms",
             "class_skill": false,
             "prerequisites": [
@@ -4216,6 +4223,7 @@
             "description": "Club: A bash attack aimed at the arms of one enemy; has a chance to inflict arm bind.",
             "max_level": 10,
             "uses": "Arms",
+            "stat": "STR, TEC, LUC",
             "class_skill": false,
             "prerequisites": [
               {
@@ -4425,6 +4433,7 @@
             "description": "Club: Attacks one enemy with a Club clad in cold air; a skill that combines strke/ice attack.",
             "max_level": 10,
             "uses": "Arms",
+            "stat": "STR",
             "class_skill": false,
             "prerequisites": [
               {
@@ -4595,6 +4604,7 @@
             "description": "Club: A bash attack that hits one enemy many times. Has reduced accuracy.",
             "max_level": 10,
             "uses": "Arms",
+            "stat": "STR",
             "class_skill": false,
             "prerequisites": [
               {
