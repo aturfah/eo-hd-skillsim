@@ -160,7 +160,7 @@ if __name__ == "__main__":
                                 "111", "71", "134", "126", "127", "150", "241", "242", "161", "228", "281",
                                 "282", "215", "216", "73", "151", "256", "205", "206", "244", "245", "83", "84",
                                 "274", "18", "279", "27", "160", "130", "235", "240", "249", "250", "251", "78",
-                                "169", "142", "28", "149"]:
+                                "169", "142", "28", "149", "144", "164", "165", "166", "167", "168", "29", "30"]:
                 """
                 0 - Empty
                 59 - Unknown59
@@ -203,6 +203,14 @@ if __name__ == "__main__":
                 142 - Ignore DEF Buffs
                 28 - Bot chase elem.
                 149 - Dispel Arms Buff
+                144 - Use Ailment on Self
+                164 - Defrag flag
+                165 - Yggdroid Bind Flag
+                166 - Restrict to bots
+                167 - Kill bots after use
+                168 - Check for bot
+                29 - Dmg type from Bot
+                30 - Elem from attack
                 """
                 try:
                     skill_data_levels.append({

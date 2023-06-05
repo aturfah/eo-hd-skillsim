@@ -27617,8 +27617,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Ailment chance (%)",
-              "Use ailment on self"
+              "Ailment chance (%)"
             ],
             "growth": {
               "TP cost": [
@@ -27705,12 +27704,6 @@
                 {
                   "levelspan": 1,
                   "value": "60"
-                }
-              ],
-              "Use ailment on self": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ]
             }
@@ -33612,8 +33605,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Restore rate",
-              "Restrict to bots"
+              "Restore rate"
             ],
             "growth": {
               "TP cost": [
@@ -33705,12 +33697,6 @@
                   "levelspan": 1,
                   "value": "200"
                 }
-              ],
-              "Restrict to bots": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
               ]
             }
           },
@@ -33783,8 +33769,7 @@
               "TP cost",
               "Skill accuracy",
               "Speed",
-              "Damage %",
-              "Check for bot"
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -33882,12 +33867,6 @@
                   "levelspan": 1,
                   "value": "165"
                 }
-              ],
-              "Check for bot": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
               ]
             }
           },
@@ -33943,9 +33922,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "DMG type from bot",
-              "Damage %",
-              "Elem from attack"
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -33976,12 +33953,6 @@
                   "value": "30"
                 }
               ],
-              "DMG type from bot": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
-                }
-              ],
               "Damage %": [
                 {
                   "levelspan": 1,
@@ -34002,12 +33973,6 @@
                 {
                   "levelspan": 1,
                   "value": "270"
-                }
-              ],
-              "Elem from attack": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
                 }
               ]
             }
@@ -34086,9 +34051,7 @@
               "Acc. (mod)",
               "Speed",
               "Damage %",
-              "DMG type from bot",
               "Bot damage mult",
-              "Kill bots after use",
               "Skill accuracy"
             ],
             "growth": {
@@ -34204,12 +34167,6 @@
                   "value": "165"
                 }
               ],
-              "DMG type from bot": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
               "Bot damage mult": [
                 {
                   "levelspan": 1,
@@ -34250,12 +34207,6 @@
                 {
                   "levelspan": 1,
                   "value": "200"
-                }
-              ],
-              "Kill bots after use": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ],
               "Skill accuracy": [
@@ -34308,8 +34259,7 @@
             ],
             "growth_order": [
               "TP cost",
-              "Speed",
-              "Defrag flag"
+              "Speed"
             ],
             "growth": {
               "TP cost": [
@@ -34338,12 +34288,6 @@
                 {
                   "levelspan": 5,
                   "value": "-6"
-                }
-              ],
-              "Defrag flag": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
                 }
               ]
             }
@@ -34396,9 +34340,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Ailment chance (%)",
-              "Use ailment on self",
-              "Yggdroid bind flag"
+              "Ailment chance (%)"
             ],
             "growth": {
               "TP cost": [
@@ -34433,18 +34375,6 @@
                 {
                   "levelspan": 5,
                   "value": "100"
-                }
-              ],
-              "Use ailment on self": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
-                }
-              ],
-              "Yggdroid bind flag": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
                 }
               ]
             }
@@ -34708,27 +34638,129 @@
               }
             ],
             "growth_order": [
-              "Ailment chance (%)",
-              "Use ailment on self",
-              "Yggdroid bind flag"
+              "TP cost",
+              "Acc. (mod)",
+              "Speed",
+              "Damage %",
+              "Ailment chance (%)"
             ],
             "growth": {
+              "TP cost": [
+                {
+                  "levelspan": 1,
+                  "value": "18"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "19"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "20"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "21"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "22"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "23"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "24"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "26"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "28"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "30"
+                }
+              ],
+              "Acc. (mod)": [
+                {
+                  "levelspan": 2,
+                  "value": "-5"
+                },
+                {
+                  "levelspan": 2,
+                  "value": "-4"
+                },
+                {
+                  "levelspan": 2,
+                  "value": "-3"
+                },
+                {
+                  "levelspan": 2,
+                  "value": "-2"
+                },
+                {
+                  "levelspan": 2,
+                  "value": "-1"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": 10,
+                  "value": "-3"
+                }
+              ],
+              "Damage %": [
+                {
+                  "levelspan": 1,
+                  "value": "90"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "98"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "106"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "114"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "122"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "130"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "138"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "146"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "155"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "165"
+                }
+              ],
               "Ailment chance (%)": [
                 {
                   "levelspan": 10,
                   "value": "100"
-                }
-              ],
-              "Use ailment on self": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
-              "Yggdroid bind flag": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ]
             }
@@ -34782,8 +34814,6 @@
               "TP cost",
               "Speed",
               "Ailment chance (%)",
-              "Use ailment on self",
-              "Yggdroid bind flag",
               "Guaranteed evasion"
             ],
             "growth": {
@@ -34835,18 +34865,6 @@
                 {
                   "levelspan": 5,
                   "value": "100"
-                }
-              ],
-              "Use ailment on self": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
-                }
-              ],
-              "Yggdroid bind flag": [
-                {
-                  "levelspan": 5,
-                  "value": "0"
                 }
               ],
               "Guaranteed evasion": [
