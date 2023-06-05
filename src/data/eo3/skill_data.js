@@ -1396,7 +1396,8 @@
             ],
             "growth_order": [
               "TP cost",
-              "Speed"
+              "Speed",
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -1441,6 +1442,48 @@
                 {
                   "levelspan": 10,
                   "value": "-3"
+                }
+              ],
+              "Damage %": [
+                {
+                  "levelspan": 1,
+                  "value": "160"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "162"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "164"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "166"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "168"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "172"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "176"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "180"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "185"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "190"
                 }
               ]
             }
@@ -1898,7 +1941,7 @@
               "TP cost",
               "Speed",
               "Buff duration",
-              "Use skill at EOT"
+              "Restore rate"
             ],
             "growth": {
               "TP cost": [
@@ -1951,10 +1994,46 @@
                   "value": "4"
                 }
               ],
-              "Use skill at EOT": [
+              "Restore rate": [
                 {
-                  "levelspan": 10,
-                  "value": "368"
+                  "levelspan": 1,
+                  "value": "35"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "40"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "45"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "50"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "55"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "60"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "65"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "70"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "75"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "80"
                 }
               ]
             }
@@ -8455,7 +8534,15 @@
               "Bonus limit": [
                 {
                   "levelspan": 1,
+                  "value": "1"
+                },
+                {
+                  "levelspan": 1,
                   "value": "2"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "3"
                 },
                 {
                   "levelspan": 1,
@@ -8463,11 +8550,23 @@
                 },
                 {
                   "levelspan": 1,
+                  "value": "5"
+                },
+                {
+                  "levelspan": 1,
                   "value": "6"
                 },
                 {
                   "levelspan": 1,
+                  "value": "7"
+                },
+                {
+                  "levelspan": 1,
                   "value": "8"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "9"
                 },
                 {
                   "levelspan": 1,
@@ -8761,7 +8860,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Chase chance reduction",
+              "Chase chance red.",
               "Maximum chases",
               "Acc. (mod)",
               "Damage %"
@@ -8807,7 +8906,7 @@
                   "value": "60"
                 }
               ],
-              "Chase chance reduction": [
+              "Chase chance red.": [
                 {
                   "levelspan": 1,
                   "value": "40"
@@ -8989,7 +9088,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Chase chance reduction",
+              "Chase chance red.",
               "Maximum chases",
               "Acc. (mod)",
               "Damage %"
@@ -9035,7 +9134,7 @@
                   "value": "60"
                 }
               ],
-              "Chase chance reduction": [
+              "Chase chance red.": [
                 {
                   "levelspan": 1,
                   "value": "40"
@@ -9217,7 +9316,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Chase chance reduction",
+              "Chase chance red.",
               "Maximum chases",
               "Acc. (mod)",
               "Damage %"
@@ -9263,7 +9362,7 @@
                   "value": "60"
                 }
               ],
-              "Chase chance reduction": [
+              "Chase chance red.": [
                 {
                   "levelspan": 1,
                   "value": "40"
@@ -9865,7 +9964,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Chase chance reduction",
+              "Chase chance red.",
               "Maximum chases",
               "Acc. (mod)",
               "Damage %"
@@ -9911,7 +10010,7 @@
                   "value": "60"
                 }
               ],
-              "Chase chance reduction": [
+              "Chase chance red.": [
                 {
                   "levelspan": 1,
                   "value": "40"
@@ -10093,7 +10192,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Chase chance reduction",
+              "Chase chance red.",
               "Maximum chases",
               "Acc. (mod)",
               "Damage %"
@@ -10139,7 +10238,7 @@
                   "value": "60"
                 }
               ],
-              "Chase chance reduction": [
+              "Chase chance red.": [
                 {
                   "levelspan": 1,
                   "value": "40"
@@ -10321,7 +10420,7 @@
             "growth_order": [
               "TP cost",
               "Speed",
-              "Chase chance reduction",
+              "Chase chance red.",
               "Maximum chases",
               "Acc. (mod)",
               "Damage %"
@@ -10367,7 +10466,7 @@
                   "value": "60"
                 }
               ],
-              "Chase chance reduction": [
+              "Chase chance red.": [
                 {
                   "levelspan": 1,
                   "value": "40"
@@ -21146,8 +21245,7 @@
               "TP cost",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Multiplier",
-              "Ailment chance (%)"
+              "Beast Stat Multiplier"
             ],
             "growth": {
               "TP cost": [
@@ -21225,48 +21323,6 @@
                   "levelspan": 10,
                   "value": "100"
                 }
-              ],
-              "Ailment chance (%)": [
-                {
-                  "levelspan": 1,
-                  "value": "25"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "27"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "29"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "32"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "35"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "38"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "41"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "44"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "47"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "50"
-                }
               ]
             }
           },
@@ -21343,11 +21399,7 @@
               "TP cost",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Multiplier",
-              "Skill accuracy",
-              "Ailment chance (%)",
-              "Damage %",
-              "Damage % (if ailment)"
+              "Beast Stat Multiplier"
             ],
             "growth": {
               "TP cost": [
@@ -21424,138 +21476,6 @@
                 {
                   "levelspan": 10,
                   "value": "150"
-                }
-              ],
-              "Skill accuracy": [
-                {
-                  "levelspan": 10,
-                  "value": "98"
-                }
-              ],
-              "Ailment chance (%)": [
-                {
-                  "levelspan": 1,
-                  "value": "30"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "33"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "36"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "39"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "42"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "45"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "48"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "51"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "54"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "57"
-                }
-              ],
-              "Damage %": [
-                {
-                  "levelspan": 1,
-                  "value": "130"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "135"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "140"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "145"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "150"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "160"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "170"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "180"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "190"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "200"
-                }
-              ],
-              "Damage % (if ailment)": [
-                {
-                  "levelspan": 1,
-                  "value": "160"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "170"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "180"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "190"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "200"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "210"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "220"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "230"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "240"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "250"
                 }
               ]
             }
@@ -22335,11 +22255,7 @@
               "TP cost",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Multiplier",
-              "Skill accuracy",
-              "Damage %",
-              "Ailment chance (%)",
-              "Poison damage"
+              "Beast Stat Multiplier"
             ],
             "growth": {
               "TP cost": [
@@ -22416,102 +22332,6 @@
                 {
                   "levelspan": 10,
                   "value": "90"
-                }
-              ],
-              "Skill accuracy": [
-                {
-                  "levelspan": 10,
-                  "value": "98"
-                }
-              ],
-              "Damage %": [
-                {
-                  "levelspan": 1,
-                  "value": "120"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "125"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "130"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "135"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "140"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "150"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "160"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "170"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "180"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "190"
-                }
-              ],
-              "Ailment chance (%)": [
-                {
-                  "levelspan": 10,
-                  "value": "40"
-                }
-              ],
-              "Poison damage": [
-                {
-                  "levelspan": 1,
-                  "value": "30"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "60"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "90"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "120"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "150"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "180"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "210"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "240"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "270"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "300"
                 }
               ]
             }
@@ -32725,8 +32545,10 @@
               "TP cost",
               "Speed",
               "Bot HP and TP",
-              "Chase chance reduction",
-              "Maximum chases"
+              "Chase chance red.",
+              "Maximum chases",
+              "Skill accuracy",
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -32777,12 +32599,6 @@
                   "value": "6"
                 }
               ],
-              "Bot skill ID": [
-                {
-                  "levelspan": 10,
-                  "value": "387"
-                }
-              ],
               "Bot HP and TP": [
                 {
                   "levelspan": 1,
@@ -32825,7 +32641,7 @@
                   "value": "360"
                 }
               ],
-              "Chase chance reduction": [
+              "Chase chance red.": [
                 {
                   "levelspan": 1,
                   "value": "40"
@@ -32871,6 +32687,54 @@
                 {
                   "levelspan": 10,
                   "value": "7"
+                }
+              ],
+              "Skill accuracy": [
+                {
+                  "levelspan": 10,
+                  "value": "98"
+                }
+              ],
+              "Damage %": [
+                {
+                  "levelspan": 1,
+                  "value": "80"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "90"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "100"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "110"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "120"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "130"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "140"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "150"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "160"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "170"
                 }
               ]
             }
@@ -32944,8 +32808,10 @@
               "TP cost",
               "Speed",
               "Bot HP and TP",
-              "Chase chance reduction",
-              "Maximum chases"
+              "Chase chance red.",
+              "Maximum chases",
+              "Skill accuracy",
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -32996,12 +32862,6 @@
                   "value": "6"
                 }
               ],
-              "Bot skill ID": [
-                {
-                  "levelspan": 10,
-                  "value": "388"
-                }
-              ],
               "Bot HP and TP": [
                 {
                   "levelspan": 1,
@@ -33044,7 +32904,7 @@
                   "value": "360"
                 }
               ],
-              "Chase chance reduction": [
+              "Chase chance red.": [
                 {
                   "levelspan": 1,
                   "value": "40"
@@ -33090,6 +32950,54 @@
                 {
                   "levelspan": 10,
                   "value": "7"
+                }
+              ],
+              "Skill accuracy": [
+                {
+                  "levelspan": 10,
+                  "value": "98"
+                }
+              ],
+              "Damage %": [
+                {
+                  "levelspan": 1,
+                  "value": "80"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "90"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "100"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "110"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "120"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "130"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "140"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "150"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "160"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "170"
                 }
               ]
             }
@@ -33163,8 +33071,10 @@
               "TP cost",
               "Speed",
               "Bot HP and TP",
-              "Chase chance reduction",
-              "Maximum chases"
+              "Chase chance red.",
+              "Maximum chases",
+              "Skill accuracy",
+              "Damage %"
             ],
             "growth": {
               "TP cost": [
@@ -33215,12 +33125,6 @@
                   "value": "6"
                 }
               ],
-              "Bot skill ID": [
-                {
-                  "levelspan": 10,
-                  "value": "389"
-                }
-              ],
               "Bot HP and TP": [
                 {
                   "levelspan": 1,
@@ -33263,7 +33167,7 @@
                   "value": "360"
                 }
               ],
-              "Chase chance reduction": [
+              "Chase chance red.": [
                 {
                   "levelspan": 1,
                   "value": "40"
@@ -33309,6 +33213,54 @@
                 {
                   "levelspan": 10,
                   "value": "7"
+                }
+              ],
+              "Skill accuracy": [
+                {
+                  "levelspan": 10,
+                  "value": "98"
+                }
+              ],
+              "Damage %": [
+                {
+                  "levelspan": 1,
+                  "value": "80"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "90"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "100"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "110"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "120"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "130"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "140"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "150"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "160"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "170"
                 }
               ]
             }
@@ -33858,8 +33810,7 @@
               "DMG type from bot",
               "Bot damage mult",
               "Kill bots after use",
-              "Skill accuracy",
-              "Bot chase elem."
+              "Skill accuracy"
             ],
             "growth": {
               "TP cost": [
@@ -34032,12 +33983,6 @@
                 {
                   "levelspan": 10,
                   "value": "98"
-                }
-              ],
-              "Bot chase elem.": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
                 }
               ]
             }
@@ -34295,10 +34240,7 @@
               "Acc. (mod)",
               "Speed",
               "Damage %",
-              "Hit twice",
-              "Ailment chance (%)",
-              "Use ailment on self",
-              "Yggdroid bind flag"
+              "Hit twice"
             ],
             "growth": {
               "TP cost": [
@@ -34418,24 +34360,6 @@
                   "levelspan": 10,
                   "value": "0"
                 }
-              ],
-              "Ailment chance (%)": [
-                {
-                  "levelspan": 10,
-                  "value": "100"
-                }
-              ],
-              "Use ailment on self": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
-              ],
-              "Yggdroid bind flag": [
-                {
-                  "levelspan": 10,
-                  "value": "0"
-                }
               ]
             }
           },
@@ -34505,127 +34429,11 @@
               }
             ],
             "growth_order": [
-              "TP cost",
-              "Acc. (mod)",
-              "Speed",
-              "Damage %",
               "Ailment chance (%)",
               "Use ailment on self",
               "Yggdroid bind flag"
             ],
             "growth": {
-              "TP cost": [
-                {
-                  "levelspan": 1,
-                  "value": "18"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "19"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "20"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "21"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "22"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "23"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "24"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "26"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "28"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "30"
-                }
-              ],
-              "Acc. (mod)": [
-                {
-                  "levelspan": 2,
-                  "value": "-5"
-                },
-                {
-                  "levelspan": 2,
-                  "value": "-4"
-                },
-                {
-                  "levelspan": 2,
-                  "value": "-3"
-                },
-                {
-                  "levelspan": 2,
-                  "value": "-2"
-                },
-                {
-                  "levelspan": 2,
-                  "value": "-1"
-                }
-              ],
-              "Speed": [
-                {
-                  "levelspan": 10,
-                  "value": "-3"
-                }
-              ],
-              "Damage %": [
-                {
-                  "levelspan": 1,
-                  "value": "90"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "98"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "106"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "114"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "122"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "130"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "138"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "146"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "155"
-                },
-                {
-                  "levelspan": 1,
-                  "value": "165"
-                }
-              ],
               "Ailment chance (%)": [
                 {
                   "levelspan": 10,
