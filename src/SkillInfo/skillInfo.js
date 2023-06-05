@@ -100,6 +100,17 @@ function buildSkillText(skillDatum) {
         return oldBuildSkillText(skillDatum)
     }
 
+    // Body Part
+    var usesText = null;
+    var partText = null;
+    console.log(skillDatum)
+    if (skillDatum.uses !== undefined & skillDatum.uses !== "N/A") {
+        partText = <span className='SkillDescription'><i>Body Part: {skillDatum.uses}</i></span>;
+    }
+    if (skillDatum.stat !== undefined) {
+        usesText = <span className='SkillDescription'><i>Stat(s) Used: {skillDatum.stat}</i></span>;
+    }
+
     let skillDescr = skillDatum.description;
 
     // Build the table rows
@@ -181,6 +192,13 @@ function buildSkillText(skillDatum) {
             </tr>
         </thead>
         <tbody>
+            <tr>
+                <td>{partText}</td>
+            </tr>
+            <tr>
+                <td>{usesText}</td>
+            </tr>
+
             <tr>
                 <td>{skillDescr.split("\n").map(str => <p className='SkillDescription'>{str}</p>)}</td>
             </tr>
