@@ -160,7 +160,7 @@ if __name__ == "__main__":
                                 "111", "71", "134", "126", "127", "150", "241", "242", "161", "228", "281",
                                 "282", "215", "216", "73", "151", "256", "205", "206", "244", "245", "83", "84",
                                 "274", "18", "279", "27", "160", "130", "235", "240", "249", "250", "251", "78",
-                                "169", "142", "28"]:
+                                "169", "142", "28", "149"]:
                 """
                 0 - Empty
                 59 - Unknown59
@@ -202,6 +202,7 @@ if __name__ == "__main__":
                 169 - Unknown169
                 142 - Ignore DEF Buffs
                 28 - Bot chase elem.
+                149 - Dispel Arms Buff
                 """
                 try:
                     skill_data_levels.append({
@@ -345,5 +346,5 @@ if __name__ == "__main__":
     prereq_data_output.append({})
 
     output_js(default_skill_data, "common_skills.js", "commonSkills")
-    output_js(class_skill_data_output, 'skill_data.js', 'skillData')
+    output_js(class_skill_data_output, 'pre_skill_data.js', 'skillData')
     output_js(prereq_data_output, "prereq_data.js", "prereqData")
