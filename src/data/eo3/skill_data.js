@@ -21245,7 +21245,8 @@
               "TP cost",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Multiplier"
+              "Beast Stat Multiplier",
+              "Ailment chance (%)"
             ],
             "growth": {
               "TP cost": [
@@ -21323,6 +21324,48 @@
                   "levelspan": 10,
                   "value": "100"
                 }
+              ],
+              "Ailment chance (%)": [
+                {
+                  "levelspan": 1,
+                  "value": "25"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "27"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "29"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "32"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "35"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "38"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "41"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "44"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "47"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "50"
+                }
               ]
             }
           },
@@ -21399,7 +21442,11 @@
               "TP cost",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Multiplier"
+              "Beast Stat Multiplier",
+              "Skill accuracy",
+              "Ailment chance (%)",
+              "Damage %",
+              "Damage % (if ailment)"
             ],
             "growth": {
               "TP cost": [
@@ -21476,6 +21523,138 @@
                 {
                   "levelspan": 10,
                   "value": "150"
+                }
+              ],
+              "Skill accuracy": [
+                {
+                  "levelspan": 10,
+                  "value": "98"
+                }
+              ],
+              "Ailment chance (%)": [
+                {
+                  "levelspan": 1,
+                  "value": "30"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "33"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "36"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "39"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "42"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "45"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "48"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "51"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "54"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "57"
+                }
+              ],
+              "Damage %": [
+                {
+                  "levelspan": 1,
+                  "value": "130"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "135"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "140"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "145"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "150"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "160"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "170"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "180"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "190"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "200"
+                }
+              ],
+              "Damage % (if ailment)": [
+                {
+                  "levelspan": 1,
+                  "value": "160"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "170"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "180"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "190"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "200"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "210"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "220"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "230"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "240"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "250"
                 }
               ]
             }
@@ -22255,7 +22434,11 @@
               "TP cost",
               "Speed",
               "Beast Base HP",
-              "Beast Stat Multiplier"
+              "Beast Stat Multiplier",
+              "Skill accuracy",
+              "Damage %",
+              "Ailment chance (%)",
+              "Poison damage"
             ],
             "growth": {
               "TP cost": [
@@ -22332,6 +22515,102 @@
                 {
                   "levelspan": 10,
                   "value": "90"
+                }
+              ],
+              "Skill accuracy": [
+                {
+                  "levelspan": 10,
+                  "value": "98"
+                }
+              ],
+              "Damage %": [
+                {
+                  "levelspan": 1,
+                  "value": "120"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "125"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "130"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "135"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "140"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "150"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "160"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "170"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "180"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "190"
+                }
+              ],
+              "Ailment chance (%)": [
+                {
+                  "levelspan": 10,
+                  "value": "40"
+                }
+              ],
+              "Poison damage": [
+                {
+                  "levelspan": 1,
+                  "value": "30"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "60"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "90"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "120"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "150"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "180"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "210"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "240"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "270"
+                },
+                {
+                  "levelspan": 1,
+                  "value": "300"
                 }
               ]
             }
