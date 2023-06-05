@@ -5670,7 +5670,7 @@
             "no_level": false,
             "_id": "recuperate",
             "name": "Recuperate",
-            "description": "When Defending, HP is healed.",
+            "description": "When Defending, recover a fixed amount of HP.",
             "max_level": 10,
             "uses": "N/A",
             "class_skill": false,
@@ -5783,7 +5783,7 @@
             "no_level": false,
             "_id": "parry",
             "name": "Parry",
-            "description": "There is a chance to nullify slash, pierce, and bash attacks.",
+            "description": "There is a chance to nullify slash, pierce, and bash attacks against the Hoplite.",
             "max_level": 5,
             "uses": "N/A",
             "class_skill": false,
@@ -5856,7 +5856,7 @@
             "no_level": false,
             "_id": "magic_parry",
             "name": "Magic Parry",
-            "description": "There is a chance to nullify FIRE, ICE, and VOLT attacks.",
+            "description": "There is a chance to nullify FIRE, ICE, and VOLT attacks against the Hoplite.",
             "max_level": 5,
             "uses": "N/A",
             "class_skill": false,
@@ -6790,6 +6790,7 @@
             "description": "Spear: Attack the enemy with a pierce attack and then switch rows simultaneously.",
             "max_level": 10,
             "uses": "Legs",
+            "stat": "STR",
             "class_skill": false,
             "prerequisites": [
               {
@@ -6956,6 +6957,7 @@
             "description": "Spear: Lightning spear attack to a single target; pierce and VOLT damage.",
             "max_level": 10,
             "uses": "Legs",
+            "stat": "STR",
             "class_skill": false,
             "prerequisites": [
               {
@@ -7122,6 +7124,7 @@
             "description": "Spear: Attack all enemies; more damage is dealt if the Hoplite is in the back row.",
             "max_level": 10,
             "uses": "Legs",
+            "stat": "STR",
             "class_skill": false,
             "prerequisites": [
               {
@@ -7355,6 +7358,7 @@
             "description": "Restore all status ailments and binds from self.",
             "max_level": 5,
             "uses": "N/A",
+            "stat": "STR",
             "class_skill": false,
             "prerequisites": [],
             "levels": [
