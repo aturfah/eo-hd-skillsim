@@ -31,6 +31,10 @@
     border-collapse: collapse;
 }
 
+th.AltName {
+    font-size: 12pt;
+}
+
 .SkillInfoTable th, .SkillInfoTable td {
     border: 2px solid black;
     border-spacing: 0;

@@ -106,7 +106,7 @@ function buildSkillText(skillDatum) {
     var altText = null;
     console.log(skillDatum)
     if (skillDatum.alt_name !== undefined) {
-        altText = <span className='SkillDescription'>Alt. Name {skillDatum.alt_name}</span>
+        altText = <span className='AltName'>Alt. Name {skillDatum.alt_name}</span>
     }
     if (skillDatum.uses !== undefined & skillDatum.uses !== "N/A") {
         partText = <span className='SkillDescription'><i>Body Part: {skillDatum.uses}</i></span>;
