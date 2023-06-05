@@ -103,7 +103,11 @@ function buildSkillText(skillDatum) {
     // Body Part
     var usesText = null;
     var partText = null;
+    var altText = null;
     console.log(skillDatum)
+    if (skillDatum.alt_name !== undefined) {
+        altText = <span className='SkillDescription'>Alt. Name {skillDatum.alt_name}</span>
+    }
     if (skillDatum.uses !== undefined & skillDatum.uses !== "N/A") {
         partText = <span className='SkillDescription'><i>Body Part: {skillDatum.uses}</i></span>;
     }
@@ -189,6 +193,9 @@ function buildSkillText(skillDatum) {
         <thead className='SkillHeader'>
             <tr>
                 <th>{skillDatum.name}</th>
+            </tr>
+            <tr>
+                <th>{altText}</th>
             </tr>
         </thead>
         <tbody>
