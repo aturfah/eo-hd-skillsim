@@ -1844,6 +1844,7 @@
             "description": "One row of allies will recover HP at the end of each turn.",
             "max_level": 10,
             "uses": "Head",
+            "stat": "TEC",
             "class_skill": false,
             "prerequisites": [
               {
@@ -1974,6 +1975,7 @@
             "description": "Dispel all buffs of an ally, healing their HP.",
             "max_level": 10,
             "uses": "Head",
+            "stat": "TEC",
             "class_skill": false,
             "prerequisites": [
               {
@@ -2116,6 +2118,7 @@
             "name": "Inspire",
             "description": "Dispel a row of allies' debuffs, healing their TP.",
             "max_level": 10,
+            "stat": "TEC",
             "uses": "Head",
             "class_skill": false,
             "prerequisites": [
