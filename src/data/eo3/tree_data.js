@@ -596,19 +596,26 @@ const treeData = [
             coords: {x: 0, y: 6},
             numBefore: 1,
             numAfter: 8,
-            preReqLevels: [10]
+            // preReqLevels: [10]
         },
         {
             skillID: undefined,
             coords: {x: 0, y: 13},
             numBefore: 1,
-            preReqLevels: [10],
+            // preReqLevels: [10],
             numAfter: 1
         },
         {
             skillID: 'pincushion',
+            coords: {x: 1, y: 10},
+            numBefore: 1,
+            preReqLevels: [10]
+        },
+        {
+            skillID: 'swashbuckling',
             coords: {x: 1, y: 9},
             numBefore: 1,
+            preReqLevels: [8]
         },
     ],
     [// Ninja
