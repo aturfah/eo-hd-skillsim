@@ -8971,8 +8971,44 @@
               ],
               "Maximum chases": [
                 {
-                  "levelspan": 10,
-                  "value": "7"
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 5
+                },
+                {
+                  "levelspan": 1,
+                  "value": 6
+                },
+                {
+                  "levelspan": 1,
+                  "value": 7
+                },
+                {
+                  "levelspan": 1,
+                  "value": 7
                 }
               ],
               "Acc. (mod)": [
@@ -9200,8 +9236,44 @@
               ],
               "Maximum chases": [
                 {
-                  "levelspan": 10,
-                  "value": "7"
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 5
+                },
+                {
+                  "levelspan": 1,
+                  "value": 6
+                },
+                {
+                  "levelspan": 1,
+                  "value": 7
+                },
+                {
+                  "levelspan": 1,
+                  "value": 7
                 }
               ],
               "Acc. (mod)": [
@@ -9429,8 +9501,44 @@
               ],
               "Maximum chases": [
                 {
-                  "levelspan": 10,
-                  "value": "7"
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 5
+                },
+                {
+                  "levelspan": 1,
+                  "value": 6
+                },
+                {
+                  "levelspan": 1,
+                  "value": 7
+                },
+                {
+                  "levelspan": 1,
+                  "value": 7
                 }
               ],
               "Acc. (mod)": [
@@ -10080,8 +10188,44 @@
               ],
               "Maximum chases": [
                 {
-                  "levelspan": 10,
-                  "value": "8"
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 5
+                },
+                {
+                  "levelspan": 1,
+                  "value": 6
+                },
+                {
+                  "levelspan": 1,
+                  "value": 8
+                },
+                {
+                  "levelspan": 1,
+                  "value": 8
+                },
+                {
+                  "levelspan": 1,
+                  "value": 8
                 }
               ],
               "Acc. (mod)": [
@@ -10309,8 +10453,44 @@
               ],
               "Maximum chases": [
                 {
-                  "levelspan": 10,
-                  "value": "8"
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 5
+                },
+                {
+                  "levelspan": 1,
+                  "value": 6
+                },
+                {
+                  "levelspan": 1,
+                  "value": 8
+                },
+                {
+                  "levelspan": 1,
+                  "value": 8
+                },
+                {
+                  "levelspan": 1,
+                  "value": 8
                 }
               ],
               "Acc. (mod)": [
@@ -10538,8 +10718,44 @@
               ],
               "Maximum chases": [
                 {
-                  "levelspan": 10,
-                  "value": "8"
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 5
+                },
+                {
+                  "levelspan": 1,
+                  "value": 6
+                },
+                {
+                  "levelspan": 1,
+                  "value": 8
+                },
+                {
+                  "levelspan": 1,
+                  "value": 8
+                },
+                {
+                  "levelspan": 1,
+                  "value": 8
                 }
               ],
               "Acc. (mod)": [
@@ -33008,8 +33224,44 @@
               ],
               "Maximum chases": [
                 {
-                  "levelspan": 10,
-                  "value": "7"
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 5
+                },
+                {
+                  "levelspan": 1,
+                  "value": 6
+                },
+                {
+                  "levelspan": 1,
+                  "value": 7
+                },
+                {
+                  "levelspan": 1,
+                  "value": 7
                 }
               ],
               "Skill accuracy": [
@@ -33271,8 +33523,44 @@
               ],
               "Maximum chases": [
                 {
-                  "levelspan": 10,
-                  "value": "7"
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 5
+                },
+                {
+                  "levelspan": 1,
+                  "value": 6
+                },
+                {
+                  "levelspan": 1,
+                  "value": 7
+                },
+                {
+                  "levelspan": 1,
+                  "value": 7
                 }
               ],
               "Skill accuracy": [
@@ -33534,8 +33822,44 @@
               ],
               "Maximum chases": [
                 {
-                  "levelspan": 10,
-                  "value": "7"
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 3
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 4
+                },
+                {
+                  "levelspan": 1,
+                  "value": 5
+                },
+                {
+                  "levelspan": 1,
+                  "value": 6
+                },
+                {
+                  "levelspan": 1,
+                  "value": 7
+                },
+                {
+                  "levelspan": 1,
+                  "value": 7
                 }
               ],
               "Skill accuracy": [

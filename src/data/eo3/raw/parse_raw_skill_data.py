@@ -1,6 +1,7 @@
 from collections import defaultdict
 from pprint import pprint
 import json
+from math import ceil
 
 LINKED_SKILLS = {
     "Call Elephant": ["Reckless Rush (Initial)", "Reckless Rush (Follow-Up)"],
@@ -79,6 +80,14 @@ def generate_skill_output(skill_datum:dict, linked_skill_id:str=None, linked_ski
         skill_output["growth_order"].append(attribute)
         idx = 0
         while idx < max_level:
+            ## Chaser skills
+            if attribute == "Maximum chases":
+                true_max_val = int(attrib_info["levels"][idx])
+                if "Chase chance red." in skill_output["growth"].keys():
+                    chase_chance_red = int(skill_output["growth"]["Chase chance red."][idx]["value"])
+                    attrib_info["levels"][idx] = min(true_max_val, ceil(100 / chase_chance_red))
+                print(skill_datum["_id"], idx, chase_chance_red, attrib_info["levels"][idx])
+
             levelspan = 1
             if idx + 1 < max_level:
                 while attrib_info["levels"][idx] == attrib_info["levels"][idx+1]:
@@ -141,6 +150,7 @@ if __name__ == "__main__":
     parsed_skills = {}
     id_counter = 0
     id_data_map = {}
+    id_name_map = {}
     for skill_datum in raw_skill_rows:
         name = skill_datum[0]
         if not name or name.startswith("--"):
@@ -225,6 +235,7 @@ if __name__ == "__main__":
            offset = offset + 11
 
         id_data_map[str(id_counter)] = skill_data_levels
+        id_name_map[str(id_counter)] = name
         if name not in parsed_skills.keys():
             parsed_skills[name] = {
                 "name": name,
@@ -246,7 +257,11 @@ if __name__ == "__main__":
         for attrib_info in skill_data["data"]:
             if attrib_info["subheader_val"] in LINK_SKILL_SUBHEADERS:
                 ## Logic to add linked skill
-                linked_skill_data = id_data_map[attrib_info["levels"][0]]
+                linked_skill_id = attrib_info["levels"][0]
+                print("Linking {_id} {name} with skill {_id2} {name2}".format(
+                    _id=skill_data["skill_id"], name=skill_id,
+                    _id2=linked_skill_id, name2=id_name_map[linked_skill_id]))
+                linked_skill_data = id_data_map[linked_skill_id]
                 parsed_skills[skill_id]["data"].extend(linked_skill_data)
                 idx_to_delete.append(link_attrib_idx)
 
