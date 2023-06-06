@@ -31,7 +31,7 @@
     border-collapse: collapse;
 }
 
-th.AltName {
+span.AltName {
     font-size: 12pt;
 }
 
