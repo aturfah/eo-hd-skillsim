@@ -71,6 +71,10 @@ class SkillTree extends Component {
         const updateMethod = this.props.updateMethod;
 
         const branches = skillTreeData.branches;
+
+        // Hacky way to get around EO2 stuff
+        branches.push(...gameSkills[gameSkills.length - 1].branches)
+
         const output = {};
         branches.forEach(function (skillBranch) {
             skillBranch.skill_data.forEach(function (skillDatum) {

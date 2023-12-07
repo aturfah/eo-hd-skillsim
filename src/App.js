@@ -26,7 +26,7 @@ function defaultState() {
     activeSubclassFlag: false,
     subclassToggle: false,
     maxLevel: 70,
-    gameID: "eo3"
+    gameID: "eo2"
   };
 }
 
@@ -161,6 +161,17 @@ class App extends Component {
       // its 13
       defaultSkillsIdx = 12
     }
+
+    // Only show default skills for EO3
+    let defaultSkillsBar = <span></span>
+    if (this.state.gameID === 'eo3') {
+      defaultSkillsBar = <SkillTree
+        updateMethod={this.updateState.bind(this)}
+        skillsChosen={this.state.skillsChosen}
+        activeClassIdx={defaultSkillsIdx}
+        gameID={this.state.gameID}
+      ></SkillTree>
+    }
     return (
       <div className="App">
         <Header
@@ -179,12 +190,7 @@ class App extends Component {
           maxLevel={this.state.maxLevel}
           gameID={this.state.gameID}
         ></Header>
-        <SkillTree
-          updateMethod={this.updateState.bind(this)}
-          skillsChosen={this.state.skillsChosen}
-          activeClassIdx={defaultSkillsIdx}
-          gameID={this.state.gameID}
-        ></SkillTree>
+        {defaultSkillsBar}
         <SkillTree
           updateMethod={this.updateState.bind(this)}
           skillsChosen={this.state.skillsChosen}
