@@ -601,19 +601,51 @@
         "level": 3
       }
     ],
-    "blaze/frost/shock": [
+    "blaze": [
       {
         "_id": "songs",
         "level": 7
       }
     ],
-    "ifrit/ymir/taranis": [
+    "frost": [
       {
-        "_id": "requirements_(inferno):_songs",
+        "_id": "songs",
+        "level": 7
+      }
+    ],
+    "shock": [
+      {
+        "_id": "songs",
+        "level": 7
+      }
+    ],
+    "ifrit": [
+      {
+        "_id": "songs",
         "level": 10
       },
       {
         "_id": "blaze",
+        "level": 3
+      }
+    ],
+    "ymir": [
+      {
+        "_id": "songs",
+        "level": 10
+      },
+      {
+        "_id": "frost",
+        "level": 3
+      }
+    ],
+    "taranis": [
+      {
+        "_id": "songs",
+        "level": 10
+      },
+      {
+        "_id": "shock",
         "level": 3
       }
     ],
