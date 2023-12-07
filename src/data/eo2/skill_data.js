@@ -11816,19 +11816,421 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "flame/freeze/thunder",
-            "name": "Flame/Freeze/Thunder",
-            "description": "Deals ranged TEC-based Fire/Ice/Volt damage to one enemy. A 1.5x damage multiplier is applied to the Alchemist's base damage when using these skills.",
+            "_id": "flame",
+            "name": "Flame",
+            "description": "Deals ranged TEC-based Fire damage to one enemy. A 1.5x damage multiplier is applied to the Alchemist's base damage when using these skills.",
             "max_level": 10,
             "uses": "Head",
             "class_skill": false,
             "prerequisites": [
               {
-                "_id": "requirements_(flame):_fire_up",
+                "_id": "fire_up",
                 "level": 5
               },
               {
                 "_id": "fire",
+                "level": 5
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Spell Power",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "18"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "20"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "22"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "24"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "28"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "32"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "34"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "36"
+                }
+              ],
+              "Spell Power": [
+                {
+                  "levelspan": "1",
+                  "value": "23"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "25"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "29"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "43"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "53"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "79"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "113"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "10%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "16%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "22%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "40%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "66%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "82%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "150%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "151%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "153%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "156%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "160%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "165%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "171%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "178%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "186%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "195%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "freeze",
+            "name": "Freeze",
+            "description": "Deals ranged TEC-based Ice damage to one enemy. A 1.5x damage multiplier is applied to the Alchemist's base damage when using these skills.",
+            "max_level": 10,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "ice_up",
+                "level": 5
+              },
+              {
+                "_id": "ice",
+                "level": 5
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Spell Power",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "18"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "20"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "22"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "24"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "28"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "32"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "34"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "36"
+                }
+              ],
+              "Spell Power": [
+                {
+                  "levelspan": "1",
+                  "value": "23"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "25"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "29"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "43"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "53"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "79"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "113"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "10%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "16%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "22%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "40%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "66%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "82%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "150%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "151%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "153%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "156%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "160%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "165%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "171%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "178%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "186%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "195%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "thunder",
+            "name": "Thunder",
+            "description": "Deals ranged TEC-based Volt damage to one enemy. A 1.5x damage multiplier is applied to the Alchemist's base damage when using these skills.",
+            "max_level": 10,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "volt_up",
+                "level": 5
+              },
+              {
+                "_id": "volt",
                 "level": 5
               }
             ],
