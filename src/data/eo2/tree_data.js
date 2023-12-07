@@ -2,7 +2,7 @@ const treeData = [
     // Landsknecht
     [
         {
-            skillID: '(l)_swords',
+            skillID: 'swords',
             baseSkill: false,
             coords: {x: 0, y: 0},
             numAfter: 6

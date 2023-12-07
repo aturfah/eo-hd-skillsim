@@ -1,7 +1,7 @@
 // AUTOMATICALLY GENERATED FILE; DO NOT MODIFY!;
     var prereqData = [
   {
-    "(l)_swords": [],
+    "swords": [],
     "axes": [],
     "counter": [
       {
@@ -91,14 +91,34 @@
         "level": 7
       }
     ],
-    "blazer/freezer/shocker": [
+    "blazer": [
       {
         "_id": "swords",
-        "level": 8
+        "level": 5
       },
       {
         "_id": "axes",
-        "level": 8
+        "level": 5
+      }
+    ],
+    "shocker": [
+      {
+        "_id": "swords",
+        "level": 5
+      },
+      {
+        "_id": "axes",
+        "level": 5
+      }
+    ],
+    "freezer": [
+      {
+        "_id": "swords",
+        "level": 5
+      },
+      {
+        "_id": "axes",
+        "level": 5
       }
     ],
     "war_cry": [

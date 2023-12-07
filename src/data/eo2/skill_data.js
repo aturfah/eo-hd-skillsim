@@ -58,8 +58,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(l)_swords",
-            "name": "(L) Swords",
+            "_id": "swords",
+            "name": "Swords",
             "description": "Needed to learn sword skills. Passively increases damage dealt with swords.",
             "max_level": 10,
             "uses": "N/A",
@@ -2415,20 +2415,346 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "blazer/freezer/shocker",
-            "name": "Blazer/Freezer/Shocker",
-            "description": "When used, the Landsknecht prepares to attack any enemies in the battle with Fire/Ice/Volt damage at the start of the turn. When any enemy gets hit with an elemental attack that has the same element as the chaser, the Landsknecht will perform a follow up attack on those enemies. Every time the Landsknecht chases an attack, the chances of chasing another attack within the same turn decreases.",
+            "_id": "freezer",
+            "name": "Freezer",
+            "description": "When used, the Landsknecht prepares to attack any enemies in the battle with Ice damage at the start of the turn. When any enemy gets hit with an elemental attack that has the same element as the chaser, the Landsknecht will perform a follow up attack on those enemies. Every time the Landsknecht chases an attack, the chances of chasing another attack within the same turn decreases.",
             "max_level": 5,
             "uses": "Arms",
             "class_skill": false,
             "prerequisites": [
               {
                 "_id": "swords",
-                "level": 8
+                "level": 5
               },
               {
                 "_id": "axes",
-                "level": 8
+                "level": 5
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Accuracy",
+              "Base Activation Rate",
+              "Chance Reduction",
+              "Max Chases"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "130%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "136%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "148%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "166%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "190%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "130%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "140%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "150%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "160%"
+                }
+              ],
+              "Base Activation Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "93%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "96%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "103%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "114%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "129%"
+                }
+              ],
+              "Chance Reduction": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "79%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "58%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "37%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "16%"
+                }
+              ],
+              "Max Chases": [
+                {
+                  "levelspan": "1",
+                  "value": "1"
+                },
+                {
+                  "levelspan": "2",
+                  "value": "2"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "blazer",
+            "name": "Blazer",
+            "description": "When used, the Landsknecht prepares to attack any enemies in the battle with Fire damage at the start of the turn. When any enemy gets hit with an elemental attack that has the same element as the chaser, the Landsknecht will perform a follow up attack on those enemies. Every time the Landsknecht chases an attack, the chances of chasing another attack within the same turn decreases.",
+            "max_level": 5,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "swords",
+                "level": 5
+              },
+              {
+                "_id": "axes",
+                "level": 5
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Accuracy",
+              "Base Activation Rate",
+              "Chance Reduction",
+              "Max Chases"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "130%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "136%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "148%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "166%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "190%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "130%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "140%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "150%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "160%"
+                }
+              ],
+              "Base Activation Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "93%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "96%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "103%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "114%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "129%"
+                }
+              ],
+              "Chance Reduction": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "79%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "58%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "37%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "16%"
+                }
+              ],
+              "Max Chases": [
+                {
+                  "levelspan": "1",
+                  "value": "1"
+                },
+                {
+                  "levelspan": "2",
+                  "value": "2"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "shocker",
+            "name": "Shocker",
+            "description": "When used, the Landsknecht prepares to attack any enemies in the battle with Volt damage at the start of the turn. When any enemy gets hit with an elemental attack that has the same element as the chaser, the Landsknecht will perform a follow up attack on those enemies. Every time the Landsknecht chases an attack, the chances of chasing another attack within the same turn decreases.",
+            "max_level": 5,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "swords",
+                "level": 5
+              },
+              {
+                "_id": "axes",
+                "level": 5
               }
             ],
             "growth_order": [
