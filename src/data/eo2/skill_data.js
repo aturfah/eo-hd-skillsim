@@ -12824,9 +12824,9 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "blaze/frost/shock",
-            "name": "Blaze/Frost/Shock",
-            "description": "Imbues one party member's weapon with Fire/Ice/Volt, enabling them to deal Fire/Ice/Volt damage with their normal attacks.",
+            "_id": "blaze",
+            "name": "Blaze",
+            "description": "Imbues one party member's weapon with Fire, enabling them to deal Fire damage with their normal attacks.",
             "max_level": 5,
             "uses": "Head",
             "class_skill": false,
@@ -12895,19 +12895,563 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "ifrit/ymir/taranis",
-            "name": "Ifrit/Ymir/Taranis",
-            "description": "Places a buff on the entire party that increases their resistance to Fire/Ice/Volt and places a debuff on all enemies that decreases their resistance to Fire/Ice/Volt. The buff lasts for the duration of the battle, while the debuff lasts for 5 turns. This is multiplier actually applied directly to their damage resistances, so the Alchemist's Analysis skill can activate on certain enemies that have this debuff.",
+            "_id": "frost",
+            "name": "Frost",
+            "description": "Imbues one party member's weapon with Ice, enabling them to deal Ice damage with their normal attacks.",
+            "max_level": 5,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "songs",
+                "level": 7
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Speed"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "20"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "3"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "1"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "110%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "170%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "250%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "shock",
+            "name": "Shock",
+            "description": "Imbues one party member's weapon with Volt, enabling them to deal Volt damage with their normal attacks.",
+            "max_level": 5,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "songs",
+                "level": 7
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Speed"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "20"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "3"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "1"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "110%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "170%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "250%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "taranis",
+            "name": "Taranis",
+            "description": "Places a buff on the entire party that increases their resistance to Volt and places a debuff on all enemies that decreases their resistance to Volt. The buff lasts for the duration of the battle, while the debuff lasts for 5 turns. This is multiplier actually applied directly to their damage resistances, so the Alchemist's Analysis skill can activate on certain enemies that have this debuff.",
             "max_level": 10,
             "uses": "Head",
             "class_skill": false,
             "prerequisites": [
               {
-                "_id": "requirements_(inferno):_songs",
+                "_id": "songs",
+                "level": 10
+              },
+              {
+                "_id": "shock",
+                "level": 3
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Resistance Increase",
+              "Resistance Decrease",
+              "Speed"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                }
+              ],
+              "Resistance Increase": [
+                {
+                  "levelspan": "1",
+                  "value": "3%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "15%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "18%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "24%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "27%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                }
+              ],
+              "Resistance Decrease": [
+                {
+                  "levelspan": "1",
+                  "value": "5%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "15%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "20%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "33%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "41%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "62%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "80%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "92%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "122%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "140%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "ifrit",
+            "name": "Ifrit",
+            "description": "Places a buff on the entire party that increases their resistance to Fire and places a debuff on all enemies that decreases their resistance to Fire. The buff lasts for the duration of the battle, while the debuff lasts for 5 turns. This is multiplier actually applied directly to their damage resistances, so the Alchemist's Analysis skill can activate on certain enemies that have this debuff.",
+            "max_level": 10,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "songs",
                 "level": 10
               },
               {
                 "_id": "blaze",
+                "level": 3
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Resistance Increase",
+              "Resistance Decrease",
+              "Speed"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                }
+              ],
+              "Resistance Increase": [
+                {
+                  "levelspan": "1",
+                  "value": "3%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "15%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "18%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "24%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "27%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                }
+              ],
+              "Resistance Decrease": [
+                {
+                  "levelspan": "1",
+                  "value": "5%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "15%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "20%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "33%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "41%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "62%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "80%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "92%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "122%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "140%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "ymir",
+            "name": "Ymir",
+            "description": "Places a buff on the entire party that increases their resistance to Ice and places a debuff on all enemies that decreases their resistance to Ice. The buff lasts for the duration of the battle, while the debuff lasts for 5 turns. This is multiplier actually applied directly to their damage resistances, so the Alchemist's Analysis skill can activate on certain enemies that have this debuff.",
+            "max_level": 10,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "songs",
+                "level": 10
+              },
+              {
+                "_id": "frost",
                 "level": 3
               }
             ],
