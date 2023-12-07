@@ -28,6 +28,7 @@ BASE_FILENAME = "{}.html"
 COMMON_SKILLS = []
 
 if __name__ == "__main__":
+    raise RuntimeError("DO NOT RUN THIS YOU IDIOT")
     prereq_data_output = []
     class_skill_data_output = []
     for class_id in CLASSES:
