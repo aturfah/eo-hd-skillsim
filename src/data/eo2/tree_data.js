@@ -182,7 +182,131 @@ const treeData = [
     // Medic
     [],
     // Alchemist
-    [],
+    [
+        {
+            skillID: 'fire_up',
+            baseSkill: false,
+            coords: {x: 0, y: 0},
+            numAfter: 2
+        },
+        {
+            skillID: 'fire',
+            coords: {x: 1, y: 0},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 2,
+            postReqLevels: [5]
+        },
+        {
+            skillID: undefined,
+            coords: {x: 1, y: 1},
+            preReqLevels: [5],
+            numBefore: 1,
+            numAfter: 1,
+        },
+        {
+            skillID: 'flame',
+            coords: {x: 2, y: 0},
+            numBefore: 2,
+        },
+        {
+            skillID: 'inferno',
+            coords: {x: 2, y: 1},
+            numBefore: 1,
+        },
+        {
+            skillID: 'ice_up',
+            baseSkill: false,
+            coords: {x: 0, y: 2},
+            numAfter: 2
+        },
+        {
+            skillID: 'ice',
+            coords: {x: 1, y: 2},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 2,
+            postReqLevels: [5]
+        },
+        {
+            skillID: undefined,
+            coords: {x: 1, y: 3},
+            preReqLevels: [5],
+            numBefore: 1,
+            numAfter: 1,
+        },
+        {
+            skillID: 'freeze',
+            coords: {x: 2, y: 2},
+            numBefore: 2,
+        },
+        {
+            skillID: 'cocytus',
+            coords: {x: 2, y: 3},
+            numBefore: 1,
+        },
+        {
+            skillID: 'volt_up',
+            baseSkill: false,
+            coords: {x: 0, y: 4},
+            numAfter: 2
+        },
+        {
+            skillID: 'volt',
+            coords: {x: 1, y: 4},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 2,
+            postReqLevels: [5]
+        },
+        {
+            skillID: undefined,
+            coords: {x: 1, y: 5},
+            preReqLevels: [5],
+            numBefore: 1,
+            numAfter: 1,
+        },
+        {
+            skillID: 'thunder',
+            coords: {x: 2, y: 4},
+            numBefore: 2,
+        },
+        {
+            skillID: 'thor',
+            coords: {x: 2, y: 5},
+            numBefore: 1,
+        },
+        {
+            skillID: 'str_up',
+            baseSkill: false,
+            coords: {x: 0, y: 6},
+            numAfter: 1
+        },
+        {
+            skillID: 'phys_up',
+            baseSkill: false,
+            coords: {x: 1, y: 6},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 3
+        },
+        {
+            skillID: 'blades',
+            coords: {x: 2, y: 6},
+            numBefore: 1,
+            preReqLevels: [1]
+        },
+        {
+            skillID: 'gravity',
+            coords: {x: 2, y: 7},
+            numBefore: 1,
+        },
+        {
+            skillID: 'piercing',
+            coords: {x: 2, y: 8},
+            numBefore: 1,
+        },
+    ],
     // Troubadour
     [
         {
