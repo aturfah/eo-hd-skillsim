@@ -260,7 +260,7 @@
             "linked_skill": null,
             "no_level": false,
             "_id": "(l)_2-hit",
-            "name": "(L) 2-Hit",
+            "name": "2-Hit",
             "description": "Normal attacks have a chance of hitting twice.",
             "max_level": 10,
             "uses": "N/A",
