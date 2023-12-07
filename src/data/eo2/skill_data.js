@@ -12782,9 +12782,243 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "blades/gravity/piercing",
-            "name": "Blades/Gravity/Piercing",
-            "description": "Deals ranged TEC-based Cut/Bash/Stab damage to all enemies.",
+            "_id": "blades",
+            "name": "Blades",
+            "description": "Deals ranged TEC-based Cut damage to all enemies.",
+            "max_level": 5,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "phys_up",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Spell Power",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "20"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "28"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "36"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "44"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52"
+                }
+              ],
+              "Spell Power": [
+                {
+                  "levelspan": "1",
+                  "value": "23"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "29"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "43"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "92%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "122%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "150%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "153%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "160%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "171%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "186%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "gravity",
+            "name": "Gravity",
+            "description": "Deals ranged TEC-based Bash damage to all enemies.",
+            "max_level": 5,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "phys_up",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Spell Power",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "20"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "28"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "36"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "44"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52"
+                }
+              ],
+              "Spell Power": [
+                {
+                  "levelspan": "1",
+                  "value": "23"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "29"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "43"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "92%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "122%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "150%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "153%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "160%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "171%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "186%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "piercing",
+            "name": "Piercing",
+            "description": "Deals ranged TEC-based Stab damage to all enemies.",
             "max_level": 5,
             "uses": "Head",
             "class_skill": false,
