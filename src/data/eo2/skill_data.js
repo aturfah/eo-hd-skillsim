@@ -3841,9 +3841,341 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "sleeper/number/poisoner",
-            "name": "Sleeper/Number/Poisoner",
-            "description": "Deals ranged STR-based Stab damage to one enemy. Has a chance to inflict sleep/paralysis/poison.",
+            "_id": "sleeper",
+            "name": "Sleeper",
+            "description": "Deals ranged STR-based Stab damage to one enemy. Has a chance to inflict sleep.",
+            "max_level": 5,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "bows",
+                "level": 3
+              },
+              {
+                "_id": "tec_up",
+                "level": 3
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Infliction Rate",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "115%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "121%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "133%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "151%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "175%"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "25%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "27%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "31%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "37%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "45%"
+                }
+              ],
+              "Poison Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "15"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "25"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "45"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "75"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "115"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "102%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "92%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "102%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "113%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "128%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "number",
+            "name": "Number",
+            "description": "Deals ranged STR-based Stab damage to one enemy. Has a chance to inflict paralysis.",
+            "max_level": 5,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "bows",
+                "level": 3
+              },
+              {
+                "_id": "tec_up",
+                "level": 3
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Infliction Rate",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "115%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "121%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "133%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "151%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "175%"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "25%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "27%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "31%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "37%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "45%"
+                }
+              ],
+              "Poison Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "15"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "25"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "45"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "75"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "115"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "102%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "92%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "102%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "113%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "128%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "poisoner",
+            "name": "Poisoner",
+            "description": "Deals ranged STR-based Stab damage to one enemy. Has a chance to inflict poison.",
             "max_level": 5,
             "uses": "Arms",
             "class_skill": false,
@@ -4647,7 +4979,7 @@
             "linked_skill": null,
             "no_level": false,
             "_id": "(s)_patrol",
-            "name": "(S) Patrol",
+            "name": "Patrol",
             "description": "Can only be used on the field. Lowers damage taken from damage tiles for a set number of steps.",
             "max_level": 5,
             "uses": "N/A",
