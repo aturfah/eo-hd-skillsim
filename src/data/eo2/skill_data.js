@@ -17855,12 +17855,57 @@
             "_id": "curses",
             "name": "Curses",
             "description": "Needed to learn curse skills. Has absolutely no effect otherwise.",
-            "max_level": 0,
+            "max_level": 10,
             "uses": "N/A",
             "class_skill": false,
             "prerequisites": [],
-            "growth_order": [],
-            "growth": {}
+            "growth_order": [
+              ""
+            ],
+            "growth": {
+              "": [
+                {
+                  "levelspan": "1",
+                  "value": ""
+                },
+                {
+                  "levelspan": "1",
+                  "value": ""
+                },
+                {
+                  "levelspan": "1",
+                  "value": ""
+                },
+                {
+                  "levelspan": "1",
+                  "value": ""
+                },
+                {
+                  "levelspan": "1",
+                  "value": ""
+                },
+                {
+                  "levelspan": "1",
+                  "value": ""
+                },
+                {
+                  "levelspan": "1",
+                  "value": ""
+                },
+                {
+                  "levelspan": "1",
+                  "value": ""
+                },
+                {
+                  "levelspan": "1",
+                  "value": ""
+                },
+                {
+                  "levelspan": "1",
+                  "value": ""
+                }
+              ],
+            }
           },
           {
             "force_boost": false,
