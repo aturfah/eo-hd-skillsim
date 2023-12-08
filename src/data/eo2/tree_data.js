@@ -697,6 +697,41 @@ const treeData = [
             coords: {x: 2, y: 13},
             numBefore: 1,
         },
+        {
+            skillID: 'hp_up',
+            baseSkill: false,
+            coords: {x: 0, y: 16},
+        },
+        {
+            skillID: 'str_up',
+            baseSkill: false,
+            coords: {x: 0, y: 17},
+        },
+        {
+            skillID: 'vit_up',
+            baseSkill: false,
+            coords: {x: 0, y: 18},
+        },
+        {
+            skillID: 'agi_up',
+            baseSkill: false,
+            coords: {x: 0, y: 19},
+        },
+        {
+            skillID: 'luc_up',
+            baseSkill: false,
+            coords: {x: 0, y: 20},
+        },
+        {
+            skillID: 'esc_up',
+            baseSkill: false,
+            coords: {x: 2, y: 16},
+        },
+        {
+            skillID: 'take',
+            baseSkill: false,
+            coords: {x: 2, y: 17},
+        },
     ],
     // Gunner
     [],
