@@ -524,19 +524,51 @@
         "level": 5
       }
     ],
-    "fire/ice/volt": [
+    "fire": [
       {
-        "_id": "requirements_(fire):_fire_up",
+        "_id": "fire_up",
         "level": 1
       }
     ],
-    "flame/freeze/thunder": [
+    "ice": [
       {
-        "_id": "requirements_(flame):_fire_up",
+        "_id": "ice_up",
+        "level": 1
+      }
+    ],
+    "volt": [
+      {
+        "_id": "volt_up",
+        "level": 1
+      }
+    ],
+    "flame": [
+      {
+        "_id": "fire_up",
         "level": 5
       },
       {
         "_id": "fire",
+        "level": 5
+      }
+    ],
+    "freeze": [
+      {
+        "_id": "ice_up",
+        "level": 5
+      },
+      {
+        "_id": "ice",
+        "level": 5
+      }
+    ],
+    "thunder": [
+      {
+        "_id": "volt_up",
+        "level": 5
+      },
+      {
+        "_id": "volt",
         "level": 5
       }
     ],
