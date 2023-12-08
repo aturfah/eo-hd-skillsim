@@ -341,6 +341,41 @@ const treeData = [
             numBefore: 1,
             preReqLevels: [5]
         },
+        {
+            skillID: 'hp_up',
+            baseSkill: false,
+            coords: {x: 0, y: 11},
+        },
+        {
+            skillID: 'vit_up',
+            baseSkill: false,
+            coords: {x: 0, y: 12},
+        },
+        {
+            skillID: 'agi_up',
+            baseSkill: false,
+            coords: {x: 0, y: 13},
+        },
+        {
+            skillID: 'luc_up',
+            baseSkill: false,
+            coords: {x: 0, y: 14},
+        },
+        {
+            skillID: 'return',
+            baseSkill: false,
+            coords: {x: 1, y: 11},
+        },
+        {
+            skillID: 'esc_up',
+            baseSkill: false,
+            coords: {x: 2, y: 11},
+        },
+        {
+            skillID: 'chop',
+            baseSkill: false,
+            coords: {x: 2, y: 12},
+        },
     ],
     // Troubadour
     [
