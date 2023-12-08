@@ -734,7 +734,152 @@ const treeData = [
         },
     ],
     // Gunner
-    [],
+    [
+        {
+            skillID: 'guns',
+            baseSkill: false,
+            coords: {x: 0, y: 0},
+            numAfter: 13
+        },
+        {
+            skillID: undefined,
+            coords: {x: 1, y: 0},
+            numBefore: 1,
+            numAfter: 1
+        },
+        {
+            skillID: undefined,
+            coords: {x: 2, y: 0},
+            numBefore: 1,
+            postReqLevels: [5],
+            numAfter: 4
+        },
+        {
+            skillID: "riskfire",
+            baseSkill: false,
+            coords: {x: 2, y: 1},
+            numBefore: 1,
+            numAfter: 1
+        },
+        {
+            skillID: "riskice",
+            baseSkill: false,
+            coords: {x: 2, y: 2},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1
+        },
+        {
+            skillID: "riskvolt",
+            baseSkill: false,
+            coords: {x: 2, y: 3},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1
+        },
+        {
+            skillID: "fireshot",
+            baseSkill: false,
+            coords: {x: 1, y: 1},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1,
+            postReqLevels: [5]
+        },
+        {
+            skillID: "iceshot",
+            baseSkill: false,
+            coords: {x: 1, y: 2},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1,
+            postReqLevels: [5]
+        },
+        {
+            skillID: "voltshot",
+            baseSkill: false,
+            coords: {x: 1, y: 3},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1,
+            postReqLevels: [5]
+        },
+        {
+            skillID: "agi_up",
+            baseSkill: false,
+            coords: {x: 2, y: 5},
+            numBefore: 3,
+            preReqLevels: ["(Lv.1)"],
+            beforeStyle: 'centered'
+        },
+        {
+            skillID: "legshot",
+            baseSkill: false,
+            coords: {x: 1, y: 4},
+            numBefore: 1,
+            preReqLevels: [2],
+            numAfter: 1,
+        },
+        {
+            skillID: "armshot",
+            baseSkill: false,
+            coords: {x: 1, y: 5},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 1,
+        },
+        {
+            skillID: "headshot",
+            baseSkill: false,
+            coords: {x: 1, y: 6},
+            numBefore: 1,
+            preReqLevels: [4],
+            numAfter: 1,
+        },
+        {
+            skillID: "riskshot",
+            baseSkill: false,
+            coords: {x: 1, y: 7},
+            numBefore: 1,
+            preReqLevels: [5],
+        },
+        {
+            skillID: "stunshot",
+            baseSkill: false,
+            coords: {x: 1, y: 8},
+            numBefore: 1,
+            preReqLevels: [5],
+        },
+        {
+            skillID: "snipe",
+            baseSkill: false,
+            coords: {x: 1, y: 9},
+            numBefore: 1,
+            preReqLevels: [5],
+        },
+        {
+            skillID: "wildshot",
+            baseSkill: false,
+            coords: {x: 1, y: 10},
+            numBefore: 1,
+            preReqLevels: [7],
+        },
+        {
+            skillID: "(g)_2-hit",
+            baseSkill: false,
+            coords: {x: 1, y: 11},
+            numBefore: 1,
+            preReqLevels: [10],
+        },
+        {
+            skillID: "ricochet",
+            baseSkill: false,
+            coords: {x: 1, y: 12},
+            numBefore: 1,
+            preReqLevels: [10],
+        },
+        
+    ],
     // War Magus
     [],
     // Beast

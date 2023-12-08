@@ -20176,7 +20176,7 @@
             "linked_skill": null,
             "no_level": false,
             "_id": "(g)_2-hit",
-            "name": "(G) 2-Hit",
+            "name": "2-Hit",
             "description": "Normal attacks have a chance of hitting twice.",
             "max_level": 10,
             "uses": "N/A",
