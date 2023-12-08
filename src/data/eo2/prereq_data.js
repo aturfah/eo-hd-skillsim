@@ -959,10 +959,30 @@
       }
     ],
     "weakshot": [],
-    "legshot/armshot/headshot": [
+    "legshot": [
       {
-        "_id": "requirements_(legshot):_guns",
+        "_id": "guns",
         "level": 2
+      },
+      {
+        "_id": "agi_up",
+        "level": 1
+      }
+    ],
+    "armshot": [
+      {
+        "_id": "guns",
+        "level": 3
+      },
+      {
+        "_id": "agi_up",
+        "level": 1
+      }
+    ],
+    "headshot": [
+      {
+        "_id": "guns",
+        "level": 4
       },
       {
         "_id": "agi_up",
@@ -987,19 +1007,51 @@
         "level": 5
       }
     ],
-    "fireshot/iceshot/voltshot": [
+    "iceshot": [
       {
         "_id": "guns",
         "level": 1
       }
     ],
-    "riskfire/riskice/riskvolt": [
+    "fireshot": [
       {
-        "_id": "requirements_(riskfire):_guns",
+        "_id": "guns",
+        "level": 1
+      }
+    ],
+    "voltshot": [
+      {
+        "_id": "guns",
+        "level": 1
+      }
+    ],
+    "riskfire": [
+      {
+        "_id": "guns",
         "level": 5
       },
       {
         "_id": "fireshot",
+        "level": 5
+      }
+    ],
+    "riskice": [
+      {
+        "_id": "guns",
+        "level": 5
+      },
+      {
+        "_id": "iceshot",
+        "level": 5
+      }
+    ],
+    "riskvolt": [
+      {
+        "_id": "guns",
+        "level": 5
+      },
+      {
+        "_id": "voltshot",
         "level": 5
       }
     ],
