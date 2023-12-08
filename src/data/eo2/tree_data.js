@@ -543,7 +543,125 @@ const treeData = [
     // Ronin
     [],
     // Hexer
-    [],
+    [
+        {
+            skillID: 'curses',
+            baseSkill: false,
+            coords: {x: 0, y: 0},
+            numAfter: 14
+        },
+        {
+            skillID: 'sapping',
+            baseSkill: false,
+            coords: {x: 1, y: 0},
+            numBefore: 1,
+            preReqLevels: [1]
+        },
+        {
+            skillID: 'frailty',
+            baseSkill: false,
+            coords: {x: 1, y: 1},
+            numBefore: 1,
+            preReqLevels: [1]
+        },
+        {
+            skillID: 'leaden',
+            baseSkill: false,
+            coords: {x: 1, y: 2},
+            numBefore: 1,
+            preReqLevels: [1]
+        },
+        {
+            skillID: 'blinding',
+            baseSkill: false,
+            coords: {x: 1, y: 3},
+            numBefore: 1,
+            preReqLevels: [1]
+        },
+        {
+            skillID: 'poison',
+            baseSkill: false,
+            coords: {x: 1, y: 4},
+            numBefore: 1,
+            preReqLevels: [2]
+        },
+        {
+            skillID: 'torpor',
+            baseSkill: false,
+            coords: {x: 1, y: 5},
+            numBefore: 1,
+            preReqLevels: [3]
+        },
+        {
+            skillID: 'cranial',
+            baseSkill: false,
+            coords: {x: 1, y: 6},
+            numBefore: 1,
+            preReqLevels: [3]
+        },
+        {
+            skillID: 'abdomen',
+            baseSkill: false,
+            coords: {x: 1, y: 7},
+            numBefore: 1,
+            preReqLevels: [3]
+        },
+        {
+            skillID: 'immobile',
+            baseSkill: false,
+            coords: {x: 1, y: 8},
+            numBefore: 1,
+            preReqLevels: [3]
+        },
+        {
+            skillID: 'evil_eye',
+            baseSkill: false,
+            coords: {x: 1, y: 9},
+            numBefore: 1,
+            preReqLevels: [4],
+            numAfter: 3,
+            postReqLevels: [1]
+        },
+        {
+            skillID: 'paralyze',
+            baseSkill: false,
+            coords: {x: 2, y: 9},
+            numBefore: 1,
+        },
+        {
+            skillID: 'betrayal',
+            baseSkill: false,
+            coords: {x: 2, y: 10},
+            numBefore: 1,
+        },
+        {
+            skillID: 'suicide',
+            baseSkill: false,
+            coords: {x: 2, y: 11},
+            numBefore: 1,
+        },
+        {
+            skillID: 'paralysis',
+            baseSkill: false,
+            coords: {x: 1, y: 10},
+            numBefore: 1,
+            preReqLevels: [5]
+        },
+        {
+            skillID: 'corrupt',
+            baseSkill: false,
+            coords: {x: 1, y: 11},
+            numBefore: 1,
+            preReqLevels: [6]
+        },
+        {
+            skillID: 'revenge',
+            baseSkill: false,
+            coords: {x: 1, y: 12},
+            numBefore: 1,
+            preReqLevels: [7]
+        },
+    ],
     // Gunner
     [],
     // War Magus
