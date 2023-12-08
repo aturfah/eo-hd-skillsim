@@ -18482,9 +18482,317 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "cranial/abdomen/immobile",
-            "name": "Cranial/Abdomen/Immobile",
-            "description": "Attempts to inflict head bind/arm bind/leg bind on one enemy.",
+            "_id": "immobile",
+            "name": "Immobile",
+            "description": "Attempts to inflict leg bind on one enemy.",
+            "max_level": 10,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "curses",
+                "level": 3
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Infliction Rate",
+              "Speed"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "3"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "40%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "41%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "43%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "46%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "55%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "61%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "68%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "76%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "85%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "62%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "80%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "92%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "122%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "140%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "cranial",
+            "name": "Cranial",
+            "description": "Attempts to inflict head bind on one enemy.",
+            "max_level": 10,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "curses",
+                "level": 3
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Infliction Rate",
+              "Speed"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "3"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "40%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "41%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "43%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "46%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "55%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "61%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "68%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "76%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "85%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "62%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "80%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "92%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "122%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "140%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "abdomen",
+            "name": "Abdomen",
+            "description": "Attempts to inflict arm bind on one enemy.",
             "max_level": 10,
             "uses": "Head",
             "class_skill": false,
@@ -18639,6 +18947,382 @@
             "_id": "blinding/torpor/evil_eye/paralysis/corrupt",
             "name": "Blinding/Torpor/Evil Eye/Paralysis/Corrupt",
             "description": "Attempts to inflict blind/sleep/fear/paralysis/curse on all enemies.",
+            "max_level": 5,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(blinding):_curses",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Infliction Rate",
+              "Speed"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "15%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "57%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "87%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "142%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "172%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "blinding",
+            "name": "Blinding",
+            "description": "Attempts to inflict blind on all enemies.",
+            "max_level": 5,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "curses",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Infliction Rate",
+              "Speed"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "15%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "57%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "87%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "142%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "172%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "torpor",
+            "name": "Torpor",
+            "description": "Attempts to inflict sleep on all enemies.",
+            "max_level": 5,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(blinding):_curses",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Infliction Rate",
+              "Speed"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "15%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "57%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "87%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "142%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "172%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "evil_eye",
+            "name": "Evil Eye",
+            "description": "Attempts to inflict fear on all enemies.",
+            "max_level": 5,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(blinding):_curses",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Infliction Rate",
+              "Speed"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "15%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "57%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "87%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "142%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "172%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "paralysis",
+            "name": "Paralysis",
+            "description": "Attempts to inflict paralysis on all enemies.",
             "max_level": 5,
             "uses": "Head",
             "class_skill": false,
