@@ -832,7 +832,7 @@
   },
   {
     "curses": [],
-    "(h)_scavenge": [
+    "scavenge": [
       {
         "_id": "tp_up",
         "level": 5
@@ -870,16 +870,52 @@
         "level": 5
       }
     ],
-    "cranial/abdomen/immobile": [
+    "abdomen": [
       {
         "_id": "curses",
         "level": 3
       }
     ],
-    "blinding/torpor/evil_eye/paralysis/corrupt": [
+    "cranial": [
       {
-        "_id": "requirements_(blinding):_curses",
+        "_id": "curses",
+        "level": 3
+      }
+    ],
+    "immobile": [
+      {
+        "_id": "curses",
+        "level": 3
+      }
+    ],
+    "blinding": [
+      {
+        "_id": "curses",
         "level": 1
+      }
+    ],
+    "torpor": [
+      {
+        "_id": "curses",
+        "level": 3
+      }
+    ],
+    "evil_eye": [
+      {
+        "_id": "curses",
+        "level": 4
+      }
+    ],
+    "paralysis": [
+      {
+        "_id": "curses",
+        "level": 5
+      }
+    ],
+    "corrupt": [
+      {
+        "_id": "curses",
+        "level": 6
       }
     ],
     "poison": [
@@ -888,7 +924,19 @@
         "level": 2
       }
     ],
-    "suicide/betrayal/paralyze": [
+    "paralyze": [
+      {
+        "_id": "evil_eye",
+        "level": 1
+      }
+    ],
+    "betrayal": [
+      {
+        "_id": "evil_eye",
+        "level": 1
+      }
+    ],
+    "suicide": [
       {
         "_id": "evil_eye",
         "level": 1
