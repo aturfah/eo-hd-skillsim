@@ -20306,16 +20306,304 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "legshot/armshot/headshot",
-            "name": "Legshot/Armshot/Headshot",
-            "description": "Deals ranged STR-based Stab damage to one enemy. Has a chance to inflict leg bind/arm bind/head bind.",
+            "_id": "legshot",
+            "name": "Legshot",
+            "description": "Deals ranged STR-based Stab damage to one enemy. Has a chance to inflict leg bind.",
             "max_level": 5,
             "uses": "Arms",
             "class_skill": false,
             "prerequisites": [
               {
-                "_id": "requirements_(legshot):_guns",
+                "_id": "guns",
                 "level": 2
+              },
+              {
+                "_id": "agi_up",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Infliction Rate",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "123%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "129%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "138%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "150%"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "35%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "36%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "38%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "41%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "45%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "62%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "102%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "armshot",
+            "name": "Armshot",
+            "description": "Deals ranged STR-based Stab damage to one enemy. Has a chance to inflict arm bind.",
+            "max_level": 5,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "guns",
+                "level": 3
+              },
+              {
+                "_id": "agi_up",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Infliction Rate",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "123%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "129%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "138%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "150%"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "35%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "36%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "38%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "41%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "45%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "62%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "102%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "headshot",
+            "name": "Headshot",
+            "description": "Deals ranged STR-based Stab damage to one enemy. Has a chance to inflict head bind.",
+            "max_level": 5,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "guns",
+                "level": 4
               },
               {
                 "_id": "agi_up",
