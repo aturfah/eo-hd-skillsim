@@ -166,7 +166,27 @@
         "level": 5
       }
     ],
-    "sleeper/number/poisoner": [
+    "sleeper": [
+      {
+        "_id": "bows",
+        "level": 3
+      },
+      {
+        "_id": "tec_up",
+        "level": 3
+      }
+    ],
+    "number": [
+      {
+        "_id": "bows",
+        "level": 3
+      },
+      {
+        "_id": "tec_up",
+        "level": 3
+      }
+    ],
+    "poisoner": [
       {
         "_id": "bows",
         "level": 3
