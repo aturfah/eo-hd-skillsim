@@ -18944,9 +18944,9 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "blinding/torpor/evil_eye/paralysis/corrupt",
-            "name": "Blinding/Torpor/Evil Eye/Paralysis/Corrupt",
-            "description": "Attempts to inflict blind/sleep/fear/paralysis/curse on all enemies.",
+            "_id": "corrupt",
+            "name": "Corrupt",
+            "description": "Attempts to inflict curse on all enemies.",
             "max_level": 5,
             "uses": "Head",
             "class_skill": false,
@@ -19611,9 +19611,9 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "suicide/betrayal/paralyze",
-            "name": "Suicide/Betrayal/Paralyze",
-            "description": "Targets one enemy at the start of the turn. If that enemy is inflicted with fear, they will attack themselves a number of times/attack a random enemy once/do nothing for the turn. Otherwise, the skill will have no effect.",
+            "_id": "suicide",
+            "name": "Suicide",
+            "description": "Targets one enemy at the start of the turn. If that enemy is inflicted with fear, they will attack themselves a number of times. Otherwise, the skill will have no effect.",
             "max_level": 5,
             "uses": "Head",
             "class_skill": false,
@@ -19626,6 +19626,130 @@
             "growth_order": [
               "TP Cost",
               "Suicide Attacks"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "2"
+                }
+              ],
+              "Suicide Attacks": [
+                {
+                  "levelspan": "2",
+                  "value": "1"
+                },
+                {
+                  "levelspan": "2",
+                  "value": "2"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "3"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "betrayal",
+            "name": "Betrayal",
+            "description": "Targets one enemy at the start of the turn. If that enemy is inflicted with fear, they will attack a random enemy once. Otherwise, the skill will have no effect.",
+            "max_level": 5,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "evil_eye",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "2"
+                }
+              ],
+              "Suicide Attacks": [
+                {
+                  "levelspan": "2",
+                  "value": "1"
+                },
+                {
+                  "levelspan": "2",
+                  "value": "2"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "3"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "paralyze",
+            "name": "Paralyze",
+            "description": "Targets one enemy at the start of the turn. If that enemy is inflicted with fear, they will do nothing for the turn. Otherwise, the skill will have no effect.",
+            "max_level": 5,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "evil_eye",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
             ],
             "growth": {
               "TP Cost": [
