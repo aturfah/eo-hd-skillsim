@@ -572,13 +572,33 @@
         "level": 5
       }
     ],
-    "inferno/cocytus/thor": [
+    "inferno": [
       {
-        "_id": "requirements_(inferno):_fire_up",
+        "_id": "fire_up",
         "level": 5
       },
       {
         "_id": "fire",
+        "level": 5
+      }
+    ],
+    "cocytus": [
+      {
+        "_id": "ice_up",
+        "level": 5
+      },
+      {
+        "_id": "ice",
+        "level": 5
+      }
+    ],
+    "thor": [
+      {
+        "_id": "volt_up",
+        "level": 5
+      },
+      {
+        "_id": "volt",
         "level": 5
       }
     ],
