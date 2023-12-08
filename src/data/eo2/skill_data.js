@@ -21103,9 +21103,9 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "fireshot/iceshot/voltshot",
-            "name": "Fireshot/Iceshot/Voltshot",
-            "description": "Deals ranged STR-based Fire/Ice/Volt damage to one enemy.",
+            "_id": "fireshot",
+            "name": "Fireshot",
+            "description": "Deals ranged STR-based Fire damage to one enemy.",
             "max_level": 10,
             "uses": "Arms",
             "class_skill": false,
@@ -21300,19 +21300,829 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "riskfire/riskice/riskvolt",
-            "name": "Riskfire/Riskice/Riskvolt",
-            "description": "At the start of the turn, the Gunner prepares to deal ranged STR-based Fire/Ice/Volt damage to one enemy. Until they fire the shot, they will take extra damage from all attacks.",
+            "_id": "iceshot",
+            "name": "Iceshot",
+            "description": "Deals ranged STR-based Ice damage to one enemy.",
             "max_level": 10,
             "uses": "Arms",
             "class_skill": false,
             "prerequisites": [
               {
-                "_id": "requirements_(riskfire):_guns",
+                "_id": "guns",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "15"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "125%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "127%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "131%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "137%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "145%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "155%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "167%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "181%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "197%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "215%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "20%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "22%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "41%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "48%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "101%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "103%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "110%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "115%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "121%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "128%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "136%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "145%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "voltshot",
+            "name": "Voltshot",
+            "description": "Deals ranged STR-based Volt damage to one enemy.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "guns",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "15"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "125%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "127%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "131%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "137%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "145%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "155%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "167%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "181%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "197%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "215%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "20%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "22%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "41%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "48%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "101%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "103%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "110%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "115%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "121%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "128%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "136%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "145%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "riskfire",
+            "name": "Riskfire",
+            "description": "At the start of the turn, the Gunner prepares to deal ranged STR-based Fire damage to one enemy. Until they fire the shot, they will take extra damage from all attacks.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "guns",
                 "level": 5
               },
               {
                 "_id": "fireshot",
+                "level": 5
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Self-Damage Multiplier",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "15"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "16"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "17"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "18"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "19"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "20"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "250%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "252%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "256%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "262%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "270%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "280%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "292%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "306%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "322%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "340%"
+                }
+              ],
+              "Self-Damage Multiplier": [
+                {
+                  "levelspan": "1",
+                  "value": "520%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "466%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "418%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "376%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "340%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "310%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "286%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "268%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "256%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "250%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "10",
+                  "value": "1%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "102%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "130%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "142%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "156%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "172%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "190%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "riskice",
+            "name": "Riskice",
+            "description": "At the start of the turn, the Gunner prepares to deal ranged STR-based Ice damage to one enemy. Until they fire the shot, they will take extra damage from all attacks.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "guns",
+                "level": 5
+              },
+              {
+                "_id": "iceshot",
+                "level": 5
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Self-Damage Multiplier",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "15"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "16"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "17"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "18"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "19"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "20"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "250%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "252%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "256%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "262%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "270%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "280%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "292%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "306%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "322%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "340%"
+                }
+              ],
+              "Self-Damage Multiplier": [
+                {
+                  "levelspan": "1",
+                  "value": "520%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "466%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "418%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "376%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "340%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "310%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "286%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "268%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "256%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "250%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "10",
+                  "value": "1%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "102%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "130%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "142%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "156%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "172%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "190%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "riskvolt",
+            "name": "Riskvolt",
+            "description": "At the start of the turn, the Gunner prepares to deal ranged STR-based Volt damage to one enemy. Until they fire the shot, they will take extra damage from all attacks.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "guns",
+                "level": 5
+              },
+              {
+                "_id": "voltshot",
                 "level": 5
               }
             ],
