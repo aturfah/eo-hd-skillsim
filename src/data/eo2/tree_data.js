@@ -221,7 +221,7 @@ const treeData = [
             beforeStyle: 'centered',
         },
         {
-            skillID: 'multihit',
+            skillID: '2-bolt',
             baseSkill: false,
             coords: {x: 1, y: 4},
             numBefore: 1,
