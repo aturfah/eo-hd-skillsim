@@ -878,6 +878,64 @@ const treeData = [
             numBefore: 1,
             preReqLevels: [10],
         },
+        {
+            skillID: "tec_up",
+            baseSkill: false,
+            coords: {x: 0, y: 13},
+            numAfter: 1,
+            postReqLevels: [1]
+        },
+        {
+            skillID: "medishot",
+            baseSkill: false,
+            coords: {x: 1, y: 13},
+            numBefore: 1,
+        },
+        {
+            skillID: "hp_up",
+            baseSkill: false,
+            coords: {x: 0, y: 14},
+        },
+        {
+            skillID: "tp_up",
+            baseSkill: false,
+            coords: {x: 0, y: 15},
+        },
+        {
+            skillID: "str_up",
+            baseSkill: false,
+            coords: {x: 0, y: 16},
+        },
+        {
+            skillID: "vit_up",
+            baseSkill: false,
+            coords: {x: 0, y: 17},
+        },
+        {
+            skillID: "luc_up",
+            baseSkill: false,
+            coords: {x: 0, y: 18},
+        },
+        {
+            skillID: "weakshot",
+            baseSkill: false,
+            coords: {x: 1, y: 14},
+        },
+        {
+            skillID: "haltshot",
+            baseSkill: false,
+            coords: {x: 1, y: 15},
+        },
+        {
+            skillID: "esc_up",
+            baseSkill: false,
+            coords: {x: 2, y: 14},
+        },
+        {
+            skillID: "take",
+            baseSkill: false,
+            coords: {x: 2, y: 15},
+        },
         
     ],
     // War Magus
