@@ -174,7 +174,187 @@ const treeData = [
         },
     ],
     // Survivalist
-    [],
+    [
+        {
+            skillID: 'bows',
+            baseSkill: false,
+            coords: {x: 0, y: 0},
+            numAfter: 6
+        },
+        {
+            skillID: 'trueshot',
+            baseSkill: false,
+            coords: {x: 1, y: 0},
+            numBefore: 1,
+            preReqLevels: [1]
+        },
+        {
+            skillID: 'sleeper',
+            baseSkill: false,
+            coords: {x: 1, y: 1},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1,
+        },
+        {
+            skillID: 'number',
+            baseSkill: false,
+            coords: {x: 1, y: 2},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1,
+        },
+        {
+            skillID: 'poisoner',
+            baseSkill: false,
+            coords: {x: 1, y: 3},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1
+        },
+        {
+            skillID: 'tec_up',
+            baseSkill: false,
+            coords: {x: 2, y: 2},
+            numBefore: 3,
+            preReqLevels: ["(Lv.3)"],
+            beforeStyle: 'centered',
+        },
+        {
+            skillID: 'multihit',
+            baseSkill: false,
+            coords: {x: 1, y: 4},
+            numBefore: 1,
+            preReqLevels: [5],
+        },
+        {
+            skillID: 'apollon',
+            baseSkill: false,
+            coords: {x: 1, y: 5},
+            numBefore: 1,
+            preReqLevels: [10],
+        },
+        {
+            skillID: 'agi_up',
+            baseSkill: false,
+            coords: {x: 0, y: 6},
+            numAfter: 4
+        },
+        {
+            skillID: 'velocity',
+            baseSkill: false,
+            coords: {x: 1, y: 6},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'slowstep',
+            baseSkill: false,
+            coords: {x: 2, y: 6},
+            numBefore: 1,
+            numAfter: 2,
+            postReqLevels: [1]
+        },
+        {
+            skillID: '1st_turn',
+            baseSkill: false,
+            coords: {x: 2, y: 7},
+            numAfter: 1,
+        },
+        {
+            skillID: 'baitstep',
+            baseSkill: false,
+            coords: {x: 1, y: 7},
+            numBefore: 3,
+            preReqLevels: [1],
+        },
+        {
+            skillID: 'ambush',
+            baseSkill: false,
+            coords: {x: 1, y: 8},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 2,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'sagacity',
+            baseSkill: false,
+            coords: {x: 1, y: 9},
+            numBefore: 1,
+            preReqLevels: [5],
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: '1st_hit',
+            baseSkill: false,
+            coords: {x: 2, y: 8},
+            numBefore: 1,
+        },
+        {
+            skillID: 'hp_up',
+            baseSkill: false,
+            coords: {x: 0, y: 10}
+        },
+        {
+            skillID: 'tp_up',
+            baseSkill: false,
+            coords: {x: 0, y: 11}
+        },
+        {
+            skillID: 'str_up',
+            baseSkill: false,
+            coords: {x: 0, y: 12}
+        },
+        {
+            skillID: 'vit_up',
+            baseSkill: false,
+            coords: {x: 0, y: 13}
+        },
+        {
+            skillID: 'luc_up',
+            baseSkill: false,
+            coords: {x: 0, y: 14}
+        },
+        {
+            skillID: '(s)_patrol',
+            baseSkill: false,
+            coords: {x: 1, y: 10}
+        },
+        {
+            skillID: 'stalker',
+            baseSkill: false,
+            coords: {x: 1, y: 11}
+        },
+        {
+            skillID: 'esc_up',
+            baseSkill: false,
+            coords: {x: 2, y: 10}
+        },
+        {
+            skillID: 'foesense',
+            baseSkill: false,
+            coords: {x: 2, y: 11}
+        },
+        {
+            skillID: 'take',
+            baseSkill: false,
+            coords: {x: 2, y: 12}
+        },
+        {
+            skillID: 'chop',
+            baseSkill: false,
+            coords: {x: 2, y: 13}
+        },
+        {
+            skillID: 'mine',
+            baseSkill: false,
+            coords: {x: 2, y: 14}
+        },
+    ],
     // Protector
     [],
     // Dark Hunter
