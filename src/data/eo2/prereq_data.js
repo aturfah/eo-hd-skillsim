@@ -602,7 +602,19 @@
         "level": 5
       }
     ],
-    "blades/gravity/piercing": [
+    "blades": [
+      {
+        "_id": "phys_up",
+        "level": 1
+      }
+    ],
+    "gravity": [
+      {
+        "_id": "phys_up",
+        "level": 1
+      }
+    ],
+    "piercing": [
       {
         "_id": "phys_up",
         "level": 1
