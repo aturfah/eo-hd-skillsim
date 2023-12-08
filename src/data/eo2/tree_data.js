@@ -306,6 +306,41 @@ const treeData = [
             coords: {x: 2, y: 8},
             numBefore: 1,
         },
+        {
+            skillID: 'tec_up',
+            baseSkill: false,
+            coords: {x: 0, y: 9},
+            numAfter: 2
+        },
+        {
+            skillID: 'tp_up',
+            baseSkill: false,
+            coords: {x: 0, y: 10},
+            numAfter: 1
+        },
+        {
+            skillID: 'analysis',
+            baseSkill: false,
+            coords: {x: 1, y: 10},
+            numAfter: 1,
+            numBefore: 1,
+            preReqLevels: [5]
+        },
+        {
+            skillID: undefined,
+            baseSkill: false,
+            coords: {x: 1, y: 9},
+            numBefore: 1,
+            numAfter: 2,
+            postReqLevels: [10]
+        },
+        {
+            skillID: 'megido',
+            baseSkill: false,
+            coords: {x: 2, y: 10},
+            numBefore: 1,
+            preReqLevels: [5]
+        },
     ],
     // Troubadour
     [
