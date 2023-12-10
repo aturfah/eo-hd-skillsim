@@ -5,7 +5,7 @@ import SkillInfoPanel from '../SkillInfo/skillInfo'
 import './skillTree.css';
 
 // Helper Functions
-import {firstDegSkills, buildBarsBefore, buildBarsAfter, skillData} from '../helpers';
+import {firstDegSkills, buildBarsBefore, buildBarsAfter, skillData, deepCopy} from '../helpers';
 
 // Data Import
 import eo3TreeData from '../data/eo3/tree_data'
@@ -70,7 +70,7 @@ class SkillTree extends Component {
         const addSkillFunc = this._addSkill;
         const updateMethod = this.props.updateMethod;
 
-        const branches = skillTreeData.branches;
+        const branches = deepCopy(skillTreeData.branches);
 
         // Hacky way to get around EO2 stuff
         branches.push(...gameSkills[gameSkills.length - 1].branches)
