@@ -356,7 +356,204 @@ const treeData = [
         },
     ],
     // Protector
-    [],
+    [
+        {
+            skillID: 'shields',
+            baseSkill: false,
+            coords: {x: 0, y: 0},
+            numAfter: 9
+        },
+        {
+            skillID: 'front_guard',
+            coords: {x: 1, y: 0},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'rear_guard',
+            coords: {x: 1, y: 1},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'full_guard',
+            coords: {x: 2, y: 0},
+            numBefore: 2
+        },
+        {
+            skillID: 'fire_wall',
+            baseSkill: false,
+            coords: {x: 1, y: 2},
+            numBefore: 1,
+            preReqLevels: [3]
+        },
+        {
+            skillID: 'ice_wall',
+            baseSkill: false,
+            coords: {x: 1, y: 3},
+            numBefore: 1,
+            preReqLevels: [3]
+        },
+        {
+            skillID: 'volt_wall',
+            baseSkill: false,
+            coords: {x: 1, y: 4},
+            numBefore: 1,
+            preReqLevels: [3]
+        },
+        {
+            skillID: 'en_garde',
+            baseSkill: false,
+            coords: {x: 1, y: 5},
+            numBefore: 1,
+            preReqLevels: [5]
+        },
+        {
+            skillID: '1_guard',
+            baseSkill: false,
+            coords: {x: 1, y: 6},
+            numBefore: 1,
+            preReqLevels: [7]
+        },
+        {
+            skillID: 'smite',
+            baseSkill: false,
+            coords: {x: 1, y: 7},
+            numBefore: 1,
+            preReqLevels: [10]
+        },
+        {
+            skillID: undefined,
+            baseSkill: false,
+            coords: {x: 1, y: 8},
+            numBefore: 1,
+            preReqLevels: [10],
+            numAfter: 1
+        },
+        {
+            skillID: 'mana_wall',
+            baseSkill: false,
+            coords: {x: 2, y: 8},
+            numBefore: 2,
+        },
+        {
+            skillID: 'tec_up',
+            baseSkill: false,
+            coords: {x: 0, y: 9},
+            numAfter: 2,
+        },
+        {
+            skillID: undefined,
+            baseSkill: false,
+            coords: {x: 1, y: 9},
+            numBefore: 1,
+            preReqLevels: [10],
+            numAfter: 1
+        },
+        {
+            skillID: '(p)_refresh',
+            baseSkill: false,
+            coords: {x: 1, y: 10},
+            numBefore: 1,
+            preReqLevels: [1]
+        },
+        {
+            skillID: 'hp_up',
+            baseSkill: false,
+            coords: {x: 0, y: 11},
+            numAfter: 2,
+        },
+        {
+            skillID: 'hp_regen',
+            baseSkill: false,
+            coords: {x: 1, y: 11},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1
+        },
+        {
+            skillID: 'riskwall',
+            baseSkill: false,
+            coords: {x: 1, y: 12},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 1,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'aegis',
+            baseSkill: false,
+            coords: {x: 2, y: 11},
+            numBefore: 2,
+            preReqLevels: [5]
+        },
+        {
+            skillID: 'provoke',
+            baseSkill: false,
+            coords: {x: 0, y: 13},
+            numAfter: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'parry',
+            baseSkill: false,
+            coords: {x: 1, y: 13},
+            numBefore: 1
+        },
+        {
+            skillID: 'vit_up',
+            baseSkill: false,
+            coords: {x: 0, y: 14},
+            numAfter: 1,
+            postReqLevels: [1]
+        },
+        {
+            skillID: 'fortify',
+            baseSkill: false,
+            coords: {x: 1, y: 14},
+            numBefore: 1
+        },
+        {
+            skillID: 'tp_up',
+            baseSkill: false,
+            coords: {x: 0, y: 15}
+        },
+        {
+            skillID: 'str_up',
+            baseSkill: false,
+            coords: {x: 0, y: 16}
+        },
+        {
+            skillID: 'agi_up',
+            baseSkill: false,
+            coords: {x: 0, y: 17}
+        },
+        {
+            skillID: 'luc_up',
+            baseSkill: false,
+            coords: {x: 0, y: 18}
+        },
+        {
+            skillID: 'flee',
+            baseSkill: false,
+            coords: {x: 1, y: 15}
+        },
+        {
+            skillID: 'esc_up',
+            baseSkill: false,
+            coords: {x: 2, y: 15}
+        },
+        {
+            skillID: 'mine',
+            baseSkill: false,
+            coords: {x: 2, y: 16}
+        },
+        
+    ],
     // Dark Hunter
     [],
     // Medic

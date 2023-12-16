@@ -5529,8 +5529,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(p)_en_garde",
-            "name": "(P) En Garde",
+            "_id": "en_garde",
+            "name": "En Garde",
             "description": "Passively gives the Protector a chance to reduce any instance of damage they take by 50%.",
             "max_level": 10,
             "uses": "N/A",
@@ -5909,9 +5909,9 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "f._guard/b._guard",
-            "name": "F. Guard/B. Guard",
-            "description": "At the start of the turn, the Protector prepares to reduces the amount of damage the front/back row takes from physical attacks for the current turn. Remains active until the turn ends or the Protector dies. Every time the skill activates, the chance of it activating again is reduced. The base activation rate is 100% at all levels.",
+            "_id": "front_guard",
+            "name": "Front Guard",
+            "description": "At the start of the turn, the Protector prepares to reduces the amount of damage the front row takes from physical attacks for the current turn. Remains active until the turn ends or the Protector dies. Every time the skill activates, the chance of it activating again is reduced. The base activation rate is 100% at all levels.",
             "max_level": 10,
             "uses": "Arms",
             "class_skill": false,
@@ -6086,8 +6086,185 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "a._guard",
-            "name": "A. Guard",
+            "_id": "rear_guard",
+            "name": "Rear Guard",
+            "description": "At the start of the turn, the Protector prepares to reduces the amount of damage the back row takes from physical attacks for the current turn. Remains active until the turn ends or the Protector dies. Every time the skill activates, the chance of it activating again is reduced. The base activation rate is 100% at all levels.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "shields",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage Reduction",
+              "Chance Reduction",
+              "Max Activations"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "2"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "3"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                }
+              ],
+              "Damage Reduction": [
+                {
+                  "levelspan": "1",
+                  "value": "15%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "16%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "18%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "25%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "36%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "43%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "51%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "60%"
+                }
+              ],
+              "Chance Reduction": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "91%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "82%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "73%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "64%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "55%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "46%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "37%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "28%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10%"
+                }
+              ],
+              "Max Activations": [
+                {
+                  "levelspan": "1",
+                  "value": "1"
+                },
+                {
+                  "levelspan": "5",
+                  "value": "2"
+                },
+                {
+                  "levelspan": "2",
+                  "value": "3"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "full_guard",
+            "name": "Full Guard",
             "description": "At the start of the turn, the Protector prepares to reduces the amount of damage the entire party takes from physical attacks for the current turn. Remains active until the turn ends or the Protector dies. Every time the skill activates, the chance of it activating again is reduced. The base activation rate is 100% at all levels.",
             "max_level": 5,
             "uses": "Arms",
@@ -6316,8 +6493,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "antifire/anticold/antivolt",
-            "name": "Antifire/Anticold/Antivolt",
+            "_id": "volt_wall",
+            "name": "Volt Wall",
             "description": "At the start of the turn, the Protector prepares to reduces the amount of damage the entire party takes from fire/ice/volt attacks for the current turn. Remains active until the turn ends or the Protector dies. From levels 1 through 9, every time the skill activates, the chance of it activating again is reduced. The base activation rate is 100% at all levels. At level 10, the skill will always activate. At levels 1 through 7, the damage is simply reduced. At levels 8 through 10, the effects of the attack are completely nullified, meaning that any status effects attached to those attacks will not take effect. At levels 9 and 10, the damage is not nullified, but ends up being absorbed and heals the party instead.",
             "max_level": 10,
             "uses": "Arms",
@@ -6508,8 +6685,392 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "antiall",
-            "name": "Antiall",
+            "_id": "fire_wall",
+            "name": "Fire Wall",
+            "description": "At the start of the turn, the Protector prepares to reduces the amount of damage the entire party takes from fire attacks for the current turn. Remains active until the turn ends or the Protector dies. From levels 1 through 9, every time the skill activates, the chance of it activating again is reduced. The base activation rate is 100% at all levels. At level 10, the skill will always activate. At levels 1 through 7, the damage is simply reduced. At levels 8 through 10, the effects of the attack are completely nullified, meaning that any status effects attached to those attacks will not take effect. At levels 9 and 10, the damage is not nullified, but ends up being absorbed and heals the party instead.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "shields",
+                "level": 3
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage Reduction",
+              "Damage Absorption",
+              "Chance Reduction",
+              "Max Activations"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "2"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "3"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                }
+              ],
+              "Damage Reduction": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "55%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "61%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "68%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "76%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "85%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "2",
+                  "value": "0%"
+                }
+              ],
+              "Damage Absorption": [
+                {
+                  "levelspan": "8",
+                  "value": "0%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "25%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                }
+              ],
+              "Chance Reduction": [
+                {
+                  "levelspan": "1",
+                  "value": "90%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "80%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "60%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "40%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "20%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "0%"
+                }
+              ],
+              "Max Activations": [
+                {
+                  "levelspan": "5",
+                  "value": "2"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "3"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "Infinite"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "ice_wall",
+            "name": "Ice Wall",
+            "description": "At the start of the turn, the Protector prepares to reduces the amount of damage the entire party takes from ice attacks for the current turn. Remains active until the turn ends or the Protector dies. From levels 1 through 9, every time the skill activates, the chance of it activating again is reduced. The base activation rate is 100% at all levels. At level 10, the skill will always activate. At levels 1 through 7, the damage is simply reduced. At levels 8 through 10, the effects of the attack are completely nullified, meaning that any status effects attached to those attacks will not take effect. At levels 9 and 10, the damage is not nullified, but ends up being absorbed and heals the party instead.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "shields",
+                "level": 3
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage Reduction",
+              "Damage Absorption",
+              "Chance Reduction",
+              "Max Activations"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "2"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "3"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                }
+              ],
+              "Damage Reduction": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "55%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "61%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "68%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "76%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "85%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "2",
+                  "value": "0%"
+                }
+              ],
+              "Damage Absorption": [
+                {
+                  "levelspan": "8",
+                  "value": "0%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "25%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                }
+              ],
+              "Chance Reduction": [
+                {
+                  "levelspan": "1",
+                  "value": "90%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "80%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "60%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "40%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "20%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "0%"
+                }
+              ],
+              "Max Activations": [
+                {
+                  "levelspan": "5",
+                  "value": "2"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "3"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "Infinite"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "mana_wall",
+            "name": "Mana Wall",
             "description": "At the start of the turn, the Protector prepares to reduces the amount of damage the entire party takes from elemental attacks for the current turn. Remains active until the turn ends or the Protector dies. Every time the skill activates, the chance of it activating again is reduced. The base activation rate is 100% at all levels. At levels 1 through 4, the damage is simply reduced. At level 5, the effects of the attack are completely nullified, meaning that any status effects attached to those attacks will not take effect.The damage taken is also absorbed and heals the party instead.",
             "max_level": 5,
             "uses": "Arms",
