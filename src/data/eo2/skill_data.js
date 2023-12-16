@@ -5395,7 +5395,7 @@
             "linked_skill": null,
             "no_level": false,
             "_id": "shields",
-            "name": "Shields",
+            "name": "Shield Mastery",
             "description": "Needed to learn shield skills. Passively decreases the damage the Protector takes from all damage types.",
             "max_level": 10,
             "uses": "N/A",

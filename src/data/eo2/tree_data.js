@@ -369,7 +369,7 @@ const treeData = [
             numBefore: 1,
             preReqLevels: [1],
             numAfter: 1,
-            postReqLevels: [3]
+            postReqLevels: [5]
         },
         {
             skillID: 'rear_guard',
@@ -377,7 +377,7 @@ const treeData = [
             numBefore: 1,
             preReqLevels: [1],
             numAfter: 1,
-            postReqLevels: [3]
+            postReqLevels: [5]
         },
         {
             skillID: 'full_guard',
