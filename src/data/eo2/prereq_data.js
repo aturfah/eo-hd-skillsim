@@ -243,7 +243,7 @@
         "level": 5
       }
     ],
-    "(p)_en_garde": [
+    "en_garde": [
       {
         "_id": "shields",
         "level": 5
@@ -267,19 +267,25 @@
         "level": 10
       }
     ],
-    "f._guard/b._guard": [
+    "front_guard": [
       {
         "_id": "shields",
         "level": 1
       }
     ],
-    "a._guard": [
+    "rear_guard": [
       {
-        "_id": "f._guard",
+        "_id": "shields",
+        "level": 1
+      }
+    ],
+    "full_guard": [
+      {
+        "_id": "front_guard",
         "level": 5
       },
       {
-        "_id": "b._guard",
+        "_id": "rear_guard",
         "level": 5
       }
     ],
@@ -289,13 +295,25 @@
         "level": 7
       }
     ],
-    "antifire/anticold/antivolt": [
+    "fire_wall": [
       {
         "_id": "shields",
         "level": 3
       }
     ],
-    "antiall": [
+    "ice_wall": [
+      {
+        "_id": "shields",
+        "level": 3
+      }
+    ],
+    "volt_wall": [
+      {
+        "_id": "shields",
+        "level": 3
+      }
+    ],
+    "mana_wall": [
       {
         "_id": "tec_up",
         "level": 10
@@ -320,8 +338,8 @@
     ],
     "(p)_refresh": [
       {
-        "_id": "provoke",
-        "level": 3
+        "_id": "tec_up",
+        "level": 1
       }
     ],
     "flee": [],

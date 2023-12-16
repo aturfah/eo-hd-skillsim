@@ -7566,7 +7566,7 @@
             "linked_skill": null,
             "no_level": false,
             "_id": "(p)_refresh",
-            "name": "(P) Refresh",
+            "name": "Refresh",
             "description": "Dispels certain status ailments from one party member. Which ailments are dispelled depends on the skill's level. Cannot dispel petrification, no matter how high its level is.",
             "max_level": 5,
             "uses": "Head",
