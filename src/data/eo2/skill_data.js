@@ -7923,9 +7923,57 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "antisick/antibind",
-            "name": "Antisick/Antibind",
-            "description": "Passively increases the Dark Hunter's resistance to ailments/binds.",
+            "_id": "antibind",
+            "name": "Antibind",
+            "description": "Passively increases the Dark Hunter's resistance to binds.",
+            "max_level": 5,
+            "uses": "N/A",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "unbind",
+                "level": 3
+              }
+            ],
+            "growth_order": [
+              "Resistance Increase"
+            ],
+            "growth": {
+              "Resistance Increase": [
+                {
+                  "levelspan": "1",
+                  "value": "15%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "45%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "60%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "80%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "antisick",
+            "name": "Antisick",
+            "description": "Passively increases the Dark Hunter's resistance to ailments.",
             "max_level": 5,
             "uses": "N/A",
             "class_skill": false,
@@ -10414,8 +10462,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(d)_unbind",
-            "name": "(D) Unbind",
+            "_id": "unbind",
+            "name": "Unbind",
             "description": "Removes binds from one party member.",
             "max_level": 5,
             "uses": "Head",
