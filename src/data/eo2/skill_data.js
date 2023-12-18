@@ -8134,9 +8134,489 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "shackles/cuffs/gag",
-            "name": "Shackles/Cuffs/Gag",
-            "description": "Deals melee STR-based Cut damage to one enemy. Has a chance to inflict leg bind/arm bind/head bind.",
+            "_id": "shackles",
+            "name": "Shackles",
+            "description": "Deals melee STR-based Cut damage to one enemy. Has a chance to inflict leg bind.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(shackles):_whips",
+                "level": 2
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Infliction Rate",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "115%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "117%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "121%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "127%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "135%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "145%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "157%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "171%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "187%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "205%"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "20%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "23%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "41%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "48%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "75%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "77%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "81%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "87%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "105%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "117%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "131%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "147%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "165%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "96%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "98%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "101%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "105%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "110%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "116%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "123%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "131%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "140%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "cuffs",
+            "name": "Cuffs",
+            "description": "Deals melee STR-based Cut damage to one enemy. Has a chance to inflict arm bind.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(shackles):_whips",
+                "level": 2
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Infliction Rate",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "115%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "117%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "121%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "127%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "135%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "145%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "157%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "171%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "187%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "205%"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "20%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "23%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "41%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "48%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "75%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "77%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "81%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "87%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "105%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "117%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "131%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "147%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "165%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "96%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "98%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "101%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "105%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "110%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "116%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "123%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "131%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "140%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "gag",
+            "name": "Gag",
+            "description": "Deals melee STR-based Cut damage to one enemy. Has a chance to inflict head bind.",
             "max_level": 10,
             "uses": "Arms",
             "class_skill": false,
