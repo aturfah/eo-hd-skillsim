@@ -1007,6 +1007,86 @@ const treeData = [
             preReqLevels: [7],
             numAfter: 1
         },
+        {
+            skillID: 'iai',
+            coords: {x: 0, y: 10},
+            numAfter: 4,
+        },
+        {
+            skillID: 'kubiuchi',
+            coords: {x: 1, y: 10},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 2,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'nukeuchi',
+            coords: {x: 1, y: 11},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 1,
+        },
+        {
+            skillID: 'hyosetsu',
+            coords: {x: 1, y: 12},
+            numBefore: 1,
+            preReqLevels: [5],
+            numAfter: 2,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'hosoyuki',
+            coords: {x: 1, y: 13},
+            numBefore: 1,
+            preReqLevels: [7],
+            numAfter: 1
+        },
+        {
+            skillID: 'agi_up',
+            coords: {x: 0, y: 14},
+            numAfter: 2,
+            postReqLevels: [8]
+        },
+        {
+            skillID: 'luc_up',
+            coords: {x: 0, y: 15},
+            numAfter: 1,
+            postReqLevels: [8]
+        },
+        {
+            skillID: 'shiraha',
+            coords: {x: 1, y: 14},
+            numBefore: 1
+        },
+        {
+            skillID: 'hp_up',
+            coords: {x: 0, y: 16},
+        },
+        {
+            skillID: 'tp_up',
+            coords: {x: 0, y: 17},
+        },
+        {
+            skillID: 'tec_up',
+            coords: {x: 0, y: 18},
+        },
+        {
+            skillID: 'vit_up',
+            coords: {x: 0, y: 19},
+        },
+        {
+            skillID: 'sayageki',
+            coords: {x: 1, y: 16},
+        },
+        {
+            skillID: 'esc_up',
+            coords: {x: 2, y: 16},
+        },
+        {
+            skillID: 'mine',
+            coords: {x: 2, y: 17},
+        },
     ],
     // Hexer
     [
