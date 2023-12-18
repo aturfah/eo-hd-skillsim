@@ -844,19 +844,51 @@
         "level": 5
       }
     ],
-    "orochi/raizuki/hyosetsu": [
+    "orochi": [
       {
-        "_id": "requirements_(orochi):_overhead",
+        "_id": "overhead",
         "level": 5
       }
     ],
-    "kienzan/minakata/hosoyuki": [
+    "raizuki": [
       {
-        "_id": "requirements_(orochi):_overhead",
+        "_id": "seigan",
+        "level": 5
+      }
+    ],
+    "hyosetsu": [
+      {
+        "_id": "iai",
+        "level": 5
+      }
+    ],
+    "kienzan": [
+      {
+        "_id": "overhead",
         "level": 7
       },
       {
         "_id": "orochi",
+        "level": 5
+      }
+    ],
+    "minakata": [
+      {
+        "_id": "seigan",
+        "level": 7
+      },
+      {
+        "_id": "raizuki",
+        "level": 5
+      }
+    ],
+    "hosoyuki": [
+      {
+        "_id": "iai",
+        "level": 7
+      },
+      {
+        "_id": "hyosetsu",
         "level": 5
       }
     ],
