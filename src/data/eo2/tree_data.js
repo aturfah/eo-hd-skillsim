@@ -918,7 +918,96 @@ const treeData = [
         },
     ],
     // Ronin
-    [],
+    [
+        {
+            skillID: 'overhead',
+            baseSkill: false,
+            coords: {x: 0, y: 0},
+            numAfter: 4
+        },
+        {
+            skillID: 'zamba',
+            coords: {x: 1, y: 0},
+            numBefore: 1,
+            preReqLevels: [1],
+        },
+        {
+            skillID: 'orochi',
+            coords: {x: 1, y: 1},
+            numBefore: 1,
+            preReqLevels: [5],
+            postReqLevels: [5],
+            numAfter: 2
+        },
+        {
+            skillID: 'kienzan',
+            coords: {x: 1, y: 2},
+            numBefore: 1,
+            preReqLevels: [7],
+            numAfter: 1,
+        },
+        {
+            skillID: 'midareba',
+            coords: {x: 1, y: 3},
+            numBefore: 1,
+            preReqLevels: [10],
+            numAfter: 2,
+        },
+        {
+            skillID: 'str_up',
+            coords: {x: 0, y: 4},
+            numAfter: 2
+        },
+        {
+            skillID: 'dead_law',
+            coords: {x: 1, y: 4},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'clarity',
+            coords: {x: 1, y: 5},
+            numBefore: 1,
+            preReqLevels: [5],
+        },
+        {
+            skillID: 'seigan',
+            coords: {x: 0, y: 6},
+            numAfter: 4
+        },
+        {
+            skillID: 'koteuchi',
+            coords: {x: 1, y: 6},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 2,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'getsuei',
+            coords: {x: 1, y: 7},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 1,
+        },
+        {
+            skillID: 'raizuki',
+            coords: {x: 1, y: 8},
+            numBefore: 1,
+            preReqLevels: [5],
+            numAfter: 2,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'minakata',
+            coords: {x: 1, y: 9},
+            numBefore: 1,
+            preReqLevels: [7],
+            numAfter: 1
+        },
+    ],
     // Hexer
     [
         {
