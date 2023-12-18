@@ -10172,9 +10172,130 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "bait/magibait",
-            "name": "Bait/Magibait",
-            "description": "At the start of the turn, the Dark Hunter sets up a trap. If they or any party member adjacent to them get attacked with a physical/elemental attack, the Dark Hunter has a chance of dealing melee STR-based Cut damage to the attacker. The counters will still activate even if the damage taken was nullified through the use of methods such as Painless.",
+            "_id": "magibait",
+            "name": "Magibait",
+            "description": "At the start of the turn, the Dark Hunter sets up a trap. If they or any party member adjacent to them get attacked with a elemental attack, the Dark Hunter has a chance of dealing melee STR-based Cut damage to the attacker. The counters will still activate even if the damage taken was nullified through the use of methods such as Painless.",
+            "max_level": 5,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "swords",
+                "level": 8
+              },
+              {
+                "_id": "whips",
+                "level": 8
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Counter Chance",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "16"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "18"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "150%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "175%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "225%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "300%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "400%"
+                }
+              ],
+              "Counter Chance": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "55%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "80%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "97%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "101%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "107%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "115%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "bait",
+            "name": "Bait",
+            "description": "At the start of the turn, the Dark Hunter sets up a trap. If they or any party member adjacent to them get attacked with a physical, the Dark Hunter has a chance of dealing melee STR-based Cut damage to the attacker. The counters will still activate even if the damage taken was nullified through the use of methods such as Painless.",
             "max_level": 5,
             "uses": "Arms",
             "class_skill": false,
