@@ -1021,7 +1021,7 @@ const treeData = [
             postReqLevels: [5]
         },
         {
-            skillID: 'nukeuchi',
+            skillID: 'nukechi',
             coords: {x: 1, y: 11},
             numBefore: 1,
             preReqLevels: [3],

@@ -18150,7 +18150,7 @@
             "linked_skill": null,
             "no_level": false,
             "_id": "nukechi",
-            "name": "Nukechi",
+            "name": "Nukeuchi",
             "description": "Deals melee STR-based Cut damage to one enemy.",
             "max_level": 10,
             "uses": "Arms",
@@ -18350,9 +18350,9 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "orochi/raizuki/hyosetsu",
-            "name": "Orochi/Raizuki/Hyosetsu",
-            "description": "Deals melee STR-based Cut+Fire/Volt+Stab/Cut+Ice to one enemy.",
+            "_id": "orochi",
+            "name": "Orochi",
+            "description": "Deals melee STR-based Cut+Fire to one enemy.",
             "max_level": 5,
             "uses": "Arm",
             "class_skill": false,
@@ -18467,9 +18467,485 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "kienzan/minakata/hosoyuki",
-            "name": "Kienzan/Minakata/Hosoyuki",
-            "description": "Deals melee STR-based Cut+Fire/Volt+Stab/Cut+Ice to all enemies.",
+            "_id": "raizuki",
+            "name": "Raizuki",
+            "description": "Deals melee STR-based Volt+Stab to one enemy.",
+            "max_level": 5,
+            "uses": "Arm",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(orochi):_overhead",
+                "level": 5
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "128%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "144%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "168%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "200%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "25%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "31%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "45%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "67%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "97%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "98%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "105%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "116%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "hyosetsu",
+            "name": "Hyosetsu",
+            "description": "Deals melee STR-based Cut+Ice to one enemy.",
+            "max_level": 5,
+            "uses": "Arm",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(orochi):_overhead",
+                "level": 5
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "128%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "144%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "168%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "200%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "25%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "31%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "45%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "67%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "97%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "98%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "105%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "116%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "kienzan",
+            "name": "Kienzan",
+            "description": "Deals melee STR-based Cut+Fire to all enemies.",
+            "max_level": 5,
+            "uses": "Arm",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(orochi):_overhead",
+                "level": 7
+              },
+              {
+                "_id": "orochi",
+                "level": 5
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "18"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "22"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "107%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "121%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "142%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "170%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "1%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "43%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "73%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "98%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "105%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "116%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "minakata",
+            "name": "Minakata",
+            "description": "Deals melee STR-based Volt+Stab to all enemies.",
+            "max_level": 5,
+            "uses": "Arm",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(orochi):_overhead",
+                "level": 7
+              },
+              {
+                "_id": "orochi",
+                "level": 5
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "18"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "22"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "107%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "121%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "142%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "170%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "1%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "43%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "73%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "98%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "105%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "116%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "hosoyuki",
+            "name": "Hosoyuki",
+            "description": "Deals melee STR-based Cut+Ice to all enemies.",
             "max_level": 5,
             "uses": "Arm",
             "class_skill": false,
