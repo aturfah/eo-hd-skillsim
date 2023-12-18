@@ -555,7 +555,200 @@ const treeData = [
         
     ],
     // Dark Hunter
-    [],
+    [
+        {
+            skillID: 'whips',
+            baseSkill: false,
+            coords: {x: 0, y: 0},
+            numAfter: 7
+        },
+        {
+            skillID: 'viper',
+            baseSkill: false,
+            coords: {x: 1, y: 0},
+            numBefore: 1,
+            preReqLevels: [1]
+        },
+        {
+            skillID: 'shackles',
+            baseSkill: false,
+            coords: {x: 1, y: 1},
+            numBefore: 1,
+            preReqLevels: [2]
+        },
+        {
+            skillID: 'cuffs',
+            baseSkill: false,
+            coords: {x: 1, y: 2},
+            numBefore: 1,
+            preReqLevels: [3]
+        },
+        {
+            skillID: 'gag',
+            baseSkill: false,
+            coords: {x: 1, y: 3},
+            numBefore: 1,
+            preReqLevels: [4]
+        },
+        {
+            skillID: 'climax',
+            baseSkill: false,
+            coords: {x: 1, y: 4},
+            numBefore: 1,
+            preReqLevels: [6]
+        },
+        {
+            skillID: 'ecstasy',
+            baseSkill: false,
+            coords: {x: 1, y: 5},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1,
+            postReqLevels: ["(Lv.5)"]
+        },
+        {
+            skillID: 'str_up',
+            baseSkill: false,
+            coords: {x: 2, y: 5},
+            numBefore: 1,
+        },
+        {
+            skillID: undefined,
+            coords: {x: 1, y: 6},
+            numBefore: 1,
+            numAfter: 3,
+            preReqLevels: [8]
+        },
+        {
+            skillID: 'bait',
+            baseSkill: false,
+            coords: {x: 2, y: 6},
+            numBefore: 1,
+        },
+        {
+            skillID: 'magibait',
+            baseSkill: false,
+            coords: {x: 2, y: 7},
+            numBefore: 1,
+        },
+        {
+            skillID: 'swords',
+            baseSkill: false,
+            coords: {x: 0, y: 8},
+            numAfter: 6
+        },
+        {
+            skillID: undefined,
+            baseSkill: false,
+            coords: {x: 1, y: 8},
+            numBefore: 1,
+            numAfter: 1,
+            preReqLevels: [8]
+        },
+        {
+            skillID: 'hypnos',
+            baseSkill: false,
+            coords: {x: 1, y: 9},
+            numBefore: 1,
+            preReqLevels: [1]
+        },
+        {
+            skillID: 'nerve',
+            baseSkill: false,
+            coords: {x: 1, y: 10},
+            numBefore: 1,
+            preReqLevels: [2]
+        },
+        {
+            skillID: 'mirage',
+            baseSkill: false,
+            coords: {x: 1, y: 11},
+            numBefore: 1,
+            preReqLevels: [3]
+        },
+        {
+            skillID: 'drain',
+            baseSkill: false,
+            coords: {x: 1, y: 12},
+            numBefore: 1,
+            preReqLevels: [4]
+        },
+        {
+            skillID: 'petrify',
+            baseSkill: false,
+            coords: {x: 1, y: 13},
+            numBefore: 1,
+            preReqLevels: [6]
+        },
+        {
+            skillID: 'tec_up',
+            baseSkill: false,
+            coords: {x: 0, y: 14},
+            numAfter: 1,
+            postReqLevels: [1]
+        },
+        {
+            skillID: 'unbind',
+            baseSkill: false,
+            coords: {x: 1, y: 14},
+            numBefore: 1,
+            numAfter: 2,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'antisick',
+            baseSkill: false,
+            coords: {x: 2, y: 14},
+            numBefore: 1,
+        },
+        {
+            skillID: 'antibind',
+            baseSkill: false,
+            coords: {x: 2, y: 15},
+            numBefore: 1,
+        },
+        {
+            skillID: 'hp_up',
+            baseSkill: false,
+            coords: {x: 0, y: 15},
+        },
+        {
+            skillID: 'tp_up',
+            baseSkill: false,
+            coords: {x: 0, y: 16},
+        },
+        {
+            skillID: 'vit_up',
+            baseSkill: false,
+            coords: {x: 0, y: 17},
+        },
+        {
+            skillID: 'agi_up',
+            baseSkill: false,
+            coords: {x: 0, y: 18},
+        },
+        {
+            skillID: 'luc_up',
+            baseSkill: false,
+            coords: {x: 0, y: 19},
+        },
+        {
+            skillID: 'racket',
+            baseSkill: false,
+            coords: {x: 1, y: 15},
+        },
+        {
+            skillID: 'esc_up',
+            baseSkill: false,
+            coords: {x: 2, y: 16},
+        },
+        {
+            skillID: 'chop',
+            baseSkill: false,
+            coords: {x: 2, y: 17},
+        },
+        
+    ],
     // Medic
     [],
     // Alchemist
