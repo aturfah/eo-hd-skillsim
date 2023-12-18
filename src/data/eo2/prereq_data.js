@@ -348,7 +348,13 @@
   {
     "whips": [],
     "(d)_swords": [],
-    "antisick/antibind": [
+    "antisick": [
+      {
+        "_id": "unbind",
+        "level": 3
+      }
+    ],
+    "antibind": [
       {
         "_id": "unbind",
         "level": 3
@@ -360,10 +366,22 @@
         "level": 1
       }
     ],
-    "shackles/cuffs/gag": [
+    "shackles": [
       {
-        "_id": "requirements_(shackles):_whips",
+        "_id": "whips",
         "level": 2
+      }
+    ],
+    "cuffs": [
+      {
+        "_id": "whips",
+        "level": 3
+      }
+    ],
+    "gag": [
+      {
+        "_id": "whips",
+        "level": 4
       }
     ],
     "ecstasy": [
@@ -382,9 +400,15 @@
         "level": 6
       }
     ],
-    "hypnos/nerve": [
+    "nerve": [
       {
-        "_id": "requirements_(hypnos):_swords",
+        "_id": "swords",
+        "level": 2
+      }
+    ],
+    "hypnos": [
+      {
+        "_id": "swords",
         "level": 1
       }
     ],
@@ -402,11 +426,11 @@
     ],
     "petrify": [
       {
-        "_id": "requirements_(nerve):_swords",
+        "_id": "swords",
         "level": 6
       }
     ],
-    "bait/magibait": [
+    "bait": [
       {
         "_id": "swords",
         "level": 8
@@ -416,7 +440,17 @@
         "level": 8
       }
     ],
-    "(d)_unbind": [
+    "magibait": [
+      {
+        "_id": "swords",
+        "level": 8
+      },
+      {
+        "_id": "whips",
+        "level": 8
+      }
+    ],
+    "unbind": [
       {
         "_id": "tec_up",
         "level": 1
