@@ -602,7 +602,7 @@ const treeData = [
             baseSkill: false,
             coords: {x: 1, y: 5},
             numBefore: 1,
-            preReqLevels: [1],
+            preReqLevels: [8],
             numAfter: 1,
             postReqLevels: ["(Lv.5)"]
         },
