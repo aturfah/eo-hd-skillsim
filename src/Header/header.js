@@ -243,8 +243,8 @@ class Header extends Component {
         const imgStyle = {
             float: 'left',
             marginLeft: '5%',
-            width: '377px',
-            height: 'auto'
+            width: 'auto',
+            height: '200px'
         }
 
         let headerControlsDiv = <div>
@@ -277,13 +277,13 @@ class Header extends Component {
         } 
 
         let headerBarColors = {
-            backgroundColor: "#3574bc",
-            color: "white"
+            backgroundColor: "#215489",
+            color: "#FFF1A5"
         }
         if (this.props.gameID === "eo2") {
             headerBarColors = {
-                backgroundColor: "#FF0000",
-                color: "black"
+                backgroundColor: "#17422F",
+                color: "#FFEE9A"
             }
         }
 
