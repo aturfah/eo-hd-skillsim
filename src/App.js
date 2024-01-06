@@ -164,7 +164,9 @@ class App extends Component {
 
     // Only show default skills for EO3
     let defaultSkillsBar = <span></span>
+    document.body.style.backgroundColor  = "#298463";
     if (this.state.gameID === 'eo3') {
+      document.body.style.backgroundColor = "#107FB4";
       defaultSkillsBar = <SkillTree
         updateMethod={this.updateState.bind(this)}
         skillsChosen={this.state.skillsChosen}
@@ -172,6 +174,7 @@ class App extends Component {
         gameID={this.state.gameID}
       ></SkillTree>
     }
+
     return (
       <div className="App">
         <Header

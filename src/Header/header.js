@@ -277,7 +277,7 @@ class Header extends Component {
         } 
 
         let headerBarColors = {
-            backgroundColor: "#215489",
+            backgroundColor: "#002035",
             color: "#FFF1A5"
         }
         if (this.props.gameID === "eo2") {
