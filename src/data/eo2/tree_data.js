@@ -750,7 +750,214 @@ const treeData = [
         
     ],
     // Medic
-    [],
+    [
+        {
+            skillID: 'healer',
+            baseSkill: false,
+            coords: {x: 0, y: 0},
+            numAfter: 9
+        },
+        {
+            skillID: undefined,
+            baseSkill: false,
+            coords: {x: 1, y: 0},
+            numBefore: 1,
+            numAfter: 1,
+        },
+        {
+            skillID: undefined,
+            baseSkill: false,
+            coords: {x: 2, y: 0},
+            numBefore: 1,
+            numAfter: 7,
+        },
+        {
+            skillID: 'patch_up',
+            baseSkill: false,
+            coords: {x: 1, y: 1},
+            numBefore: 1,
+            preReqLevels: [1]
+        },
+        {
+            skillID: 'cure',
+            baseSkill: false,
+            coords: {x: 1, y: 2},
+            numBefore: 1,
+            preReqLevels: [1],
+            numAfter: 1,
+        },
+        {
+            skillID: 'salve',
+            baseSkill: false,
+            coords: {x: 2, y: 2},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 1,
+            postReqLevels: ["(Lv.3)"]
+        },
+        {
+            skillID: 'unbind',
+            baseSkill: false,
+            coords: {x: 1, y: 3},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 1,
+        },
+        {
+            skillID: 'freedom',
+            baseSkill: false,
+            coords: {x: 2, y: 3},
+            numBefore: 1,
+            preReqLevels: [5],
+        },
+        {
+            skillID: 'refresh',
+            baseSkill: false,
+            coords: {x: 1, y: 4},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 1,
+        },
+        {
+            skillID: 'purify',
+            baseSkill: false,
+            coords: {x: 2, y: 4},
+            numBefore: 1,
+            preReqLevels: [3],
+        },
+        {
+            skillID: 'healing',
+            baseSkill: false,
+            coords: {x: 1, y: 5},
+            numBefore: 1,
+            preReqLevels: [5],
+            numAfter: 1,
+        },
+        {
+            skillID: 'salve_2',
+            baseSkill: false,
+            coords: {x: 2, y: 5},
+            numBefore: 1,
+            preReqLevels: [4],
+            numAfter: 1,
+            postReqLevels: ["(Lv.6)"]
+        },
+        {
+            skillID: 'full_heal',
+            baseSkill: false,
+            coords: {x: 1, y: 6},
+            numBefore: 1,
+            preReqLevels: [5],
+            numAfter: 1,
+        },
+        {
+            skillID: 'salve_3',
+            baseSkill: false,
+            coords: {x: 2, y: 6},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 1,
+            postReqLevels: ["(Lv.10)"]
+        },
+        {
+            skillID: 'revive',
+            baseSkill: false,
+            coords: {x: 1, y: 7},
+            numBefore: 1,
+            preReqLevels: [5],
+            numAfter: 1,
+        },
+        {
+            skillID: 'cpr',
+            baseSkill: false,
+            coords: {x: 2, y: 7},
+            numBefore: 1,
+            preReqLevels: [10],
+        },
+        {
+            skillID: 'phoenix',
+            baseSkill: false,
+            coords: {x: 1, y: 8},
+            numBefore: 1,
+            preReqLevels: [10],
+        },
+        {
+            skillID: 'hp_up',
+            baseSkill: false,
+            coords: {x: 0, y: 8},
+        },
+        {
+            skillID: 'tp_up',
+            baseSkill: false,
+            coords: {x: 0, y: 9},
+            numAfter: 2,
+            postReqLevels: [10]
+        },
+        {
+            skillID: 'tec_up',
+            baseSkill: false,
+            coords: {x: 0, y: 10},
+            numAfter: 1,
+            postReqLevels: [10]
+        },
+        {
+            skillID: 'tp_regen',
+            baseSkill: false,
+            coords: {x: 1, y: 9},
+            numBefore: 1
+        },
+        {
+            skillID: 'str_up',
+            baseSkill: false,
+            coords: {x: 0, y: 11},
+            numAfter: 2,
+            postReqLevels: [10]
+        },
+        {
+            skillID: 'vit_up',
+            baseSkill: false,
+            coords: {x: 0, y: 12},
+            numAfter: 1,
+            postReqLevels: [10]
+        },
+        {
+            skillID: 'caduceus',
+            baseSkill: false,
+            coords: {x: 1, y: 11},
+            numBefore: 1
+        },
+        {
+            skillID: 'agi_up',
+            baseSkill: false,
+            coords: {x: 0, y: 13},
+        },
+        {
+            skillID: 'luc_up',
+            baseSkill: false,
+            coords: {x: 0, y: 14}
+        },
+        {
+            skillID: 'scavenge',
+            baseSkill: false,
+            coords: {x: 1, y: 13},
+        },
+        {
+            skillID: 'patrol',
+            baseSkill: false,
+            coords: {x: 1, y: 14}
+        },
+        {
+            skillID: 'esc_up',
+            baseSkill: false,
+            coords: {x: 2, y: 13},
+        },
+        {
+            skillID: 'take',
+            baseSkill: false,
+            coords: {x: 2, y: 14}
+        },
+        
+    ],
     // Alchemist
     [
         {
