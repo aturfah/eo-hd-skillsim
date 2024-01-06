@@ -1,7 +1,7 @@
 // AUTOMATICALLY GENERATED FILE; DO NOT MODIFY!;
     var prereqData = [
   {
-    "(l)_swords": [],
+    "swords": [],
     "axes": [],
     "counter": [
       {
@@ -91,14 +91,34 @@
         "level": 7
       }
     ],
-    "blazer/freezer/shocker": [
+    "blazer": [
       {
         "_id": "swords",
-        "level": 8
+        "level": 5
       },
       {
         "_id": "axes",
-        "level": 8
+        "level": 5
+      }
+    ],
+    "shocker": [
+      {
+        "_id": "swords",
+        "level": 5
+      },
+      {
+        "_id": "axes",
+        "level": 5
+      }
+    ],
+    "freezer": [
+      {
+        "_id": "swords",
+        "level": 5
+      },
+      {
+        "_id": "axes",
+        "level": 5
       }
     ],
     "war_cry": [
@@ -146,7 +166,27 @@
         "level": 5
       }
     ],
-    "sleeper/number/poisoner": [
+    "sleeper": [
+      {
+        "_id": "bows",
+        "level": 3
+      },
+      {
+        "_id": "tec_up",
+        "level": 3
+      }
+    ],
+    "number": [
+      {
+        "_id": "bows",
+        "level": 3
+      },
+      {
+        "_id": "tec_up",
+        "level": 3
+      }
+    ],
+    "poisoner": [
       {
         "_id": "bows",
         "level": 3
@@ -203,7 +243,7 @@
         "level": 5
       }
     ],
-    "(p)_en_garde": [
+    "en_garde": [
       {
         "_id": "shields",
         "level": 5
@@ -227,19 +267,25 @@
         "level": 10
       }
     ],
-    "f._guard/b._guard": [
+    "front_guard": [
       {
         "_id": "shields",
         "level": 1
       }
     ],
-    "a._guard": [
+    "rear_guard": [
       {
-        "_id": "f._guard",
+        "_id": "shields",
+        "level": 1
+      }
+    ],
+    "full_guard": [
+      {
+        "_id": "front_guard",
         "level": 5
       },
       {
-        "_id": "b._guard",
+        "_id": "rear_guard",
         "level": 5
       }
     ],
@@ -249,13 +295,25 @@
         "level": 7
       }
     ],
-    "antifire/anticold/antivolt": [
+    "fire_wall": [
       {
         "_id": "shields",
         "level": 3
       }
     ],
-    "antiall": [
+    "ice_wall": [
+      {
+        "_id": "shields",
+        "level": 3
+      }
+    ],
+    "volt_wall": [
+      {
+        "_id": "shields",
+        "level": 3
+      }
+    ],
+    "mana_wall": [
       {
         "_id": "tec_up",
         "level": 10
@@ -280,8 +338,8 @@
     ],
     "(p)_refresh": [
       {
-        "_id": "provoke",
-        "level": 3
+        "_id": "tec_up",
+        "level": 1
       }
     ],
     "flee": [],
@@ -290,7 +348,13 @@
   {
     "whips": [],
     "(d)_swords": [],
-    "antisick/antibind": [
+    "antisick": [
+      {
+        "_id": "unbind",
+        "level": 3
+      }
+    ],
+    "antibind": [
       {
         "_id": "unbind",
         "level": 3
@@ -302,10 +366,22 @@
         "level": 1
       }
     ],
-    "shackles/cuffs/gag": [
+    "shackles": [
       {
-        "_id": "requirements_(shackles):_whips",
+        "_id": "whips",
         "level": 2
+      }
+    ],
+    "cuffs": [
+      {
+        "_id": "whips",
+        "level": 3
+      }
+    ],
+    "gag": [
+      {
+        "_id": "whips",
+        "level": 4
       }
     ],
     "ecstasy": [
@@ -324,9 +400,15 @@
         "level": 6
       }
     ],
-    "hypnos/nerve": [
+    "nerve": [
       {
-        "_id": "requirements_(hypnos):_swords",
+        "_id": "swords",
+        "level": 2
+      }
+    ],
+    "hypnos": [
+      {
+        "_id": "swords",
         "level": 1
       }
     ],
@@ -344,11 +426,11 @@
     ],
     "petrify": [
       {
-        "_id": "requirements_(nerve):_swords",
+        "_id": "swords",
         "level": 6
       }
     ],
-    "bait/magibait": [
+    "bait": [
       {
         "_id": "swords",
         "level": 8
@@ -358,7 +440,17 @@
         "level": 8
       }
     ],
-    "(d)_unbind": [
+    "magibait": [
+      {
+        "_id": "swords",
+        "level": 8
+      },
+      {
+        "_id": "whips",
+        "level": 8
+      }
+    ],
+    "unbind": [
       {
         "_id": "tec_up",
         "level": 1
@@ -369,7 +461,12 @@
   },
   {
     "healer": [],
-    "patch_up": [],
+    "patch_up": [
+      {
+        "_id": "healer",
+        "level": 1
+      }
+    ],
     "tp_regen": [
       {
         "_id": "tp_up",
@@ -380,26 +477,26 @@
         "level": 10
       }
     ],
-    "(m)_scavenge": [],
-    "(m)_cure": [
+    "scavenge": [],
+    "cure": [
       {
         "_id": "healer",
         "level": 1
       }
     ],
-    "(m)_cure_2": [
+    "healing": [
       {
         "_id": "healer",
         "level": 3
       }
     ],
-    "(m)_cure_3": [
+    "full_heal": [
       {
         "_id": "healer",
         "level": 5
       }
     ],
-    "(m)_salve": [
+    "salve": [
       {
         "_id": "healer",
         "level": 3
@@ -409,13 +506,13 @@
         "level": 3
       }
     ],
-    "(m)_salve_2": [
+    "salve_2": [
       {
         "_id": "healer",
         "level": 6
       },
       {
-        "_id": "cure_2",
+        "_id": "healing",
         "level": 4
       }
     ],
@@ -425,7 +522,7 @@
         "level": 10
       },
       {
-        "_id": "cure_3",
+        "_id": "full_heal",
         "level": 5
       }
     ],
@@ -435,7 +532,7 @@
         "level": 5
       }
     ],
-    "(m)_unbind": [
+    "unbind": [
       {
         "_id": "healer",
         "level": 3
@@ -447,7 +544,7 @@
         "level": 5
       }
     ],
-    "(m)_refresh": [
+    "refresh": [
       {
         "_id": "healer",
         "level": 3
@@ -481,7 +578,7 @@
         "level": 10
       }
     ],
-    "(m)_patrol": [],
+    "patrol": [],
     "force_skill:_h._touch": []
   },
   {
@@ -504,15 +601,27 @@
         "level": 5
       }
     ],
-    "fire/ice/volt": [
+    "fire": [
       {
-        "_id": "requirements_(fire):_fire_up",
+        "_id": "fire_up",
         "level": 1
       }
     ],
-    "flame/freeze/thunder": [
+    "ice": [
       {
-        "_id": "requirements_(flame):_fire_up",
+        "_id": "ice_up",
+        "level": 1
+      }
+    ],
+    "volt": [
+      {
+        "_id": "volt_up",
+        "level": 1
+      }
+    ],
+    "flame": [
+      {
+        "_id": "fire_up",
         "level": 5
       },
       {
@@ -520,9 +629,29 @@
         "level": 5
       }
     ],
-    "inferno/cocytus/thor": [
+    "freeze": [
       {
-        "_id": "requirements_(inferno):_fire_up",
+        "_id": "ice_up",
+        "level": 5
+      },
+      {
+        "_id": "ice",
+        "level": 5
+      }
+    ],
+    "thunder": [
+      {
+        "_id": "volt_up",
+        "level": 5
+      },
+      {
+        "_id": "volt",
+        "level": 5
+      }
+    ],
+    "inferno": [
+      {
+        "_id": "fire_up",
         "level": 5
       },
       {
@@ -530,7 +659,39 @@
         "level": 5
       }
     ],
-    "blades/gravity/piercing": [
+    "cocytus": [
+      {
+        "_id": "ice_up",
+        "level": 5
+      },
+      {
+        "_id": "ice",
+        "level": 5
+      }
+    ],
+    "thor": [
+      {
+        "_id": "volt_up",
+        "level": 5
+      },
+      {
+        "_id": "volt",
+        "level": 5
+      }
+    ],
+    "blades": [
+      {
+        "_id": "phys_up",
+        "level": 1
+      }
+    ],
+    "gravity": [
+      {
+        "_id": "phys_up",
+        "level": 1
+      }
+    ],
+    "piercing": [
       {
         "_id": "phys_up",
         "level": 1
@@ -581,19 +742,51 @@
         "level": 3
       }
     ],
-    "blaze/frost/shock": [
+    "blaze": [
       {
         "_id": "songs",
         "level": 7
       }
     ],
-    "ifrit/ymir/taranis": [
+    "frost": [
       {
-        "_id": "requirements_(inferno):_songs",
+        "_id": "songs",
+        "level": 7
+      }
+    ],
+    "shock": [
+      {
+        "_id": "songs",
+        "level": 7
+      }
+    ],
+    "ifrit": [
+      {
+        "_id": "songs",
         "level": 10
       },
       {
         "_id": "blaze",
+        "level": 3
+      }
+    ],
+    "ymir": [
+      {
+        "_id": "songs",
+        "level": 10
+      },
+      {
+        "_id": "frost",
+        "level": 3
+      }
+    ],
+    "taranis": [
+      {
+        "_id": "songs",
+        "level": 10
+      },
+      {
+        "_id": "shock",
         "level": 3
       }
     ],
@@ -690,19 +883,51 @@
         "level": 5
       }
     ],
-    "orochi/raizuki/hyosetsu": [
+    "orochi": [
       {
-        "_id": "requirements_(orochi):_overhead",
+        "_id": "overhead",
         "level": 5
       }
     ],
-    "kienzan/minakata/hosoyuki": [
+    "raizuki": [
       {
-        "_id": "requirements_(orochi):_overhead",
+        "_id": "seigan",
+        "level": 5
+      }
+    ],
+    "hyosetsu": [
+      {
+        "_id": "iai",
+        "level": 5
+      }
+    ],
+    "kienzan": [
+      {
+        "_id": "overhead",
         "level": 7
       },
       {
         "_id": "orochi",
+        "level": 5
+      }
+    ],
+    "minakata": [
+      {
+        "_id": "seigan",
+        "level": 7
+      },
+      {
+        "_id": "raizuki",
+        "level": 5
+      }
+    ],
+    "hosoyuki": [
+      {
+        "_id": "iai",
+        "level": 7
+      },
+      {
+        "_id": "hyosetsu",
         "level": 5
       }
     ],
@@ -716,7 +941,7 @@
   },
   {
     "curses": [],
-    "(h)_scavenge": [
+    "scavenge": [
       {
         "_id": "tp_up",
         "level": 5
@@ -754,16 +979,52 @@
         "level": 5
       }
     ],
-    "cranial/abdomen/immobile": [
+    "abdomen": [
       {
         "_id": "curses",
         "level": 3
       }
     ],
-    "blinding/torpor/evil_eye/paralysis/corrupt": [
+    "cranial": [
       {
-        "_id": "requirements_(blinding):_curses",
+        "_id": "curses",
+        "level": 3
+      }
+    ],
+    "immobile": [
+      {
+        "_id": "curses",
+        "level": 3
+      }
+    ],
+    "blinding": [
+      {
+        "_id": "curses",
         "level": 1
+      }
+    ],
+    "torpor": [
+      {
+        "_id": "curses",
+        "level": 3
+      }
+    ],
+    "evil_eye": [
+      {
+        "_id": "curses",
+        "level": 4
+      }
+    ],
+    "paralysis": [
+      {
+        "_id": "curses",
+        "level": 5
+      }
+    ],
+    "corrupt": [
+      {
+        "_id": "curses",
+        "level": 6
       }
     ],
     "poison": [
@@ -772,7 +1033,19 @@
         "level": 2
       }
     ],
-    "suicide/betrayal/paralyze": [
+    "paralyze": [
+      {
+        "_id": "evil_eye",
+        "level": 1
+      }
+    ],
+    "betrayal": [
+      {
+        "_id": "evil_eye",
+        "level": 1
+      }
+    ],
+    "suicide": [
       {
         "_id": "evil_eye",
         "level": 1
@@ -795,10 +1068,30 @@
       }
     ],
     "weakshot": [],
-    "legshot/armshot/headshot": [
+    "legshot": [
       {
-        "_id": "requirements_(legshot):_guns",
+        "_id": "guns",
         "level": 2
+      },
+      {
+        "_id": "agi_up",
+        "level": 1
+      }
+    ],
+    "armshot": [
+      {
+        "_id": "guns",
+        "level": 3
+      },
+      {
+        "_id": "agi_up",
+        "level": 1
+      }
+    ],
+    "headshot": [
+      {
+        "_id": "guns",
+        "level": 4
       },
       {
         "_id": "agi_up",
@@ -823,19 +1116,51 @@
         "level": 5
       }
     ],
-    "fireshot/iceshot/voltshot": [
+    "iceshot": [
       {
         "_id": "guns",
         "level": 1
       }
     ],
-    "riskfire/riskice/riskvolt": [
+    "fireshot": [
       {
-        "_id": "requirements_(riskfire):_guns",
+        "_id": "guns",
+        "level": 1
+      }
+    ],
+    "voltshot": [
+      {
+        "_id": "guns",
+        "level": 1
+      }
+    ],
+    "riskfire": [
+      {
+        "_id": "guns",
         "level": 5
       },
       {
         "_id": "fireshot",
+        "level": 5
+      }
+    ],
+    "riskice": [
+      {
+        "_id": "guns",
+        "level": 5
+      },
+      {
+        "_id": "iceshot",
+        "level": 5
+      }
+    ],
+    "riskvolt": [
+      {
+        "_id": "guns",
+        "level": 5
+      },
+      {
+        "_id": "voltshot",
         "level": 5
       }
     ],
@@ -864,14 +1189,34 @@
     "war_edge": [],
     "war_lore": [],
     "regenall": [],
-    "blindcut/venomcut/stuncut": [
+    "blindcut": [
       {
-        "_id": "requirements_(blindcut):_war_edge",
+        "_id": "war_edge",
         "level": 1
       },
       {
         "_id": "str_up",
         "level": 1
+      }
+    ],
+    "venomcut": [
+      {
+        "_id": "war_edge",
+        "level": 2
+      },
+      {
+        "_id": "str_up",
+        "level": 2
+      }
+    ],
+    "stuncut": [
+      {
+        "_id": "war_edge",
+        "level": 5
+      },
+      {
+        "_id": "str_up",
+        "level": 5
       }
     ],
     "sleepcut": [
@@ -904,25 +1249,25 @@
         "level": 6
       }
     ],
-    "(w)_cure": [
+    "cure": [
       {
         "_id": "war_lore",
         "level": 1
       }
     ],
-    "(w)_cure_2": [
+    "healing": [
       {
         "_id": "war_lore",
         "level": 3
       }
     ],
-    "(w)_cure_3": [
+    "full_heal": [
       {
         "_id": "war_lore",
         "level": 5
       }
     ],
-    "(w)_salve": [
+    "salve": [
       {
         "_id": "war_lore",
         "level": 7
@@ -932,13 +1277,13 @@
         "level": 3
       }
     ],
-    "(w)_salve_2": [
+    "salve_2": [
       {
         "_id": "war_lore",
         "level": 10
       },
       {
-        "_id": "cure_2",
+        "_id": "healing",
         "level": 4
       }
     ],
@@ -988,7 +1333,7 @@
         "level": 5
       }
     ],
-    "(b)_en_garde": [
+    "en_garde": [
       {
         "_id": "vit_up",
         "level": 10
@@ -1007,10 +1352,10 @@
         "level": 5
       }
     ],
-    "bodyslam": [],
+    "tackle": [],
     "rampage": [
       {
-        "_id": "bodyslam",
+        "_id": "tackle",
         "level": 5
       },
       {
@@ -1038,7 +1383,7 @@
       }
     ],
     "wildwall": [],
-    "roar": [],
+    "beast_roar": [],
     "saliva": [],
     "doze_off": [
       {

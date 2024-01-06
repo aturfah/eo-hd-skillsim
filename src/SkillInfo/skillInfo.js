@@ -234,6 +234,7 @@ class SkillInfoPanel extends Component {
         super(props);
         this.activeClassIdx = props.activeClassIdx;
         this.parsedSkillData = parseSkillBranches(skillData[this.props.gameID][this.activeClassIdx])
+        this.defaultSkillData = parseSkillBranches(skillData[this.props.gameID][skillData[this.props.gameID].length - 1])
         this.maxWidth = 800;
     }
 
@@ -244,7 +245,11 @@ class SkillInfoPanel extends Component {
         const activeSkillID = this.props.activeInfo.activeSkillID;
         const activeSkillBox = this.props.activeInfo.activeSkillBox;
         const graphParams = this.props.activeInfo.graphParams;
-        const skillDatum = this.parsedSkillData[activeSkillID];
+        let skillDatum = this.parsedSkillData[activeSkillID];
+        if (skillDatum === undefined) {
+            skillDatum = this.defaultSkillData[activeSkillID];
+        }
+
         const skillText = buildSkillText(skillDatum);
         const displayPosn = this.props.activeInfo.displayPosn;
 

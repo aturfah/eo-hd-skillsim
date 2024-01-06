@@ -46,12 +46,26 @@ class SkillTreeNode extends Component {
 
     render() {
         let header = <span>{this.props.skillData.name}</span>;
-        let nodeColor = '#9dc5f7';
-        let textColor = 'black';
         if(this.props.activeFlag) {
             header = <b>{this.props.skillData.name}</b>
-            nodeColor = '#247de9'; 
         }
+        // Node/Text color are game-dependent
+        let nodeColor = "#5F6865";
+        let textColor = 'black';
+        if (this.props.gameID === "eo3") {
+            console.log("EO3")            
+            if(this.props.activeFlag) {
+                textColor = "#A0E0E9";
+                nodeColor = '#004A79'; 
+            }
+        } else {
+            console.log("EO2")
+            if(this.props.activeFlag) {
+                nodeColor = '#075071'; 
+                textColor = "#56F6DE";
+            }
+        }
+
         const nodeStyle = {
             backgroundColor: nodeColor,
             color: textColor,

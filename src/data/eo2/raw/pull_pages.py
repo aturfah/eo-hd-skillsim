@@ -5,6 +5,7 @@ from helpers import OUTPUT_DIR, CLASSES
 BASE_URL = "https://gamefaqs.gamespot.com/ds/943642-etrian-odyssey-ii-heroes-of-lagaard/faqs/73801/{}"
 
 if __name__ == "__main__":
+    raise RuntimeError("DO NOT RUN THIS YOU IDIOT")
     if not OUTPUT_DIR.exists():
         OUTPUT_DIR.mkdir()
 

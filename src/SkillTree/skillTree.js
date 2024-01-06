@@ -5,7 +5,7 @@ import SkillInfoPanel from '../SkillInfo/skillInfo'
 import './skillTree.css';
 
 // Helper Functions
-import {firstDegSkills, buildBarsBefore, buildBarsAfter, skillData} from '../helpers';
+import {firstDegSkills, buildBarsBefore, buildBarsAfter, skillData, deepCopy} from '../helpers';
 
 // Data Import
 import eo3TreeData from '../data/eo3/tree_data'
@@ -65,12 +65,17 @@ class SkillTree extends Component {
 
     buildSkillTreeNodes() {
         const objProps = this.props;
+        const curGameID = this.props.gameID;
         const gameSkills = skillData[this.props.gameID];
         const skillTreeData = gameSkills[objProps.activeClassIdx];
         const addSkillFunc = this._addSkill;
         const updateMethod = this.props.updateMethod;
 
-        const branches = skillTreeData.branches;
+        const branches = deepCopy(skillTreeData.branches);
+
+        // Hacky way to get around EO2 stuff
+        branches.push(...gameSkills[gameSkills.length - 1].branches)
+
         const output = {};
         branches.forEach(function (skillBranch) {
             skillBranch.skill_data.forEach(function (skillDatum) {
@@ -79,6 +84,7 @@ class SkillTree extends Component {
                 }
                 output[skillDatum._id] = <SkillTreeNode
                     key={skillDatum._id}
+                    gameID={curGameID}
                     skillData={skillDatum}
                     activeFlag={Object.keys(objProps.skillsChosen).includes(skillDatum._id)}
                     onClickFunc={() => addSkillFunc(skillDatum._id)}

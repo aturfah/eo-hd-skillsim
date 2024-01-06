@@ -58,8 +58,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(l)_swords",
-            "name": "(L) Swords",
+            "_id": "swords",
+            "name": "Swords",
             "description": "Needed to learn sword skills. Passively increases damage dealt with swords.",
             "max_level": 10,
             "uses": "N/A",
@@ -260,7 +260,7 @@
             "linked_skill": null,
             "no_level": false,
             "_id": "(l)_2-hit",
-            "name": "(L) 2-Hit",
+            "name": "2-Hit",
             "description": "Normal attacks have a chance of hitting twice.",
             "max_level": 10,
             "uses": "N/A",
@@ -2415,20 +2415,346 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "blazer/freezer/shocker",
-            "name": "Blazer/Freezer/Shocker",
-            "description": "When used, the Landsknecht prepares to attack any enemies in the battle with Fire/Ice/Volt damage at the start of the turn. When any enemy gets hit with an elemental attack that has the same element as the chaser, the Landsknecht will perform a follow up attack on those enemies. Every time the Landsknecht chases an attack, the chances of chasing another attack within the same turn decreases.",
+            "_id": "freezer",
+            "name": "Freezer",
+            "description": "When used, the Landsknecht prepares to attack any enemies in the battle with Ice damage at the start of the turn. When any enemy gets hit with an elemental attack that has the same element as the chaser, the Landsknecht will perform a follow up attack on those enemies. Every time the Landsknecht chases an attack, the chances of chasing another attack within the same turn decreases.",
             "max_level": 5,
             "uses": "Arms",
             "class_skill": false,
             "prerequisites": [
               {
                 "_id": "swords",
-                "level": 8
+                "level": 5
               },
               {
                 "_id": "axes",
-                "level": 8
+                "level": 5
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Accuracy",
+              "Base Activation Rate",
+              "Chance Reduction",
+              "Max Chases"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "130%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "136%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "148%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "166%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "190%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "130%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "140%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "150%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "160%"
+                }
+              ],
+              "Base Activation Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "93%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "96%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "103%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "114%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "129%"
+                }
+              ],
+              "Chance Reduction": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "79%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "58%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "37%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "16%"
+                }
+              ],
+              "Max Chases": [
+                {
+                  "levelspan": "1",
+                  "value": "1"
+                },
+                {
+                  "levelspan": "2",
+                  "value": "2"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "blazer",
+            "name": "Blazer",
+            "description": "When used, the Landsknecht prepares to attack any enemies in the battle with Fire damage at the start of the turn. When any enemy gets hit with an elemental attack that has the same element as the chaser, the Landsknecht will perform a follow up attack on those enemies. Every time the Landsknecht chases an attack, the chances of chasing another attack within the same turn decreases.",
+            "max_level": 5,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "swords",
+                "level": 5
+              },
+              {
+                "_id": "axes",
+                "level": 5
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Accuracy",
+              "Base Activation Rate",
+              "Chance Reduction",
+              "Max Chases"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "130%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "136%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "148%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "166%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "190%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "130%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "140%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "150%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "160%"
+                }
+              ],
+              "Base Activation Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "93%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "96%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "103%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "114%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "129%"
+                }
+              ],
+              "Chance Reduction": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "79%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "58%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "37%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "16%"
+                }
+              ],
+              "Max Chases": [
+                {
+                  "levelspan": "1",
+                  "value": "1"
+                },
+                {
+                  "levelspan": "2",
+                  "value": "2"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "shocker",
+            "name": "Shocker",
+            "description": "When used, the Landsknecht prepares to attack any enemies in the battle with Volt damage at the start of the turn. When any enemy gets hit with an elemental attack that has the same element as the chaser, the Landsknecht will perform a follow up attack on those enemies. Every time the Landsknecht chases an attack, the chances of chasing another attack within the same turn decreases.",
+            "max_level": 5,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "swords",
+                "level": 5
+              },
+              {
+                "_id": "axes",
+                "level": 5
               }
             ],
             "growth_order": [
@@ -3515,9 +3841,341 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "sleeper/number/poisoner",
-            "name": "Sleeper/Number/Poisoner",
-            "description": "Deals ranged STR-based Stab damage to one enemy. Has a chance to inflict sleep/paralysis/poison.",
+            "_id": "sleeper",
+            "name": "Sleeper",
+            "description": "Deals ranged STR-based Stab damage to one enemy. Has a chance to inflict sleep.",
+            "max_level": 5,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "bows",
+                "level": 3
+              },
+              {
+                "_id": "tec_up",
+                "level": 3
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Infliction Rate",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "115%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "121%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "133%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "151%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "175%"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "25%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "27%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "31%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "37%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "45%"
+                }
+              ],
+              "Poison Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "15"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "25"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "45"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "75"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "115"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "102%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "92%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "102%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "113%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "128%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "number",
+            "name": "Number",
+            "description": "Deals ranged STR-based Stab damage to one enemy. Has a chance to inflict paralysis.",
+            "max_level": 5,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "bows",
+                "level": 3
+              },
+              {
+                "_id": "tec_up",
+                "level": 3
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Infliction Rate",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "115%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "121%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "133%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "151%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "175%"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "25%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "27%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "31%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "37%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "45%"
+                }
+              ],
+              "Poison Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "15"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "25"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "45"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "75"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "115"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "102%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "92%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "102%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "113%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "128%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "poisoner",
+            "name": "Poisoner",
+            "description": "Deals ranged STR-based Stab damage to one enemy. Has a chance to inflict poison.",
             "max_level": 5,
             "uses": "Arms",
             "class_skill": false,
@@ -4321,7 +4979,7 @@
             "linked_skill": null,
             "no_level": false,
             "_id": "(s)_patrol",
-            "name": "(S) Patrol",
+            "name": "Patrol",
             "description": "Can only be used on the field. Lowers damage taken from damage tiles for a set number of steps.",
             "max_level": 5,
             "uses": "N/A",
@@ -4737,7 +5395,7 @@
             "linked_skill": null,
             "no_level": false,
             "_id": "shields",
-            "name": "Shields",
+            "name": "Shield Mastery",
             "description": "Needed to learn shield skills. Passively decreases the damage the Protector takes from all damage types.",
             "max_level": 10,
             "uses": "N/A",
@@ -4871,8 +5529,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(p)_en_garde",
-            "name": "(P) En Garde",
+            "_id": "en_garde",
+            "name": "En Garde",
             "description": "Passively gives the Protector a chance to reduce any instance of damage they take by 50%.",
             "max_level": 10,
             "uses": "N/A",
@@ -5251,9 +5909,9 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "f._guard/b._guard",
-            "name": "F. Guard/B. Guard",
-            "description": "At the start of the turn, the Protector prepares to reduces the amount of damage the front/back row takes from physical attacks for the current turn. Remains active until the turn ends or the Protector dies. Every time the skill activates, the chance of it activating again is reduced. The base activation rate is 100% at all levels.",
+            "_id": "front_guard",
+            "name": "Front Guard",
+            "description": "At the start of the turn, the Protector prepares to reduces the amount of damage the front row takes from physical attacks for the current turn. Remains active until the turn ends or the Protector dies. Every time the skill activates, the chance of it activating again is reduced. The base activation rate is 100% at all levels.",
             "max_level": 10,
             "uses": "Arms",
             "class_skill": false,
@@ -5428,8 +6086,185 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "a._guard",
-            "name": "A. Guard",
+            "_id": "rear_guard",
+            "name": "Rear Guard",
+            "description": "At the start of the turn, the Protector prepares to reduces the amount of damage the back row takes from physical attacks for the current turn. Remains active until the turn ends or the Protector dies. Every time the skill activates, the chance of it activating again is reduced. The base activation rate is 100% at all levels.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "shields",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage Reduction",
+              "Chance Reduction",
+              "Max Activations"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "2"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "3"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                }
+              ],
+              "Damage Reduction": [
+                {
+                  "levelspan": "1",
+                  "value": "15%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "16%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "18%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "25%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "36%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "43%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "51%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "60%"
+                }
+              ],
+              "Chance Reduction": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "91%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "82%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "73%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "64%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "55%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "46%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "37%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "28%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10%"
+                }
+              ],
+              "Max Activations": [
+                {
+                  "levelspan": "1",
+                  "value": "1"
+                },
+                {
+                  "levelspan": "5",
+                  "value": "2"
+                },
+                {
+                  "levelspan": "2",
+                  "value": "3"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "full_guard",
+            "name": "Full Guard",
             "description": "At the start of the turn, the Protector prepares to reduces the amount of damage the entire party takes from physical attacks for the current turn. Remains active until the turn ends or the Protector dies. Every time the skill activates, the chance of it activating again is reduced. The base activation rate is 100% at all levels.",
             "max_level": 5,
             "uses": "Arms",
@@ -5658,8 +6493,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "antifire/anticold/antivolt",
-            "name": "Antifire/Anticold/Antivolt",
+            "_id": "volt_wall",
+            "name": "Volt Wall",
             "description": "At the start of the turn, the Protector prepares to reduces the amount of damage the entire party takes from fire/ice/volt attacks for the current turn. Remains active until the turn ends or the Protector dies. From levels 1 through 9, every time the skill activates, the chance of it activating again is reduced. The base activation rate is 100% at all levels. At level 10, the skill will always activate. At levels 1 through 7, the damage is simply reduced. At levels 8 through 10, the effects of the attack are completely nullified, meaning that any status effects attached to those attacks will not take effect. At levels 9 and 10, the damage is not nullified, but ends up being absorbed and heals the party instead.",
             "max_level": 10,
             "uses": "Arms",
@@ -5850,8 +6685,392 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "antiall",
-            "name": "Antiall",
+            "_id": "fire_wall",
+            "name": "Fire Wall",
+            "description": "At the start of the turn, the Protector prepares to reduces the amount of damage the entire party takes from fire attacks for the current turn. Remains active until the turn ends or the Protector dies. From levels 1 through 9, every time the skill activates, the chance of it activating again is reduced. The base activation rate is 100% at all levels. At level 10, the skill will always activate. At levels 1 through 7, the damage is simply reduced. At levels 8 through 10, the effects of the attack are completely nullified, meaning that any status effects attached to those attacks will not take effect. At levels 9 and 10, the damage is not nullified, but ends up being absorbed and heals the party instead.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "shields",
+                "level": 3
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage Reduction",
+              "Damage Absorption",
+              "Chance Reduction",
+              "Max Activations"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "2"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "3"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                }
+              ],
+              "Damage Reduction": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "55%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "61%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "68%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "76%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "85%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "2",
+                  "value": "0%"
+                }
+              ],
+              "Damage Absorption": [
+                {
+                  "levelspan": "8",
+                  "value": "0%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "25%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                }
+              ],
+              "Chance Reduction": [
+                {
+                  "levelspan": "1",
+                  "value": "90%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "80%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "60%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "40%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "20%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "0%"
+                }
+              ],
+              "Max Activations": [
+                {
+                  "levelspan": "5",
+                  "value": "2"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "3"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "Infinite"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "ice_wall",
+            "name": "Ice Wall",
+            "description": "At the start of the turn, the Protector prepares to reduces the amount of damage the entire party takes from ice attacks for the current turn. Remains active until the turn ends or the Protector dies. From levels 1 through 9, every time the skill activates, the chance of it activating again is reduced. The base activation rate is 100% at all levels. At level 10, the skill will always activate. At levels 1 through 7, the damage is simply reduced. At levels 8 through 10, the effects of the attack are completely nullified, meaning that any status effects attached to those attacks will not take effect. At levels 9 and 10, the damage is not nullified, but ends up being absorbed and heals the party instead.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "shields",
+                "level": 3
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage Reduction",
+              "Damage Absorption",
+              "Chance Reduction",
+              "Max Activations"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "2"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "3"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                }
+              ],
+              "Damage Reduction": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "55%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "61%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "68%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "76%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "85%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "2",
+                  "value": "0%"
+                }
+              ],
+              "Damage Absorption": [
+                {
+                  "levelspan": "8",
+                  "value": "0%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "25%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                }
+              ],
+              "Chance Reduction": [
+                {
+                  "levelspan": "1",
+                  "value": "90%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "80%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "60%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "40%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "20%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "0%"
+                }
+              ],
+              "Max Activations": [
+                {
+                  "levelspan": "5",
+                  "value": "2"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "3"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "Infinite"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "mana_wall",
+            "name": "Mana Wall",
             "description": "At the start of the turn, the Protector prepares to reduces the amount of damage the entire party takes from elemental attacks for the current turn. Remains active until the turn ends or the Protector dies. Every time the skill activates, the chance of it activating again is reduced. The base activation rate is 100% at all levels. At levels 1 through 4, the damage is simply reduced. At level 5, the effects of the attack are completely nullified, meaning that any status effects attached to those attacks will not take effect.The damage taken is also absorbed and heals the party instead.",
             "max_level": 5,
             "uses": "Arms",
@@ -6347,7 +7566,7 @@
             "linked_skill": null,
             "no_level": false,
             "_id": "(p)_refresh",
-            "name": "(P) Refresh",
+            "name": "Refresh",
             "description": "Dispels certain status ailments from one party member. Which ailments are dispelled depends on the skill's level. Cannot dispel petrification, no matter how high its level is.",
             "max_level": 5,
             "uses": "Head",
@@ -6641,8 +7860,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(d)_swords",
-            "name": "(D) Swords",
+            "_id": "swords",
+            "name": "Swords",
             "description": "Needed to learn sword skills. Passively increases damage dealt with swords.",
             "max_level": 10,
             "uses": "N/A",
@@ -6704,9 +7923,57 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "antisick/antibind",
-            "name": "Antisick/Antibind",
-            "description": "Passively increases the Dark Hunter's resistance to ailments/binds.",
+            "_id": "antibind",
+            "name": "Antibind",
+            "description": "Passively increases the Dark Hunter's resistance to binds.",
+            "max_level": 5,
+            "uses": "N/A",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "unbind",
+                "level": 3
+              }
+            ],
+            "growth_order": [
+              "Resistance Increase"
+            ],
+            "growth": {
+              "Resistance Increase": [
+                {
+                  "levelspan": "1",
+                  "value": "15%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "45%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "60%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "80%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "antisick",
+            "name": "Antisick",
+            "description": "Passively increases the Dark Hunter's resistance to ailments.",
             "max_level": 5,
             "uses": "N/A",
             "class_skill": false,
@@ -6753,7 +8020,7 @@
             "linked_skill": null,
             "no_level": false,
             "_id": "viper",
-            "name": "Viper",
+            "name": "Anaconda",
             "description": "Deals melee STR-based Cut damage to one enemy. Has a chance to inflict poison.",
             "max_level": 5,
             "uses": "Arms",
@@ -6915,9 +8182,489 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "shackles/cuffs/gag",
-            "name": "Shackles/Cuffs/Gag",
-            "description": "Deals melee STR-based Cut damage to one enemy. Has a chance to inflict leg bind/arm bind/head bind.",
+            "_id": "shackles",
+            "name": "Shackles",
+            "description": "Deals melee STR-based Cut damage to one enemy. Has a chance to inflict leg bind.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(shackles):_whips",
+                "level": 2
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Infliction Rate",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "115%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "117%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "121%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "127%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "135%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "145%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "157%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "171%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "187%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "205%"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "20%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "23%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "41%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "48%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "75%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "77%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "81%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "87%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "105%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "117%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "131%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "147%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "165%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "96%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "98%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "101%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "105%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "110%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "116%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "123%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "131%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "140%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "cuffs",
+            "name": "Cuffs",
+            "description": "Deals melee STR-based Cut damage to one enemy. Has a chance to inflict arm bind.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(shackles):_whips",
+                "level": 2
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Infliction Rate",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "115%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "117%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "121%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "127%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "135%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "145%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "157%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "171%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "187%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "205%"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "20%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "23%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "41%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "48%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "75%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "77%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "81%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "87%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "105%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "117%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "131%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "147%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "165%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "96%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "98%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "101%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "105%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "110%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "116%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "123%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "131%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "140%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "gag",
+            "name": "Gag",
+            "description": "Deals melee STR-based Cut damage to one enemy. Has a chance to inflict head bind.",
             "max_level": 10,
             "uses": "Arms",
             "class_skill": false,
@@ -7473,9 +9220,249 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "hypnos/nerve",
-            "name": "Hypnos/Nerve",
-            "description": "Deals melee STR-based Cut damage to one enemy. Has a chance to inflict sleep/paralysis.",
+            "_id": "hypnos",
+            "name": "Hypnos",
+            "description": "Deals melee STR-based Cut damage to one enemy. Has a chance to inflict sleep.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(hypnos):_swords",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Infliction Rate",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "135%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "137%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "141%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "147%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "155%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "165%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "177%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "191%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "187%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "225%"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "20%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "23%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "41%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "48%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "75%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "77%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "81%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "87%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "105%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "117%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "131%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "147%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "165%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "96%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "98%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "101%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "105%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "110%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "116%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "123%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "131%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "140%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "nerve",
+            "name": "Nerve",
+            "description": "Deals melee STR-based Cut damage to one enemy. Has a chance to inflict paralysis.",
             "max_level": 10,
             "uses": "Arms",
             "class_skill": false,
@@ -8233,9 +10220,9 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "bait/magibait",
-            "name": "Bait/Magibait",
-            "description": "At the start of the turn, the Dark Hunter sets up a trap. If they or any party member adjacent to them get attacked with a physical/elemental attack, the Dark Hunter has a chance of dealing melee STR-based Cut damage to the attacker. The counters will still activate even if the damage taken was nullified through the use of methods such as Painless.",
+            "_id": "magibait",
+            "name": "Magibait",
+            "description": "At the start of the turn, the Dark Hunter sets up a trap. If they or any party member adjacent to them get attacked with a elemental attack, the Dark Hunter has a chance of dealing melee STR-based Cut damage to the attacker. The counters will still activate even if the damage taken was nullified through the use of methods such as Painless.",
             "max_level": 5,
             "uses": "Arms",
             "class_skill": false,
@@ -8354,8 +10341,129 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(d)_unbind",
-            "name": "(D) Unbind",
+            "_id": "bait",
+            "name": "Bait",
+            "description": "At the start of the turn, the Dark Hunter sets up a trap. If they or any party member adjacent to them get attacked with a physical, the Dark Hunter has a chance of dealing melee STR-based Cut damage to the attacker. The counters will still activate even if the damage taken was nullified through the use of methods such as Painless.",
+            "max_level": 5,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "swords",
+                "level": 8
+              },
+              {
+                "_id": "whips",
+                "level": 8
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Counter Chance",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "16"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "18"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "150%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "175%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "225%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "300%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "400%"
+                }
+              ],
+              "Counter Chance": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "55%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "80%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "97%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "101%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "107%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "115%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "unbind",
+            "name": "Unbind",
             "description": "Removes binds from one party member.",
             "max_level": 5,
             "uses": "Head",
@@ -8763,8 +10871,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(m)_scavenge",
-            "name": "(M) Scavenge",
+            "_id": "scavenge",
+            "name": "Scavenge",
             "description": "Passively increases the drop rate for each item the enemy has. The increase is additive and stacks with other instances of Scavenge.",
             "max_level": 5,
             "uses": "N/A",
@@ -8806,8 +10914,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(m)_cure",
-            "name": "(M) Cure",
+            "_id": "cure",
+            "name": "Cure",
             "description": "Restores one party member's HP.",
             "max_level": 10,
             "uses": "Head",
@@ -8960,8 +11068,9 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(m)_cure_2",
-            "name": "(M) Cure 2",
+            "_id": "healing",
+            "alt_name": "Cure II",
+            "name": "Healing",
             "description": "Restores one party member's HP.",
             "max_level": 10,
             "uses": "Head",
@@ -9114,8 +11223,9 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(m)_cure_3",
-            "name": "(M) Cure 3",
+            "_id": "full_heal",
+            "alt_name": "Cure 3",
+            "name": "Full Heal",
             "description": "Fully restores one party member's HP.",
             "max_level": 5,
             "uses": "Head",
@@ -9185,8 +11295,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(m)_salve",
-            "name": "(M) Salve",
+            "_id": "salve",
+            "name": "Salve",
             "description": "Restores the entire party's HP.",
             "max_level": 5,
             "uses": "Head",
@@ -9283,8 +11393,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(m)_salve_2",
-            "name": "(M) Salve 2",
+            "_id": "salve_2",
+            "name": "Salve 2",
             "description": "Restores the entire party's HP.",
             "max_level": 5,
             "uses": "Head",
@@ -9610,8 +11720,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(m)_unbind",
-            "name": "(M) Unbind",
+            "_id": "unbind",
+            "name": "Unbind",
             "description": "Removes binds from one party member.",
             "max_level": 10,
             "uses": "Head",
@@ -9766,8 +11876,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(m)_refresh",
-            "name": "(M) Refresh",
+            "_id": "refresh",
+            "name": "Refresh",
             "description": "Dispels certain status ailments from the entire party. Which ailments are dispelled depends on the skill's level. The higher the skill's level, the more ailments that can be dispelled. ",
             "max_level": 10,
             "uses": "Head",
@@ -10450,8 +12560,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(m)_patrol",
-            "name": "(M) Patrol",
+            "_id": "patrol",
+            "name": "Patrol",
             "description": "Can only be used on the field. Lowers damage taken from damage tiles for a set number of steps.",
             "max_level": 5,
             "uses": "N/A",
@@ -10899,15 +13009,212 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "fire/ice/volt",
-            "name": "Fire/Ice/Volt",
-            "description": "Deals ranged TEC-based Fire/Ice/Volt damage to one enemy.",
+            "_id": "fire",
+            "name": "Fire",
+            "description": "Deals ranged TEC-based Fire damage to one enemy.",
             "max_level": 10,
             "uses": "Head",
             "class_skill": false,
             "prerequisites": [
               {
-                "_id": "requirements_(fire):_fire_up",
+                "_id": "fire_up",
+                "level": 1,
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Spell Power",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "16"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "18"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "20"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "22"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "24"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26"
+                }
+              ],
+              "Spell Power": [
+                {
+                  "levelspan": "1",
+                  "value": "23"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "25"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "29"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "43"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "53"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "79"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "113"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "62%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "80%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "92%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "122%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "140%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "150%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "151%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "153%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "156%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "160%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "165%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "171%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "178%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "186%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "195%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "ice",
+            "name": "Ice",
+            "description": "Deals ranged TEC-based Ice damage to one enemy.",
+            "max_level": 10,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "ice_up",
                 "level": 1
               }
             ],
@@ -11096,15 +13403,212 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "flame/freeze/thunder",
-            "name": "Flame/Freeze/Thunder",
-            "description": "Deals ranged TEC-based Fire/Ice/Volt damage to one enemy. A 1.5x damage multiplier is applied to the Alchemist's base damage when using these skills.",
+            "_id": "volt",
+            "name": "Volt",
+            "description": "Deals ranged TEC-based Volt damage to one enemy.",
             "max_level": 10,
             "uses": "Head",
             "class_skill": false,
             "prerequisites": [
               {
-                "_id": "requirements_(flame):_fire_up",
+                "_id": "volt_up",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Spell Power",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "16"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "18"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "20"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "22"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "24"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26"
+                }
+              ],
+              "Spell Power": [
+                {
+                  "levelspan": "1",
+                  "value": "23"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "25"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "29"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "43"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "53"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "79"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "113"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "62%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "80%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "92%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "122%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "140%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "150%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "151%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "153%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "156%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "160%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "165%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "171%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "178%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "186%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "195%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "flame",
+            "name": "Flame",
+            "description": "Deals ranged TEC-based Fire damage to one enemy. A 1.5x damage multiplier is applied to the Alchemist's base damage when using these skills.",
+            "max_level": 10,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "fire_up",
                 "level": 5
               },
               {
@@ -11297,15 +13801,417 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "inferno/cocytus/thor",
-            "name": "Inferno/Cocytus/Thor",
-            "description": "Deals ranged TEC-based Fire/Ice/Volt damage to all enemies.",
+            "_id": "freeze",
+            "name": "Freeze",
+            "description": "Deals ranged TEC-based Ice damage to one enemy. A 1.5x damage multiplier is applied to the Alchemist's base damage when using these skills.",
+            "max_level": 10,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "ice_up",
+                "level": 5
+              },
+              {
+                "_id": "ice",
+                "level": 5
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Spell Power",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "18"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "20"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "22"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "24"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "28"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "32"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "34"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "36"
+                }
+              ],
+              "Spell Power": [
+                {
+                  "levelspan": "1",
+                  "value": "23"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "25"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "29"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "43"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "53"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "79"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "113"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "10%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "16%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "22%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "40%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "66%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "82%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "150%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "151%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "153%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "156%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "160%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "165%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "171%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "178%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "186%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "195%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "thunder",
+            "name": "Thunder",
+            "description": "Deals ranged TEC-based Volt damage to one enemy. A 1.5x damage multiplier is applied to the Alchemist's base damage when using these skills.",
+            "max_level": 10,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "volt_up",
+                "level": 5
+              },
+              {
+                "_id": "volt",
+                "level": 5
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Spell Power",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "18"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "20"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "22"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "24"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "28"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "32"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "34"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "36"
+                }
+              ],
+              "Spell Power": [
+                {
+                  "levelspan": "1",
+                  "value": "23"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "25"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "29"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "43"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "53"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "79"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "113"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "10%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "16%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "22%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "40%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "66%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "82%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "150%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "151%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "153%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "156%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "160%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "165%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "171%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "178%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "186%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "195%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "inferno",
+            "name": "Inferno",
+            "description": "Deals ranged TEC-based Fire damage to all enemies.",
             "max_level": 5,
             "uses": "Head",
             "class_skill": false,
             "prerequisites": [
               {
-                "_id": "requirements_(inferno):_fire_up",
+                "_id": "fire_up",
                 "level": 5
               },
               {
@@ -11418,9 +14324,485 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "blades/gravity/piercing",
-            "name": "Blades/Gravity/Piercing",
-            "description": "Deals ranged TEC-based Cut/Bash/Stab damage to all enemies.",
+            "_id": "cocytus",
+            "name": "Cocytus",
+            "description": "Deals ranged TEC-based Ice damage to all enemies.",
+            "max_level": 5,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "ice_up",
+                "level": 5
+              },
+              {
+                "_id": "ice",
+                "level": 5
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Spell Power",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "20"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "28"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "36"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "44"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52"
+                }
+              ],
+              "Spell Power": [
+                {
+                  "levelspan": "1",
+                  "value": "23"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "29"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "43"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "92%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "122%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "150%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "153%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "160%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "171%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "186%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "thor",
+            "name": "Thor",
+            "description": "Deals ranged TEC-based Volt damage to all enemies.",
+            "max_level": 5,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "volt_up",
+                "level": 5
+              },
+              {
+                "_id": "volt",
+                "level": 5
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Spell Power",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "20"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "28"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "36"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "44"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52"
+                }
+              ],
+              "Spell Power": [
+                {
+                  "levelspan": "1",
+                  "value": "23"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "29"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "43"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "92%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "122%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "150%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "153%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "160%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "171%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "186%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "blades",
+            "name": "Blades",
+            "description": "Deals ranged TEC-based Cut damage to all enemies.",
+            "max_level": 5,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "phys_up",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Spell Power",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "20"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "28"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "36"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "44"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52"
+                }
+              ],
+              "Spell Power": [
+                {
+                  "levelspan": "1",
+                  "value": "23"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "29"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "43"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "92%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "122%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "150%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "153%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "160%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "171%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "186%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "gravity",
+            "name": "Gravity",
+            "description": "Deals ranged TEC-based Bash damage to all enemies.",
+            "max_level": 5,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "phys_up",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Spell Power",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "20"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "28"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "36"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "44"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52"
+                }
+              ],
+              "Spell Power": [
+                {
+                  "levelspan": "1",
+                  "value": "23"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "29"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "43"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "95"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "92%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "122%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "150%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "153%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "160%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "171%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "186%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "piercing",
+            "name": "Piercing",
+            "description": "Deals ranged TEC-based Stab damage to all enemies.",
             "max_level": 5,
             "uses": "Head",
             "class_skill": false,
@@ -12498,9 +15880,9 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "blaze/frost/shock",
-            "name": "Blaze/Frost/Shock",
-            "description": "Imbues one party member's weapon with Fire/Ice/Volt, enabling them to deal Fire/Ice/Volt damage with their normal attacks.",
+            "_id": "blaze",
+            "name": "Blaze",
+            "description": "Imbues one party member's weapon with Fire, enabling them to deal Fire damage with their normal attacks.",
             "max_level": 5,
             "uses": "Head",
             "class_skill": false,
@@ -12569,19 +15951,563 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "ifrit/ymir/taranis",
-            "name": "Ifrit/Ymir/Taranis",
-            "description": "Places a buff on the entire party that increases their resistance to Fire/Ice/Volt and places a debuff on all enemies that decreases their resistance to Fire/Ice/Volt. The buff lasts for the duration of the battle, while the debuff lasts for 5 turns. This is multiplier actually applied directly to their damage resistances, so the Alchemist's Analysis skill can activate on certain enemies that have this debuff.",
+            "_id": "frost",
+            "name": "Frost",
+            "description": "Imbues one party member's weapon with Ice, enabling them to deal Ice damage with their normal attacks.",
+            "max_level": 5,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "songs",
+                "level": 7
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Speed"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "20"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "3"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "1"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "110%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "170%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "250%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "shock",
+            "name": "Shock",
+            "description": "Imbues one party member's weapon with Volt, enabling them to deal Volt damage with their normal attacks.",
+            "max_level": 5,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "songs",
+                "level": 7
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Speed"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "20"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "3"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "1"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "110%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "170%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "250%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "taranis",
+            "name": "Taranis",
+            "description": "Places a buff on the entire party that increases their resistance to Volt and places a debuff on all enemies that decreases their resistance to Volt. The buff lasts for the duration of the battle, while the debuff lasts for 5 turns. This is multiplier actually applied directly to their damage resistances, so the Alchemist's Analysis skill can activate on certain enemies that have this debuff.",
             "max_level": 10,
             "uses": "Head",
             "class_skill": false,
             "prerequisites": [
               {
-                "_id": "requirements_(inferno):_songs",
+                "_id": "songs",
+                "level": 10
+              },
+              {
+                "_id": "shock",
+                "level": 3
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Resistance Increase",
+              "Resistance Decrease",
+              "Speed"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                }
+              ],
+              "Resistance Increase": [
+                {
+                  "levelspan": "1",
+                  "value": "3%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "15%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "18%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "24%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "27%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                }
+              ],
+              "Resistance Decrease": [
+                {
+                  "levelspan": "1",
+                  "value": "5%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "15%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "20%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "33%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "41%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "62%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "80%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "92%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "122%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "140%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "ifrit",
+            "name": "Ifrit",
+            "description": "Places a buff on the entire party that increases their resistance to Fire and places a debuff on all enemies that decreases their resistance to Fire. The buff lasts for the duration of the battle, while the debuff lasts for 5 turns. This is multiplier actually applied directly to their damage resistances, so the Alchemist's Analysis skill can activate on certain enemies that have this debuff.",
+            "max_level": 10,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "songs",
                 "level": 10
               },
               {
                 "_id": "blaze",
+                "level": 3
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Resistance Increase",
+              "Resistance Decrease",
+              "Speed"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                }
+              ],
+              "Resistance Increase": [
+                {
+                  "levelspan": "1",
+                  "value": "3%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "15%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "18%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "24%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "27%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                }
+              ],
+              "Resistance Decrease": [
+                {
+                  "levelspan": "1",
+                  "value": "5%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "15%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "20%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "33%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "41%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "62%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "80%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "92%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "122%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "140%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "ymir",
+            "name": "Ymir",
+            "description": "Places a buff on the entire party that increases their resistance to Ice and places a debuff on all enemies that decreases their resistance to Ice. The buff lasts for the duration of the battle, while the debuff lasts for 5 turns. This is multiplier actually applied directly to their damage resistances, so the Alchemist's Analysis skill can activate on certain enemies that have this debuff.",
+            "max_level": 10,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "songs",
+                "level": 10
+              },
+              {
+                "_id": "frost",
                 "level": 3
               }
             ],
@@ -15115,7 +19041,7 @@
             "linked_skill": null,
             "no_level": false,
             "_id": "nukechi",
-            "name": "Nukechi",
+            "name": "Nukeuchi",
             "description": "Deals melee STR-based Cut damage to one enemy.",
             "max_level": 10,
             "uses": "Arms",
@@ -15315,9 +19241,9 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "orochi/raizuki/hyosetsu",
-            "name": "Orochi/Raizuki/Hyosetsu",
-            "description": "Deals melee STR-based Cut+Fire/Volt+Stab/Cut+Ice to one enemy.",
+            "_id": "orochi",
+            "name": "Orochi",
+            "description": "Deals melee STR-based Cut+Fire to one enemy.",
             "max_level": 5,
             "uses": "Arm",
             "class_skill": false,
@@ -15432,9 +19358,485 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "kienzan/minakata/hosoyuki",
-            "name": "Kienzan/Minakata/Hosoyuki",
-            "description": "Deals melee STR-based Cut+Fire/Volt+Stab/Cut+Ice to all enemies.",
+            "_id": "raizuki",
+            "name": "Raizuki",
+            "description": "Deals melee STR-based Volt+Stab to one enemy.",
+            "max_level": 5,
+            "uses": "Arm",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(orochi):_overhead",
+                "level": 5
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "128%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "144%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "168%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "200%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "25%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "31%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "45%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "67%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "97%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "98%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "105%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "116%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "hyosetsu",
+            "name": "Hyosetsu",
+            "description": "Deals melee STR-based Cut+Ice to one enemy.",
+            "max_level": 5,
+            "uses": "Arm",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(orochi):_overhead",
+                "level": 5
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "128%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "144%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "168%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "200%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "25%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "31%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "45%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "67%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "97%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "98%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "105%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "116%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "kienzan",
+            "name": "Kienzan",
+            "description": "Deals melee STR-based Cut+Fire to all enemies.",
+            "max_level": 5,
+            "uses": "Arm",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(orochi):_overhead",
+                "level": 7
+              },
+              {
+                "_id": "orochi",
+                "level": 5
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "18"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "22"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "107%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "121%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "142%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "170%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "1%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "43%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "73%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "98%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "105%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "116%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "minakata",
+            "name": "Minakata",
+            "description": "Deals melee STR-based Volt+Stab to all enemies.",
+            "max_level": 5,
+            "uses": "Arm",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(orochi):_overhead",
+                "level": 7
+              },
+              {
+                "_id": "orochi",
+                "level": 5
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "18"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "22"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "107%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "121%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "142%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "170%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "1%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "43%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "73%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "95%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "98%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "105%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "116%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "hosoyuki",
+            "name": "Hosoyuki",
+            "description": "Deals melee STR-based Cut+Ice to all enemies.",
             "max_level": 5,
             "uses": "Arm",
             "class_skill": false,
@@ -15713,12 +20115,57 @@
             "_id": "curses",
             "name": "Curses",
             "description": "Needed to learn curse skills. Has absolutely no effect otherwise.",
-            "max_level": 0,
+            "max_level": 10,
             "uses": "N/A",
             "class_skill": false,
             "prerequisites": [],
-            "growth_order": [],
-            "growth": {}
+            "growth_order": [
+              ""
+            ],
+            "growth": {
+              "": [
+                {
+                  "levelspan": "1",
+                  "value": ""
+                },
+                {
+                  "levelspan": "1",
+                  "value": ""
+                },
+                {
+                  "levelspan": "1",
+                  "value": ""
+                },
+                {
+                  "levelspan": "1",
+                  "value": ""
+                },
+                {
+                  "levelspan": "1",
+                  "value": ""
+                },
+                {
+                  "levelspan": "1",
+                  "value": ""
+                },
+                {
+                  "levelspan": "1",
+                  "value": ""
+                },
+                {
+                  "levelspan": "1",
+                  "value": ""
+                },
+                {
+                  "levelspan": "1",
+                  "value": ""
+                },
+                {
+                  "levelspan": "1",
+                  "value": ""
+                }
+              ],
+            }
           },
           {
             "force_boost": false,
@@ -15728,8 +20175,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(h)_scavenge",
-            "name": "(H) Scavenge",
+            "_id": "scavenge",
+            "name": "Scavenge",
             "description": "Passively increases the drop rate for each item the enemy has. The increase is additive and stacks with other instances of Scavenge.",
             "max_level": 5,
             "uses": "N/A",
@@ -16340,9 +20787,9 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "cranial/abdomen/immobile",
-            "name": "Cranial/Abdomen/Immobile",
-            "description": "Attempts to inflict head bind/arm bind/leg bind on one enemy.",
+            "_id": "immobile",
+            "name": "Immobile",
+            "description": "Attempts to inflict leg bind on one enemy.",
             "max_level": 10,
             "uses": "Head",
             "class_skill": false,
@@ -16494,9 +20941,693 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "blinding/torpor/evil_eye/paralysis/corrupt",
-            "name": "Blinding/Torpor/Evil Eye/Paralysis/Corrupt",
-            "description": "Attempts to inflict blind/sleep/fear/paralysis/curse on all enemies.",
+            "_id": "cranial",
+            "name": "Cranial",
+            "description": "Attempts to inflict head bind on one enemy.",
+            "max_level": 10,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "curses",
+                "level": 3
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Infliction Rate",
+              "Speed"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "3"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "40%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "41%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "43%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "46%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "55%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "61%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "68%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "76%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "85%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "62%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "80%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "92%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "122%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "140%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "abdomen",
+            "name": "Abdomen",
+            "description": "Attempts to inflict arm bind on one enemy.",
+            "max_level": 10,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "curses",
+                "level": 3
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Infliction Rate",
+              "Speed"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "3"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "40%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "41%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "43%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "46%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "55%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "61%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "68%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "76%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "85%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "62%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "80%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "92%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "122%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "140%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "corrupt",
+            "name": "Corrupt",
+            "description": "Attempts to inflict curse on all enemies.",
+            "max_level": 5,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(blinding):_curses",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Infliction Rate",
+              "Speed"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "15%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "57%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "87%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "142%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "172%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "blinding",
+            "name": "Blinding",
+            "description": "Attempts to inflict blind on all enemies.",
+            "max_level": 5,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "curses",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Infliction Rate",
+              "Speed"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "15%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "57%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "87%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "142%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "172%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "torpor",
+            "name": "Torpor",
+            "description": "Attempts to inflict sleep on all enemies.",
+            "max_level": 5,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(blinding):_curses",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Infliction Rate",
+              "Speed"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "15%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "57%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "87%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "142%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "172%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "evil_eye",
+            "name": "Evil Eye",
+            "description": "Attempts to inflict fear on all enemies.",
+            "max_level": 5,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(blinding):_curses",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Infliction Rate",
+              "Speed"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "15%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "57%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "87%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "142%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "172%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "paralysis",
+            "name": "Paralysis",
+            "description": "Attempts to inflict paralysis on all enemies.",
             "max_level": 5,
             "uses": "Head",
             "class_skill": false,
@@ -16785,9 +21916,9 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "suicide/betrayal/paralyze",
-            "name": "Suicide/Betrayal/Paralyze",
-            "description": "Targets one enemy at the start of the turn. If that enemy is inflicted with fear, they will attack themselves a number of times/attack a random enemy once/do nothing for the turn. Otherwise, the skill will have no effect.",
+            "_id": "suicide",
+            "name": "Suicide",
+            "description": "Targets one enemy at the start of the turn. If that enemy is inflicted with fear, they will attack themselves a number of times. Otherwise, the skill will have no effect.",
             "max_level": 5,
             "uses": "Head",
             "class_skill": false,
@@ -16800,6 +21931,130 @@
             "growth_order": [
               "TP Cost",
               "Suicide Attacks"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "2"
+                }
+              ],
+              "Suicide Attacks": [
+                {
+                  "levelspan": "2",
+                  "value": "1"
+                },
+                {
+                  "levelspan": "2",
+                  "value": "2"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "3"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "betrayal",
+            "name": "Betrayal",
+            "description": "Targets one enemy at the start of the turn. If that enemy is inflicted with fear, they will attack a random enemy once. Otherwise, the skill will have no effect.",
+            "max_level": 5,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "evil_eye",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "2"
+                }
+              ],
+              "Suicide Attacks": [
+                {
+                  "levelspan": "2",
+                  "value": "1"
+                },
+                {
+                  "levelspan": "2",
+                  "value": "2"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "3"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "paralyze",
+            "name": "Paralyze",
+            "description": "Targets one enemy at the start of the turn. If that enemy is inflicted with fear, they will do nothing for the turn. Otherwise, the skill will have no effect.",
+            "max_level": 5,
+            "uses": "Head",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "evil_eye",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
             ],
             "growth": {
               "TP Cost": [
@@ -17181,7 +22436,7 @@
             "linked_skill": null,
             "no_level": false,
             "_id": "(g)_2-hit",
-            "name": "(G) 2-Hit",
+            "name": "2-Hit",
             "description": "Normal attacks have a chance of hitting twice.",
             "max_level": 10,
             "uses": "N/A",
@@ -17311,16 +22566,304 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "legshot/armshot/headshot",
-            "name": "Legshot/Armshot/Headshot",
-            "description": "Deals ranged STR-based Stab damage to one enemy. Has a chance to inflict leg bind/arm bind/head bind.",
+            "_id": "legshot",
+            "name": "Legshot",
+            "description": "Deals ranged STR-based Stab damage to one enemy. Has a chance to inflict leg bind.",
             "max_level": 5,
             "uses": "Arms",
             "class_skill": false,
             "prerequisites": [
               {
-                "_id": "requirements_(legshot):_guns",
+                "_id": "guns",
                 "level": 2
+              },
+              {
+                "_id": "agi_up",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Infliction Rate",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "123%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "129%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "138%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "150%"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "35%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "36%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "38%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "41%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "45%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "62%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "102%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "armshot",
+            "name": "Armshot",
+            "description": "Deals ranged STR-based Stab damage to one enemy. Has a chance to inflict arm bind.",
+            "max_level": 5,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "guns",
+                "level": 3
+              },
+              {
+                "_id": "agi_up",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Infliction Rate",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "123%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "129%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "138%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "150%"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "35%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "36%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "38%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "41%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "45%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "50%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "52%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "62%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "102%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "headshot",
+            "name": "Headshot",
+            "description": "Deals ranged STR-based Stab damage to one enemy. Has a chance to inflict head bind.",
+            "max_level": 5,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "guns",
+                "level": 4
               },
               {
                 "_id": "agi_up",
@@ -17820,9 +23363,9 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "fireshot/iceshot/voltshot",
-            "name": "Fireshot/Iceshot/Voltshot",
-            "description": "Deals ranged STR-based Fire/Ice/Volt damage to one enemy.",
+            "_id": "fireshot",
+            "name": "Fireshot",
+            "description": "Deals ranged STR-based Fire damage to one enemy.",
             "max_level": 10,
             "uses": "Arms",
             "class_skill": false,
@@ -18017,19 +23560,829 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "riskfire/riskice/riskvolt",
-            "name": "Riskfire/Riskice/Riskvolt",
-            "description": "At the start of the turn, the Gunner prepares to deal ranged STR-based Fire/Ice/Volt damage to one enemy. Until they fire the shot, they will take extra damage from all attacks.",
+            "_id": "iceshot",
+            "name": "Iceshot",
+            "description": "Deals ranged STR-based Ice damage to one enemy.",
             "max_level": 10,
             "uses": "Arms",
             "class_skill": false,
             "prerequisites": [
               {
-                "_id": "requirements_(riskfire):_guns",
+                "_id": "guns",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "15"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "125%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "127%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "131%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "137%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "145%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "155%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "167%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "181%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "197%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "215%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "20%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "22%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "41%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "48%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "101%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "103%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "110%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "115%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "121%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "128%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "136%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "145%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "voltshot",
+            "name": "Voltshot",
+            "description": "Deals ranged STR-based Volt damage to one enemy.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "guns",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "15"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "125%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "127%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "131%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "137%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "145%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "155%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "167%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "181%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "197%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "215%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "20%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "21%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "22%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "26%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "30%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "35%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "41%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "48%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "56%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "65%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "101%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "103%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "110%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "115%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "121%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "128%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "136%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "145%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "riskfire",
+            "name": "Riskfire",
+            "description": "At the start of the turn, the Gunner prepares to deal ranged STR-based Fire damage to one enemy. Until they fire the shot, they will take extra damage from all attacks.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "guns",
                 "level": 5
               },
               {
                 "_id": "fireshot",
+                "level": 5
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Self-Damage Multiplier",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "15"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "16"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "17"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "18"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "19"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "20"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "250%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "252%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "256%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "262%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "270%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "280%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "292%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "306%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "322%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "340%"
+                }
+              ],
+              "Self-Damage Multiplier": [
+                {
+                  "levelspan": "1",
+                  "value": "520%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "466%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "418%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "376%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "340%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "310%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "286%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "268%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "256%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "250%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "10",
+                  "value": "1%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "102%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "130%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "142%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "156%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "172%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "190%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "riskice",
+            "name": "Riskice",
+            "description": "At the start of the turn, the Gunner prepares to deal ranged STR-based Ice damage to one enemy. Until they fire the shot, they will take extra damage from all attacks.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "guns",
+                "level": 5
+              },
+              {
+                "_id": "iceshot",
+                "level": 5
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Self-Damage Multiplier",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "14"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "15"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "16"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "17"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "18"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "19"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "20"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "250%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "252%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "256%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "262%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "270%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "280%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "292%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "306%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "322%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "340%"
+                }
+              ],
+              "Self-Damage Multiplier": [
+                {
+                  "levelspan": "1",
+                  "value": "520%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "466%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "418%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "376%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "340%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "310%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "286%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "268%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "256%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "250%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "10",
+                  "value": "1%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "102%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "130%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "142%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "156%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "172%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "190%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "riskvolt",
+            "name": "Riskvolt",
+            "description": "At the start of the turn, the Gunner prepares to deal ranged STR-based Volt damage to one enemy. Until they fire the shot, they will take extra damage from all attacks.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "guns",
+                "level": 5
+              },
+              {
+                "_id": "voltshot",
                 "level": 5
               }
             ],
@@ -18957,9 +25310,497 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "blindcut/venomcut/stuncut",
-            "name": "Blindcut/Venomcut/Stuncut",
-            "description": "Deals melee STR-based untyped damage to one enemy. Has no damage type, so it ignores damage resistances altogether. If the enemy is inflicted with blind/poison/paralysis, they have a chance to be inflicted with head bind/leg bind/arm bind.",
+            "_id": "blindcut",
+            "name": "Blindcut",
+            "description": "Deals melee STR-based untyped damage to one enemy. Has no damage type, so it ignores damage resistances altogether. If the enemy is inflicted with blind, they have a chance to be inflicted with head bind.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(blindcut):_war_edge",
+                "level": 1
+              },
+              {
+                "_id": "str_up",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Infliction Rate",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "125%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "127%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "131%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "137%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "145%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "155%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "167%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "181%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "197%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "215%"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "60%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "61%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "63%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "66%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "75%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "81%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "88%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "96%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "105%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "102%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "130%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "142%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "156%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "172%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "190%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "101%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "103%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "110%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "115%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "121%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "128%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "136%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "145%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "venomcut",
+            "name": "Venomcut",
+            "description": "Deals melee STR-based untyped damage to one enemy. Has no damage type, so it ignores damage resistances altogether. If the enemy is inflicted with poison, they have a chance to be inflicted with leg bind.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(blindcut):_war_edge",
+                "level": 1
+              },
+              {
+                "_id": "str_up",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Infliction Rate",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "125%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "127%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "131%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "137%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "145%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "155%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "167%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "181%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "197%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "215%"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "60%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "61%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "63%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "66%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "75%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "81%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "88%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "96%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "105%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "102%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "130%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "142%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "156%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "172%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "190%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "101%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "103%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "110%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "115%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "121%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "128%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "136%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "145%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "stuncut",
+            "name": "Stuncut",
+            "description": "Deals melee STR-based untyped damage to one enemy. Has no damage type, so it ignores damage resistances altogether. If the enemy is inflicted with paralysis, they have a chance to be inflicted with arm bind.",
             "max_level": 10,
             "uses": "Arms",
             "class_skill": false,
@@ -19833,8 +26674,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(w)_cure",
-            "name": "(W) Cure",
+            "_id": "cure",
+            "name": "Cure",
             "description": "Restores one party member's HP.",
             "max_level": 10,
             "uses": "Head",
@@ -19987,8 +26828,9 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(w)_cure_2",
-            "name": "(W) Cure 2",
+            "_id": "healing",
+            "name": "Healing",
+            "alt_name": "Cure 2",
             "description": "Restores one party member's HP.",
             "max_level": 10,
             "uses": "Head",
@@ -20141,8 +26983,9 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(w)_cure_3",
-            "name": "(W) Cure 3",
+            "_id": "full_heal",
+            "name": "Full Heal",
+            "alt_name": "Cure 3",
             "description": "Fully restores one party member's HP.",
             "max_level": 5,
             "uses": "Head",
@@ -20212,8 +27055,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(w)_salve",
-            "name": "(W) Salve",
+            "_id": "salve",
+            "name": "Salve",
             "description": "Restores the entire party's HP.",
             "max_level": 5,
             "uses": "Head",
@@ -20310,8 +27153,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(w)_salve_2",
-            "name": "(W) Salve 2",
+            "_id": "salve_2",
+            "name": "Salve 2",
             "description": "Restores the entire party's HP.",
             "max_level": 5,
             "uses": "Head",
@@ -21121,8 +27964,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(b)_en_garde",
-            "name": "(B) En Garde",
+            "_id": "en_garde",
+            "name": "En Garde",
             "description": "Passively gives the Protector a chance to reduce any instance of damage they take by 50%. Does not work with Loyalty activations.",
             "max_level": 10,
             "uses": "N/A",
@@ -21741,8 +28584,9 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "bodyslam",
-            "name": "Bodyslam",
+            "_id": "tackle",
+            "name": "Tackle",
+            "alt_name": "Bodyslam",
             "description": "Deals melee STR-based Bash damage to one enemy. Has a chance to inflict stun.",
             "max_level": 10,
             "uses": "Arms",
@@ -22996,8 +29840,9 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "roar",
-            "name": "Roar",
+            "_id": "beast_roar",
+            "name": "Beast Roar",
+            "alt_name": "Roar",
             "description": "Attempts to inflict fear on all enemies.",
             "max_level": 5,
             "uses": "Head",
