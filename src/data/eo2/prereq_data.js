@@ -1189,14 +1189,34 @@
     "war_edge": [],
     "war_lore": [],
     "regenall": [],
-    "blindcut/venomcut/stuncut": [
+    "blindcut": [
       {
-        "_id": "requirements_(blindcut):_war_edge",
+        "_id": "war_edge",
         "level": 1
       },
       {
         "_id": "str_up",
         "level": 1
+      }
+    ],
+    "venomcut": [
+      {
+        "_id": "war_edge",
+        "level": 2
+      },
+      {
+        "_id": "str_up",
+        "level": 2
+      }
+    ],
+    "stuncut": [
+      {
+        "_id": "war_edge",
+        "level": 5
+      },
+      {
+        "_id": "str_up",
+        "level": 5
       }
     ],
     "sleepcut": [
@@ -1229,25 +1249,25 @@
         "level": 6
       }
     ],
-    "(w)_cure": [
+    "cure": [
       {
         "_id": "war_lore",
         "level": 1
       }
     ],
-    "(w)_cure_2": [
+    "healing": [
       {
         "_id": "war_lore",
         "level": 3
       }
     ],
-    "(w)_cure_3": [
+    "full_heal": [
       {
         "_id": "war_lore",
         "level": 5
       }
     ],
-    "(w)_salve": [
+    "salve": [
       {
         "_id": "war_lore",
         "level": 7
@@ -1257,13 +1277,13 @@
         "level": 3
       }
     ],
-    "(w)_salve_2": [
+    "salve_2": [
       {
         "_id": "war_lore",
         "level": 10
       },
       {
-        "_id": "cure_2",
+        "_id": "healing",
         "level": 4
       }
     ],
