@@ -25310,9 +25310,497 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "blindcut/venomcut/stuncut",
-            "name": "Blindcut/Venomcut/Stuncut",
-            "description": "Deals melee STR-based untyped damage to one enemy. Has no damage type, so it ignores damage resistances altogether. If the enemy is inflicted with blind/poison/paralysis, they have a chance to be inflicted with head bind/leg bind/arm bind.",
+            "_id": "blindcut",
+            "name": "Blindcut",
+            "description": "Deals melee STR-based untyped damage to one enemy. Has no damage type, so it ignores damage resistances altogether. If the enemy is inflicted with blind, they have a chance to be inflicted with head bind.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(blindcut):_war_edge",
+                "level": 1
+              },
+              {
+                "_id": "str_up",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Infliction Rate",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "125%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "127%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "131%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "137%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "145%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "155%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "167%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "181%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "197%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "215%"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "60%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "61%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "63%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "66%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "75%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "81%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "88%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "96%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "105%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "102%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "130%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "142%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "156%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "172%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "190%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "101%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "103%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "110%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "115%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "121%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "128%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "136%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "145%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "venomcut",
+            "name": "Venomcut",
+            "description": "Deals melee STR-based untyped damage to one enemy. Has no damage type, so it ignores damage resistances altogether. If the enemy is inflicted with poison, they have a chance to be inflicted with leg bind.",
+            "max_level": 10,
+            "uses": "Arms",
+            "class_skill": false,
+            "prerequisites": [
+              {
+                "_id": "requirements_(blindcut):_war_edge",
+                "level": 1
+              },
+              {
+                "_id": "str_up",
+                "level": 1
+              }
+            ],
+            "growth_order": [
+              "TP Cost",
+              "Damage",
+              "Infliction Rate",
+              "Speed",
+              "Accuracy"
+            ],
+            "growth": {
+              "TP Cost": [
+                {
+                  "levelspan": "1",
+                  "value": "4"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "5"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "6"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "7"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "8"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "9"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "10"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "11"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "12"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "13"
+                }
+              ],
+              "Damage": [
+                {
+                  "levelspan": "1",
+                  "value": "125%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "127%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "131%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "137%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "145%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "155%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "167%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "181%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "197%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "215%"
+                }
+              ],
+              "Infliction Rate": [
+                {
+                  "levelspan": "1",
+                  "value": "60%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "61%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "63%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "66%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "70%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "75%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "81%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "88%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "96%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "105%"
+                }
+              ],
+              "Speed": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "102%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "112%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "120%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "130%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "142%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "156%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "172%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "190%"
+                }
+              ],
+              "Accuracy": [
+                {
+                  "levelspan": "1",
+                  "value": "100%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "101%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "103%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "106%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "110%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "115%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "121%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "128%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "136%"
+                },
+                {
+                  "levelspan": "1",
+                  "value": "145%"
+                }
+              ]
+            }
+          },
+          {
+            "force_boost": false,
+            "force_break": false,
+            "force_skill": false,
+            "transform_only": false,
+            "mastery": false,
+            "linked_skill": null,
+            "no_level": false,
+            "_id": "stuncut",
+            "name": "Stuncut",
+            "description": "Deals melee STR-based untyped damage to one enemy. Has no damage type, so it ignores damage resistances altogether. If the enemy is inflicted with paralysis, they have a chance to be inflicted with arm bind.",
             "max_level": 10,
             "uses": "Arms",
             "class_skill": false,
@@ -26186,8 +26674,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(w)_cure",
-            "name": "(W) Cure",
+            "_id": "cure",
+            "name": "Cure",
             "description": "Restores one party member's HP.",
             "max_level": 10,
             "uses": "Head",
@@ -26340,8 +26828,9 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(w)_cure_2",
-            "name": "(W) Cure 2",
+            "_id": "healing",
+            "name": "Healing",
+            "alt_name": "Cure 2",
             "description": "Restores one party member's HP.",
             "max_level": 10,
             "uses": "Head",
@@ -26494,8 +26983,9 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(w)_cure_3",
-            "name": "(W) Cure 3",
+            "_id": "full_heal",
+            "name": "Full Heal",
+            "alt_name": "Cure 3",
             "description": "Fully restores one party member's HP.",
             "max_level": 5,
             "uses": "Head",
@@ -26565,8 +27055,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(w)_salve",
-            "name": "(W) Salve",
+            "_id": "salve",
+            "name": "Salve",
             "description": "Restores the entire party's HP.",
             "max_level": 5,
             "uses": "Head",
@@ -26663,8 +27153,8 @@
             "mastery": false,
             "linked_skill": null,
             "no_level": false,
-            "_id": "(w)_salve_2",
-            "name": "(W) Salve 2",
+            "_id": "salve_2",
+            "name": "Salve 2",
             "description": "Restores the entire party's HP.",
             "max_level": 5,
             "uses": "Head",
