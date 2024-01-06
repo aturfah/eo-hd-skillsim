@@ -65,6 +65,7 @@ class SkillTree extends Component {
 
     buildSkillTreeNodes() {
         const objProps = this.props;
+        const curGameID = this.props.gameID;
         const gameSkills = skillData[this.props.gameID];
         const skillTreeData = gameSkills[objProps.activeClassIdx];
         const addSkillFunc = this._addSkill;
@@ -83,6 +84,7 @@ class SkillTree extends Component {
                 }
                 output[skillDatum._id] = <SkillTreeNode
                     key={skillDatum._id}
+                    gameID={curGameID}
                     skillData={skillDatum}
                     activeFlag={Object.keys(objProps.skillsChosen).includes(skillDatum._id)}
                     onClickFunc={() => addSkillFunc(skillDatum._id)}
