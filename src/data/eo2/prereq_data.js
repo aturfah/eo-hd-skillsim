@@ -461,7 +461,12 @@
   },
   {
     "healer": [],
-    "patch_up": [],
+    "patch_up": [
+      {
+        "_id": "healer",
+        "level": 1
+      }
+    ],
     "tp_regen": [
       {
         "_id": "tp_up",
@@ -472,26 +477,26 @@
         "level": 10
       }
     ],
-    "(m)_scavenge": [],
-    "(m)_cure": [
+    "scavenge": [],
+    "cure": [
       {
         "_id": "healer",
         "level": 1
       }
     ],
-    "(m)_cure_2": [
+    "healing": [
       {
         "_id": "healer",
         "level": 3
       }
     ],
-    "(m)_cure_3": [
+    "full_heal": [
       {
         "_id": "healer",
         "level": 5
       }
     ],
-    "(m)_salve": [
+    "salve": [
       {
         "_id": "healer",
         "level": 3
@@ -501,13 +506,13 @@
         "level": 3
       }
     ],
-    "(m)_salve_2": [
+    "salve_2": [
       {
         "_id": "healer",
         "level": 6
       },
       {
-        "_id": "cure_2",
+        "_id": "healing",
         "level": 4
       }
     ],
@@ -517,7 +522,7 @@
         "level": 10
       },
       {
-        "_id": "cure_3",
+        "_id": "full_heal",
         "level": 5
       }
     ],
@@ -527,7 +532,7 @@
         "level": 5
       }
     ],
-    "(m)_unbind": [
+    "unbind": [
       {
         "_id": "healer",
         "level": 3
@@ -539,7 +544,7 @@
         "level": 5
       }
     ],
-    "(m)_refresh": [
+    "refresh": [
       {
         "_id": "healer",
         "level": 3
@@ -573,7 +578,7 @@
         "level": 10
       }
     ],
-    "(m)_patrol": [],
+    "patrol": [],
     "force_skill:_h._touch": []
   },
   {

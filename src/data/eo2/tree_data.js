@@ -823,7 +823,7 @@ const treeData = [
             baseSkill: false,
             coords: {x: 2, y: 4},
             numBefore: 1,
-            preReqLevels: [3],
+            preReqLevels: [5],
         },
         {
             skillID: 'healing',
@@ -855,7 +855,7 @@ const treeData = [
             baseSkill: false,
             coords: {x: 2, y: 6},
             numBefore: 1,
-            preReqLevels: [3],
+            preReqLevels: [5],
             numAfter: 1,
             postReqLevels: ["(Lv.10)"]
         },
