@@ -38,16 +38,16 @@ class Header extends Component {
     }
 
     buildGameToggle() {
-        const eo1Toggle = this.props.gameID === "eo1";
+        // const eo1Toggle = this.props.gameID === "eo1";
         const eo2Toggle = this.props.gameID === "eo2";
         const eo3Toggle = this.props.gameID === "eo3";
         return <div>
             <div className='btn-group'>
-                <button type='button'
+                {/* <button type='button'
                     class={'btn ' + (eo1Toggle ? 'btn-active' : 'btn-inactive')}
                     onClick={() => this.props.updateMethod('gameID', 'eo1')}
                     >
-                    EO1</button>
+                    EO1</button> */}
                 <button type='button'
                     class={'btn ' + (eo2Toggle ? 'btn-active' : 'btn-inactive')}
                     onClick={() => this.props.updateMethod('gameID', 'eo2')}
@@ -258,7 +258,9 @@ class Header extends Component {
                     {skillPointsInfo}                        
                 </div>
         </div>
+        let imgFilename = "eo2_skillsim_img.png"
         if (this.props.gameID === 'eo3') {
+            imgFilename = "eo3_skillsim_img.png"
             headerControlsDiv = <div>
                 <div className='inline-block-div'>
                     {classDropdown}
@@ -277,7 +279,7 @@ class Header extends Component {
         return <div className="HeaderBar">
             <div className="HeaderImg">
                 <a href="https://github.com/aturfah/eo3-remake-skillsim">
-                <img src={process.env.PUBLIC_URL + "/skillsim_img.png"}  alt="alt_text" style={imgStyle}/>
+                <img src={process.env.PUBLIC_URL + "/" + imgFilename}  alt="alt_text" style={imgStyle}/>
                 </a>
             </div>
             <div className="HeaderControls">
