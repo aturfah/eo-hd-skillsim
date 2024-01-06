@@ -1885,7 +1885,217 @@ const treeData = [
         
     ],
     // War Magus
-    [],
+    [
+        {
+            skillID: 'war_lore',
+            baseSkill: false,
+            coords: {x: 0, y: 0},
+            numAfter: 8
+        },
+        {
+            skillID: undefined,
+            baseSkill: false,
+            coords: {x: 1, y: 0},
+            numAfter: 1,
+            numBefore: 1
+        },
+        {
+            skillID: undefined,
+            baseSkill: false,
+            coords: {x: 2, y: 0},
+            numAfter: 3,
+            numBefore: 1
+        },
+        {
+            skillID: 'cure',
+            baseSkill: false,
+            coords: {x: 1, y: 1},
+            numAfter: 1,
+            preReqLevels: [1],
+            numBefore: 1,
+            postReqLevels: [3]
+        },
+        {
+            skillID: 'salve',
+            baseSkill: false,
+            coords: {x: 2, y: 1},
+            numBefore: 1,
+            numAfter: 1,
+            postReqLevels: ["(Lv.7)"]
+        },
+        {
+            skillID: 'healing',
+            baseSkill: false,
+            coords: {x: 1, y: 2},
+            numAfter: 1,
+            preReqLevels: [3],
+            numBefore: 1,
+            postReqLevels: [4]
+        },
+        {
+            skillID: 'salve_2',
+            baseSkill: false,
+            coords: {x: 2, y: 2},
+            numBefore: 1,
+            numAfter: 1,
+            postReqLevels: ["(Lv.10)"]
+        },
+        {
+            skillID: 'full_heal',
+            baseSkill: false,
+            coords: {x: 1, y: 3},
+            preReqLevels: [5],
+            numBefore: 1,
+        },
+        {
+            skillID: 'warmight',
+            baseSkill: false,
+            coords: {x: 1, y: 4},
+            preReqLevels: [2],
+            numBefore: 1,
+        },
+        {
+            skillID: 'rockskin',
+            baseSkill: false,
+            coords: {x: 1, y: 5},
+            preReqLevels: [2],
+            numBefore: 1,
+        },
+        {
+            skillID: 'elkspeed',
+            baseSkill: false,
+            coords: {x: 1, y: 6},
+            preReqLevels: [2],
+            numBefore: 1,
+        },
+        {
+            skillID: 'erase',
+            baseSkill: false,
+            coords: {x: 1, y: 7},
+            preReqLevels: [3],
+            numBefore: 1,
+        },
+        {
+            skillID: 'war_edge',
+            baseSkill: false,
+            coords: {x: 0, y: 8},
+            numAfter: 6
+        },
+        {
+            skillID: 'str_up',
+            baseSkill: false,
+            coords: {x: 2, y: 8},
+            numBefore: 6
+        },
+        {
+            skillID: 'blindcut',
+            baseSkill: false,
+            coords: {x: 1, y: 8},
+            numAfter: 1,
+            preReqLevels: [1],
+            numBefore: 1,
+            postReqLevels: ["(Lv.1)"]
+        },
+        {
+            skillID: 'venomcut',
+            baseSkill: false,
+            coords: {x: 1, y: 9},
+            numAfter: 1,
+            preReqLevels: [2],
+            numBefore: 1,
+            postReqLevels: ["(Lv.2)"]
+        },
+        {
+            skillID: 'sleepcut',
+            baseSkill: false,
+            coords: {x: 1, y: 10},
+            numAfter: 1,
+            preReqLevels: [3],
+            numBefore: 1,
+            postReqLevels: ["(Lv.3)"]
+        },
+        {
+            skillID: 'fearcut',
+            baseSkill: false,
+            coords: {x: 1, y: 11},
+            numAfter: 1,
+            preReqLevels: [4],
+            numBefore: 1,
+            postReqLevels: ["(Lv.4)"]
+        },
+        {
+            skillID: 'stuncut',
+            baseSkill: false,
+            coords: {x: 1, y: 12},
+            numAfter: 1,
+            preReqLevels: [5],
+            numBefore: 1,
+            postReqLevels: ["(Lv.5)"]
+        },
+        {
+            skillID: 'cursecut',
+            baseSkill: false,
+            coords: {x: 1, y: 13},
+            numAfter: 1,
+            preReqLevels: [10],
+            numBefore: 1,
+            postReqLevels: ["(Lv.6)"]
+        },
+        {
+            skillID: 'tp_up',
+            baseSkill: false,
+            coords: {x: 0, y: 14},
+            numAfter: 1,
+            postReqLevels: [1]
+        },
+        {
+            skillID: 'transfer',
+            baseSkill: false,
+            coords: {x: 1, y: 14},
+            numBefore: 1,
+        },
+        {
+            skillID: 'hp_up',
+            baseSkill: false,
+            coords: {x: 0, y: 15},
+        },
+        {
+            skillID: 'regenall',
+            baseSkill: false,
+            coords: {x: 1, y: 15},
+        },
+        {
+            skillID: 'esc_up',
+            baseSkill: false,
+            coords: {x: 2, y: 15},
+        },
+        {
+            skillID: 'tec_up',
+            baseSkill: false,
+            coords: {x: 0, y: 16},
+        },
+        {
+            skillID: 'chop',
+            baseSkill: false,
+            coords: {x: 2, y: 16},
+        },
+        {
+            skillID: 'vit_up',
+            baseSkill: false,
+            coords: {x: 0, y: 17},
+        },
+        {
+            skillID: 'agi_up',
+            baseSkill: false,
+            coords: {x: 0, y: 18},
+        },
+        {
+            skillID: 'luc_up',
+            baseSkill: false,
+            coords: {x: 0, y: 19},
+        },
+        
+    ],
     // Beast
     [],
     [ // Everyone Skills
