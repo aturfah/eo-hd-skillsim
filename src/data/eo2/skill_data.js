@@ -772,7 +772,7 @@
             "name": "Allslash",
             "description": "Deals melee STR-based Cut damage to 2 to 4 enemies. Each enemy can only be hit once.",
             "max_level": 10,
-            "uses": "Arms",
+            "uses": "Legs",
             "class_skill": false,
             "prerequisites": [
               {
@@ -5787,7 +5787,7 @@
             "no_level": false,
             "_id": "smite",
             "name": "Smite",
-            "description": "Deals melee STR-based Bash damage to one enemy. Has a chance to inflict arm bind. The defense value on the Protector's shield is used for Weapon Attack in the damage formula.",
+            "description": "Deals melee STR-based Bash damage to one enemy. Has a chance to inflict arm bind.",
             "max_level": 5,
             "uses": "Arms",
             "class_skill": false,
