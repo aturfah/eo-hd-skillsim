@@ -1333,7 +1333,7 @@
         "level": 5
       }
     ],
-    "(b)_en_garde": [
+    "en_garde": [
       {
         "_id": "vit_up",
         "level": 10
@@ -1352,10 +1352,10 @@
         "level": 5
       }
     ],
-    "bodyslam": [],
+    "tackle": [],
     "rampage": [
       {
-        "_id": "bodyslam",
+        "_id": "tackle",
         "level": 5
       },
       {
@@ -1383,7 +1383,7 @@
       }
     ],
     "wildwall": [],
-    "roar": [],
+    "beast_roar": [],
     "saliva": [],
     "doze_off": [
       {

@@ -2097,7 +2097,185 @@ const treeData = [
         
     ],
     // Beast
-    [],
+    [
+        {
+            skillID: 'loyalty',
+            baseSkill: false,
+            coords: {x: 0, y: 0},
+            numAfter: 4
+        },
+        {
+            skillID: 'doze_off',
+            baseSkill: false,
+            coords: {x: 1, y: 0},
+            numBefore: 1,
+            preReqLevels: [1]
+        },
+        {
+            skillID: 'preen',
+            baseSkill: false,
+            coords: {x: 1, y: 1},
+            numBefore: 1,
+            preReqLevels: [2]
+        },
+        {
+            skillID: 'bristle',
+            baseSkill: false,
+            coords: {x: 1, y: 2},
+            numBefore: 1,
+            preReqLevels: [3]
+        },
+        {
+            skillID: 'rampage',
+            baseSkill: false,
+            coords: {x: 1, y: 3},
+            numBefore: 1,
+            preReqLevels: [10],
+            numAfter: 1,
+            postReqLevels: ["(Lv.5)"]
+        },
+        {
+            skillID: 'tackle',
+            baseSkill: false,
+            coords: {x: 2, y: 3},
+            numBefore: 1,
+        },
+        {
+            skillID: 'maul',
+            baseSkill: false,
+            coords: {x: 0, y: 4},
+            numAfter: 1,
+        },
+        {
+            skillID: 'devour',
+            baseSkill: false,
+            coords: {x: 1, y: 4},
+            numBefore: 1,
+            preReqLevels: [5]
+        },
+        {
+            skillID: 'claw',
+            baseSkill: false,
+            coords: {x: 0, y: 5},
+            numAfter: 1,
+        },
+        {
+            skillID: 'wildcut',
+            baseSkill: false,
+            coords: {x: 1, y: 5},
+            numBefore: 1,
+            preReqLevels: [5]
+        },
+        {
+            skillID: 'hp_up',
+            baseSkill: false,
+            coords: {x: 0, y: 6},
+            numAfter: 1,
+        },
+        {
+            skillID: 'autocure',
+            baseSkill: false,
+            coords: {x: 1, y: 6},
+            numBefore: 1,
+            preReqLevels: [3],
+            numAfter: 1,
+            postReq: [5],
+        },
+        {
+            skillID: 'autoheal',
+            baseSkill: false,
+            coords: {x: 2, y: 6},
+            numBefore: 1,
+            preReqLevels: [5],
+            numAfter: 2,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'tenacity',
+            baseSkill: false,
+            coords: {x: 2, y: 7},
+            numAfter: 1
+        },
+        {
+            skillID: 'tec_up',
+            baseSkill: false,
+            coords: {x: 0, y: 7},
+            numAfter: 1,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'luc_up',
+            baseSkill: false,
+            coords: {x: 0, y: 8},
+            numAfter: 1,
+            postReqLevels: [5]
+        },
+        {
+            skillID: 'fetch',
+            baseSkill: false,
+            coords: {x: 1, y: 7},
+            numBefore: 2,
+        },
+        {
+            skillID: 'vit_up',
+            baseSkill: false,
+            coords: {x: 0, y: 9},
+            numAfter: 1,
+            postReqLevels: [10]
+        },
+        {
+            skillID: 'en_garde',
+            baseSkill: false,
+            coords: {x: 1, y: 9},
+            numBefore: 1
+        },
+        {
+            skillID: 'tp_up',
+            baseSkill: false,
+            coords: {x: 0, y: 10},
+        },
+        {
+            skillID: 'esc_up',
+            baseSkill: false,
+            coords: {x: 2, y: 10},
+        },
+        {
+            skillID: 'str_up',
+            baseSkill: false,
+            coords: {x: 0, y: 11},
+        },
+        {
+            skillID: 'agi_up',
+            baseSkill: false,
+            coords: {x: 0, y: 12},
+        },
+        {
+            skillID: 'wildwall',
+            baseSkill: false,
+            coords: {x: 1, y: 10},
+        },
+        {
+            skillID: 'beast_roar',
+            baseSkill: false,
+            coords: {x: 1, y: 11},
+        },
+        {
+            skillID: 'saliva',
+            baseSkill: false,
+            coords: {x: 1, y: 12},
+        },
+        {
+            skillID: 'howl',
+            baseSkill: false,
+            coords: {x: 1, y: 13},
+        },
+        {
+            skillID: 'growl',
+            baseSkill: false,
+            coords: {x: 1, y: 14},
+        },
+        
+    ],
     [ // Everyone Skills
         {
             skillID: 'hp_up',
