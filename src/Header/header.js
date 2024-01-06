@@ -276,7 +276,18 @@ class Header extends Component {
             </div>
         } 
 
-        return <div className="HeaderBar">
+        let headerBarColors = {
+            backgroundColor: "#3574bc",
+            color: "white"
+        }
+        if (this.props.gameID === "eo2") {
+            headerBarColors = {
+                backgroundColor: "#FF0000",
+                color: "black"
+            }
+        }
+
+        return <div className="HeaderBar" style={headerBarColors}>
             <div className="HeaderImg">
                 <a href="https://github.com/aturfah/eo3-remake-skillsim">
                 <img src={process.env.PUBLIC_URL + "/" + imgFilename}  alt="alt_text" style={imgStyle}/>
